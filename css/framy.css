@@ -24,6 +24,9 @@
   overflow-x: hidden;
 }
 .columns {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
@@ -55,6 +58,9 @@
 .columns .xs-10,
 .columns .xs-11,
 .columns .xs-12 {
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   flex: 0 0 auto;
 }
@@ -161,6 +167,9 @@
   .columns .sm-10,
   .columns .sm-11,
   .columns .sm-12 {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -298,6 +307,9 @@
   .columns .md-10,
   .columns .md-11,
   .columns .md-12 {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -435,6 +447,9 @@
   .columns .lg-10,
   .columns .lg-11,
   .columns .lg-12 {
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
@@ -557,4 +572,7 @@
   .columns .lg-offset-11 {
     margin-left: 91.667%;
   }
+}
+.button {
+  display: block;
 }
