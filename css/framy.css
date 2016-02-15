@@ -1,3 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+object,
+embed,
+iframe {
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+li {
+  list-style: none;
+}
+blockquote,
+blockquote:before,
+blockquote:after,
+q,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  text-align: left;
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+input,
+select {
+  vertical-align: middle;
+}
+input[type=checkbox],
+input[type=radio] {
+  vertical-align: text-top;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+button,
+input[type=button],
+input[type=submit] {
+  width: auto;
+  overflow: visible;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+.clickable,
+label,
+input[type=button],
+[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+img {
+  -ms-interpolation-mode: bicubic;
+}
+a img {
+  border: none;
+}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -24,10 +128,6 @@
   overflow-x: hidden;
 }
 .columns {
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
@@ -58,10 +158,6 @@
 .columns .xs-10,
 .columns .xs-11,
 .columns .xs-12 {
-  -ms-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   flex: 0 0 auto;
 }
 .columns .xs {
@@ -167,10 +263,6 @@
   .columns .sm-10,
   .columns .sm-11,
   .columns .sm-12 {
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
@@ -307,10 +399,6 @@
   .columns .md-10,
   .columns .md-11,
   .columns .md-12 {
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
@@ -447,10 +535,6 @@
   .columns .lg-10,
   .columns .lg-11,
   .columns .lg-12 {
-    -ms-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     -webkit-flex: 0 0 auto;
     -ms-flex: 0 0 auto;
     -webkit-box-flex: 0;
