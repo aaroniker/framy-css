@@ -103,6 +103,8 @@ a img {
   border: none;
 }
 .container {
+  padding-right: 15px;
+  padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
   overflow-x: hidden;
@@ -618,6 +620,7 @@ a img {
     -webkit-flex-basis: 91.667%;
     flex-basis: 91.667%;
     max-width: 91.667%;
+
   }
   .columns .lg-12 {
     -ms-flex-preferred-size: 100%;
