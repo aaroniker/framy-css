@@ -108,6 +108,15 @@ body {
 	line-height: 1.428571429;
 	color: #858891;
 }
+a {
+	color: #00b5f6;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #00b5f6;
+	text-decoration: none;
+}
 input,
 button,
 select,

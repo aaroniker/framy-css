@@ -5,6 +5,16 @@ body {
 	color: @text;
 }
 
+a {
+	&:hover,
+	&:focus {
+		color: @link-hover-color;
+		text-decoration: @link-hover-decoration;
+	}
+	color: @link-color;
+	text-decoration: none;
+}
+
 input,
 button,
 select,
