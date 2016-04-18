@@ -102,6 +102,26 @@ img {
 a img {
 	border: none;
 }
+body {
+	font-family: 'Roboto', Arial;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #858891;
+}
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-top: 1px solid #d9d8de;
+}
 .container {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -669,22 +689,8 @@ button {
 	border-radius: 3px;
 	padding: 6px 15px;
 }
-body {
-	font-family: 'Roboto', Arial;
-	font-size: 14px;
-	line-height: 1.428571429;
-	color: #858891;
-}
 p {
 	margin: 0 0 10px;
-}
-input,
-button,
-select,
-textarea {
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
 }
 h1,
 h2,
