@@ -672,7 +672,19 @@ button {
 body {
 	font-family: 'Roboto', Arial;
 	font-size: 14px;
+	line-height: 1.428571429;
 	color: #858891;
+}
+p {
+	margin: 0 0 10px;
+}
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
 }
 h1,
 h2,
@@ -682,7 +694,20 @@ h5,
 h6 {
 	font-family: inherit;
 	font-weight: 500;
+	line-height: 1.1;
 	color: #454852;
+}
+h1,
+h2,
+h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+h4,
+h5,
+h6 {
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 h1 {
 	font-size: 36px;
