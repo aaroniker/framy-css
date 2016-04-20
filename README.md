@@ -1,3 +1,12 @@
 # Framy - Very simple CSS Framework
 
-More information soon!
+Framy is a simple CSS-Framework mostly done for own projects [WIP]
+
+__Website__ http://www.framycss.org/
+
+__Demo__ http://www.framycss.org/demo
+
+## External Resources
+
+- [Roboto](https://www.google.com/fonts/specimen/Roboto)
+- [Ionicons](http://ionicons.com/)
