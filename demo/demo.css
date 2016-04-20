@@ -5,3 +5,36 @@
 	border: 1px solid #d9d8de;
 	margin: 30px 0 0 0;
 }
+
+.color {
+	overflow: hidden;
+	margin: 30px 0 0 0;
+}
+
+.color span {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	float: left;
+}
+
+.color span.primary { background: #00b5f6; }
+.color span.success { background: #4ce276; }
+.color span.warning { background: #f9d65e; }
+.color span.error { background: #f36362; }
+.color span.dark { background: #3f4457; }
+.color span.light { background: #f1f3f6; }
+.color span.border {
+	background: none;
+	border: 2px solid #d9d8de;
+}
+
+
+.color .info {
+	margin: 0 0 0 80px;
+}
+
+.color .info h4 {
+	margin-bottom: 4px;
+}

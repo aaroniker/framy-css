@@ -131,6 +131,10 @@ hr {
 	border: 0;
 	border-top: 1px solid #d9d8de;
 }
+hr.lg {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 .container {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -741,4 +745,7 @@ h5 {
 }
 h6 {
 	font-size: 12px;
+}
+small {
+	font-size: 85%;
 }
