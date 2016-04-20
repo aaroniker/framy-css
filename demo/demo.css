@@ -38,3 +38,16 @@
 .color .info h4 {
 	margin-bottom: 4px;
 }
+
+#icons {
+	overflow: hidden;
+}
+
+#icons li {
+	display: block;
+	float: left;
+	border: 1px solid #d9d8de;
+	margin: 10px 10px 0 0;
+	padding: 10px;
+	font-size: 2em;
+}

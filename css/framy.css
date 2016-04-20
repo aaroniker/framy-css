@@ -2385,7 +2385,7 @@ hr.lg {
 	-moz-osx-font-smoothing: grayscale;
 }
 p {
-	margin: 0 0 10px;
+	margin: 0 0 10px 0;
 }
 h1,
 h2,
