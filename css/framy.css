@@ -3022,15 +3022,10 @@ button:hover {
 	background: #00a2dd;
 	color: #fff;
 }
-.button.block,
-button.block {
-	display: block;
-}
-.button.center,
-button.center {
-	display: table;
-	margin-left: auto;
-	margin-right: auto;
+.button .icon,
+button .icon {
+	position: relative;
+	left: -4px;
 }
 .button.lg,
 button.lg {
@@ -3041,6 +3036,10 @@ button.lg {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
+.button.lg .icon,
+button.lg .icon {
+	left: -5px;
+}
 .button.sm,
 button.sm {
 	padding: 6px 14px;
@@ -3049,6 +3048,20 @@ button.sm {
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
+}
+.button.sm .icon,
+button.sm .icon {
+	left: -2px;
+}
+.button.block,
+button.block {
+	display: block;
+}
+.button.center,
+button.center {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
 }
 .button.success,
 button.success {

@@ -32,6 +32,22 @@ button {
 	border: none;
 	.button-style(@primary, #fff);
 	.button-size(@padding-v, @padding-h, @font-size, @line-height, @border-radius);
+	.icon {
+		position: relative;
+		left: -4px;
+	}
+	&.lg {
+		.icon {
+			left: -5px;
+		}
+		.button-size(@padding-lg-v, @padding-lg-h, @font-size-large, @line-height, @border-lg-radius);
+	}
+	&.sm {
+		.icon {
+			left: -2px;
+		}
+		.button-size(@padding-sm-v, @padding-sm-h, @font-size-small, @line-height, @border-sm-radius);
+	}
 	&.block {
 		display: block;
 	}
@@ -39,12 +55,6 @@ button {
 		display: table;
 		margin-left: auto;
 		margin-right: auto;
-	}
-	&.lg {
-		.button-size(@padding-lg-v, @padding-lg-h, @font-size-large, @line-height, @border-lg-radius);
-	}
-	&.sm {
-		.button-size(@padding-sm-v, @padding-sm-h, @font-size-small, @line-height, @border-sm-radius);
 	}
 	&.success {
 		.button-style(@success, #fff);
