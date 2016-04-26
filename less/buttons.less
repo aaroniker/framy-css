@@ -1,9 +1,62 @@
-.btn,
-button {
-	background: @primary;
-	color: #fff;
-	display: table;
-	border: none;
+.button-size(@padding-vertical, @padding-horizontal, @font-size, @line-height, @border-radius) {
+	padding: @padding-vertical @padding-horizontal;
+	font-size: @font-size;
+	line-height: @line-height;
 	.round(@border-radius);
-	padding: @padding-v @padding-h;
+}
+
+.button-style(@background, @color) {
+	&:active,
+	&:focus,
+	&:hover {
+		background: darken(@background, 5%);
+		color: @color;
+	}
+	background: @background;
+	color: @color;
+}
+
+.button,
+button {
+	&:active,
+	&:focus,
+	&:hover {
+		background: darken(@primary, 5%);
+		color: #fff;
+	}
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	white-space: nowrap;
+	border: none;
+	.button-style(@primary, #fff);
+	.button-size(@padding-v, @padding-h, @font-size, @line-height, @border-radius);
+	&.block {
+		display: block;
+	}
+	&.center {
+		display: table;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&.lg {
+		.button-size(@padding-lg-v, @padding-lg-h, @font-size-large, @line-height, @border-lg-radius);
+	}
+	&.sm {
+		.button-size(@padding-sm-v, @padding-sm-h, @font-size-small, @line-height, @border-sm-radius);
+	}
+	&.success {
+		.button-style(@success, #fff);
+	}
+	&.warning {
+		.button-style(@warning, #fff);
+	}
+	&.error {
+		.button-style(@error, #fff);
+	}
+	&.border {
+		border: 1px solid @border;
+		.button-style(#fff, @text);
+	}
 }

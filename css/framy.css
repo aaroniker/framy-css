@@ -2987,14 +2987,123 @@ small {
 		margin-left: 91.667%;
 	}
 }
-.btn,
+.button,
 button {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	touch-action: manipulation;
+	white-space: nowrap;
+	border: none;
 	background: #00b5f6;
 	color: #fff;
-	display: table;
-	border: none;
+	padding: 8px 18px;
+	font-size: 14px;
+	line-height: 1.428571429;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	padding: 6px 15px;
+}
+.button:active,
+.button:focus,
+.button:hover,
+button:active,
+button:focus,
+button:hover {
+	background: #00a2dd;
+	color: #fff;
+}
+.button:active,
+.button:focus,
+.button:hover,
+button:active,
+button:focus,
+button:hover {
+	background: #00a2dd;
+	color: #fff;
+}
+.button.block,
+button.block {
+	display: block;
+}
+.button.center,
+button.center {
+	display: table;
+	margin-left: auto;
+	margin-right: auto;
+}
+.button.lg,
+button.lg {
+	padding: 10px 20px;
+	font-size: 18px;
+	line-height: 1.428571429;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.button.sm,
+button.sm {
+	padding: 6px 14px;
+	font-size: 12px;
+	line-height: 1.428571429;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.button.success,
+button.success {
+	background: #4ce276;
+	color: #fff;
+}
+.button.success:active,
+.button.success:focus,
+.button.success:hover,
+button.success:active,
+button.success:focus,
+button.success:hover {
+	background: #36de65;
+	color: #fff;
+}
+.button.warning,
+button.warning {
+	background: #f9d65e;
+	color: #fff;
+}
+.button.warning:active,
+.button.warning:focus,
+.button.warning:hover,
+button.warning:active,
+button.warning:focus,
+button.warning:hover {
+	background: #f8d045;
+	color: #fff;
+}
+.button.error,
+button.error {
+	background: #f36362;
+	color: #fff;
+}
+.button.error:active,
+.button.error:focus,
+.button.error:hover,
+button.error:active,
+button.error:focus,
+button.error:hover {
+	background: #f14b4a;
+	color: #fff;
+}
+.button.border,
+button.border {
+	border: 1px solid #d9d8de;
+	background: #fff;
+	color: #858891;
+}
+.button.border:active,
+.button.border:focus,
+.button.border:hover,
+button.border:active,
+button.border:focus,
+button.border:hover {
+	background: #f2f2f2;
+	color: #858891;
 }
