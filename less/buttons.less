@@ -28,6 +28,7 @@ button {
 	text-align: center;
 	vertical-align: middle;
 	touch-action: manipulation;
+	position: relative;
 	white-space: nowrap;
 	border: none;
 	.button-style(@primary, #fff);
@@ -49,6 +50,9 @@ button {
 		.button-size(@padding-sm-v, @padding-sm-h, @font-size-small, @line-height, @border-sm-radius);
 	}
 	&.block {
+		& + .button.block {
+			margin-top: 5px;
+		}
 		display: block;
 	}
 	&.center {
@@ -66,7 +70,17 @@ button {
 		.button-style(@error, #fff);
 	}
 	&.border {
-		border: 1px solid @border;
+		&:before {
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			position: absolute;
+			z-index: 0;
+			content: "";
+			border: 1px solid @border;
+			.round(@border-radius);
+		}
 		.button-style(#fff, @text);
 	}
 }

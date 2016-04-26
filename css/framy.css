@@ -2993,6 +2993,7 @@ button {
 	text-align: center;
 	vertical-align: middle;
 	touch-action: manipulation;
+	position: relative;
 	white-space: nowrap;
 	border: none;
 	background: #00b5f6;
@@ -3057,6 +3058,10 @@ button.sm .icon {
 button.block {
 	display: block;
 }
+.button.block + .button.block,
+button.block + .button.block {
+	margin-top: 5px;
+}
 .button.center,
 button.center {
 	display: table;
@@ -3107,9 +3112,22 @@ button.error:hover {
 }
 .button.border,
 button.border {
-	border: 1px solid #d9d8de;
 	background: #fff;
 	color: #858891;
+}
+.button.border:before,
+button.border:before {
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 0;
+	content: "";
+	border: 1px solid #d9d8de;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .button.border:active,
 .button.border:focus,
