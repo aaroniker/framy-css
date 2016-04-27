@@ -30,6 +30,7 @@
 	div[class*=' md'],
 	div[class^='lg'],
 	div[class*=' lg'] {
+		-webkit-flex-basis: 100%;
 		flex-basis: 100%;
 		padding-right: @gap-half-width * 1px;
 		padding-left: @gap-half-width * 1px;
@@ -47,58 +48,88 @@
 	.xs-10,
 	.xs-11,
 	.xs-12 {
+		-webkit-flex: 0 0 auto;
 		flex: 0 0 auto;
+		-webkit-box-flex: 0;
 	}
 	.xs {
+		-webkit-flex-grow: 1;
 		flex-grow: 1;
+		-webkit-flex-basis: 0;
+		-webkit-box-flex: 1;
+		-ms-flex-preferred-size: 0;
 		flex-basis: 0;
 		max-width: 100%;
 	}
 	.xs-1 {
+		-ms-flex-preferred-size: 8.333%;
+		-webkit-flex-basis: 8.333%;
 		flex-basis: 8.333%;
 		max-width: 8.333%;
 	}
 	.xs-2 {
+		-ms-flex-preferred-size: 16.666%;
+		-webkit-flex-basis: 16.666%;
 		flex-basis: 16.666%;
 		max-width: 16.666%;
 	}
 	.xs-3 {
+		-ms-flex-preferred-size: 25%;
+		-webkit-flex-basis: 25%;
 		flex-basis: 25%;
 		max-width: 25%;
 	}
 	.xs-4 {
+		-ms-flex-preferred-size: 33.333%;
+		-webkit-flex-basis: 33.333%;
 		flex-basis: 33.333%;
 		max-width: 33.333%;
 	}
 	.xs-5 {
+		-ms-flex-preferred-size: 41.667%;
+		-webkit-flex-basis: 41.667%;
 		flex-basis: 41.667%;
 		max-width: 41.667%;
 	}
 	.xs-6 {
+		-ms-flex-preferred-size: 50%;
+		-webkit-flex-basis: 50%;
 		flex-basis: 50%;
 		max-width: 50%;
 	}
 	.xs-7 {
+		-ms-flex-preferred-size: 58.333%;
+		-webkit-flex-basis: 58.333%;
 		flex-basis: 58.333%;
 		max-width: 58.333%;
 	}
 	.xs-8 {
+		-ms-flex-preferred-size: 66.667%;
+		-webkit-flex-basis: 66.667%;
 		flex-basis: 66.667%;
 		max-width: 66.667%;
 	}
 	.xs-9 {
+		-ms-flex-preferred-size: 75%;
+		-webkit-flex-basis: 75%;
 		flex-basis: 75%;
 		max-width: 75%;
 	}
 	.xs-10 {
+		-ms-flex-preferred-size: 83.333%;
+		-webkit-flex-basis: 83.333%;
 		flex-basis: 83.333%;
 		max-width: 83.333%;
 	}
 	.xs-11 {
+		-ms-flex-preferred-size: 91.667%;
+		-webkit-flex-basis: 91.667%;
 		flex-basis: 91.667%;
 		max-width: 91.667%;
 	}
 	.xs-12 {
+		-ms-flex-preferred-size: 100%;
+		-webkit-flex-basis: 100%;
 		flex-basis: 100%;
 		max-width: 100%;
 	}
@@ -543,9 +574,21 @@
 			margin-left: 91.667%;
 		}
 	}
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: -webkit-box;
 	display: flex;
+	-webkit-flex: 0 1 auto;
+	-ms-flex: 0 1 auto;
+	-webkit-box-flex: 0;
 	flex: 0 1 auto;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
 	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	margin-right: @gap-compensation * 1px;
 	margin-left: @gap-compensation * 1px;
