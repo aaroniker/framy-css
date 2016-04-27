@@ -2459,9 +2459,9 @@ small {
 	overflow-x: hidden;
 }
 .columns {
-	display: -webkit-flex;
-	display: -ms-flexbox;
 	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	-webkit-flex: 0 1 auto;
 	-ms-flex: 0 1 auto;
@@ -2478,18 +2478,18 @@ small {
 	margin-right: -15px;
 	margin-left: -15px;
 }
-.columns div[class^='xs'],
-.columns div[class*=' xs'],
-.columns div[class^='sm'],
-.columns div[class*=' sm'],
-.columns div[class^='md'],
-.columns div[class*=' md'],
-.columns div[class^='lg'],
-.columns div[class*=' lg'] {
-	-webkit-flex-basis: 100%;
-	flex-basis: 100%;
+.columns [class^='xs'],
+.columns [class*=' xs'],
+.columns [class^='sm'],
+.columns [class*=' sm'],
+.columns [class^='md'],
+.columns [class*=' md'],
+.columns [class^='lg'],
+.columns [class*=' lg'] {
 	padding-right: 15px;
 	padding-left: 15px;
+	-webkit-flex-basis: 100%;
+	flex-basis: 100%;
 }
 .columns .xs,
 .columns .xs-1,
@@ -2639,9 +2639,9 @@ small {
 	.columns .sm-10,
 	.columns .sm-11,
 	.columns .sm-12 {
+		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
-		-webkit-box-flex: 0;
 		flex: 0 0 auto;
 	}
 	.columns .sm {
@@ -2774,9 +2774,9 @@ small {
 	.columns .md-10,
 	.columns .md-11,
 	.columns .md-12 {
+		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
-		-webkit-box-flex: 0;
 		flex: 0 0 auto;
 	}
 	.columns .md {
@@ -2909,9 +2909,9 @@ small {
 	.columns .lg-10,
 	.columns .lg-11,
 	.columns .lg-12 {
+		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
-		-webkit-box-flex: 0;
 		flex: 0 0 auto;
 	}
 	.columns .lg {
