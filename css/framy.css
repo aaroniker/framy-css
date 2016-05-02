@@ -2345,12 +2345,12 @@ body {
 	color: #858891;
 }
 a {
-	color: #00b5f6;
+	color: #77cdff;
 	text-decoration: none;
 }
 a:hover,
 a:focus {
-	color: #00b5f6;
+	color: #77cdff;
 	text-decoration: none;
 }
 input,
@@ -3039,7 +3039,7 @@ button {
 	position: relative;
 	white-space: nowrap;
 	border: none;
-	background: #00b5f6;
+	background: #77cdff;
 	color: #fff;
 	padding: 8px 18px;
 	font-size: 14px;
@@ -3054,7 +3054,7 @@ button {
 button:active,
 button:focus,
 button:hover {
-	background: #00a2dd;
+	background: #5ec4ff;
 	color: #fff;
 }
 .button:active,
@@ -3063,7 +3063,7 @@ button:hover {
 button:active,
 button:focus,
 button:hover {
-	background: #00a2dd;
+	background: #5ec4ff;
 	color: #fff;
 }
 .button .icon,
