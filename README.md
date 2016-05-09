@@ -6,6 +6,10 @@ __Website__ http://www.framycss.org/
 
 __Demo__ http://www.framycss.org/demo
 
+## CDN
+
+`https://cdn.jsdelivr.net/framy/latest/css/framy.min.css`
+
 ## External Resources
 
 - [Roboto](https://www.google.com/fonts/specimen/Roboto)
