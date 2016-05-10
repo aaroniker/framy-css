@@ -2235,9 +2235,6 @@
 	content: "\f30c";
 }
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
 	-webkit-font-smoothing: antialiased;
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -2246,26 +2243,39 @@
 }
 article,
 aside,
+details,
+figcaption,
 figure,
 footer,
 header,
+main,
+menu,
 nav,
 section,
-details,
 summary {
 	display: block;
+}
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
 }
 object,
 embed,
 iframe {
 	max-width: 100%;
 }
+progress {
+	vertical-align: baseline;
+}
 html,
 body {
 	height: 100%;
 }
-li {
-	list-style: none;
+a:active,
+a:hover {
+	outline: 0;
 }
 blockquote,
 blockquote:before,
@@ -2294,6 +2304,13 @@ th {
 td {
 	font-weight: normal;
 	vertical-align: top;
+}
+input,
+button,
+optgroup,
+select,
+textarea {
+	margin: 0;
 }
 input,
 select {
@@ -2338,11 +2355,16 @@ img {
 a img {
 	border: none;
 }
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
 body {
+	margin: 0;
 	font-family: "Roboto", Arial;
 	font-size: 14px;
 	line-height: 1.428571429;
-	color: #858891;
+	color: #757880;
 }
 a {
 	color: #5bb8fd;
@@ -2355,6 +2377,7 @@ a:focus {
 }
 input,
 button,
+optgroup,
 select,
 textarea {
 	font-family: inherit;
@@ -2370,6 +2393,38 @@ hr {
 hr.lg {
 	margin-top: 40px;
 	margin-bottom: 40px;
+}
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+	margin-bottom: 0;
+}
+ul.unstyled,
+ol.unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+ul.inline,
+ol.inline {
+	padding-left: 0;
+	list-style: none;
+	margin-left: -5px;
+}
+ul.inline > li,
+ol.inline > li {
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+nav ul {
+	padding-left: 0;
+	list-style: none;
 }
 .icon {
 	display: inline-block;
@@ -3156,7 +3211,7 @@ button.error:hover {
 .button.border,
 button.border {
 	background: #fff;
-	color: #858891;
+	color: #757880;
 }
 .button.border:before,
 button.border:before {
@@ -3179,5 +3234,5 @@ button.border:active,
 button.border:focus,
 button.border:hover {
 	background: #f2f2f2;
-	color: #858891;
+	color: #757880;
 }

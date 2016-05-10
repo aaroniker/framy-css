@@ -1,4 +1,10 @@
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
 body {
+	margin: 0;
 	font-family: @font-family;
 	font-size: @font-size;
 	line-height: @line-height;
@@ -17,6 +23,7 @@ a {
 
 input,
 button,
+optgroup,
 select,
 textarea {
 	font-family: inherit;
@@ -33,6 +40,37 @@ hr {
 	margin-bottom: @line-height-computed;
 	border: 0;
 	border-top: 1px solid @border;
+}
+
+ul,
+ol {
+	ul,
+	ol {
+		margin-bottom: 0;
+	}
+	&.unstyled {
+		padding-left: 0;
+		list-style: none;
+	}
+	&.inline {
+		& > li {
+			display: inline-block;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		padding-left: 0;
+		list-style: none;
+		margin-left: -5px;
+	}
+	margin-top: 0;
+	margin-bottom: (@line-height-computed / 2);
+}
+
+nav {
+	ul {
+		padding-left: 0;
+		list-style: none;
+	}
 }
 
 .icon {
