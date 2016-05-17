@@ -2439,6 +2439,9 @@ nav ul {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.clear {
+	clear: both;
+}
 p {
 	margin: 0 0 10px 0;
 }
