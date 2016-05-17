@@ -1,3 +1,8 @@
+body {
+	padding: 140px 20px 40px 300px;
+	background: #f1f3f6;
+}
+
 .box {
 	width: 100%;
 	line-height: 40px;
@@ -9,6 +14,9 @@
 .color {
 	overflow: hidden;
 	margin: 30px 0 0 0;
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
 }
 
 .color span {
@@ -25,10 +33,7 @@
 .color span.error { background: #f36362; }
 .color span.dark { background: #2f3241; }
 .color span.light { background: #f1f3f6; }
-.color span.border {
-	background: none;
-	border: 2px solid #d9d8de;
-}
+.color span.border { background: none; border: 2px solid #d9d8de; }
 
 
 .color .info {
@@ -39,16 +44,92 @@
 	margin-bottom: 4px;
 }
 
-#icons {
+#icons ul {
 	overflow: hidden;
 	padding: 0;
 }
 
-#icons li {
+#icons ul li {
 	display: block;
 	float: left;
 	border: 1px solid #d9d8de;
 	margin: 10px 10px 0 0;
 	padding: 10px;
 	font-size: 2em;
+}
+
+.wrap {
+	margin: 0 auto;
+	max-width: 1020px;
+}
+
+#head {
+	left: 280px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	background: #fff;
+	padding: 30px 20px;
+}
+
+#head h1 {
+	margin: 0;
+	line-height: 40px;
+	float: left;
+}
+
+#head .version {
+	float: right;
+	line-height: 28px;
+	color: #babcc3;
+	border-radius: 15px;
+	padding: 0 21px;
+	border: 1px solid #d9d8de;
+	margin: 5px 0 0 0;
+}
+
+#left {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background: #2f3241;
+	width: 280px;
+	z-index: 1;
+}
+
+#left .logo {
+	display: block;
+	padding: 60px 0;
+}
+
+#left .logo img {
+	display: block;
+	width: 80px;
+	margin: 0 auto;
+}
+
+#left h5 {
+	color: #454852;
+	text-transform: uppercase;
+	padding: 0 35px;
+	font-size: 12px;
+}
+
+#left nav {
+	margin-bottom: 35px;
+}
+
+#left nav a {
+	display: block;
+	padding: 6px 35px 6px 32px;
+	line-height: 22px;
+	color: #fff;
+	border-left: 3px solid transparent;
+}
+
+#left nav .active a {
+	border-color: #5bb8fd;
+	background: #373b4b;
 }

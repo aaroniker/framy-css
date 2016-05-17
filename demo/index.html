@@ -14,1047 +14,1139 @@
 
 <body>
 
-	<div class="container">
+	<section id="left">
     	
-        <h1>FramyCSS Demo</h1>
+        <a href="http://framycss.org" class="logo">
+        	<img src="http://framycss.org/img/logo.svg" alt="Framy Logo">
+        </a>
         
-        <hr class="lg">
+        <h5>Base</h5>
         
-        <h2>Colors</h2>
+        <nav>
+        	<ul>
+            	<li class="active"><a href="#colors">Colors</a></li>
+            	<li><a href="#typography">Typography</a></li>
+            	<li><a href="#lists">Lists</a></li>
+            </ul>
+        </nav>
         
-        <div class="columns">
+        <h5>Components</h5>
         
-            <div class="md-3 sm-6">
-                <div class="color">
-                    <span class="primary"></span>
-                    <div class="info">
-                        <h4>Primary</h4>
-                        <small>#5bb8fd</small>
-                    </div>
-                </div>
+        <nav>
+        	<ul>
+            	<li><a href="#buttons">Buttons</a></li>
+            	<li><a href="#icons">Icons</a></li>
+            	<li><a href="#grid">Grid</a></li>
+            </ul>
+        </nav>
+        
+    </section>
+    
+    <header id="head">
+
+		<div class="wrap">
+    	
+        	<h1>FramyCSS Demo</h1>
+            
+            <div class="version">
+            	v0.8
             </div>
             
-            <div class="md-3 sm-6">
-                <div class="color">
-                    <span class="success"></span>
-                    <div class="info">
-                        <h4>Success</h4>
-                        <small>#4ce276</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="md-3 sm-6">
-                <div class="color">
-                    <span class="warning"></span>
-                    <div class="info">
-                        <h4>Warning</h4>
-                        <small>#f9d65e</small>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="md-3 sm-6">
-                <div class="color">
-                    <span class="error"></span>
-                    <div class="info">
-                        <h4>Error</h4>
-                        <small>#f36362</small>
-                    </div>
-                </div>
-            </div>
+            <div class="clear"></div>
         
         </div>
+    
+    </header>
+
+	<div class="wrap">
+    
+    	<div id="content">
         
-        <div class="columns">
-        
-            <div class="md-3 sm-6">
-                <div class="color">
-                    <span class="dark"></span>
-                    <div class="info">
-                        <h4>Dark</h4>
-                        <small>#2f3241</small>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="md-3 sm-6">
-                <div class="color">
-                    <span class="light"></span>
-                    <div class="info">
-                        <h4>Light</h4>
-                        <small>#f1f3f6</small>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="md-3 sm-6">
-                <div class="color">
-                    <span class="border"></span>
-                    <div class="info">
-                        <h4>Border</h4>
-                        <small>#d9d8de</small>
-                    </div>
-                </div>
-            </div>
+        	<section id="colors">
             
-        </div>
-        
-        <hr class="lg">
-        
-        <h2>Buttons</h2>
-        
-        <p>
-        	<a class="button lg" href="">Large Button</a>
-        	<a class="button" href="">Button</a>
-        	<a class="button sm" href="">Small Button</a>
-        </p>
-        
-        <p>
-        	<a class="button" href="">Primary</a>
-        	<a class="button success" href="">Success</a>
-        	<a class="button warning" href="">Warning</a>
-        	<a class="button error" href="">Error</a>
-        	<a class="button border" href="">Border</a>
-        </p>
-        
-        <p>
-        	<a class="button block" href="">Block Button</a>
-        </p>
-        
-        <p>
-        	<a class="button center" href="">Center Button</a>
-        </p>
-        
-        <p>
-        	<a class="button lg" href="">
-            	<i class="icon icon-gear-a"></i>
-            	Large Button
-            </a>
-        	<a class="button" href="">
-            	<i class="icon icon-log-in"></i>
-            	Button
-            </a>
-        	<a class="button sm" href="">
-            	<i class="icon icon-refresh"></i>
-            	Small Button
-            </a>
-        </p>
-        
-        <hr class="lg">
-        
-        <h2>Icons</h2>
-        
-        <ul id="icons">
-            <li class="icon icon-ionic"></li>
-            <li class="icon icon-arrow-up-a"></li>
-            <li class="icon icon-arrow-right-a"></li>
-            <li class="icon icon-arrow-down-a"></li>
-            <li class="icon icon-arrow-left-a"></li>
-            <li class="icon icon-arrow-up-b"></li>
-            <li class="icon icon-arrow-right-b"></li>
-            <li class="icon icon-arrow-down-b"></li>
-            <li class="icon icon-arrow-left-b"></li>
-            <li class="icon icon-arrow-up-c"></li>
-            <li class="icon icon-arrow-right-c"></li>
-            <li class="icon icon-arrow-down-c"></li>
-            <li class="icon icon-arrow-left-c"></li>
-            <li class="icon icon-arrow-return-right"></li>
-            <li class="icon icon-arrow-return-left"></li>
-            <li class="icon icon-arrow-swap"></li>
-            <li class="icon icon-arrow-shrink"></li>
-            <li class="icon icon-arrow-expand"></li>
-            <li class="icon icon-arrow-move"></li>
-            <li class="icon icon-arrow-resize"></li>
-            <li class="icon icon-chevron-up"></li>
-            <li class="icon icon-chevron-right"></li>
-            <li class="icon icon-chevron-down"></li>
-            <li class="icon icon-chevron-left"></li>
-            <li class="icon icon-navicon-round"></li>
-            <li class="icon icon-navicon"></li>
-            <li class="icon icon-drag"></li>
-            <li class="icon icon-log-in"></li>
-            <li class="icon icon-log-out"></li>
-            <li class="icon icon-checkmark-round"></li>
-            <li class="icon icon-checkmark"></li>
-            <li class="icon icon-checkmark-circled"></li>
-            <li class="icon icon-close-round"></li>
-            <li class="icon icon-close"></li>
-            <li class="icon icon-close-circled"></li>
-            <li class="icon icon-plus-round"></li>
-            <li class="icon icon-plus"></li>
-            <li class="icon icon-plus-circled"></li>
-            <li class="icon icon-minus-round"></li>
-            <li class="icon icon-minus"></li>
-            <li class="icon icon-minus-circled"></li>
-            <li class="icon icon-information"></li>
-            <li class="icon icon-information-circled"></li>
-            <li class="icon icon-help"></li>
-            <li class="icon icon-help-circled"></li>
-            <li class="icon icon-backspace-outline"></li>
-            <li class="icon icon-backspace"></li>
-            <li class="icon icon-help-buoy"></li>
-            <li class="icon icon-asterisk"></li>
-            <li class="icon icon-alert"></li>
-            <li class="icon icon-alert-circled"></li>
-            <li class="icon icon-refresh"></li>
-            <li class="icon icon-loop"></li>
-            <li class="icon icon-shuffle"></li>
-            <li class="icon icon-home"></li>
-            <li class="icon icon-search"></li>
-            <li class="icon icon-flag"></li>
-            <li class="icon icon-star"></li>
-            <li class="icon icon-heart"></li>
-            <li class="icon icon-heart-broken"></li>
-            <li class="icon icon-gear-a"></li>
-            <li class="icon icon-gear-b"></li>
-            <li class="icon icon-toggle-filled"></li>
-            <li class="icon icon-toggle"></li>
-            <li class="icon icon-settings"></li>
-            <li class="icon icon-wrench"></li>
-            <li class="icon icon-hammer"></li>
-            <li class="icon icon-edit"></li>
-            <li class="icon icon-trash-a"></li>
-            <li class="icon icon-trash-b"></li>
-            <li class="icon icon-document"></li>
-            <li class="icon icon-document-text"></li>
-            <li class="icon icon-clipboard"></li>
-            <li class="icon icon-scissors"></li>
-            <li class="icon icon-funnel"></li>
-            <li class="icon icon-bookmark"></li>
-            <li class="icon icon-email"></li>
-            <li class="icon icon-email-unread"></li>
-            <li class="icon icon-folder"></li>
-            <li class="icon icon-filing"></li>
-            <li class="icon icon-archive"></li>
-            <li class="icon icon-reply"></li>
-            <li class="icon icon-reply-all"></li>
-            <li class="icon icon-forward"></li>
-            <li class="icon icon-share"></li>
-            <li class="icon icon-paper-airplane"></li>
-            <li class="icon icon-link"></li>
-            <li class="icon icon-paperclip"></li>
-            <li class="icon icon-compose"></li>
-            <li class="icon icon-briefcase"></li>
-            <li class="icon icon-medkit"></li>
-            <li class="icon icon-at"></li>
-            <li class="icon icon-pound"></li>
-            <li class="icon icon-quote"></li>
-            <li class="icon icon-cloud"></li>
-            <li class="icon icon-upload"></li>
-            <li class="icon icon-more"></li>
-            <li class="icon icon-grid"></li>
-            <li class="icon icon-calendar"></li>
-            <li class="icon icon-clock"></li>
-            <li class="icon icon-compass"></li>
-            <li class="icon icon-pinpoint"></li>
-            <li class="icon icon-pin"></li>
-            <li class="icon icon-navigate"></li>
-            <li class="icon icon-location"></li>
-            <li class="icon icon-map"></li>
-            <li class="icon icon-lock-combination"></li>
-            <li class="icon icon-locked"></li>
-            <li class="icon icon-unlocked"></li>
-            <li class="icon icon-key"></li>
-            <li class="icon icon-arrow-graph-up-right"></li>
-            <li class="icon icon-arrow-graph-down-right"></li>
-            <li class="icon icon-arrow-graph-up-left"></li>
-            <li class="icon icon-arrow-graph-down-left"></li>
-            <li class="icon icon-stats-bars"></li>
-            <li class="icon icon-connection-bars"></li>
-            <li class="icon icon-pie-graph"></li>
-            <li class="icon icon-chatbubble"></li>
-            <li class="icon icon-chatbubble-working"></li>
-            <li class="icon icon-chatbubbles"></li>
-            <li class="icon icon-chatbox"></li>
-            <li class="icon icon-chatbox-working"></li>
-            <li class="icon icon-chatboxes"></li>
-            <li class="icon icon-person"></li>
-            <li class="icon icon-person-add"></li>
-            <li class="icon icon-person-stalker"></li>
-            <li class="icon icon-woman"></li>
-            <li class="icon icon-man"></li>
-            <li class="icon icon-female"></li>
-            <li class="icon icon-male"></li>
-            <li class="icon icon-transgender"></li>
-            <li class="icon icon-fork"></li>
-            <li class="icon icon-knife"></li>
-            <li class="icon icon-spoon"></li>
-            <li class="icon icon-soup-can-outline"></li>
-            <li class="icon icon-soup-can"></li>
-            <li class="icon icon-beer"></li>
-            <li class="icon icon-wineglass"></li>
-            <li class="icon icon-coffee"></li>
-            <li class="icon icon-icecream"></li>
-            <li class="icon icon-pizza"></li>
-            <li class="icon icon-power"></li>
-            <li class="icon icon-mouse"></li>
-            <li class="icon icon-battery-full"></li>
-            <li class="icon icon-battery-half"></li>
-            <li class="icon icon-battery-low"></li>
-            <li class="icon icon-battery-empty"></li>
-            <li class="icon icon-battery-charging"></li>
-            <li class="icon icon-wifi"></li>
-            <li class="icon icon-bluetooth"></li>
-            <li class="icon icon-calculator"></li>
-            <li class="icon icon-camera"></li>
-            <li class="icon icon-eye"></li>
-            <li class="icon icon-eye-disabled"></li>
-            <li class="icon icon-flash"></li>
-            <li class="icon icon-flash-off"></li>
-            <li class="icon icon-qr-scanner"></li>
-            <li class="icon icon-image"></li>
-            <li class="icon icon-images"></li>
-            <li class="icon icon-wand"></li>
-            <li class="icon icon-contrast"></li>
-            <li class="icon icon-aperture"></li>
-            <li class="icon icon-crop"></li>
-            <li class="icon icon-easel"></li>
-            <li class="icon icon-paintbrush"></li>
-            <li class="icon icon-paintbucket"></li>
-            <li class="icon icon-monitor"></li>
-            <li class="icon icon-laptop"></li>
-            <li class="icon icon-ipad"></li>
-            <li class="icon icon-iphone"></li>
-            <li class="icon icon-ipod"></li>
-            <li class="icon icon-printer"></li>
-            <li class="icon icon-usb"></li>
-            <li class="icon icon-outlet"></li>
-            <li class="icon icon-bug"></li>
-            <li class="icon icon-code"></li>
-            <li class="icon icon-code-working"></li>
-            <li class="icon icon-code-download"></li>
-            <li class="icon icon-fork-repo"></li>
-            <li class="icon icon-network"></li>
-            <li class="icon icon-pull-request"></li>
-            <li class="icon icon-merge"></li>
-            <li class="icon icon-xbox"></li>
-            <li class="icon icon-playstation"></li>
-            <li class="icon icon-steam"></li>
-            <li class="icon icon-closed-captioning"></li>
-            <li class="icon icon-videocamera"></li>
-            <li class="icon icon-film-marker"></li>
-            <li class="icon icon-disc"></li>
-            <li class="icon icon-headphone"></li>
-            <li class="icon icon-music-note"></li>
-            <li class="icon icon-radio-waves"></li>
-            <li class="icon icon-speakerphone"></li>
-            <li class="icon icon-mic-a"></li>
-            <li class="icon icon-mic-b"></li>
-            <li class="icon icon-mic-c"></li>
-            <li class="icon icon-volume-high"></li>
-            <li class="icon icon-volume-medium"></li>
-            <li class="icon icon-volume-low"></li>
-            <li class="icon icon-volume-mute"></li>
-            <li class="icon icon-levels"></li>
-            <li class="icon icon-play"></li>
-            <li class="icon icon-pause"></li>
-            <li class="icon icon-stop"></li>
-            <li class="icon icon-record"></li>
-            <li class="icon icon-skip-forward"></li>
-            <li class="icon icon-skip-backward"></li>
-            <li class="icon icon-eject"></li>
-            <li class="icon icon-bag"></li>
-            <li class="icon icon-card"></li>
-            <li class="icon icon-cash"></li>
-            <li class="icon icon-pricetag"></li>
-            <li class="icon icon-pricetags"></li>
-            <li class="icon icon-thumbsup"></li>
-            <li class="icon icon-thumbsdown"></li>
-            <li class="icon icon-happy-outline"></li>
-            <li class="icon icon-happy"></li>
-            <li class="icon icon-sad-outline"></li>
-            <li class="icon icon-sad"></li>
-            <li class="icon icon-bowtie"></li>
-            <li class="icon icon-tshirt-outline"></li>
-            <li class="icon icon-tshirt"></li>
-            <li class="icon icon-trophy"></li>
-            <li class="icon icon-podium"></li>
-            <li class="icon icon-ribbon-a"></li>
-            <li class="icon icon-ribbon-b"></li>
-            <li class="icon icon-university"></li>
-            <li class="icon icon-magnet"></li>
-            <li class="icon icon-beaker"></li>
-            <li class="icon icon-erlenmeyer-flask"></li>
-            <li class="icon icon-egg"></li>
-            <li class="icon icon-earth"></li>
-            <li class="icon icon-planet"></li>
-            <li class="icon icon-lightbulb"></li>
-            <li class="icon icon-cube"></li>
-            <li class="icon icon-leaf"></li>
-            <li class="icon icon-waterdrop"></li>
-            <li class="icon icon-flame"></li>
-            <li class="icon icon-fireball"></li>
-            <li class="icon icon-bonfire"></li>
-            <li class="icon icon-umbrella"></li>
-            <li class="icon icon-nuclear"></li>
-            <li class="icon icon-no-smoking"></li>
-            <li class="icon icon-thermometer"></li>
-            <li class="icon icon-speedometer"></li>
-            <li class="icon icon-model-s"></li>
-            <li class="icon icon-plane"></li>
-            <li class="icon icon-jet"></li>
-            <li class="icon icon-load-a"></li>
-            <li class="icon icon-load-b"></li>
-            <li class="icon icon-load-c"></li>
-            <li class="icon icon-load-d"></li>
-            <li class="icon icon-ios-ionic-outline"></li>
-            <li class="icon icon-ios-arrow-back"></li>
-            <li class="icon icon-ios-arrow-forward"></li>
-            <li class="icon icon-ios-arrow-up"></li>
-            <li class="icon icon-ios-arrow-right"></li>
-            <li class="icon icon-ios-arrow-down"></li>
-            <li class="icon icon-ios-arrow-left"></li>
-            <li class="icon icon-ios-arrow-thin-up"></li>
-            <li class="icon icon-ios-arrow-thin-right"></li>
-            <li class="icon icon-ios-arrow-thin-down"></li>
-            <li class="icon icon-ios-arrow-thin-left"></li>
-            <li class="icon icon-ios-circle-filled"></li>
-            <li class="icon icon-ios-circle-outline"></li>
-            <li class="icon icon-ios-checkmark-empty"></li>
-            <li class="icon icon-ios-checkmark-outline"></li>
-            <li class="icon icon-ios-checkmark"></li>
-            <li class="icon icon-ios-plus-empty"></li>
-            <li class="icon icon-ios-plus-outline"></li>
-            <li class="icon icon-ios-plus"></li>
-            <li class="icon icon-ios-close-empty"></li>
-            <li class="icon icon-ios-close-outline"></li>
-            <li class="icon icon-ios-close"></li>
-            <li class="icon icon-ios-minus-empty"></li>
-            <li class="icon icon-ios-minus-outline"></li>
-            <li class="icon icon-ios-minus"></li>
-            <li class="icon icon-ios-information-empty"></li>
-            <li class="icon icon-ios-information-outline"></li>
-            <li class="icon icon-ios-information"></li>
-            <li class="icon icon-ios-help-empty"></li>
-            <li class="icon icon-ios-help-outline"></li>
-            <li class="icon icon-ios-help"></li>
-            <li class="icon icon-ios-search"></li>
-            <li class="icon icon-ios-search-strong"></li>
-            <li class="icon icon-ios-star"></li>
-            <li class="icon icon-ios-star-half"></li>
-            <li class="icon icon-ios-star-outline"></li>
-            <li class="icon icon-ios-heart"></li>
-            <li class="icon icon-ios-heart-outline"></li>
-            <li class="icon icon-ios-more"></li>
-            <li class="icon icon-ios-more-outline"></li>
-            <li class="icon icon-ios-home"></li>
-            <li class="icon icon-ios-home-outline"></li>
-            <li class="icon icon-ios-cloud"></li>
-            <li class="icon icon-ios-cloud-outline"></li>
-            <li class="icon icon-ios-cloud-upload"></li>
-            <li class="icon icon-ios-cloud-upload-outline"></li>
-            <li class="icon icon-ios-cloud-download"></li>
-            <li class="icon icon-ios-cloud-download-outline"></li>
-            <li class="icon icon-ios-upload"></li>
-            <li class="icon icon-ios-upload-outline"></li>
-            <li class="icon icon-ios-download"></li>
-            <li class="icon icon-ios-download-outline"></li>
-            <li class="icon icon-ios-refresh"></li>
-            <li class="icon icon-ios-refresh-outline"></li>
-            <li class="icon icon-ios-refresh-empty"></li>
-            <li class="icon icon-ios-reload"></li>
-            <li class="icon icon-ios-loop-strong"></li>
-            <li class="icon icon-ios-loop"></li>
-            <li class="icon icon-ios-bookmarks"></li>
-            <li class="icon icon-ios-bookmarks-outline"></li>
-            <li class="icon icon-ios-book"></li>
-            <li class="icon icon-ios-book-outline"></li>
-            <li class="icon icon-ios-flag"></li>
-            <li class="icon icon-ios-flag-outline"></li>
-            <li class="icon icon-ios-glasses"></li>
-            <li class="icon icon-ios-glasses-outline"></li>
-            <li class="icon icon-ios-browsers"></li>
-            <li class="icon icon-ios-browsers-outline"></li>
-            <li class="icon icon-ios-at"></li>
-            <li class="icon icon-ios-at-outline"></li>
-            <li class="icon icon-ios-pricetag"></li>
-            <li class="icon icon-ios-pricetag-outline"></li>
-            <li class="icon icon-ios-pricetags"></li>
-            <li class="icon icon-ios-pricetags-outline"></li>
-            <li class="icon icon-ios-cart"></li>
-            <li class="icon icon-ios-cart-outline"></li>
-            <li class="icon icon-ios-chatboxes"></li>
-            <li class="icon icon-ios-chatboxes-outline"></li>
-            <li class="icon icon-ios-chatbubble"></li>
-            <li class="icon icon-ios-chatbubble-outline"></li>
-            <li class="icon icon-ios-cog"></li>
-            <li class="icon icon-ios-cog-outline"></li>
-            <li class="icon icon-ios-gear"></li>
-            <li class="icon icon-ios-gear-outline"></li>
-            <li class="icon icon-ios-settings"></li>
-            <li class="icon icon-ios-settings-strong"></li>
-            <li class="icon icon-ios-toggle"></li>
-            <li class="icon icon-ios-toggle-outline"></li>
-            <li class="icon icon-ios-analytics"></li>
-            <li class="icon icon-ios-analytics-outline"></li>
-            <li class="icon icon-ios-pie"></li>
-            <li class="icon icon-ios-pie-outline"></li>
-            <li class="icon icon-ios-pulse"></li>
-            <li class="icon icon-ios-pulse-strong"></li>
-            <li class="icon icon-ios-filing"></li>
-            <li class="icon icon-ios-filing-outline"></li>
-            <li class="icon icon-ios-box"></li>
-            <li class="icon icon-ios-box-outline"></li>
-            <li class="icon icon-ios-compose"></li>
-            <li class="icon icon-ios-compose-outline"></li>
-            <li class="icon icon-ios-trash"></li>
-            <li class="icon icon-ios-trash-outline"></li>
-            <li class="icon icon-ios-copy"></li>
-            <li class="icon icon-ios-copy-outline"></li>
-            <li class="icon icon-ios-email"></li>
-            <li class="icon icon-ios-email-outline"></li>
-            <li class="icon icon-ios-undo"></li>
-            <li class="icon icon-ios-undo-outline"></li>
-            <li class="icon icon-ios-redo"></li>
-            <li class="icon icon-ios-redo-outline"></li>
-            <li class="icon icon-ios-paperplane"></li>
-            <li class="icon icon-ios-paperplane-outline"></li>
-            <li class="icon icon-ios-folder"></li>
-            <li class="icon icon-ios-folder-outline"></li>
-            <li class="icon icon-ios-paper"></li>
-            <li class="icon icon-ios-paper-outline"></li>
-            <li class="icon icon-ios-list"></li>
-            <li class="icon icon-ios-list-outline"></li>
-            <li class="icon icon-ios-world"></li>
-            <li class="icon icon-ios-world-outline"></li>
-            <li class="icon icon-ios-alarm"></li>
-            <li class="icon icon-ios-alarm-outline"></li>
-            <li class="icon icon-ios-speedometer"></li>
-            <li class="icon icon-ios-speedometer-outline"></li>
-            <li class="icon icon-ios-stopwatch"></li>
-            <li class="icon icon-ios-stopwatch-outline"></li>
-            <li class="icon icon-ios-timer"></li>
-            <li class="icon icon-ios-timer-outline"></li>
-            <li class="icon icon-ios-clock"></li>
-            <li class="icon icon-ios-clock-outline"></li>
-            <li class="icon icon-ios-time"></li>
-            <li class="icon icon-ios-time-outline"></li>
-            <li class="icon icon-ios-calendar"></li>
-            <li class="icon icon-ios-calendar-outline"></li>
-            <li class="icon icon-ios-photos"></li>
-            <li class="icon icon-ios-photos-outline"></li>
-            <li class="icon icon-ios-albums"></li>
-            <li class="icon icon-ios-albums-outline"></li>
-            <li class="icon icon-ios-camera"></li>
-            <li class="icon icon-ios-camera-outline"></li>
-            <li class="icon icon-ios-reverse-camera"></li>
-            <li class="icon icon-ios-reverse-camera-outline"></li>
-            <li class="icon icon-ios-eye"></li>
-            <li class="icon icon-ios-eye-outline"></li>
-            <li class="icon icon-ios-bolt"></li>
-            <li class="icon icon-ios-bolt-outline"></li>
-            <li class="icon icon-ios-color-wand"></li>
-            <li class="icon icon-ios-color-wand-outline"></li>
-            <li class="icon icon-ios-color-filter"></li>
-            <li class="icon icon-ios-color-filter-outline"></li>
-            <li class="icon icon-ios-grid-view"></li>
-            <li class="icon icon-ios-grid-view-outline"></li>
-            <li class="icon icon-ios-crop-strong"></li>
-            <li class="icon icon-ios-crop"></li>
-            <li class="icon icon-ios-barcode"></li>
-            <li class="icon icon-ios-barcode-outline"></li>
-            <li class="icon icon-ios-briefcase"></li>
-            <li class="icon icon-ios-briefcase-outline"></li>
-            <li class="icon icon-ios-medkit"></li>
-            <li class="icon icon-ios-medkit-outline"></li>
-            <li class="icon icon-ios-medical"></li>
-            <li class="icon icon-ios-medical-outline"></li>
-            <li class="icon icon-ios-infinite"></li>
-            <li class="icon icon-ios-infinite-outline"></li>
-            <li class="icon icon-ios-calculator"></li>
-            <li class="icon icon-ios-calculator-outline"></li>
-            <li class="icon icon-ios-keypad"></li>
-            <li class="icon icon-ios-keypad-outline"></li>
-            <li class="icon icon-ios-telephone"></li>
-            <li class="icon icon-ios-telephone-outline"></li>
-            <li class="icon icon-ios-drag"></li>
-            <li class="icon icon-ios-location"></li>
-            <li class="icon icon-ios-location-outline"></li>
-            <li class="icon icon-ios-navigate"></li>
-            <li class="icon icon-ios-navigate-outline"></li>
-            <li class="icon icon-ios-locked"></li>
-            <li class="icon icon-ios-locked-outline"></li>
-            <li class="icon icon-ios-unlocked"></li>
-            <li class="icon icon-ios-unlocked-outline"></li>
-            <li class="icon icon-ios-monitor"></li>
-            <li class="icon icon-ios-monitor-outline"></li>
-            <li class="icon icon-ios-printer"></li>
-            <li class="icon icon-ios-printer-outline"></li>
-            <li class="icon icon-ios-game-controller-a"></li>
-            <li class="icon icon-ios-game-controller-a-outline"></li>
-            <li class="icon icon-ios-game-controller-b"></li>
-            <li class="icon icon-ios-game-controller-b-outline"></li>
-            <li class="icon icon-ios-americanfootball"></li>
-            <li class="icon icon-ios-americanfootball-outline"></li>
-            <li class="icon icon-ios-baseball"></li>
-            <li class="icon icon-ios-baseball-outline"></li>
-            <li class="icon icon-ios-basketball"></li>
-            <li class="icon icon-ios-basketball-outline"></li>
-            <li class="icon icon-ios-tennisball"></li>
-            <li class="icon icon-ios-tennisball-outline"></li>
-            <li class="icon icon-ios-football"></li>
-            <li class="icon icon-ios-football-outline"></li>
-            <li class="icon icon-ios-body"></li>
-            <li class="icon icon-ios-body-outline"></li>
-            <li class="icon icon-ios-person"></li>
-            <li class="icon icon-ios-person-outline"></li>
-            <li class="icon icon-ios-personadd"></li>
-            <li class="icon icon-ios-personadd-outline"></li>
-            <li class="icon icon-ios-people"></li>
-            <li class="icon icon-ios-people-outline"></li>
-            <li class="icon icon-ios-musical-notes"></li>
-            <li class="icon icon-ios-musical-note"></li>
-            <li class="icon icon-ios-bell"></li>
-            <li class="icon icon-ios-bell-outline"></li>
-            <li class="icon icon-ios-mic"></li>
-            <li class="icon icon-ios-mic-outline"></li>
-            <li class="icon icon-ios-mic-off"></li>
-            <li class="icon icon-ios-volume-high"></li>
-            <li class="icon icon-ios-volume-low"></li>
-            <li class="icon icon-ios-play"></li>
-            <li class="icon icon-ios-play-outline"></li>
-            <li class="icon icon-ios-pause"></li>
-            <li class="icon icon-ios-pause-outline"></li>
-            <li class="icon icon-ios-recording"></li>
-            <li class="icon icon-ios-recording-outline"></li>
-            <li class="icon icon-ios-fastforward"></li>
-            <li class="icon icon-ios-fastforward-outline"></li>
-            <li class="icon icon-ios-rewind"></li>
-            <li class="icon icon-ios-rewind-outline"></li>
-            <li class="icon icon-ios-skipbackward"></li>
-            <li class="icon icon-ios-skipbackward-outline"></li>
-            <li class="icon icon-ios-skipforward"></li>
-            <li class="icon icon-ios-skipforward-outline"></li>
-            <li class="icon icon-ios-shuffle-strong"></li>
-            <li class="icon icon-ios-shuffle"></li>
-            <li class="icon icon-ios-videocam"></li>
-            <li class="icon icon-ios-videocam-outline"></li>
-            <li class="icon icon-ios-film"></li>
-            <li class="icon icon-ios-film-outline"></li>
-            <li class="icon icon-ios-flask"></li>
-            <li class="icon icon-ios-flask-outline"></li>
-            <li class="icon icon-ios-lightbulb"></li>
-            <li class="icon icon-ios-lightbulb-outline"></li>
-            <li class="icon icon-ios-wineglass"></li>
-            <li class="icon icon-ios-wineglass-outline"></li>
-            <li class="icon icon-ios-pint"></li>
-            <li class="icon icon-ios-pint-outline"></li>
-            <li class="icon icon-ios-nutrition"></li>
-            <li class="icon icon-ios-nutrition-outline"></li>
-            <li class="icon icon-ios-flower"></li>
-            <li class="icon icon-ios-flower-outline"></li>
-            <li class="icon icon-ios-rose"></li>
-            <li class="icon icon-ios-rose-outline"></li>
-            <li class="icon icon-ios-paw"></li>
-            <li class="icon icon-ios-paw-outline"></li>
-            <li class="icon icon-ios-flame"></li>
-            <li class="icon icon-ios-flame-outline"></li>
-            <li class="icon icon-ios-sunny"></li>
-            <li class="icon icon-ios-sunny-outline"></li>
-            <li class="icon icon-ios-partlysunny"></li>
-            <li class="icon icon-ios-partlysunny-outline"></li>
-            <li class="icon icon-ios-cloudy"></li>
-            <li class="icon icon-ios-cloudy-outline"></li>
-            <li class="icon icon-ios-rainy"></li>
-            <li class="icon icon-ios-rainy-outline"></li>
-            <li class="icon icon-ios-thunderstorm"></li>
-            <li class="icon icon-ios-thunderstorm-outline"></li>
-            <li class="icon icon-ios-snowy"></li>
-            <li class="icon icon-ios-moon"></li>
-            <li class="icon icon-ios-moon-outline"></li>
-            <li class="icon icon-ios-cloudy-night"></li>
-            <li class="icon icon-ios-cloudy-night-outline"></li>
-            <li class="icon icon-android-arrow-up"></li>
-            <li class="icon icon-android-arrow-forward"></li>
-            <li class="icon icon-android-arrow-down"></li>
-            <li class="icon icon-android-arrow-back"></li>
-            <li class="icon icon-android-arrow-dropup"></li>
-            <li class="icon icon-android-arrow-dropup-circle"></li>
-            <li class="icon icon-android-arrow-dropright"></li>
-            <li class="icon icon-android-arrow-dropright-circle"></li>
-            <li class="icon icon-android-arrow-dropdown"></li>
-            <li class="icon icon-android-arrow-dropdown-circle"></li>
-            <li class="icon icon-android-arrow-dropleft"></li>
-            <li class="icon icon-android-arrow-dropleft-circle"></li>
-            <li class="icon icon-android-add"></li>
-            <li class="icon icon-android-add-circle"></li>
-            <li class="icon icon-android-remove"></li>
-            <li class="icon icon-android-remove-circle"></li>
-            <li class="icon icon-android-close"></li>
-            <li class="icon icon-android-cancel"></li>
-            <li class="icon icon-android-radio-button-off"></li>
-            <li class="icon icon-android-radio-button-on"></li>
-            <li class="icon icon-android-checkmark-circle"></li>
-            <li class="icon icon-android-checkbox-outline-blank"></li>
-            <li class="icon icon-android-checkbox-outline"></li>
-            <li class="icon icon-android-checkbox-blank"></li>
-            <li class="icon icon-android-checkbox"></li>
-            <li class="icon icon-android-done"></li>
-            <li class="icon icon-android-done-all"></li>
-            <li class="icon icon-android-menu"></li>
-            <li class="icon icon-android-more-horizontal"></li>
-            <li class="icon icon-android-more-vertical"></li>
-            <li class="icon icon-android-refresh"></li>
-            <li class="icon icon-android-sync"></li>
-            <li class="icon icon-android-wifi"></li>
-            <li class="icon icon-android-call"></li>
-            <li class="icon icon-android-apps"></li>
-            <li class="icon icon-android-settings"></li>
-            <li class="icon icon-android-options"></li>
-            <li class="icon icon-android-funnel"></li>
-            <li class="icon icon-android-search"></li>
-            <li class="icon icon-android-home"></li>
-            <li class="icon icon-android-cloud-outline"></li>
-            <li class="icon icon-android-cloud"></li>
-            <li class="icon icon-android-download"></li>
-            <li class="icon icon-android-upload"></li>
-            <li class="icon icon-android-cloud-done"></li>
-            <li class="icon icon-android-cloud-circle"></li>
-            <li class="icon icon-android-favorite-outline"></li>
-            <li class="icon icon-android-favorite"></li>
-            <li class="icon icon-android-star-outline"></li>
-            <li class="icon icon-android-star-half"></li>
-            <li class="icon icon-android-star"></li>
-            <li class="icon icon-android-calendar"></li>
-            <li class="icon icon-android-alarm-clock"></li>
-            <li class="icon icon-android-time"></li>
-            <li class="icon icon-android-stopwatch"></li>
-            <li class="icon icon-android-watch"></li>
-            <li class="icon icon-android-locate"></li>
-            <li class="icon icon-android-navigate"></li>
-            <li class="icon icon-android-pin"></li>
-            <li class="icon icon-android-compass"></li>
-            <li class="icon icon-android-map"></li>
-            <li class="icon icon-android-walk"></li>
-            <li class="icon icon-android-bicycle"></li>
-            <li class="icon icon-android-car"></li>
-            <li class="icon icon-android-bus"></li>
-            <li class="icon icon-android-subway"></li>
-            <li class="icon icon-android-train"></li>
-            <li class="icon icon-android-boat"></li>
-            <li class="icon icon-android-plane"></li>
-            <li class="icon icon-android-restaurant"></li>
-            <li class="icon icon-android-bar"></li>
-            <li class="icon icon-android-cart"></li>
-            <li class="icon icon-android-camera"></li>
-            <li class="icon icon-android-image"></li>
-            <li class="icon icon-android-film"></li>
-            <li class="icon icon-android-color-palette"></li>
-            <li class="icon icon-android-create"></li>
-            <li class="icon icon-android-mail"></li>
-            <li class="icon icon-android-drafts"></li>
-            <li class="icon icon-android-send"></li>
-            <li class="icon icon-android-archive"></li>
-            <li class="icon icon-android-delete"></li>
-            <li class="icon icon-android-attach"></li>
-            <li class="icon icon-android-share"></li>
-            <li class="icon icon-android-share-alt"></li>
-            <li class="icon icon-android-bookmark"></li>
-            <li class="icon icon-android-document"></li>
-            <li class="icon icon-android-clipboard"></li>
-            <li class="icon icon-android-list"></li>
-            <li class="icon icon-android-folder-open"></li>
-            <li class="icon icon-android-folder"></li>
-            <li class="icon icon-android-print"></li>
-            <li class="icon icon-android-open"></li>
-            <li class="icon icon-android-exit"></li>
-            <li class="icon icon-android-contract"></li>
-            <li class="icon icon-android-expand"></li>
-            <li class="icon icon-android-globe"></li>
-            <li class="icon icon-android-chat"></li>
-            <li class="icon icon-android-textsms"></li>
-            <li class="icon icon-android-hangout"></li>
-            <li class="icon icon-android-happy"></li>
-            <li class="icon icon-android-sad"></li>
-            <li class="icon icon-android-person"></li>
-            <li class="icon icon-android-people"></li>
-            <li class="icon icon-android-person-add"></li>
-            <li class="icon icon-android-contact"></li>
-            <li class="icon icon-android-contacts"></li>
-            <li class="icon icon-android-playstore"></li>
-            <li class="icon icon-android-lock"></li>
-            <li class="icon icon-android-unlock"></li>
-            <li class="icon icon-android-microphone"></li>
-            <li class="icon icon-android-microphone-off"></li>
-            <li class="icon icon-android-notifications-none"></li>
-            <li class="icon icon-android-notifications"></li>
-            <li class="icon icon-android-notifications-off"></li>
-            <li class="icon icon-android-volume-mute"></li>
-            <li class="icon icon-android-volume-down"></li>
-            <li class="icon icon-android-volume-up"></li>
-            <li class="icon icon-android-volume-off"></li>
-            <li class="icon icon-android-hand"></li>
-            <li class="icon icon-android-desktop"></li>
-            <li class="icon icon-android-laptop"></li>
-            <li class="icon icon-android-phone-portrait"></li>
-            <li class="icon icon-android-phone-landscape"></li>
-            <li class="icon icon-android-bulb"></li>
-            <li class="icon icon-android-sunny"></li>
-            <li class="icon icon-android-alert"></li>
-            <li class="icon icon-android-warning"></li>
-            <li class="icon icon-social-twitter"></li>
-            <li class="icon icon-social-twitter-outline"></li>
-            <li class="icon icon-social-facebook"></li>
-            <li class="icon icon-social-facebook-outline"></li>
-            <li class="icon icon-social-googleplus"></li>
-            <li class="icon icon-social-googleplus-outline"></li>
-            <li class="icon icon-social-google"></li>
-            <li class="icon icon-social-google-outline"></li>
-            <li class="icon icon-social-dribbble"></li>
-            <li class="icon icon-social-dribbble-outline"></li>
-            <li class="icon icon-social-octocat"></li>
-            <li class="icon icon-social-github"></li>
-            <li class="icon icon-social-github-outline"></li>
-            <li class="icon icon-social-instagram"></li>
-            <li class="icon icon-social-instagram-outline"></li>
-            <li class="icon icon-social-whatsapp"></li>
-            <li class="icon icon-social-whatsapp-outline"></li>
-            <li class="icon icon-social-snapchat"></li>
-            <li class="icon icon-social-snapchat-outline"></li>
-            <li class="icon icon-social-foursquare"></li>
-            <li class="icon icon-social-foursquare-outline"></li>
-            <li class="icon icon-social-pinterest"></li>
-            <li class="icon icon-social-pinterest-outline"></li>
-            <li class="icon icon-social-rss"></li>
-            <li class="icon icon-social-rss-outline"></li>
-            <li class="icon icon-social-tumblr"></li>
-            <li class="icon icon-social-tumblr-outline"></li>
-            <li class="icon icon-social-wordpress"></li>
-            <li class="icon icon-social-wordpress-outline"></li>
-            <li class="icon icon-social-reddit"></li>
-            <li class="icon icon-social-reddit-outline"></li>
-            <li class="icon icon-social-hackernews"></li>
-            <li class="icon icon-social-hackernews-outline"></li>
-            <li class="icon icon-social-designernews"></li>
-            <li class="icon icon-social-designernews-outline"></li>
-            <li class="icon icon-social-yahoo"></li>
-            <li class="icon icon-social-yahoo-outline"></li>
-            <li class="icon icon-social-buffer"></li>
-            <li class="icon icon-social-buffer-outline"></li>
-            <li class="icon icon-social-skype"></li>
-            <li class="icon icon-social-skype-outline"></li>
-            <li class="icon icon-social-linkedin"></li>
-            <li class="icon icon-social-linkedin-outline"></li>
-            <li class="icon icon-social-vimeo"></li>
-            <li class="icon icon-social-vimeo-outline"></li>
-            <li class="icon icon-social-twitch"></li>
-            <li class="icon icon-social-twitch-outline"></li>
-            <li class="icon icon-social-youtube"></li>
-            <li class="icon icon-social-youtube-outline"></li>
-            <li class="icon icon-social-dropbox"></li>
-            <li class="icon icon-social-dropbox-outline"></li>
-            <li class="icon icon-social-apple"></li>
-            <li class="icon icon-social-apple-outline"></li>
-            <li class="icon icon-social-android"></li>
-            <li class="icon icon-social-android-outline"></li>
-            <li class="icon icon-social-windows"></li>
-            <li class="icon icon-social-windows-outline"></li>
-            <li class="icon icon-social-html5"></li>
-            <li class="icon icon-social-html5-outline"></li>
-            <li class="icon icon-social-css3"></li>
-            <li class="icon icon-social-css3-outline"></li>
-            <li class="icon icon-social-javascript"></li>
-            <li class="icon icon-social-javascript-outline"></li>
-            <li class="icon icon-social-angular"></li>
-            <li class="icon icon-social-angular-outline"></li>
-            <li class="icon icon-social-nodejs"></li>
-            <li class="icon icon-social-sass"></li>
-            <li class="icon icon-social-python"></li>
-            <li class="icon icon-social-chrome"></li>
-            <li class="icon icon-social-chrome-outline"></li>
-            <li class="icon icon-social-codepen"></li>
-            <li class="icon icon-social-codepen-outline"></li>
-            <li class="icon icon-social-markdown"></li>
-            <li class="icon icon-social-tux"></li>
-            <li class="icon icon-social-freebsd-devil"></li>
-            <li class="icon icon-social-usd"></li>
-            <li class="icon icon-social-usd-outline"></li>
-            <li class="icon icon-social-bitcoin"></li>
-            <li class="icon icon-social-bitcoin-outline"></li>
-            <li class="icon icon-social-yen"></li>
-            <li class="icon icon-social-yen-outline"></li>
-            <li class="icon icon-social-euro"></li>
-            <li class="icon icon-social-euro-outline"></li>
-        </ul>
-        
-        <hr class="lg">
-        
-    	<h2>Typography</h2>
-    	
-        <h1>h1 Heading</h1>
-        <h2>h2 Heading</h2>
-        <h3>h3 Heading</h3>
-        <h4>h4 Heading</h4>
-        <h5>h5 Heading</h5>
-        <h6>h6 Heading</h6>
-        
-        <hr class="lg">
-        
-    	<h2>Lists</h2>
-        
-        <h3>Unordered</h3>
-        
-        <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li> 
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>
-            	Nulla volutpat aliquam velit
+                <h2>Colors</h2>
+                
+                <div class="columns">
+                
+                    <div class="md-3 sm-6">
+                        <div class="color">
+                            <span class="primary"></span>
+                            <div class="info">
+                                <h4>Primary</h4>
+                                <small>#5bb8fd</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md-3 sm-6">
+                        <div class="color">
+                            <span class="success"></span>
+                            <div class="info">
+                                <h4>Success</h4>
+                                <small>#4ce276</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md-3 sm-6">
+                        <div class="color">
+                            <span class="warning"></span>
+                            <div class="info">
+                                <h4>Warning</h4>
+                                <small>#f9d65e</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md-3 sm-6">
+                        <div class="color">
+                            <span class="error"></span>
+                            <div class="info">
+                                <h4>Error</h4>
+                                <small>#f36362</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="columns">
+                
+                    <div class="md-3 sm-6">
+                        <div class="color">
+                            <span class="dark"></span>
+                            <div class="info">
+                                <h4>Dark</h4>
+                                <small>#2f3241</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="md-3 sm-6">
+                        <div class="color">
+                            <span class="light"></span>
+                            <div class="info">
+                                <h4>Light</h4>
+                                <small>#f1f3f6</small>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="md-3 sm-6">
+                        <div class="color">
+                            <span class="border"></span>
+                            <div class="info">
+                                <h4>Border</h4>
+                                <small>#d9d8de</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </section>
+            
+            <section id="buttons">
+            
+                <h2>Buttons</h2>
+                
+                <p>
+                    <a class="button lg" href="">Large Button</a>
+                    <a class="button" href="">Button</a>
+                    <a class="button sm" href="">Small Button</a>
+                </p>
+                
+                <p>
+                    <a class="button" href="">Primary</a>
+                    <a class="button success" href="">Success</a>
+                    <a class="button warning" href="">Warning</a>
+                    <a class="button error" href="">Error</a>
+                    <a class="button border" href="">Border</a>
+                </p>
+                
+                <p>
+                    <a class="button block" href="">Block Button</a>
+                </p>
+                
+                <p>
+                    <a class="button center" href="">Center Button</a>
+                </p>
+                
+                <p>
+                    <a class="button lg" href="">
+                        <i class="icon icon-gear-a"></i>
+                        Large Button
+                    </a>
+                    <a class="button" href="">
+                        <i class="icon icon-log-in"></i>
+                        Button
+                    </a>
+                    <a class="button sm" href="">
+                        <i class="icon icon-refresh"></i>
+                        Small Button
+                    </a>
+                </p>
+            
+            </section>
+            
+            <section id="icons">
+                
+                <h2>Icons</h2>
+                
                 <ul>
-                    <li>Phasellus iaculis neque</li>
-                    <li>Purus sodales ultricies</li>
-                    <li>Vestibulum laoreet porttitor sem</li>
-                    <li>Ac tristique libero volutpat at</li>
+                    <li class="icon icon-ionic"></li>
+                    <li class="icon icon-arrow-up-a"></li>
+                    <li class="icon icon-arrow-right-a"></li>
+                    <li class="icon icon-arrow-down-a"></li>
+                    <li class="icon icon-arrow-left-a"></li>
+                    <li class="icon icon-arrow-up-b"></li>
+                    <li class="icon icon-arrow-right-b"></li>
+                    <li class="icon icon-arrow-down-b"></li>
+                    <li class="icon icon-arrow-left-b"></li>
+                    <li class="icon icon-arrow-up-c"></li>
+                    <li class="icon icon-arrow-right-c"></li>
+                    <li class="icon icon-arrow-down-c"></li>
+                    <li class="icon icon-arrow-left-c"></li>
+                    <li class="icon icon-arrow-return-right"></li>
+                    <li class="icon icon-arrow-return-left"></li>
+                    <li class="icon icon-arrow-swap"></li>
+                    <li class="icon icon-arrow-shrink"></li>
+                    <li class="icon icon-arrow-expand"></li>
+                    <li class="icon icon-arrow-move"></li>
+                    <li class="icon icon-arrow-resize"></li>
+                    <li class="icon icon-chevron-up"></li>
+                    <li class="icon icon-chevron-right"></li>
+                    <li class="icon icon-chevron-down"></li>
+                    <li class="icon icon-chevron-left"></li>
+                    <li class="icon icon-navicon-round"></li>
+                    <li class="icon icon-navicon"></li>
+                    <li class="icon icon-drag"></li>
+                    <li class="icon icon-log-in"></li>
+                    <li class="icon icon-log-out"></li>
+                    <li class="icon icon-checkmark-round"></li>
+                    <li class="icon icon-checkmark"></li>
+                    <li class="icon icon-checkmark-circled"></li>
+                    <li class="icon icon-close-round"></li>
+                    <li class="icon icon-close"></li>
+                    <li class="icon icon-close-circled"></li>
+                    <li class="icon icon-plus-round"></li>
+                    <li class="icon icon-plus"></li>
+                    <li class="icon icon-plus-circled"></li>
+                    <li class="icon icon-minus-round"></li>
+                    <li class="icon icon-minus"></li>
+                    <li class="icon icon-minus-circled"></li>
+                    <li class="icon icon-information"></li>
+                    <li class="icon icon-information-circled"></li>
+                    <li class="icon icon-help"></li>
+                    <li class="icon icon-help-circled"></li>
+                    <li class="icon icon-backspace-outline"></li>
+                    <li class="icon icon-backspace"></li>
+                    <li class="icon icon-help-buoy"></li>
+                    <li class="icon icon-asterisk"></li>
+                    <li class="icon icon-alert"></li>
+                    <li class="icon icon-alert-circled"></li>
+                    <li class="icon icon-refresh"></li>
+                    <li class="icon icon-loop"></li>
+                    <li class="icon icon-shuffle"></li>
+                    <li class="icon icon-home"></li>
+                    <li class="icon icon-search"></li>
+                    <li class="icon icon-flag"></li>
+                    <li class="icon icon-star"></li>
+                    <li class="icon icon-heart"></li>
+                    <li class="icon icon-heart-broken"></li>
+                    <li class="icon icon-gear-a"></li>
+                    <li class="icon icon-gear-b"></li>
+                    <li class="icon icon-toggle-filled"></li>
+                    <li class="icon icon-toggle"></li>
+                    <li class="icon icon-settings"></li>
+                    <li class="icon icon-wrench"></li>
+                    <li class="icon icon-hammer"></li>
+                    <li class="icon icon-edit"></li>
+                    <li class="icon icon-trash-a"></li>
+                    <li class="icon icon-trash-b"></li>
+                    <li class="icon icon-document"></li>
+                    <li class="icon icon-document-text"></li>
+                    <li class="icon icon-clipboard"></li>
+                    <li class="icon icon-scissors"></li>
+                    <li class="icon icon-funnel"></li>
+                    <li class="icon icon-bookmark"></li>
+                    <li class="icon icon-email"></li>
+                    <li class="icon icon-email-unread"></li>
+                    <li class="icon icon-folder"></li>
+                    <li class="icon icon-filing"></li>
+                    <li class="icon icon-archive"></li>
+                    <li class="icon icon-reply"></li>
+                    <li class="icon icon-reply-all"></li>
+                    <li class="icon icon-forward"></li>
+                    <li class="icon icon-share"></li>
+                    <li class="icon icon-paper-airplane"></li>
+                    <li class="icon icon-link"></li>
+                    <li class="icon icon-paperclip"></li>
+                    <li class="icon icon-compose"></li>
+                    <li class="icon icon-briefcase"></li>
+                    <li class="icon icon-medkit"></li>
+                    <li class="icon icon-at"></li>
+                    <li class="icon icon-pound"></li>
+                    <li class="icon icon-quote"></li>
+                    <li class="icon icon-cloud"></li>
+                    <li class="icon icon-upload"></li>
+                    <li class="icon icon-more"></li>
+                    <li class="icon icon-grid"></li>
+                    <li class="icon icon-calendar"></li>
+                    <li class="icon icon-clock"></li>
+                    <li class="icon icon-compass"></li>
+                    <li class="icon icon-pinpoint"></li>
+                    <li class="icon icon-pin"></li>
+                    <li class="icon icon-navigate"></li>
+                    <li class="icon icon-location"></li>
+                    <li class="icon icon-map"></li>
+                    <li class="icon icon-lock-combination"></li>
+                    <li class="icon icon-locked"></li>
+                    <li class="icon icon-unlocked"></li>
+                    <li class="icon icon-key"></li>
+                    <li class="icon icon-arrow-graph-up-right"></li>
+                    <li class="icon icon-arrow-graph-down-right"></li>
+                    <li class="icon icon-arrow-graph-up-left"></li>
+                    <li class="icon icon-arrow-graph-down-left"></li>
+                    <li class="icon icon-stats-bars"></li>
+                    <li class="icon icon-connection-bars"></li>
+                    <li class="icon icon-pie-graph"></li>
+                    <li class="icon icon-chatbubble"></li>
+                    <li class="icon icon-chatbubble-working"></li>
+                    <li class="icon icon-chatbubbles"></li>
+                    <li class="icon icon-chatbox"></li>
+                    <li class="icon icon-chatbox-working"></li>
+                    <li class="icon icon-chatboxes"></li>
+                    <li class="icon icon-person"></li>
+                    <li class="icon icon-person-add"></li>
+                    <li class="icon icon-person-stalker"></li>
+                    <li class="icon icon-woman"></li>
+                    <li class="icon icon-man"></li>
+                    <li class="icon icon-female"></li>
+                    <li class="icon icon-male"></li>
+                    <li class="icon icon-transgender"></li>
+                    <li class="icon icon-fork"></li>
+                    <li class="icon icon-knife"></li>
+                    <li class="icon icon-spoon"></li>
+                    <li class="icon icon-soup-can-outline"></li>
+                    <li class="icon icon-soup-can"></li>
+                    <li class="icon icon-beer"></li>
+                    <li class="icon icon-wineglass"></li>
+                    <li class="icon icon-coffee"></li>
+                    <li class="icon icon-icecream"></li>
+                    <li class="icon icon-pizza"></li>
+                    <li class="icon icon-power"></li>
+                    <li class="icon icon-mouse"></li>
+                    <li class="icon icon-battery-full"></li>
+                    <li class="icon icon-battery-half"></li>
+                    <li class="icon icon-battery-low"></li>
+                    <li class="icon icon-battery-empty"></li>
+                    <li class="icon icon-battery-charging"></li>
+                    <li class="icon icon-wifi"></li>
+                    <li class="icon icon-bluetooth"></li>
+                    <li class="icon icon-calculator"></li>
+                    <li class="icon icon-camera"></li>
+                    <li class="icon icon-eye"></li>
+                    <li class="icon icon-eye-disabled"></li>
+                    <li class="icon icon-flash"></li>
+                    <li class="icon icon-flash-off"></li>
+                    <li class="icon icon-qr-scanner"></li>
+                    <li class="icon icon-image"></li>
+                    <li class="icon icon-images"></li>
+                    <li class="icon icon-wand"></li>
+                    <li class="icon icon-contrast"></li>
+                    <li class="icon icon-aperture"></li>
+                    <li class="icon icon-crop"></li>
+                    <li class="icon icon-easel"></li>
+                    <li class="icon icon-paintbrush"></li>
+                    <li class="icon icon-paintbucket"></li>
+                    <li class="icon icon-monitor"></li>
+                    <li class="icon icon-laptop"></li>
+                    <li class="icon icon-ipad"></li>
+                    <li class="icon icon-iphone"></li>
+                    <li class="icon icon-ipod"></li>
+                    <li class="icon icon-printer"></li>
+                    <li class="icon icon-usb"></li>
+                    <li class="icon icon-outlet"></li>
+                    <li class="icon icon-bug"></li>
+                    <li class="icon icon-code"></li>
+                    <li class="icon icon-code-working"></li>
+                    <li class="icon icon-code-download"></li>
+                    <li class="icon icon-fork-repo"></li>
+                    <li class="icon icon-network"></li>
+                    <li class="icon icon-pull-request"></li>
+                    <li class="icon icon-merge"></li>
+                    <li class="icon icon-xbox"></li>
+                    <li class="icon icon-playstation"></li>
+                    <li class="icon icon-steam"></li>
+                    <li class="icon icon-closed-captioning"></li>
+                    <li class="icon icon-videocamera"></li>
+                    <li class="icon icon-film-marker"></li>
+                    <li class="icon icon-disc"></li>
+                    <li class="icon icon-headphone"></li>
+                    <li class="icon icon-music-note"></li>
+                    <li class="icon icon-radio-waves"></li>
+                    <li class="icon icon-speakerphone"></li>
+                    <li class="icon icon-mic-a"></li>
+                    <li class="icon icon-mic-b"></li>
+                    <li class="icon icon-mic-c"></li>
+                    <li class="icon icon-volume-high"></li>
+                    <li class="icon icon-volume-medium"></li>
+                    <li class="icon icon-volume-low"></li>
+                    <li class="icon icon-volume-mute"></li>
+                    <li class="icon icon-levels"></li>
+                    <li class="icon icon-play"></li>
+                    <li class="icon icon-pause"></li>
+                    <li class="icon icon-stop"></li>
+                    <li class="icon icon-record"></li>
+                    <li class="icon icon-skip-forward"></li>
+                    <li class="icon icon-skip-backward"></li>
+                    <li class="icon icon-eject"></li>
+                    <li class="icon icon-bag"></li>
+                    <li class="icon icon-card"></li>
+                    <li class="icon icon-cash"></li>
+                    <li class="icon icon-pricetag"></li>
+                    <li class="icon icon-pricetags"></li>
+                    <li class="icon icon-thumbsup"></li>
+                    <li class="icon icon-thumbsdown"></li>
+                    <li class="icon icon-happy-outline"></li>
+                    <li class="icon icon-happy"></li>
+                    <li class="icon icon-sad-outline"></li>
+                    <li class="icon icon-sad"></li>
+                    <li class="icon icon-bowtie"></li>
+                    <li class="icon icon-tshirt-outline"></li>
+                    <li class="icon icon-tshirt"></li>
+                    <li class="icon icon-trophy"></li>
+                    <li class="icon icon-podium"></li>
+                    <li class="icon icon-ribbon-a"></li>
+                    <li class="icon icon-ribbon-b"></li>
+                    <li class="icon icon-university"></li>
+                    <li class="icon icon-magnet"></li>
+                    <li class="icon icon-beaker"></li>
+                    <li class="icon icon-erlenmeyer-flask"></li>
+                    <li class="icon icon-egg"></li>
+                    <li class="icon icon-earth"></li>
+                    <li class="icon icon-planet"></li>
+                    <li class="icon icon-lightbulb"></li>
+                    <li class="icon icon-cube"></li>
+                    <li class="icon icon-leaf"></li>
+                    <li class="icon icon-waterdrop"></li>
+                    <li class="icon icon-flame"></li>
+                    <li class="icon icon-fireball"></li>
+                    <li class="icon icon-bonfire"></li>
+                    <li class="icon icon-umbrella"></li>
+                    <li class="icon icon-nuclear"></li>
+                    <li class="icon icon-no-smoking"></li>
+                    <li class="icon icon-thermometer"></li>
+                    <li class="icon icon-speedometer"></li>
+                    <li class="icon icon-model-s"></li>
+                    <li class="icon icon-plane"></li>
+                    <li class="icon icon-jet"></li>
+                    <li class="icon icon-load-a"></li>
+                    <li class="icon icon-load-b"></li>
+                    <li class="icon icon-load-c"></li>
+                    <li class="icon icon-load-d"></li>
+                    <li class="icon icon-ios-ionic-outline"></li>
+                    <li class="icon icon-ios-arrow-back"></li>
+                    <li class="icon icon-ios-arrow-forward"></li>
+                    <li class="icon icon-ios-arrow-up"></li>
+                    <li class="icon icon-ios-arrow-right"></li>
+                    <li class="icon icon-ios-arrow-down"></li>
+                    <li class="icon icon-ios-arrow-left"></li>
+                    <li class="icon icon-ios-arrow-thin-up"></li>
+                    <li class="icon icon-ios-arrow-thin-right"></li>
+                    <li class="icon icon-ios-arrow-thin-down"></li>
+                    <li class="icon icon-ios-arrow-thin-left"></li>
+                    <li class="icon icon-ios-circle-filled"></li>
+                    <li class="icon icon-ios-circle-outline"></li>
+                    <li class="icon icon-ios-checkmark-empty"></li>
+                    <li class="icon icon-ios-checkmark-outline"></li>
+                    <li class="icon icon-ios-checkmark"></li>
+                    <li class="icon icon-ios-plus-empty"></li>
+                    <li class="icon icon-ios-plus-outline"></li>
+                    <li class="icon icon-ios-plus"></li>
+                    <li class="icon icon-ios-close-empty"></li>
+                    <li class="icon icon-ios-close-outline"></li>
+                    <li class="icon icon-ios-close"></li>
+                    <li class="icon icon-ios-minus-empty"></li>
+                    <li class="icon icon-ios-minus-outline"></li>
+                    <li class="icon icon-ios-minus"></li>
+                    <li class="icon icon-ios-information-empty"></li>
+                    <li class="icon icon-ios-information-outline"></li>
+                    <li class="icon icon-ios-information"></li>
+                    <li class="icon icon-ios-help-empty"></li>
+                    <li class="icon icon-ios-help-outline"></li>
+                    <li class="icon icon-ios-help"></li>
+                    <li class="icon icon-ios-search"></li>
+                    <li class="icon icon-ios-search-strong"></li>
+                    <li class="icon icon-ios-star"></li>
+                    <li class="icon icon-ios-star-half"></li>
+                    <li class="icon icon-ios-star-outline"></li>
+                    <li class="icon icon-ios-heart"></li>
+                    <li class="icon icon-ios-heart-outline"></li>
+                    <li class="icon icon-ios-more"></li>
+                    <li class="icon icon-ios-more-outline"></li>
+                    <li class="icon icon-ios-home"></li>
+                    <li class="icon icon-ios-home-outline"></li>
+                    <li class="icon icon-ios-cloud"></li>
+                    <li class="icon icon-ios-cloud-outline"></li>
+                    <li class="icon icon-ios-cloud-upload"></li>
+                    <li class="icon icon-ios-cloud-upload-outline"></li>
+                    <li class="icon icon-ios-cloud-download"></li>
+                    <li class="icon icon-ios-cloud-download-outline"></li>
+                    <li class="icon icon-ios-upload"></li>
+                    <li class="icon icon-ios-upload-outline"></li>
+                    <li class="icon icon-ios-download"></li>
+                    <li class="icon icon-ios-download-outline"></li>
+                    <li class="icon icon-ios-refresh"></li>
+                    <li class="icon icon-ios-refresh-outline"></li>
+                    <li class="icon icon-ios-refresh-empty"></li>
+                    <li class="icon icon-ios-reload"></li>
+                    <li class="icon icon-ios-loop-strong"></li>
+                    <li class="icon icon-ios-loop"></li>
+                    <li class="icon icon-ios-bookmarks"></li>
+                    <li class="icon icon-ios-bookmarks-outline"></li>
+                    <li class="icon icon-ios-book"></li>
+                    <li class="icon icon-ios-book-outline"></li>
+                    <li class="icon icon-ios-flag"></li>
+                    <li class="icon icon-ios-flag-outline"></li>
+                    <li class="icon icon-ios-glasses"></li>
+                    <li class="icon icon-ios-glasses-outline"></li>
+                    <li class="icon icon-ios-browsers"></li>
+                    <li class="icon icon-ios-browsers-outline"></li>
+                    <li class="icon icon-ios-at"></li>
+                    <li class="icon icon-ios-at-outline"></li>
+                    <li class="icon icon-ios-pricetag"></li>
+                    <li class="icon icon-ios-pricetag-outline"></li>
+                    <li class="icon icon-ios-pricetags"></li>
+                    <li class="icon icon-ios-pricetags-outline"></li>
+                    <li class="icon icon-ios-cart"></li>
+                    <li class="icon icon-ios-cart-outline"></li>
+                    <li class="icon icon-ios-chatboxes"></li>
+                    <li class="icon icon-ios-chatboxes-outline"></li>
+                    <li class="icon icon-ios-chatbubble"></li>
+                    <li class="icon icon-ios-chatbubble-outline"></li>
+                    <li class="icon icon-ios-cog"></li>
+                    <li class="icon icon-ios-cog-outline"></li>
+                    <li class="icon icon-ios-gear"></li>
+                    <li class="icon icon-ios-gear-outline"></li>
+                    <li class="icon icon-ios-settings"></li>
+                    <li class="icon icon-ios-settings-strong"></li>
+                    <li class="icon icon-ios-toggle"></li>
+                    <li class="icon icon-ios-toggle-outline"></li>
+                    <li class="icon icon-ios-analytics"></li>
+                    <li class="icon icon-ios-analytics-outline"></li>
+                    <li class="icon icon-ios-pie"></li>
+                    <li class="icon icon-ios-pie-outline"></li>
+                    <li class="icon icon-ios-pulse"></li>
+                    <li class="icon icon-ios-pulse-strong"></li>
+                    <li class="icon icon-ios-filing"></li>
+                    <li class="icon icon-ios-filing-outline"></li>
+                    <li class="icon icon-ios-box"></li>
+                    <li class="icon icon-ios-box-outline"></li>
+                    <li class="icon icon-ios-compose"></li>
+                    <li class="icon icon-ios-compose-outline"></li>
+                    <li class="icon icon-ios-trash"></li>
+                    <li class="icon icon-ios-trash-outline"></li>
+                    <li class="icon icon-ios-copy"></li>
+                    <li class="icon icon-ios-copy-outline"></li>
+                    <li class="icon icon-ios-email"></li>
+                    <li class="icon icon-ios-email-outline"></li>
+                    <li class="icon icon-ios-undo"></li>
+                    <li class="icon icon-ios-undo-outline"></li>
+                    <li class="icon icon-ios-redo"></li>
+                    <li class="icon icon-ios-redo-outline"></li>
+                    <li class="icon icon-ios-paperplane"></li>
+                    <li class="icon icon-ios-paperplane-outline"></li>
+                    <li class="icon icon-ios-folder"></li>
+                    <li class="icon icon-ios-folder-outline"></li>
+                    <li class="icon icon-ios-paper"></li>
+                    <li class="icon icon-ios-paper-outline"></li>
+                    <li class="icon icon-ios-list"></li>
+                    <li class="icon icon-ios-list-outline"></li>
+                    <li class="icon icon-ios-world"></li>
+                    <li class="icon icon-ios-world-outline"></li>
+                    <li class="icon icon-ios-alarm"></li>
+                    <li class="icon icon-ios-alarm-outline"></li>
+                    <li class="icon icon-ios-speedometer"></li>
+                    <li class="icon icon-ios-speedometer-outline"></li>
+                    <li class="icon icon-ios-stopwatch"></li>
+                    <li class="icon icon-ios-stopwatch-outline"></li>
+                    <li class="icon icon-ios-timer"></li>
+                    <li class="icon icon-ios-timer-outline"></li>
+                    <li class="icon icon-ios-clock"></li>
+                    <li class="icon icon-ios-clock-outline"></li>
+                    <li class="icon icon-ios-time"></li>
+                    <li class="icon icon-ios-time-outline"></li>
+                    <li class="icon icon-ios-calendar"></li>
+                    <li class="icon icon-ios-calendar-outline"></li>
+                    <li class="icon icon-ios-photos"></li>
+                    <li class="icon icon-ios-photos-outline"></li>
+                    <li class="icon icon-ios-albums"></li>
+                    <li class="icon icon-ios-albums-outline"></li>
+                    <li class="icon icon-ios-camera"></li>
+                    <li class="icon icon-ios-camera-outline"></li>
+                    <li class="icon icon-ios-reverse-camera"></li>
+                    <li class="icon icon-ios-reverse-camera-outline"></li>
+                    <li class="icon icon-ios-eye"></li>
+                    <li class="icon icon-ios-eye-outline"></li>
+                    <li class="icon icon-ios-bolt"></li>
+                    <li class="icon icon-ios-bolt-outline"></li>
+                    <li class="icon icon-ios-color-wand"></li>
+                    <li class="icon icon-ios-color-wand-outline"></li>
+                    <li class="icon icon-ios-color-filter"></li>
+                    <li class="icon icon-ios-color-filter-outline"></li>
+                    <li class="icon icon-ios-grid-view"></li>
+                    <li class="icon icon-ios-grid-view-outline"></li>
+                    <li class="icon icon-ios-crop-strong"></li>
+                    <li class="icon icon-ios-crop"></li>
+                    <li class="icon icon-ios-barcode"></li>
+                    <li class="icon icon-ios-barcode-outline"></li>
+                    <li class="icon icon-ios-briefcase"></li>
+                    <li class="icon icon-ios-briefcase-outline"></li>
+                    <li class="icon icon-ios-medkit"></li>
+                    <li class="icon icon-ios-medkit-outline"></li>
+                    <li class="icon icon-ios-medical"></li>
+                    <li class="icon icon-ios-medical-outline"></li>
+                    <li class="icon icon-ios-infinite"></li>
+                    <li class="icon icon-ios-infinite-outline"></li>
+                    <li class="icon icon-ios-calculator"></li>
+                    <li class="icon icon-ios-calculator-outline"></li>
+                    <li class="icon icon-ios-keypad"></li>
+                    <li class="icon icon-ios-keypad-outline"></li>
+                    <li class="icon icon-ios-telephone"></li>
+                    <li class="icon icon-ios-telephone-outline"></li>
+                    <li class="icon icon-ios-drag"></li>
+                    <li class="icon icon-ios-location"></li>
+                    <li class="icon icon-ios-location-outline"></li>
+                    <li class="icon icon-ios-navigate"></li>
+                    <li class="icon icon-ios-navigate-outline"></li>
+                    <li class="icon icon-ios-locked"></li>
+                    <li class="icon icon-ios-locked-outline"></li>
+                    <li class="icon icon-ios-unlocked"></li>
+                    <li class="icon icon-ios-unlocked-outline"></li>
+                    <li class="icon icon-ios-monitor"></li>
+                    <li class="icon icon-ios-monitor-outline"></li>
+                    <li class="icon icon-ios-printer"></li>
+                    <li class="icon icon-ios-printer-outline"></li>
+                    <li class="icon icon-ios-game-controller-a"></li>
+                    <li class="icon icon-ios-game-controller-a-outline"></li>
+                    <li class="icon icon-ios-game-controller-b"></li>
+                    <li class="icon icon-ios-game-controller-b-outline"></li>
+                    <li class="icon icon-ios-americanfootball"></li>
+                    <li class="icon icon-ios-americanfootball-outline"></li>
+                    <li class="icon icon-ios-baseball"></li>
+                    <li class="icon icon-ios-baseball-outline"></li>
+                    <li class="icon icon-ios-basketball"></li>
+                    <li class="icon icon-ios-basketball-outline"></li>
+                    <li class="icon icon-ios-tennisball"></li>
+                    <li class="icon icon-ios-tennisball-outline"></li>
+                    <li class="icon icon-ios-football"></li>
+                    <li class="icon icon-ios-football-outline"></li>
+                    <li class="icon icon-ios-body"></li>
+                    <li class="icon icon-ios-body-outline"></li>
+                    <li class="icon icon-ios-person"></li>
+                    <li class="icon icon-ios-person-outline"></li>
+                    <li class="icon icon-ios-personadd"></li>
+                    <li class="icon icon-ios-personadd-outline"></li>
+                    <li class="icon icon-ios-people"></li>
+                    <li class="icon icon-ios-people-outline"></li>
+                    <li class="icon icon-ios-musical-notes"></li>
+                    <li class="icon icon-ios-musical-note"></li>
+                    <li class="icon icon-ios-bell"></li>
+                    <li class="icon icon-ios-bell-outline"></li>
+                    <li class="icon icon-ios-mic"></li>
+                    <li class="icon icon-ios-mic-outline"></li>
+                    <li class="icon icon-ios-mic-off"></li>
+                    <li class="icon icon-ios-volume-high"></li>
+                    <li class="icon icon-ios-volume-low"></li>
+                    <li class="icon icon-ios-play"></li>
+                    <li class="icon icon-ios-play-outline"></li>
+                    <li class="icon icon-ios-pause"></li>
+                    <li class="icon icon-ios-pause-outline"></li>
+                    <li class="icon icon-ios-recording"></li>
+                    <li class="icon icon-ios-recording-outline"></li>
+                    <li class="icon icon-ios-fastforward"></li>
+                    <li class="icon icon-ios-fastforward-outline"></li>
+                    <li class="icon icon-ios-rewind"></li>
+                    <li class="icon icon-ios-rewind-outline"></li>
+                    <li class="icon icon-ios-skipbackward"></li>
+                    <li class="icon icon-ios-skipbackward-outline"></li>
+                    <li class="icon icon-ios-skipforward"></li>
+                    <li class="icon icon-ios-skipforward-outline"></li>
+                    <li class="icon icon-ios-shuffle-strong"></li>
+                    <li class="icon icon-ios-shuffle"></li>
+                    <li class="icon icon-ios-videocam"></li>
+                    <li class="icon icon-ios-videocam-outline"></li>
+                    <li class="icon icon-ios-film"></li>
+                    <li class="icon icon-ios-film-outline"></li>
+                    <li class="icon icon-ios-flask"></li>
+                    <li class="icon icon-ios-flask-outline"></li>
+                    <li class="icon icon-ios-lightbulb"></li>
+                    <li class="icon icon-ios-lightbulb-outline"></li>
+                    <li class="icon icon-ios-wineglass"></li>
+                    <li class="icon icon-ios-wineglass-outline"></li>
+                    <li class="icon icon-ios-pint"></li>
+                    <li class="icon icon-ios-pint-outline"></li>
+                    <li class="icon icon-ios-nutrition"></li>
+                    <li class="icon icon-ios-nutrition-outline"></li>
+                    <li class="icon icon-ios-flower"></li>
+                    <li class="icon icon-ios-flower-outline"></li>
+                    <li class="icon icon-ios-rose"></li>
+                    <li class="icon icon-ios-rose-outline"></li>
+                    <li class="icon icon-ios-paw"></li>
+                    <li class="icon icon-ios-paw-outline"></li>
+                    <li class="icon icon-ios-flame"></li>
+                    <li class="icon icon-ios-flame-outline"></li>
+                    <li class="icon icon-ios-sunny"></li>
+                    <li class="icon icon-ios-sunny-outline"></li>
+                    <li class="icon icon-ios-partlysunny"></li>
+                    <li class="icon icon-ios-partlysunny-outline"></li>
+                    <li class="icon icon-ios-cloudy"></li>
+                    <li class="icon icon-ios-cloudy-outline"></li>
+                    <li class="icon icon-ios-rainy"></li>
+                    <li class="icon icon-ios-rainy-outline"></li>
+                    <li class="icon icon-ios-thunderstorm"></li>
+                    <li class="icon icon-ios-thunderstorm-outline"></li>
+                    <li class="icon icon-ios-snowy"></li>
+                    <li class="icon icon-ios-moon"></li>
+                    <li class="icon icon-ios-moon-outline"></li>
+                    <li class="icon icon-ios-cloudy-night"></li>
+                    <li class="icon icon-ios-cloudy-night-outline"></li>
+                    <li class="icon icon-android-arrow-up"></li>
+                    <li class="icon icon-android-arrow-forward"></li>
+                    <li class="icon icon-android-arrow-down"></li>
+                    <li class="icon icon-android-arrow-back"></li>
+                    <li class="icon icon-android-arrow-dropup"></li>
+                    <li class="icon icon-android-arrow-dropup-circle"></li>
+                    <li class="icon icon-android-arrow-dropright"></li>
+                    <li class="icon icon-android-arrow-dropright-circle"></li>
+                    <li class="icon icon-android-arrow-dropdown"></li>
+                    <li class="icon icon-android-arrow-dropdown-circle"></li>
+                    <li class="icon icon-android-arrow-dropleft"></li>
+                    <li class="icon icon-android-arrow-dropleft-circle"></li>
+                    <li class="icon icon-android-add"></li>
+                    <li class="icon icon-android-add-circle"></li>
+                    <li class="icon icon-android-remove"></li>
+                    <li class="icon icon-android-remove-circle"></li>
+                    <li class="icon icon-android-close"></li>
+                    <li class="icon icon-android-cancel"></li>
+                    <li class="icon icon-android-radio-button-off"></li>
+                    <li class="icon icon-android-radio-button-on"></li>
+                    <li class="icon icon-android-checkmark-circle"></li>
+                    <li class="icon icon-android-checkbox-outline-blank"></li>
+                    <li class="icon icon-android-checkbox-outline"></li>
+                    <li class="icon icon-android-checkbox-blank"></li>
+                    <li class="icon icon-android-checkbox"></li>
+                    <li class="icon icon-android-done"></li>
+                    <li class="icon icon-android-done-all"></li>
+                    <li class="icon icon-android-menu"></li>
+                    <li class="icon icon-android-more-horizontal"></li>
+                    <li class="icon icon-android-more-vertical"></li>
+                    <li class="icon icon-android-refresh"></li>
+                    <li class="icon icon-android-sync"></li>
+                    <li class="icon icon-android-wifi"></li>
+                    <li class="icon icon-android-call"></li>
+                    <li class="icon icon-android-apps"></li>
+                    <li class="icon icon-android-settings"></li>
+                    <li class="icon icon-android-options"></li>
+                    <li class="icon icon-android-funnel"></li>
+                    <li class="icon icon-android-search"></li>
+                    <li class="icon icon-android-home"></li>
+                    <li class="icon icon-android-cloud-outline"></li>
+                    <li class="icon icon-android-cloud"></li>
+                    <li class="icon icon-android-download"></li>
+                    <li class="icon icon-android-upload"></li>
+                    <li class="icon icon-android-cloud-done"></li>
+                    <li class="icon icon-android-cloud-circle"></li>
+                    <li class="icon icon-android-favorite-outline"></li>
+                    <li class="icon icon-android-favorite"></li>
+                    <li class="icon icon-android-star-outline"></li>
+                    <li class="icon icon-android-star-half"></li>
+                    <li class="icon icon-android-star"></li>
+                    <li class="icon icon-android-calendar"></li>
+                    <li class="icon icon-android-alarm-clock"></li>
+                    <li class="icon icon-android-time"></li>
+                    <li class="icon icon-android-stopwatch"></li>
+                    <li class="icon icon-android-watch"></li>
+                    <li class="icon icon-android-locate"></li>
+                    <li class="icon icon-android-navigate"></li>
+                    <li class="icon icon-android-pin"></li>
+                    <li class="icon icon-android-compass"></li>
+                    <li class="icon icon-android-map"></li>
+                    <li class="icon icon-android-walk"></li>
+                    <li class="icon icon-android-bicycle"></li>
+                    <li class="icon icon-android-car"></li>
+                    <li class="icon icon-android-bus"></li>
+                    <li class="icon icon-android-subway"></li>
+                    <li class="icon icon-android-train"></li>
+                    <li class="icon icon-android-boat"></li>
+                    <li class="icon icon-android-plane"></li>
+                    <li class="icon icon-android-restaurant"></li>
+                    <li class="icon icon-android-bar"></li>
+                    <li class="icon icon-android-cart"></li>
+                    <li class="icon icon-android-camera"></li>
+                    <li class="icon icon-android-image"></li>
+                    <li class="icon icon-android-film"></li>
+                    <li class="icon icon-android-color-palette"></li>
+                    <li class="icon icon-android-create"></li>
+                    <li class="icon icon-android-mail"></li>
+                    <li class="icon icon-android-drafts"></li>
+                    <li class="icon icon-android-send"></li>
+                    <li class="icon icon-android-archive"></li>
+                    <li class="icon icon-android-delete"></li>
+                    <li class="icon icon-android-attach"></li>
+                    <li class="icon icon-android-share"></li>
+                    <li class="icon icon-android-share-alt"></li>
+                    <li class="icon icon-android-bookmark"></li>
+                    <li class="icon icon-android-document"></li>
+                    <li class="icon icon-android-clipboard"></li>
+                    <li class="icon icon-android-list"></li>
+                    <li class="icon icon-android-folder-open"></li>
+                    <li class="icon icon-android-folder"></li>
+                    <li class="icon icon-android-print"></li>
+                    <li class="icon icon-android-open"></li>
+                    <li class="icon icon-android-exit"></li>
+                    <li class="icon icon-android-contract"></li>
+                    <li class="icon icon-android-expand"></li>
+                    <li class="icon icon-android-globe"></li>
+                    <li class="icon icon-android-chat"></li>
+                    <li class="icon icon-android-textsms"></li>
+                    <li class="icon icon-android-hangout"></li>
+                    <li class="icon icon-android-happy"></li>
+                    <li class="icon icon-android-sad"></li>
+                    <li class="icon icon-android-person"></li>
+                    <li class="icon icon-android-people"></li>
+                    <li class="icon icon-android-person-add"></li>
+                    <li class="icon icon-android-contact"></li>
+                    <li class="icon icon-android-contacts"></li>
+                    <li class="icon icon-android-playstore"></li>
+                    <li class="icon icon-android-lock"></li>
+                    <li class="icon icon-android-unlock"></li>
+                    <li class="icon icon-android-microphone"></li>
+                    <li class="icon icon-android-microphone-off"></li>
+                    <li class="icon icon-android-notifications-none"></li>
+                    <li class="icon icon-android-notifications"></li>
+                    <li class="icon icon-android-notifications-off"></li>
+                    <li class="icon icon-android-volume-mute"></li>
+                    <li class="icon icon-android-volume-down"></li>
+                    <li class="icon icon-android-volume-up"></li>
+                    <li class="icon icon-android-volume-off"></li>
+                    <li class="icon icon-android-hand"></li>
+                    <li class="icon icon-android-desktop"></li>
+                    <li class="icon icon-android-laptop"></li>
+                    <li class="icon icon-android-phone-portrait"></li>
+                    <li class="icon icon-android-phone-landscape"></li>
+                    <li class="icon icon-android-bulb"></li>
+                    <li class="icon icon-android-sunny"></li>
+                    <li class="icon icon-android-alert"></li>
+                    <li class="icon icon-android-warning"></li>
+                    <li class="icon icon-social-twitter"></li>
+                    <li class="icon icon-social-twitter-outline"></li>
+                    <li class="icon icon-social-facebook"></li>
+                    <li class="icon icon-social-facebook-outline"></li>
+                    <li class="icon icon-social-googleplus"></li>
+                    <li class="icon icon-social-googleplus-outline"></li>
+                    <li class="icon icon-social-google"></li>
+                    <li class="icon icon-social-google-outline"></li>
+                    <li class="icon icon-social-dribbble"></li>
+                    <li class="icon icon-social-dribbble-outline"></li>
+                    <li class="icon icon-social-octocat"></li>
+                    <li class="icon icon-social-github"></li>
+                    <li class="icon icon-social-github-outline"></li>
+                    <li class="icon icon-social-instagram"></li>
+                    <li class="icon icon-social-instagram-outline"></li>
+                    <li class="icon icon-social-whatsapp"></li>
+                    <li class="icon icon-social-whatsapp-outline"></li>
+                    <li class="icon icon-social-snapchat"></li>
+                    <li class="icon icon-social-snapchat-outline"></li>
+                    <li class="icon icon-social-foursquare"></li>
+                    <li class="icon icon-social-foursquare-outline"></li>
+                    <li class="icon icon-social-pinterest"></li>
+                    <li class="icon icon-social-pinterest-outline"></li>
+                    <li class="icon icon-social-rss"></li>
+                    <li class="icon icon-social-rss-outline"></li>
+                    <li class="icon icon-social-tumblr"></li>
+                    <li class="icon icon-social-tumblr-outline"></li>
+                    <li class="icon icon-social-wordpress"></li>
+                    <li class="icon icon-social-wordpress-outline"></li>
+                    <li class="icon icon-social-reddit"></li>
+                    <li class="icon icon-social-reddit-outline"></li>
+                    <li class="icon icon-social-hackernews"></li>
+                    <li class="icon icon-social-hackernews-outline"></li>
+                    <li class="icon icon-social-designernews"></li>
+                    <li class="icon icon-social-designernews-outline"></li>
+                    <li class="icon icon-social-yahoo"></li>
+                    <li class="icon icon-social-yahoo-outline"></li>
+                    <li class="icon icon-social-buffer"></li>
+                    <li class="icon icon-social-buffer-outline"></li>
+                    <li class="icon icon-social-skype"></li>
+                    <li class="icon icon-social-skype-outline"></li>
+                    <li class="icon icon-social-linkedin"></li>
+                    <li class="icon icon-social-linkedin-outline"></li>
+                    <li class="icon icon-social-vimeo"></li>
+                    <li class="icon icon-social-vimeo-outline"></li>
+                    <li class="icon icon-social-twitch"></li>
+                    <li class="icon icon-social-twitch-outline"></li>
+                    <li class="icon icon-social-youtube"></li>
+                    <li class="icon icon-social-youtube-outline"></li>
+                    <li class="icon icon-social-dropbox"></li>
+                    <li class="icon icon-social-dropbox-outline"></li>
+                    <li class="icon icon-social-apple"></li>
+                    <li class="icon icon-social-apple-outline"></li>
+                    <li class="icon icon-social-android"></li>
+                    <li class="icon icon-social-android-outline"></li>
+                    <li class="icon icon-social-windows"></li>
+                    <li class="icon icon-social-windows-outline"></li>
+                    <li class="icon icon-social-html5"></li>
+                    <li class="icon icon-social-html5-outline"></li>
+                    <li class="icon icon-social-css3"></li>
+                    <li class="icon icon-social-css3-outline"></li>
+                    <li class="icon icon-social-javascript"></li>
+                    <li class="icon icon-social-javascript-outline"></li>
+                    <li class="icon icon-social-angular"></li>
+                    <li class="icon icon-social-angular-outline"></li>
+                    <li class="icon icon-social-nodejs"></li>
+                    <li class="icon icon-social-sass"></li>
+                    <li class="icon icon-social-python"></li>
+                    <li class="icon icon-social-chrome"></li>
+                    <li class="icon icon-social-chrome-outline"></li>
+                    <li class="icon icon-social-codepen"></li>
+                    <li class="icon icon-social-codepen-outline"></li>
+                    <li class="icon icon-social-markdown"></li>
+                    <li class="icon icon-social-tux"></li>
+                    <li class="icon icon-social-freebsd-devil"></li>
+                    <li class="icon icon-social-usd"></li>
+                    <li class="icon icon-social-usd-outline"></li>
+                    <li class="icon icon-social-bitcoin"></li>
+                    <li class="icon icon-social-bitcoin-outline"></li>
+                    <li class="icon icon-social-yen"></li>
+                    <li class="icon icon-social-yen-outline"></li>
+                    <li class="icon icon-social-euro"></li>
+                    <li class="icon icon-social-euro-outline"></li>
                 </ul>
-            </li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-        </ul>
+            
+            </section>
+            
+            <section id="typography">
+                
+                <h2>Typography</h2>
+                
+                <h1>h1 Heading</h1>
+                <h2>h2 Heading</h2>
+                <h3>h3 Heading</h3>
+                <h4>h4 Heading</h4>
+                <h5>h5 Heading</h5>
+                <h6>h6 Heading</h6>
+            
+            </section>
+            
+            <section id="lists">
+                
+                <h2>Lists</h2>
+                
+                <h3>Unordered</h3>
+                
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li> 
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>
+                        Nulla volutpat aliquam velit
+                        <ul>
+                            <li>Phasellus iaculis neque</li>
+                            <li>Purus sodales ultricies</li>
+                            <li>Vestibulum laoreet porttitor sem</li>
+                            <li>Ac tristique libero volutpat at</li>
+                        </ul>
+                    </li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+                
+                <h3>Ordered</h3>
+                
+                <ol>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li> 
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ol>
+                
+                <h3>Unstyled</h3>
+                
+                <ul class="unstyled">
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Consectetur adipiscing elit</li> 
+                    <li>Integer molestie lorem at massa</li>
+                    <li>Facilisis in pretium nisl aliquet</li>
+                    <li>Faucibus porta lacus fringilla vel</li>
+                    <li>Aenean sit amet erat nunc</li>
+                    <li>Eget porttitor lorem</li>
+                </ul>
+                
+                <h3>Inline</h3>
+                
+                <ul class="inline">
+                    <li>Lorem ipsum</li>
+                    <li>Consectetur adipiscingit</li> 
+                    <li>Integer molesti</li>
+                </ul>
+            
+            </section>
+            
+            <section id="grid">
+                
+                <h2>Grid</h2>
         
-        <h3>Ordered</h3>
+                <div class="columns">
         
-        <ol>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li> 
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-        </ol>
+                    <div class="xs-3">
+                        <div class="box">
+                            xs-3
+                        </div>
+                    </div>
         
-        <h3>Unstyled</h3>
+                    <div class="xs-3">
+                        <div class="box">
+                            xs-3
+                        </div>
+                    </div>
         
-        <ul class="unstyled">
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li> 
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-        </ul>
+                    <div class="xs-3">
+                        <div class="box">
+                            xs-3
+                        </div>
+                    </div>
         
-        <h3>Inline</h3>
+                    <div class="xs-3">
+                        <div class="box">
+                            xs-3
+                        </div>
+                    </div>
         
-        <ul class="inline">
-            <li>Lorem ipsum</li>
-            <li>Consectetur adipiscingit</li> 
-            <li>Integer molesti</li>
-        </ul>
+                </div>
         
-        <hr class="lg">
+                <div class="columns">
         
-    	<h2>Grid</h2>
-
-		<div class="columns">
-
-			<div class="xs-3">
-				<div class="box">
-					xs-3
-				</div>
-			</div>
-
-			<div class="xs-3">
-				<div class="box">
-					xs-3
-				</div>
-			</div>
-
-			<div class="xs-3">
-				<div class="box">
-					xs-3
-				</div>
-			</div>
-
-			<div class="xs-3">
-				<div class="box">
-					xs-3
-				</div>
-			</div>
-
-		</div>
-
-		<div class="columns">
-
-			<div class="sm-3 xs-4">
-				<div class="box">
-					sm-3 xs-4
-				</div>
-			</div>
-
-			<div class="sm-3 xs-4">
-				<div class="box">
-					sm-3 xs-4
-				</div>
-			</div>
-
-			<div class="sm-6 xs-4">
-				<div class="box">
-					sm-6 xs-4
-				</div>
-			</div>
-
-		</div>
-
-		<div class="columns">
-
-			<div class="md-4 md-offset-2">
-				<div class="box">
-					md-4 md-offset-2
-				</div>
-			</div>
-
-			<div class="md-5 md-offset-1">
-				<div class="box">
-					md-6 md-offset-1
-				</div>
-			</div>
-
-		</div>
-
-		<div class="columns">
-
-			<div class="md-6">
-				<div class="box">
-					md-6
-				</div>
-			</div>
-
-			<div class="md-6">
-				<div class="box">
-					md-6
-				</div>
-			</div>
-
-		</div>
-
-		<div class="columns">
-
-			<div class="lg-4">
-				<div class="box">
-					lg-4
-				</div>
-			</div>
-
-			<div class="lg-4">
-				<div class="box">
-					lg-4
-				</div>
-			</div>
-
-			<div class="lg-4">
-				<div class="box">
-					lg-4
-				</div>
-			</div>
-
-		</div>
+                    <div class="sm-3 xs-4">
+                        <div class="box">
+                            sm-3 xs-4
+                        </div>
+                    </div>
+        
+                    <div class="sm-3 xs-4">
+                        <div class="box">
+                            sm-3 xs-4
+                        </div>
+                    </div>
+        
+                    <div class="sm-6 xs-4">
+                        <div class="box">
+                            sm-6 xs-4
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="columns">
+        
+                    <div class="md-4 md-offset-2">
+                        <div class="box">
+                            md-4 md-offset-2
+                        </div>
+                    </div>
+        
+                    <div class="md-5 md-offset-1">
+                        <div class="box">
+                            md-6 md-offset-1
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="columns">
+        
+                    <div class="md-6">
+                        <div class="box">
+                            md-6
+                        </div>
+                    </div>
+        
+                    <div class="md-6">
+                        <div class="box">
+                            md-6
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <div class="columns">
+        
+                    <div class="lg-4">
+                        <div class="box">
+                            lg-4
+                        </div>
+                    </div>
+        
+                    <div class="lg-4">
+                        <div class="box">
+                            lg-4
+                        </div>
+                    </div>
+        
+                    <div class="lg-4">
+                        <div class="box">
+                            lg-4
+                        </div>
+                    </div>
+        
+                </div>
+            
+            </section>
+        
+        </div>
 
 	</div>
+    
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+		$(document).ready(function() {
+			
+			function setSection(id) {
+				
+				$("#left nav a").parent().removeClass('active');
+				$("#left nav a[href='" + id + "']").parent().addClass('active');
+				
+				$("#content > section").fadeOut(0, function() {
+					
+					$(id).show(0);
+					
+				});
+					
+			}
+			
+			$("#content > section").hide();
+			
+			setTimeout(function() {
+				setSection("#colors");
+			}, 0);
+			
+			$("#left nav a").click(function(e) {
+				
+				e.preventDefault();
+				
+				setSection($(this).attr('href'));	
+			
+			});
+				
+		});
+	</script>
 
 </body>
 </html>
