@@ -3244,3 +3244,28 @@ button.border:hover {
 	background: #f2f2f2;
 	color: #757880;
 }
+table.table {
+	width: 100%;
+}
+table.table.responsive th {
+	display: none;
+}
+table.table.responsive td {
+	display: block;
+}
+table.table.responsive td:before {
+	content: attr(data-title) ": ";
+	font-weight: bold;
+	display: inline-block;
+}
+@media (min-width: 768px) {
+	table.table.responsive td:before {
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	table.table.responsive th,
+	table.table.responsive td {
+		display: table-cell;
+	}
+}
