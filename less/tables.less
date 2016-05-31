@@ -1,0 +1,27 @@
+table {
+	&.table {
+		&.responsive {
+			th {
+				display: none;
+			}
+			td {
+				&:before {
+					content: attr(data-title)": ";
+					font-weight: bold;
+					display: inline-block;
+					@media(min-width: (@screen-sm-min * 1px)) {	
+						display: none;
+					}
+				}
+				display: block;
+			}
+			th,
+			td {
+				@media(min-width: (@screen-sm-min * 1px)) {	
+					display: table-cell;
+				}
+			}
+		}
+		width: 100%;
+	}
+}
