@@ -3248,24 +3248,34 @@ table.table {
 	width: 100%;
 }
 table.table.responsive th {
-	display: none;
+	display: table-cell;
 }
-table.table.responsive td {
-	display: block;
-}
-table.table.responsive td:before {
-	content: attr(data-title) ": ";
-	font-weight: bold;
-	display: inline-block;
-}
-@media (min-width: 768px) {
-	table.table.responsive td:before {
+@media (max-width: 768px) {
+	table.table.responsive th {
 		display: none;
 	}
 }
-@media (min-width: 768px) {
-	table.table.responsive th,
+table.table.responsive td {
+	display: table-cell;
+}
+table.table.responsive td:before {
+	content: attr(data-th) ": ";
+	font-weight: bold;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 40%;
+}
+@media (max-width: 768px) {
+	table.table.responsive td:before {
+		display: block;
+	}
+}
+@media (max-width: 768px) {
 	table.table.responsive td {
-		display: table-cell;
+		display: block;
+		padding-left: 40%;
+		position: relative;
 	}
 }

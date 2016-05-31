@@ -2,23 +2,29 @@ table {
 	&.table {
 		&.responsive {
 			th {
-				display: none;
+				display: table-cell;
+				@media(max-width: (@screen-sm-min * 1px)) {
+					display: none;
+				}
 			}
 			td {
 				&:before {
-					content: attr(data-title)": ";
+					content: attr(data-th)": ";
 					font-weight: bold;
-					display: inline-block;
-					@media(min-width: (@screen-sm-min * 1px)) {	
-						display: none;
+					display: none;
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 40%;
+					@media(max-width: (@screen-sm-min * 1px)) {	
+						display: block;
 					}
 				}
-				display: block;
-			}
-			th,
-			td {
-				@media(min-width: (@screen-sm-min * 1px)) {	
-					display: table-cell;
+				display: table-cell;
+				@media(max-width: (@screen-sm-min * 1px)) {
+					display: block;
+					padding-left: 40%;
+					position: relative;
 				}
 			}
 		}
