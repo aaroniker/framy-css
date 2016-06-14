@@ -1,31 +1,51 @@
 table {
 	&.table {
 		&.responsive {
-			th {
-				display: table-cell;
-				@media(max-width: (@screen-sm-min * 1px)) {
-					display: none;
-				}
-			}
-			td {
-				&:before {
-					content: attr(data-th)": ";
-					font-weight: bold;
-					display: none;
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 40%;
-					@media(max-width: (@screen-sm-min * 1px)) {	
-						display: block;
+			tr {
+				th {
+					display: table-cell;
+					@media(max-width: (@screen-sm-min * 1px)) {
+						display: none;
 					}
 				}
-				display: table-cell;
-				@media(max-width: (@screen-sm-min * 1px)) {
-					display: block;
-					padding-left: 40%;
-					position: relative;
+				td {
+					&:first-child {
+						border-top: 1px solid @table-border;
+					}
+					&:last-child {
+						padding-bottom: @table-padding-v;
+					}
+					&:before {
+						content: attr(data-th)": ";
+						font-weight: bold;
+						display: none;
+						position: absolute;
+						left: 0;
+						top: @table-padding-v;
+						width: 40%;
+						@media(max-width: (@screen-sm-min * 1px)) {	
+							display: block;
+						}
+					}
+					display: table-cell;
+					@media(max-width: (@screen-sm-min * 1px)) {
+						display: block;
+						padding-left: 40%;
+						padding-bottom: 0;
+						position: relative;
+						border: 0;
+					}
 				}
+			}
+		}
+		tr {
+			th {
+				color:  @table-th-text;
+				padding: @table-padding-v 0;
+			}
+			td {
+				padding: @table-padding-v 0;
+				border-top: 1px solid @table-border;
 			}
 		}
 		width: 100%;
