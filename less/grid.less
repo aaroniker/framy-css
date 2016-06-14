@@ -1,4 +1,7 @@
 .container {
+	&:after {
+		clear: both;
+	}
 	@media(min-width: (@screen-sm-min * 1px)) {	
 		width: @container-sm * 1px;
 	}
@@ -12,16 +15,21 @@
 	padding-left: @gap-half-width * 1px;
 	margin-left: auto;
 	margin-right: auto;
-	overflow-x: hidden;
 }
 
 .container-fluid {
+	&:after {
+		clear: both;
+	}
 	margin-right: auto;
 	margin-left: auto;
 	overflow-x: hidden;
 }
 
 .columns {
+	&:after {
+		clear: both;
+	}
 	[class^='xs'],
 	[class*=' xs'],
 	[class^='sm'],
