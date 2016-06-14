@@ -143,7 +143,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;a class=&quot;button lg&quot; href=&quot;&quot;&gt;Large Button&lt;/a&gt;
+                        <pre><code class="html">&lt;a class=&quot;button lg&quot; href=&quot;&quot;&gt;Large Button&lt;/a&gt;
                         &lt;a class=&quot;button&quot; href=&quot;&quot;&gt;Button&lt;/a&gt;
                         &lt;a class=&quot;button sm&quot; href=&quot;&quot;&gt;Small Button&lt;/a&gt;                        </code></pre>
                     
@@ -163,7 +163,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;a class=&quot;button&quot; href=&quot;&quot;&gt;Primary&lt;/a&gt;
+                        <pre><code class="html">&lt;a class=&quot;button&quot; href=&quot;&quot;&gt;Primary&lt;/a&gt;
                         &lt;a class=&quot;button success&quot; href=&quot;&quot;&gt;Success&lt;/a&gt;
                         &lt;a class=&quot;button warning&quot; href=&quot;&quot;&gt;Warning&lt;/a&gt;
                         &lt;a class=&quot;button error&quot; href=&quot;&quot;&gt;Error&lt;/a&gt;
@@ -182,7 +182,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;a class=&quot;button block&quot; href=&quot;&quot;&gt;Block Button&lt;/a&gt;
+                        <pre><code class="html">&lt;a class=&quot;button block&quot; href=&quot;&quot;&gt;Block Button&lt;/a&gt;
                         &lt;a class=&quot;button center&quot; href=&quot;&quot;&gt;Center Button&lt;/a&gt;                        </code></pre>
                     
                     </div>
@@ -208,7 +208,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;a class=&quot;button lg&quot; href=&quot;&quot;&gt;
+                        <pre><code class="html">&lt;a class=&quot;button lg&quot; href=&quot;&quot;&gt;
                         <span class="tab"></span>&lt;i class=&quot;icon icon-gear-a&quot;&gt;&lt;/i&gt;
                         <span class="tab"></span>Large Button
                         &lt;/a&gt;
@@ -999,7 +999,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;h1&gt;h1 Heading&lt;/h1&gt;
+                        <pre><code class="html">&lt;h1&gt;h1 Heading&lt;/h1&gt;
                             &lt;h2&gt;h2 Heading&lt;/h2&gt;
                             &lt;h3&gt;h3 Heading&lt;/h3&gt;
                             &lt;h4&gt;h4 Heading&lt;/h4&gt;
@@ -1050,7 +1050,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;ul&gt;
+                        <pre><code class="html">&lt;ul&gt;
 						<span class="tab"></span>&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 						<span class="tab"></span>&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
 						<span class="tab"></span>...
@@ -1076,7 +1076,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;ol&gt;
+                        <pre><code class="html">&lt;ol&gt;
 						<span class="tab"></span>&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
 						<span class="tab"></span>&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
 						<span class="tab"></span>...
@@ -1102,7 +1102,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;ul class=&quot;unstyled&quot;&gt;...&lt;/ul&gt;                        </code></pre>
+                        <pre><code class="html">&lt;ul class=&quot;unstyled&quot;&gt;...&lt;/ul&gt;                        </code></pre>
                     
                     </div>
                     
@@ -1120,7 +1120,7 @@
                         
                         </div>
                         
-                        <pre><code>&lt;ul class=&quot;inline&quot;&gt;...&lt;/ul&gt;                        </code></pre>
+                        <pre><code class="html">&lt;ul class=&quot;inline&quot;&gt;...&lt;/ul&gt;                        </code></pre>
                     
                     </div>
                 
@@ -1137,109 +1137,168 @@
                 </header>
                 
                 <div class="content">
-        
-                    <div class="columns">
+                    
+                    <h3>Getting started</h3>
+                	
+                    <p>There are a total of 12 columns availabe for each breakpoint (unlimited nestable). You can split it up like this e.x. : <em>4x3, 3x4, 2x6, 1x12, ...</em>.<br>
+                    See how the grid system works for different devices:</p>
+                
+                	<table class="table responsive">
+                    	<thead>
+                        	<th>Class prefix</th>
+                        	<th>Description</th>
+                            <th>Container width</th>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td data-th="Class prefix">.xs-</td>
+                            	<td data-th="Description">Phones (&lt;768px)</td>
+                                <td data-th="Container width">auto</td>
+                            </tr>
+                        	<tr>
+                            	<td data-th="Class prefix">.sm-</td>
+                            	<td data-th="Description">Small devices (&gt;768px)</td>
+                                <td data-th="Container width">730px</td>
+                            </tr>
+                        	<tr>
+                            	<td data-th="Class prefix">.md-</td>
+                            	<td data-th="Description">Medium devices (&gt;992px)</td>
+                                <td data-th="Container width">960px</td>
+                            </tr>
+                        	<tr>
+                            	<td data-th="Class prefix">.lg-</td>
+                            	<td data-th="Description">Large devices (&gt;1180)</td>
+                                <td data-th="Container width">1150px</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="code">
+                    
+                        <div class="show">
+                        
+                            <div class="columns">
             
-                        <div class="xs-3">
-                            <div class="box">
-                                xs-3
+                                <div class="lg-4">
+                                    <div class="box">
+                                        lg-4
+                                    </div>
+                                </div>
+                    
+                                <div class="lg-4">
+                                    <div class="box">
+                                        lg-4
+                                    </div>
+                                </div>
+                    
+                                <div class="lg-4">
+                                    <div class="box">
+                                        lg-4
+                                    </div>
+                                </div>
+                    
                             </div>
-                        </div>
+                        
+                            <div class="columns">
             
-                        <div class="xs-3">
-                            <div class="box">
-                                xs-3
+                                <div class="md-6">
+                                    <div class="box">
+                                        md-6
+                                    </div>
+                                </div>
+                    
+                                <div class="md-6">
+                                    <div class="box">
+                                        md-6
+                                    </div>
+                                </div>
+                    
                             </div>
+                        
                         </div>
-            
-                        <div class="xs-3">
-                            <div class="box">
-                                xs-3
-                            </div>
-                        </div>
-            
-                        <div class="xs-3">
-                            <div class="box">
-                                xs-3
-                            </div>
-                        </div>
-            
+                        
+                        <pre><code class="html">&lt;div class=&quot;columns&quot;&gt;
+                        <span class="tab"></span>&lt;div class=&quot;lg-4&quot;&gt;&lt;/div&gt;
+                        <span class="tab"></span>&lt;div class=&quot;lg-4&quot;&gt;&lt;/div&gt;
+                        <span class="tab"></span>&lt;div class=&quot;lg-4&quot;&gt;&lt;/div&gt;
+                    	&lt;/div&gt;
+						
+						&lt;div class=&quot;columns&quot;&gt;
+                        <span class="tab"></span>&lt;div class=&quot;md-6&quot;&gt;&lt;/div&gt;
+                        <span class="tab"></span>&lt;div class=&quot;md-6&quot;&gt;&lt;/div&gt;
+                    	&lt;/div&gt;                        </code></pre>
+                    
                     </div>
+                    
+                    <h3>Mobile &amp; Desktop</h3>
+                
+                    <div class="code">
+                    
+                        <div class="show">
             
-                    <div class="columns">
-            
-                        <div class="sm-3 xs-4">
-                            <div class="box">
-                                sm-3 xs-4
+                            <div class="columns">
+                    
+                                <div class="md-3 xs-4">
+                                    <div class="box">
+                                        md-3 xs-4
+                                    </div>
+                                </div>
+                    
+                                <div class="md-3 xs-4">
+                                    <div class="box">
+                                        md-3 xs-4
+                                    </div>
+                                </div>
+                    
+                                <div class="md-6 xs-4">
+                                    <div class="box">
+                                        md-6 xs-4
+                                    </div>
+                                </div>
+                    
                             </div>
+                        
                         </div>
-            
-                        <div class="sm-3 xs-4">
-                            <div class="box">
-                                sm-3 xs-4
-                            </div>
-                        </div>
-            
-                        <div class="sm-6 xs-4">
-                            <div class="box">
-                                sm-6 xs-4
-                            </div>
-                        </div>
-            
+                        
+                        <pre><code class="html">&lt;div class=&quot;columns&quot;&gt;
+                        <span class="tab"></span>&lt;div class=&quot;md-3 xs-4&quot;&gt;&lt;/div&gt;
+                        <span class="tab"></span>&lt;div class=&quot;md-3 xs-4&quot;&gt;&lt;/div&gt;
+                        <span class="tab"></span>&lt;div class=&quot;md-6 xs-4&quot;&gt;&lt;/div&gt;
+                    	&lt;/div&gt;                        </code></pre>
+                    
                     </div>
+                    
+                    <h3>Offset</h3>
+                    
+                    <p>Each breakpoint also got offset classes:</p>
+                
+                    <div class="code">
+                    
+                        <div class="show">
             
-                    <div class="columns">
-            
-                        <div class="md-4 md-offset-2">
-                            <div class="box">
-                                md-4 md-offset-2
+                            <div class="columns">
+                    
+                                <div class="md-4 md-offset-2">
+                                    <div class="box">
+                                        md-4 md-offset-2
+                                    </div>
+                                </div>
+                    
+                                <div class="md-5 md-offset-1">
+                                    <div class="box">
+                                        md-6 md-offset-1
+                                    </div>
+                                </div>
+                    
                             </div>
+                        
                         </div>
-            
-                        <div class="md-5 md-offset-1">
-                            <div class="box">
-                                md-6 md-offset-1
-                            </div>
-                        </div>
-            
-                    </div>
-            
-                    <div class="columns">
-            
-                        <div class="md-6">
-                            <div class="box">
-                                md-6
-                            </div>
-                        </div>
-            
-                        <div class="md-6">
-                            <div class="box">
-                                md-6
-                            </div>
-                        </div>
-            
-                    </div>
-            
-                    <div class="columns">
-            
-                        <div class="lg-4">
-                            <div class="box">
-                                lg-4
-                            </div>
-                        </div>
-            
-                        <div class="lg-4">
-                            <div class="box">
-                                lg-4
-                            </div>
-                        </div>
-            
-                        <div class="lg-4">
-                            <div class="box">
-                                lg-4
-                            </div>
-                        </div>
-            
+                        
+                        <pre><code class="html">&lt;div class=&quot;columns&quot;&gt;
+                        <span class="tab"></span>&lt;div class=&quot;md-4 md-offset-2&quot;&gt;&lt;/div&gt;
+                        <span class="tab"></span>&lt;div class=&quot;md-5 md-offset-1&quot;&gt;&lt;/div&gt;
+                    	&lt;/div&gt;                        </code></pre>
+                    
                     </div>
                 
                 </div>
@@ -1255,6 +1314,8 @@
                 </header>
                 
                 <div class="content">
+                
+                	<h3>Text</h3>
                 
                 	<table class="table responsive">
                     	<thead>
@@ -1280,6 +1341,29 @@
                             </tr>
                         </tbody>
                     </table>
+                    
+                    <h3>Clear floats</h3>
+                
+                	<table class="table responsive">
+                    	<thead>
+                        	<th>Class</th>
+                        	<th>Description</th>
+                        </thead>
+                        <tbody>
+                        	<tr>
+                            	<td data-th="Class">.clear</td>
+                            	<td data-th="Description">Easily clear floats by adding .clear to the <strong>parent element</strong>.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p>You can also add an extra element (e.x. div) to clear floats:</p>
+                
+                    <div class="code">
+                        
+                        <pre><code class="html">&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;                        </code></pre>
+                    
+                    </div>
                 
                 </div>
             
