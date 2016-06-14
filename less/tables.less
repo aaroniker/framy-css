@@ -17,6 +17,7 @@ table {
 					}
 					&:before {
 						content: attr(data-th)": ";
+						color:  @table-th-text;
 						font-weight: bold;
 						display: none;
 						position: absolute;
@@ -49,5 +50,6 @@ table {
 			}
 		}
 		width: 100%;
+		margin-bottom: (@line-height-computed / 2);
 	}
 }
