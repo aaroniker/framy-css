@@ -2444,9 +2444,6 @@ nav ul {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.clear {
-	clear: both;
-}
 p {
 	margin: 0 0 10px 0;
 }
@@ -3254,6 +3251,7 @@ button.border:hover {
 }
 table.table {
 	width: 100%;
+	margin-bottom: 10px;
 }
 table.table.responsive tr th {
 	display: table-cell;
@@ -3274,6 +3272,7 @@ table.table.responsive tr td:last-child {
 }
 table.table.responsive tr td:before {
 	content: attr(data-th) ": ";
+	color: #454852;
 	font-weight: bold;
 	display: none;
 	position: absolute;
@@ -3302,4 +3301,19 @@ table.table tr th {
 table.table tr td {
 	padding: 8px 0;
 	border-top: 1px solid #d9d8de;
+}
+.text-primary {
+	color: #5bb8fd;
+}
+.text-success {
+	color: #4ce276;
+}
+.text-warning {
+	color: #f9d65e;
+}
+.text-error {
+	color: #f36362;
+}
+.clear {
+	clear: both;
 }
