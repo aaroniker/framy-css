@@ -1,5 +1,6 @@
 body {
 	background: #f1f3f6;
+	padding-left: 90px;
 }
 
 .box {
@@ -132,4 +133,34 @@ body {
 	background: #f1f3f6;
 	padding: 20px;
 	border-top: 1px solid #d9d8de;
+}
+
+#nav {
+	background: #2f3241;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 90px;
+}
+
+#nav .logo {
+	display: block;
+	padding: 30px 20px;
+}
+
+#nav .logo img {
+	display: block;
+	width: 100%;
+}
+
+#nav ul li a {
+	display: block;
+	width: 100%;
+	padding: 20px 0;
+}
+
+#nav ul li a img {
+	display: block;
+	margin: 0 auto;	
 }
