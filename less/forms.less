@@ -25,12 +25,17 @@
 		color: @label-text;
 		margin-bottom: @label-bottom;
 		max-width: 100%;
-		display: inline-block;
+		display: block;
 	}
 	margin-bottom: @form-element-bottom;
 }
 
-.checkbox {
+.checkbox,
+.checkbox-inline {
+	&.checkbox-inline {
+		margin: 0 (@checkbox-size / 2) 0 0;
+		display: inline-block;
+	}
 	div {
 		float: left;
 		margin: 0 0 0 (@checkbox-size / 2);
@@ -94,9 +99,86 @@
 		}
 	}
 	overflow: hidden;
+	margin: @checkbox-margin 0;
 }
 
-.switch {
+.radio,
+.radio-inline {
+	&.radio-inline {
+		margin: 0 (@radio-size / 2) 0 0;
+		display: inline-block;
+	}
+	div {
+		float: left;
+		margin: 0 0 0 (@radio-size / 2);
+		line-height: @radio-size;
+	}
+	label {
+		width: @radio-size;
+		height: @radio-size;
+		position: relative;
+		float: left;
+		margin-bottom: 0;
+	}
+	input {
+		&:not(:checked),
+		&:checked {
+			& + label {
+				&:before {
+					.round(50%);
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: @radio-size - 2;
+					height: @radio-size - 2;
+					border: 1px solid @input-border;
+					background: @input-bg;
+					.transition();
+				}
+				&:after {
+					.transition();
+					content: "";
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: @radio-size * 0.5;
+					height: @radio-size * 0.5;
+					margin: -(@radio-size * 0.25) 0 0 -(@radio-size * 0.25);
+					display: block;
+					.round(50%);
+					background: @radio-active;
+				}
+				cursor: pointer;
+			}
+			position: absolute;
+			left: -9999px;
+		}
+		&:not(:checked) + label:after {
+			.opacity(0);
+			.scale(0);
+		}
+		&:checked + label {
+			&:after {
+				.opacity(1);
+				.scale(1);
+			}
+		}
+		&:disabled + label:after {
+			background: @input-bg-disabled;
+			color: @text;
+		}
+	}
+	overflow: hidden;
+	margin: @radio-margin 0;
+}
+
+.switch,
+.switch-inline {
+	&.switch-inline {
+		margin: 0 (@switch-size / 2) 0 0;
+		display: inline-block;
+	}
 	div {
 		float: left;
 		margin: 0 0 0 (@switch-size / 2);
@@ -155,4 +237,5 @@
 		visibility: hidden;
 	}
 	overflow: hidden;
+	margin: @switch-margin 0;
 }
