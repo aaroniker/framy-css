@@ -1,6 +1,6 @@
 # Framy - Very simple CSS Framework
 
-Framy is a simple CSS-Framework mostly done for own projects [WIP]
+Framy is a simple CSS-Framework.
 
 __Website__ http://www.framycss.org/
 
