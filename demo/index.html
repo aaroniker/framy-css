@@ -579,6 +579,7 @@
                         <li class="icon icon-ios-search"></li>
                         <li class="icon icon-ios-search-strong"></li>
                         <li class="icon icon-ios-star"></li>
+
                         <li class="icon icon-ios-star-half"></li>
                         <li class="icon icon-ios-star-outline"></li>
                         <li class="icon icon-ios-heart"></li>
@@ -1326,6 +1327,102 @@
                         <span class="tab"></span>&lt;/div&gt;
 						
 						<span class="tab"></span>&lt;button type=&quot;submit&quot; class=&quot;button&quot;&gt;Submit&lt;/button&gt;
+						
+						&lt;/form&gt;                        </code></pre>
+                    
+                    </div>
+                    
+                    <h3>Horizontal</h3>
+                
+                    <div class="code">
+                    
+                        <div class="show">
+                            
+                            <form class="horizontal">
+                            
+                                <div class="form-element">
+                                    <label for="name1h" class="sm-3">Name</label>
+                                    <div class="sm-9">
+                                        <input type="text" class="form-field" id="name1h">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-element">
+                                    <label for="gender" class="sm-3">Gender</label>
+                                    <div class="sm-9">
+                                        <select class="form-field" id="gender">
+                                        	<option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-element">
+                                    <label class="sm-3">Radio</label>
+                                    <div class="sm-9">
+                                        <div class="radio-inline">
+                                            <input id="radio1h" type="radio" name="radioh" checked>
+                                            <label for="radio1h"></label>
+                                            <div>Radio</div>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <input id="radio2h" type="radio" name="radioh">
+                                            <label for="radio2h"></label>
+                                            <div>Radio #2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="columns">
+                                    <div class="sm-9 sm-offset-3">
+                                        <button type="submit" class="button">Submit</button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        
+                        </div>
+                        
+                        <pre><code class="html">&lt;form class=&quot;horizontal&quot;&gt;
+                            
+                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;label for=&quot;name1h&quot; class=&quot;sm-3&quot;&gt;Name&lt;/label&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input type=&quot;text&quot; class=&quot;form-field&quot; id=&quot;name1h&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
+                        <span class="tab"></span>&lt;/div&gt;
+                                
+                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;label for=&quot;gender&quot; class=&quot;sm-3&quot;&gt;Gender&lt;/label&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;select class=&quot;form-field&quot; id=&quot;gender&quot;&gt;
+						<span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;option&gt;Male&lt;/option&gt;
+						<span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;option&gt;Female&lt;/option&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/select&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
+                        <span class="tab"></span>&lt;/div&gt;
+                                
+                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;label class=&quot;sm-3&quot;&gt;Radio&lt;/label&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class=&quot;radio-inline&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;radio1h&quot; type=&quot;radio&quot; name=&quot;radioh&quot; checked&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;radio1h&quot;&gt;&lt;/label&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;Radio&lt;/div&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class=&quot;radio-inline&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;radio2h&quot; type=&quot;radio&quot; name=&quot;radioh&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;radio2h&quot;&gt;&lt;/label&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;Radio #2&lt;/div&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
+                        <span class="tab"></span>&lt;/div&gt;
+                                
+                        <span class="tab"></span>&lt;div class=&quot;columns&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9 sm-offset-3&quot;&gt;
+                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;button type=&quot;submit&quot; class=&quot;button&quot;&gt;Submit&lt;/button&gt;
+                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
+                        <span class="tab"></span>&lt;/div&gt;
 						
 						&lt;/form&gt;                        </code></pre>
                     
