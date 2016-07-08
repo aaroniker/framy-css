@@ -2458,12 +2458,6 @@ h6 {
 	line-height: 1.1;
 	color: #454852;
 }
-h1,
-h2,
-h3 {
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
 h4,
 h5,
 h6 {
@@ -2472,12 +2466,18 @@ h6 {
 }
 h1 {
 	font-size: 36px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 h2 {
 	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 h3 {
 	font-size: 24px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 h4 {
 	font-size: 18px;
@@ -3289,7 +3289,7 @@ table.table.responsive tr td:before {
 	position: absolute;
 	left: 15px;
 	top: 10px;
-	width: 40%;
+	width: 42%;
 }
 @media (max-width: 768px) {
 	table.table.responsive tr td:before {
@@ -3299,7 +3299,7 @@ table.table.responsive tr td:before {
 @media (max-width: 768px) {
 	table.table.responsive tr td {
 		display: block;
-		padding-left: 40%;
+		padding-left: 42%;
 		padding-bottom: 0;
 		padding-right: 15px;
 		position: relative;
