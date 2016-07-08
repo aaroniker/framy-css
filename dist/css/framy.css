@@ -3256,8 +3256,7 @@ form.horizontal .form-element .xs-offset-11 {
 		margin-left: 91.667%;
 	}
 }
-.button,
-button {
+.button {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
@@ -3276,29 +3275,21 @@ button {
 }
 .button:active,
 .button:focus,
-.button:hover,
-button:active,
-button:focus,
-button:hover {
+.button:hover {
 	background: #42adfd;
 	color: #fff;
 }
 .button:active,
 .button:focus,
-.button:hover,
-button:active,
-button:focus,
-button:hover {
+.button:hover {
 	background: #42adfd;
 	color: #fff;
 }
-.button .icon,
-button .icon {
+.button .icon {
 	position: relative;
 	left: -4px;
 }
-.button.lg,
-button.lg {
+.button.lg {
 	padding: 10px 20px;
 	font-size: 18px;
 	line-height: 1.428571429;
@@ -3306,12 +3297,10 @@ button.lg {
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 }
-.button.lg .icon,
-button.lg .icon {
+.button.lg .icon {
 	left: -5px;
 }
-.button.sm,
-button.sm {
+.button.sm {
 	padding: 6px 14px;
 	font-size: 12px;
 	line-height: 1.428571429;
@@ -3319,73 +3308,55 @@ button.sm {
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
-.button.sm .icon,
-button.sm .icon {
+.button.sm .icon {
 	left: -2px;
 }
-.button.block,
-button.block {
+.button.block {
 	display: block;
 }
-.button.block + .button.block,
-button.block + .button.block {
+.button.block + .button.block {
 	margin-top: 5px;
 }
-.button.center,
-button.center {
+.button.center {
 	display: table;
 	margin-left: auto;
 	margin-right: auto;
 }
-.button.success,
-button.success {
+.button.success {
 	background: #4ce276;
 	color: #fff;
 }
 .button.success:active,
 .button.success:focus,
-.button.success:hover,
-button.success:active,
-button.success:focus,
-button.success:hover {
+.button.success:hover {
 	background: #36de65;
 	color: #fff;
 }
-.button.warning,
-button.warning {
+.button.warning {
 	background: #f9d65e;
 	color: #fff;
 }
 .button.warning:active,
 .button.warning:focus,
-.button.warning:hover,
-button.warning:active,
-button.warning:focus,
-button.warning:hover {
+.button.warning:hover {
 	background: #f8d045;
 	color: #fff;
 }
-.button.error,
-button.error {
+.button.error {
 	background: #f36362;
 	color: #fff;
 }
 .button.error:active,
 .button.error:focus,
-.button.error:hover,
-button.error:active,
-button.error:focus,
-button.error:hover {
+.button.error:hover {
 	background: #f14b4a;
 	color: #fff;
 }
-.button.border,
-button.border {
+.button.border {
 	background: #fff;
 	color: #757880;
 }
-.button.border:before,
-button.border:before {
+.button.border:before {
 	left: 0;
 	right: 0;
 	top: 0;
@@ -3400,10 +3371,7 @@ button.border:before {
 }
 .button.border:active,
 .button.border:focus,
-.button.border:hover,
-button.border:active,
-button.border:focus,
-button.border:hover {
+.button.border:hover {
 	background: #f2f2f2;
 	color: #757880;
 }
