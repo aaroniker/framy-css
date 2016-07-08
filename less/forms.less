@@ -1,4 +1,7 @@
 .form-field {
+	&:focus {
+		outline: none;
+	}
 	&[disabled],
 	&[readonly],
 	fieldset[disabled] & {
@@ -9,11 +12,12 @@
 	fieldset[disabled] & {
 		cursor: not-allowed;
 	}
+	outline: none;
 	display: block;
 	width: 100%;
-	padding: @padding-v @padding-h;
-	font-size: @font-size;
 	line-height: @line-height;
+	padding: @input-padding-v @input-padding-h;
+	font-size: @font-size;
 	color: @input-text;
 	background-color: @input-bg;
 	border: 1px solid @input-border;
@@ -28,6 +32,26 @@
 		display: block;
 	}
 	margin-bottom: @form-element-bottom;
+}
+
+form {
+	&.horizontal {
+		label {
+			line-height: @line-height;
+			@media(min-width: (@screen-sm-min * 1px)) {
+				margin-bottom: 0;
+				padding: @input-padding-v 0;
+			}
+		}
+		.checkbox:first-child,
+		.checkbox-inline,
+		.radio:first-child,
+		.radio-inline,
+		.switch:first-child,
+		.switch-inline {
+			padding-top: @input-padding-v;
+		}
+	}
 }
 
 .checkbox,
@@ -99,7 +123,7 @@
 		}
 	}
 	overflow: hidden;
-	margin: @checkbox-margin 0;
+	margin: 0 0 @checkbox-margin 0;
 }
 
 .radio,
@@ -170,7 +194,7 @@
 		}
 	}
 	overflow: hidden;
-	margin: @radio-margin 0;
+	margin: 0 0 @radio-margin 0;
 }
 
 .switch,
@@ -237,5 +261,5 @@
 		visibility: hidden;
 	}
 	overflow: hidden;
-	margin: @switch-margin 0;
+	margin: 0 0 @switch-margin 0;
 }

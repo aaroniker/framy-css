@@ -1,6 +1,6 @@
 /*
-* Framy CSS v0.8 (http://framycss.org)
-* Copyright 2016 http://aaroniker.me
+* Framy CSS v1.0 (http://framycss.org)
+* Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
 @font-face {
@@ -2518,12 +2518,12 @@ small {
 .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
-	overflow-x: hidden;
 }
 .container-fluid:after {
 	clear: both;
 }
-.columns {
+.columns,
+form.horizontal .form-element {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -2543,7 +2543,8 @@ small {
 	margin-right: -15px;
 	margin-left: -15px;
 }
-.columns:after {
+.columns:after,
+form.horizontal .form-element:after {
 	clear: both;
 }
 .columns [class^='xs'],
@@ -2553,7 +2554,15 @@ small {
 .columns [class^='md'],
 .columns [class*=' md'],
 .columns [class^='lg'],
-.columns [class*=' lg'] {
+.columns [class*=' lg'],
+form.horizontal .form-element [class^='xs'],
+form.horizontal .form-element [class*=' xs'],
+form.horizontal .form-element [class^='sm'],
+form.horizontal .form-element [class*=' sm'],
+form.horizontal .form-element [class^='md'],
+form.horizontal .form-element [class*=' md'],
+form.horizontal .form-element [class^='lg'],
+form.horizontal .form-element [class*=' lg'] {
 	padding-right: 15px;
 	padding-left: 15px;
 	-webkit-flex-basis: 100%;
@@ -2571,12 +2580,26 @@ small {
 .columns .xs-9,
 .columns .xs-10,
 .columns .xs-11,
-.columns .xs-12 {
+.columns .xs-12,
+form.horizontal .form-element .xs,
+form.horizontal .form-element .xs-1,
+form.horizontal .form-element .xs-2,
+form.horizontal .form-element .xs-3,
+form.horizontal .form-element .xs-4,
+form.horizontal .form-element .xs-5,
+form.horizontal .form-element .xs-6,
+form.horizontal .form-element .xs-7,
+form.horizontal .form-element .xs-8,
+form.horizontal .form-element .xs-9,
+form.horizontal .form-element .xs-10,
+form.horizontal .form-element .xs-11,
+form.horizontal .form-element .xs-12 {
 	-webkit-box-flex: 0;
 	-webkit-flex: 0 0 auto;
 	flex: 0 0 auto;
 }
-.columns .xs {
+.columns .xs,
+form.horizontal .form-element .xs {
 	-webkit-box-flex: 1;
 	-webkit-flex-grow: 1;
 	flex-grow: 1;
@@ -2585,112 +2608,136 @@ small {
 	flex-basis: 0;
 	max-width: 100%;
 }
-.columns .xs-1 {
+.columns .xs-1,
+form.horizontal .form-element .xs-1 {
 	-webkit-flex-basis: 8.333%;
 	-ms-flex-preferred-size: 8.333%;
 	flex-basis: 8.333%;
 	max-width: 8.333%;
 }
-.columns .xs-2 {
+.columns .xs-2,
+form.horizontal .form-element .xs-2 {
 	-webkit-flex-basis: 16.666%;
 	-ms-flex-preferred-size: 16.666%;
 	flex-basis: 16.666%;
 	max-width: 16.666%;
 }
-.columns .xs-3 {
+.columns .xs-3,
+form.horizontal .form-element .xs-3 {
 	-webkit-flex-basis: 25%;
 	-ms-flex-preferred-size: 25%;
 	flex-basis: 25%;
 	max-width: 25%;
 }
-.columns .xs-4 {
+.columns .xs-4,
+form.horizontal .form-element .xs-4 {
 	-webkit-flex-basis: 33.333%;
 	-ms-flex-preferred-size: 33.333%;
 	flex-basis: 33.333%;
 	max-width: 33.333%;
 }
-.columns .xs-5 {
+.columns .xs-5,
+form.horizontal .form-element .xs-5 {
 	-webkit-flex-basis: 41.667%;
 	-ms-flex-preferred-size: 41.667%;
 	flex-basis: 41.667%;
 	max-width: 41.667%;
 }
-.columns .xs-6 {
+.columns .xs-6,
+form.horizontal .form-element .xs-6 {
 	-webkit-flex-basis: 50%;
 	-ms-flex-preferred-size: 50%;
 	flex-basis: 50%;
 	max-width: 50%;
 }
-.columns .xs-7 {
+.columns .xs-7,
+form.horizontal .form-element .xs-7 {
 	-webkit-flex-basis: 58.333%;
 	-ms-flex-preferred-size: 58.333%;
 	flex-basis: 58.333%;
 	max-width: 58.333%;
 }
-.columns .xs-8 {
+.columns .xs-8,
+form.horizontal .form-element .xs-8 {
 	-webkit-flex-basis: 66.667%;
 	-ms-flex-preferred-size: 66.667%;
 	flex-basis: 66.667%;
 	max-width: 66.667%;
 }
-.columns .xs-9 {
+.columns .xs-9,
+form.horizontal .form-element .xs-9 {
 	-webkit-flex-basis: 75%;
 	-ms-flex-preferred-size: 75%;
 	flex-basis: 75%;
 	max-width: 75%;
 }
-.columns .xs-10 {
+.columns .xs-10,
+form.horizontal .form-element .xs-10 {
 	-webkit-flex-basis: 83.333%;
 	-ms-flex-preferred-size: 83.333%;
 	flex-basis: 83.333%;
 	max-width: 83.333%;
 }
-.columns .xs-11 {
+.columns .xs-11,
+form.horizontal .form-element .xs-11 {
 	-webkit-flex-basis: 91.667%;
 	-ms-flex-preferred-size: 91.667%;
 	flex-basis: 91.667%;
 	max-width: 91.667%;
 }
-.columns .xs-12 {
+.columns .xs-12,
+form.horizontal .form-element .xs-12 {
 	-webkit-flex-basis: 100%;
 	-ms-flex-preferred-size: 100%;
 	flex-basis: 100%;
 	max-width: 100%;
 }
-.columns .xs-offset-0 {
+.columns .xs-offset-0,
+form.horizontal .form-element .xs-offset-0 {
 	margin-left: 0;
 }
-.columns .xs-offset-1 {
+.columns .xs-offset-1,
+form.horizontal .form-element .xs-offset-1 {
 	margin-left: 8.333%;
 }
-.columns .xs-offset-2 {
+.columns .xs-offset-2,
+form.horizontal .form-element .xs-offset-2 {
 	margin-left: 16.666%;
 }
-.columns .xs-offset-3 {
+.columns .xs-offset-3,
+form.horizontal .form-element .xs-offset-3 {
 	margin-left: 25%;
 }
-.columns .xs-offset-4 {
+.columns .xs-offset-4,
+form.horizontal .form-element .xs-offset-4 {
 	margin-left: 33.333%;
 }
-.columns .xs-offset-5 {
+.columns .xs-offset-5,
+form.horizontal .form-element .xs-offset-5 {
 	margin-left: 41.667%;
 }
-.columns .xs-offset-6 {
+.columns .xs-offset-6,
+form.horizontal .form-element .xs-offset-6 {
 	margin-left: 50%;
 }
-.columns .xs-offset-7 {
+.columns .xs-offset-7,
+form.horizontal .form-element .xs-offset-7 {
 	margin-left: 58.333%;
 }
-.columns .xs-offset-8 {
+.columns .xs-offset-8,
+form.horizontal .form-element .xs-offset-8 {
 	margin-left: 66.667%;
 }
-.columns .xs-offset-9 {
+.columns .xs-offset-9,
+form.horizontal .form-element .xs-offset-9 {
 	margin-left: 75%;
 }
-.columns .xs-offset-10 {
+.columns .xs-offset-10,
+form.horizontal .form-element .xs-offset-10 {
 	margin-left: 83.333%;
 }
-.columns .xs-offset-11 {
+.columns .xs-offset-11,
+form.horizontal .form-element .xs-offset-11 {
 	margin-left: 91.667%;
 }
 @media (min-width: 768px) {
@@ -2706,13 +2753,27 @@ small {
 	.columns .sm-9,
 	.columns .sm-10,
 	.columns .sm-11,
-	.columns .sm-12 {
+	.columns .sm-12,
+	form.horizontal .form-element .sm,
+	form.horizontal .form-element .sm-1,
+	form.horizontal .form-element .sm-2,
+	form.horizontal .form-element .sm-3,
+	form.horizontal .form-element .sm-4,
+	form.horizontal .form-element .sm-5,
+	form.horizontal .form-element .sm-6,
+	form.horizontal .form-element .sm-7,
+	form.horizontal .form-element .sm-8,
+	form.horizontal .form-element .sm-9,
+	form.horizontal .form-element .sm-10,
+	form.horizontal .form-element .sm-11,
+	form.horizontal .form-element .sm-12 {
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
 		flex: 0 0 auto;
 	}
-	.columns .sm {
+	.columns .sm,
+	form.horizontal .form-element .sm {
 		-webkit-flex-grow: 1;
 		-ms-flex-positive: 1;
 		-webkit-box-flex: 1;
@@ -2722,109 +2783,132 @@ small {
 		flex-basis: 0;
 		max-width: 100%;
 	}
-	.columns .sm-1 {
+	.columns .sm-1,
+	form.horizontal .form-element .sm-1 {
 		-ms-flex-preferred-size: 8.333%;
 		-webkit-flex-basis: 8.333%;
 		flex-basis: 8.333%;
 		max-width: 8.333%;
 	}
-	.columns .sm-2 {
+	.columns .sm-2,
+	form.horizontal .form-element .sm-2 {
 		-ms-flex-preferred-size: 16.667%;
 		-webkit-flex-basis: 16.667%;
 		flex-basis: 16.667%;
 		max-width: 16.667%;
 	}
-	.columns .sm-3 {
+	.columns .sm-3,
+	form.horizontal .form-element .sm-3 {
 		-ms-flex-preferred-size: 25%;
 		-webkit-flex-basis: 25%;
 		flex-basis: 25%;
 		max-width: 25%;
 	}
-	.columns .sm-4 {
+	.columns .sm-4,
+	form.horizontal .form-element .sm-4 {
 		-ms-flex-preferred-size: 33.333%;
 		-webkit-flex-basis: 33.333%;
 		flex-basis: 33.333%;
 		max-width: 33.333%;
 	}
-	.columns .sm-5 {
+	.columns .sm-5,
+	form.horizontal .form-element .sm-5 {
 		-ms-flex-preferred-size: 41.667%;
 		-webkit-flex-basis: 41.667%;
 		flex-basis: 41.667%;
 		max-width: 41.667%;
 	}
-	.columns .sm-6 {
+	.columns .sm-6,
+	form.horizontal .form-element .sm-6 {
 		-ms-flex-preferred-size: 50%;
 		-webkit-flex-basis: 50%;
 		flex-basis: 50%;
 		max-width: 50%;
 	}
-	.columns .sm-7 {
+	.columns .sm-7,
+	form.horizontal .form-element .sm-7 {
 		-ms-flex-preferred-size: 58.333%;
 		-webkit-flex-basis: 58.333%;
 		flex-basis: 58.333%;
 		max-width: 58.333%;
 	}
-	.columns .sm-8 {
+	.columns .sm-8,
+	form.horizontal .form-element .sm-8 {
 		-ms-flex-preferred-size: 66.667%;
 		-webkit-flex-basis: 66.667%;
 		flex-basis: 66.667%;
 		max-width: 66.667%;
 	}
-	.columns .sm-9 {
+	.columns .sm-9,
+	form.horizontal .form-element .sm-9 {
 		-ms-flex-preferred-size: 75%;
 		-webkit-flex-basis: 75%;
 		flex-basis: 75%;
 		max-width: 75%;
 	}
-	.columns .sm-10 {
+	.columns .sm-10,
+	form.horizontal .form-element .sm-10 {
 		-ms-flex-preferred-size: 83.333%;
 		-webkit-flex-basis: 83.333%;
 		flex-basis: 83.333%;
 		max-width: 83.333%;
 	}
-	.columns .sm-11 {
+	.columns .sm-11,
+	form.horizontal .form-element .sm-11 {
 		-ms-flex-preferred-size: 91.667%;
 		-webkit-flex-basis: 91.667%;
 		flex-basis: 91.667%;
 		max-width: 91.667%;
 	}
-	.columns .sm-12 {
+	.columns .sm-12,
+	form.horizontal .form-element .sm-12 {
 		-ms-flex-preferred-size: 100%;
 		-webkit-flex-basis: 100%;
 		flex-basis: 100%;
 		max-width: 100%;
 	}
-	.columns .sm-offset-1 {
+	.columns .sm-offset-1,
+	form.horizontal .form-element .sm-offset-1 {
 		margin-left: 8.333%;
 	}
-	.columns .sm-offset-2 {
+	.columns .sm-offset-2,
+	form.horizontal .form-element .sm-offset-2 {
 		margin-left: 16.667%;
 	}
-	.columns .sm-offset-3 {
+	.columns .sm-offset-3,
+	form.horizontal .form-element .sm-offset-3 {
 		margin-left: 25%;
 	}
-	.columns .sm-offset-4 {
+	.columns .sm-offset-4,
+	form.horizontal .form-element .sm-offset-4 {
 		margin-left: 33.333%;
 	}
-	.columns .sm-offset-5 {
+	.columns .sm-offset-5,
+	form.horizontal .form-element .sm-offset-5 {
 		margin-left: 41.667%;
 	}
-	.columns .sm-offset-6 {
+	.columns .sm-offset-6,
+	form.horizontal .form-element .sm-offset-6 {
 		margin-left: 50%;
 	}
-	.columns .sm-offset-7 {
+	.columns .sm-offset-7,
+	form.horizontal .form-element .sm-offset-7 {
 		margin-left: 58.333%;
 	}
-	.columns .sm-offset-8 {
+	.columns .sm-offset-8,
+	form.horizontal .form-element .sm-offset-8 {
 		margin-left: 66.667%;
 	}
-	.columns .sm-offset-9 {
+	.columns .sm-offset-9,
+	form.horizontal .form-element .sm-offset-9 {
 		margin-left: 75%;
 	}
-	.columns .sm-offset-10 {
+	.columns .sm-offset-10,
+	form.horizontal .form-element .sm-offset-10 {
 		margin-left: 83.333%;
 	}
-	.columns .sm-offset-11 {
+	.columns .sm-offset-11,
+	form.horizontal .form-element .sm-offset-11 {
 		margin-left: 91.667%;
 	}
 }
@@ -2841,13 +2925,27 @@ small {
 	.columns .md-9,
 	.columns .md-10,
 	.columns .md-11,
-	.columns .md-12 {
+	.columns .md-12,
+	form.horizontal .form-element .md,
+	form.horizontal .form-element .md-1,
+	form.horizontal .form-element .md-2,
+	form.horizontal .form-element .md-3,
+	form.horizontal .form-element .md-4,
+	form.horizontal .form-element .md-5,
+	form.horizontal .form-element .md-6,
+	form.horizontal .form-element .md-7,
+	form.horizontal .form-element .md-8,
+	form.horizontal .form-element .md-9,
+	form.horizontal .form-element .md-10,
+	form.horizontal .form-element .md-11,
+	form.horizontal .form-element .md-12 {
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
 		flex: 0 0 auto;
 	}
-	.columns .md {
+	.columns .md,
+	form.horizontal .form-element .md {
 		-webkit-flex-grow: 1;
 		-ms-flex-positive: 1;
 		-webkit-box-flex: 1;
@@ -2857,109 +2955,132 @@ small {
 		flex-basis: 0;
 		max-width: 100%;
 	}
-	.columns .md-1 {
+	.columns .md-1,
+	form.horizontal .form-element .md-1 {
 		-ms-flex-preferred-size: 8.333%;
 		-webkit-flex-basis: 8.333%;
 		flex-basis: 8.333%;
 		max-width: 8.333%;
 	}
-	.columns .md-2 {
+	.columns .md-2,
+	form.horizontal .form-element .md-2 {
 		-ms-flex-preferred-size: 16.667%;
 		-webkit-flex-basis: 16.667%;
 		flex-basis: 16.667%;
 		max-width: 16.667%;
 	}
-	.columns .md-3 {
+	.columns .md-3,
+	form.horizontal .form-element .md-3 {
 		-ms-flex-preferred-size: 25%;
 		-webkit-flex-basis: 25%;
 		flex-basis: 25%;
 		max-width: 25%;
 	}
-	.columns .md-4 {
+	.columns .md-4,
+	form.horizontal .form-element .md-4 {
 		-ms-flex-preferred-size: 33.333%;
 		-webkit-flex-basis: 33.333%;
 		flex-basis: 33.333%;
 		max-width: 33.333%;
 	}
-	.columns .md-5 {
+	.columns .md-5,
+	form.horizontal .form-element .md-5 {
 		-ms-flex-preferred-size: 41.667%;
 		-webkit-flex-basis: 41.667%;
 		flex-basis: 41.667%;
 		max-width: 41.667%;
 	}
-	.columns .md-6 {
+	.columns .md-6,
+	form.horizontal .form-element .md-6 {
 		-ms-flex-preferred-size: 50%;
 		-webkit-flex-basis: 50%;
 		flex-basis: 50%;
 		max-width: 50%;
 	}
-	.columns .md-7 {
+	.columns .md-7,
+	form.horizontal .form-element .md-7 {
 		-ms-flex-preferred-size: 58.333%;
 		-webkit-flex-basis: 58.333%;
 		flex-basis: 58.333%;
 		max-width: 58.333%;
 	}
-	.columns .md-8 {
+	.columns .md-8,
+	form.horizontal .form-element .md-8 {
 		-ms-flex-preferred-size: 66.667%;
 		-webkit-flex-basis: 66.667%;
 		flex-basis: 66.667%;
 		max-width: 66.667%;
 	}
-	.columns .md-9 {
+	.columns .md-9,
+	form.horizontal .form-element .md-9 {
 		-ms-flex-preferred-size: 75%;
 		-webkit-flex-basis: 75%;
 		flex-basis: 75%;
 		max-width: 75%;
 	}
-	.columns .md-10 {
+	.columns .md-10,
+	form.horizontal .form-element .md-10 {
 		-ms-flex-preferred-size: 83.333%;
 		-webkit-flex-basis: 83.333%;
 		flex-basis: 83.333%;
 		max-width: 83.333%;
 	}
-	.columns .md-11 {
+	.columns .md-11,
+	form.horizontal .form-element .md-11 {
 		-ms-flex-preferred-size: 91.667%;
 		-webkit-flex-basis: 91.667%;
 		flex-basis: 91.667%;
 		max-width: 91.667%;
 	}
-	.columns .md-12 {
+	.columns .md-12,
+	form.horizontal .form-element .md-12 {
 		-ms-flex-preferred-size: 100%;
 		-webkit-flex-basis: 100%;
 		flex-basis: 100%;
 		max-width: 100%;
 	}
-	.columns .md-offset-1 {
+	.columns .md-offset-1,
+	form.horizontal .form-element .md-offset-1 {
 		margin-left: 8.333%;
 	}
-	.columns .md-offset-2 {
+	.columns .md-offset-2,
+	form.horizontal .form-element .md-offset-2 {
 		margin-left: 16.667%;
 	}
-	.columns .md-offset-3 {
+	.columns .md-offset-3,
+	form.horizontal .form-element .md-offset-3 {
 		margin-left: 25%;
 	}
-	.columns .md-offset-4 {
+	.columns .md-offset-4,
+	form.horizontal .form-element .md-offset-4 {
 		margin-left: 33.333%;
 	}
-	.columns .md-offset-5 {
+	.columns .md-offset-5,
+	form.horizontal .form-element .md-offset-5 {
 		margin-left: 41.667%;
 	}
-	.columns .md-offset-6 {
+	.columns .md-offset-6,
+	form.horizontal .form-element .md-offset-6 {
 		margin-left: 50%;
 	}
-	.columns .md-offset-7 {
+	.columns .md-offset-7,
+	form.horizontal .form-element .md-offset-7 {
 		margin-left: 58.333%;
 	}
-	.columns .md-offset-8 {
+	.columns .md-offset-8,
+	form.horizontal .form-element .md-offset-8 {
 		margin-left: 66.667%;
 	}
-	.columns .md-offset-9 {
+	.columns .md-offset-9,
+	form.horizontal .form-element .md-offset-9 {
 		margin-left: 75%;
 	}
-	.columns .md-offset-10 {
+	.columns .md-offset-10,
+	form.horizontal .form-element .md-offset-10 {
 		margin-left: 83.333%;
 	}
-	.columns .md-offset-11 {
+	.columns .md-offset-11,
+	form.horizontal .form-element .md-offset-11 {
 		margin-left: 91.667%;
 	}
 }
@@ -2976,13 +3097,27 @@ small {
 	.columns .lg-9,
 	.columns .lg-10,
 	.columns .lg-11,
-	.columns .lg-12 {
+	.columns .lg-12,
+	form.horizontal .form-element .lg,
+	form.horizontal .form-element .lg-1,
+	form.horizontal .form-element .lg-2,
+	form.horizontal .form-element .lg-3,
+	form.horizontal .form-element .lg-4,
+	form.horizontal .form-element .lg-5,
+	form.horizontal .form-element .lg-6,
+	form.horizontal .form-element .lg-7,
+	form.horizontal .form-element .lg-8,
+	form.horizontal .form-element .lg-9,
+	form.horizontal .form-element .lg-10,
+	form.horizontal .form-element .lg-11,
+	form.horizontal .form-element .lg-12 {
 		-webkit-box-flex: 0;
 		-webkit-flex: 0 0 auto;
 		-ms-flex: 0 0 auto;
 		flex: 0 0 auto;
 	}
-	.columns .lg {
+	.columns .lg,
+	form.horizontal .form-element .lg {
 		-webkit-flex-grow: 1;
 		-ms-flex-positive: 1;
 		-webkit-box-flex: 1;
@@ -2992,109 +3127,132 @@ small {
 		flex-basis: 0;
 		max-width: 100%;
 	}
-	.columns .lg-1 {
+	.columns .lg-1,
+	form.horizontal .form-element .lg-1 {
 		-ms-flex-preferred-size: 8.333%;
 		-webkit-flex-basis: 8.333%;
 		flex-basis: 8.333%;
 		max-width: 8.333%;
 	}
-	.columns .lg-2 {
+	.columns .lg-2,
+	form.horizontal .form-element .lg-2 {
 		-ms-flex-preferred-size: 16.667%;
 		-webkit-flex-basis: 16.667%;
 		flex-basis: 16.667%;
 		max-width: 16.667%;
 	}
-	.columns .lg-3 {
+	.columns .lg-3,
+	form.horizontal .form-element .lg-3 {
 		-ms-flex-preferred-size: 25%;
 		-webkit-flex-basis: 25%;
 		flex-basis: 25%;
 		max-width: 25%;
 	}
-	.columns .lg-4 {
+	.columns .lg-4,
+	form.horizontal .form-element .lg-4 {
 		-ms-flex-preferred-size: 33.333%;
 		-webkit-flex-basis: 33.333%;
 		flex-basis: 33.333%;
 		max-width: 33.333%;
 	}
-	.columns .lg-5 {
+	.columns .lg-5,
+	form.horizontal .form-element .lg-5 {
 		-ms-flex-preferred-size: 41.667%;
 		-webkit-flex-basis: 41.667%;
 		flex-basis: 41.667%;
 		max-width: 41.667%;
 	}
-	.columns .lg-6 {
+	.columns .lg-6,
+	form.horizontal .form-element .lg-6 {
 		-ms-flex-preferred-size: 50%;
 		-webkit-flex-basis: 50%;
 		flex-basis: 50%;
 		max-width: 50%;
 	}
-	.columns .lg-7 {
+	.columns .lg-7,
+	form.horizontal .form-element .lg-7 {
 		-ms-flex-preferred-size: 58.333%;
 		-webkit-flex-basis: 58.333%;
 		flex-basis: 58.333%;
 		max-width: 58.333%;
 	}
-	.columns .lg-8 {
+	.columns .lg-8,
+	form.horizontal .form-element .lg-8 {
 		-ms-flex-preferred-size: 66.667%;
 		-webkit-flex-basis: 66.667%;
 		flex-basis: 66.667%;
 		max-width: 66.667%;
 	}
-	.columns .lg-9 {
+	.columns .lg-9,
+	form.horizontal .form-element .lg-9 {
 		-ms-flex-preferred-size: 75%;
 		-webkit-flex-basis: 75%;
 		flex-basis: 75%;
 		max-width: 75%;
 	}
-	.columns .lg-10 {
+	.columns .lg-10,
+	form.horizontal .form-element .lg-10 {
 		-ms-flex-preferred-size: 83.333%;
 		-webkit-flex-basis: 83.333%;
 		flex-basis: 83.333%;
 		max-width: 83.333%;
 	}
-	.columns .lg-11 {
+	.columns .lg-11,
+	form.horizontal .form-element .lg-11 {
 		-ms-flex-preferred-size: 91.667%;
 		-webkit-flex-basis: 91.667%;
 		flex-basis: 91.667%;
 		max-width: 91.667%;
 	}
-	.columns .lg-12 {
+	.columns .lg-12,
+	form.horizontal .form-element .lg-12 {
 		-ms-flex-preferred-size: 100%;
 		-webkit-flex-basis: 100%;
 		flex-basis: 100%;
 		max-width: 100%;
 	}
-	.columns .lg-offset-1 {
+	.columns .lg-offset-1,
+	form.horizontal .form-element .lg-offset-1 {
 		margin-left: 8.333%;
 	}
-	.columns .lg-offset-2 {
+	.columns .lg-offset-2,
+	form.horizontal .form-element .lg-offset-2 {
 		margin-left: 16.667%;
 	}
-	.columns .lg-offset-3 {
+	.columns .lg-offset-3,
+	form.horizontal .form-element .lg-offset-3 {
 		margin-left: 25%;
 	}
-	.columns .lg-offset-4 {
+	.columns .lg-offset-4,
+	form.horizontal .form-element .lg-offset-4 {
 		margin-left: 33.333%;
 	}
-	.columns .lg-offset-5 {
+	.columns .lg-offset-5,
+	form.horizontal .form-element .lg-offset-5 {
 		margin-left: 41.667%;
 	}
-	.columns .lg-offset-6 {
+	.columns .lg-offset-6,
+	form.horizontal .form-element .lg-offset-6 {
 		margin-left: 50%;
 	}
-	.columns .lg-offset-7 {
+	.columns .lg-offset-7,
+	form.horizontal .form-element .lg-offset-7 {
 		margin-left: 58.333%;
 	}
-	.columns .lg-offset-8 {
+	.columns .lg-offset-8,
+	form.horizontal .form-element .lg-offset-8 {
 		margin-left: 66.667%;
 	}
-	.columns .lg-offset-9 {
+	.columns .lg-offset-9,
+	form.horizontal .form-element .lg-offset-9 {
 		margin-left: 75%;
 	}
-	.columns .lg-offset-10 {
+	.columns .lg-offset-10,
+	form.horizontal .form-element .lg-offset-10 {
 		margin-left: 83.333%;
 	}
-	.columns .lg-offset-11 {
+	.columns .lg-offset-11,
+	form.horizontal .form-element .lg-offset-11 {
 		margin-left: 91.667%;
 	}
 }
@@ -3322,17 +3480,21 @@ table.table tr td {
 	background: none;
 }
 .form-field {
+	outline: none;
 	display: block;
 	width: 100%;
-	padding: 8px 18px;
-	font-size: 14px;
 	line-height: 1.428571429;
+	padding: 8px 10px;
+	font-size: 14px;
 	color: #757880;
 	background-color: #fff;
 	border: 1px solid #d9d8de;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+}
+.form-field:focus {
+	outline: none;
 }
 .form-field[disabled],
 .form-field[readonly],
@@ -3358,10 +3520,27 @@ fieldset[disabled] .form-field {
 	max-width: 100%;
 	display: block;
 }
+form.horizontal label {
+	line-height: 1.428571429;
+}
+@media (min-width: 768px) {
+	form.horizontal label {
+		margin-bottom: 0;
+		padding: 8px 0;
+	}
+}
+form.horizontal .checkbox:first-child,
+form.horizontal .checkbox-inline,
+form.horizontal .radio:first-child,
+form.horizontal .radio-inline,
+form.horizontal .switch:first-child,
+form.horizontal .switch-inline {
+	padding-top: 8px;
+}
 .checkbox,
 .checkbox-inline {
 	overflow: hidden;
-	margin: 5px 0 0;
+	margin: 0 0 5px 0;
 }
 .checkbox.checkbox-inline,
 .checkbox-inline.checkbox-inline {
@@ -3471,7 +3650,7 @@ fieldset[disabled] .form-field {
 .radio,
 .radio-inline {
 	overflow: hidden;
-	margin: 5px 0 0;
+	margin: 0 0 5px 0;
 }
 .radio.radio-inline,
 .radio-inline.radio-inline {
@@ -3582,7 +3761,7 @@ fieldset[disabled] .form-field {
 .switch,
 .switch-inline {
 	overflow: hidden;
-	margin: 5px 0 0;
+	margin: 0 0 5px 0;
 }
 .switch.switch-inline,
 .switch-inline.switch-inline {
