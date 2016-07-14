@@ -3519,7 +3519,7 @@ form.horizontal .switch-inline {
 .checkbox div,
 .checkbox-inline div {
 	float: left;
-	margin: 0 0 0 8px;
+	margin: 0 0 0 10px;
 	line-height: 20px;
 }
 .checkbox label,
@@ -3542,8 +3542,8 @@ form.horizontal .switch-inline {
 .checkbox-inline input:not(:checked) + label,
 .checkbox-inline input:checked + label {
 	cursor: pointer;
-	width: 22px;
-	height: 22px;
+	width: 20px;
+	height: 20px;
 	position: relative;
 }
 .checkbox input:not(:checked) + label:before,
@@ -3556,9 +3556,9 @@ form.horizontal .switch-inline {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 1px;
-	right: 2px;
-	bottom: 1px;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	border: 1px solid #d9d8de;
 	background: #fff;
 }
@@ -3575,9 +3575,9 @@ form.horizontal .switch-inline {
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 2px;
+	right: 0;
 	text-align: center;
-	line-height: 22px;
+	line-height: 20px;
 	display: block;
 	font-size: 12px;
 	color: #5bb8fd;
@@ -3628,7 +3628,7 @@ form.horizontal .switch-inline {
 .radio div,
 .radio-inline div {
 	float: left;
-	margin: 0 0 0 8px;
+	margin: 0 0 0 10px;
 	line-height: 20px;
 }
 .radio label,
@@ -3651,8 +3651,8 @@ form.horizontal .switch-inline {
 .radio-inline input:not(:checked) + label,
 .radio-inline input:checked + label {
 	cursor: pointer;
-	width: 22px;
-	height: 22px;
+	width: 20px;
+	height: 20px;
 	position: relative;
 }
 .radio input:not(:checked) + label:before,
@@ -3665,15 +3665,11 @@ form.horizontal .switch-inline {
 	content: "";
 	position: absolute;
 	left: 0;
-	top: 1px;
-	right: 2px;
-	bottom: 1px;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	border: 1px solid #d9d8de;
 	background: #fff;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
 }
 .radio input:not(:checked) + label:after,
 .radio input:checked + label:after,
@@ -3689,7 +3685,7 @@ form.horizontal .switch-inline {
 	left: 50%;
 	width: 10px;
 	height: 10px;
-	margin: -5px 0 0 -6px;
+	margin: -5px 0 0 -5px;
 	display: block;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;

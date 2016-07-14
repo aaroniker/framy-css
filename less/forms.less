@@ -62,7 +62,7 @@ form {
 	}
 	div {
 		float: left;
-		margin: 0 0 0 (@checkbox-size / 2 - 2);
+		margin: 0 0 0 (@checkbox-size / 2);
 		line-height: @checkbox-size;
 	}
 	label {
@@ -81,9 +81,9 @@ form {
 					content: "";
 					position: absolute;
 					left: 0;
-					top: 1px;
-					right: 2px;
-					bottom: 1px;
+					top: 0;
+					right: 0;
+					bottom: 0;
 					border: 1px solid @input-border;
 					background: @input-bg;
 				}
@@ -94,16 +94,16 @@ form {
 					position: absolute;
 					top: 0;
 					left: 0;
-					right: 2px;
+					right: 0;
 					text-align: center;
-					line-height: @checkbox-size + 2;
+					line-height: @checkbox-size;
 					display: block;
 					font-size: 12px;
 					color: @checkbox-active;
 				}
 				cursor: pointer;
-				width: @checkbox-size + 2;
-				height: @checkbox-size + 2;
+				width: @checkbox-size;
+				height: @checkbox-size;
 				position: relative;
 			}
 			position: absolute;
@@ -136,7 +136,7 @@ form {
 	}
 	div {
 		float: left;
-		margin: 0 0 0 (@radio-size / 2 - 2);
+		margin: 0 0 0 (@radio-size / 2);
 		line-height: @radio-size;
 	}
 	label {
@@ -155,12 +155,11 @@ form {
 					content: "";
 					position: absolute;
 					left: 0;
-					top: 1px;
-					right: 2px;
-					bottom: 1px;
+					top: 0;
+					right: 0;
+					bottom: 0;
 					border: 1px solid @input-border;
 					background: @input-bg;
-					.transition();
 				}
 				&:after {
 					.transition();
@@ -170,14 +169,14 @@ form {
 					left: 50%;
 					width: @radio-size * 0.5;
 					height: @radio-size * 0.5;
-					margin: -(@radio-size * 0.25) 0 0 -((@radio-size * 0.25) + 1);
+					margin: -(@radio-size * 0.25) 0 0 -(@radio-size * 0.25);
 					display: block;
 					.round(50%);
 					background: @radio-active;
 				}
 				cursor: pointer;
-				width: @radio-size + 2;
-				height: @radio-size + 2;
+				width: @radio-size;
+				height: @radio-size;
 				position: relative;
 			}
 			position: absolute;
