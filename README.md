@@ -10,14 +10,9 @@ __Demo__ http://www.framycss.org/demo
 
 http://www.jsdelivr.com/projects/framy
 
-Just include this for the latest version:
-```
-https://cdn.jsdelivr.net/framy/latest/css/framy.min.css
-```
-
 Or include a specific version like this:
 ```
-https://cdn.jsdelivr.net/framy/1.0/css/framy.min.css
+https://cdn.jsdelivr.net/framy/1.1/css/framy.min.css
 ```
 
 ## Components
