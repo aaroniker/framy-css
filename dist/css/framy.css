@@ -1,5 +1,5 @@
 /*
-* Framy CSS v1.0 (http://framycss.org)
+* Framy CSS v1.1 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -2276,7 +2276,7 @@ progress {
 }
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 }
 a:active,
 a:hover {
@@ -2429,6 +2429,7 @@ ol.inline > li {
 }
 nav ul {
 	padding-left: 0;
+	margin-bottom: 0;
 	list-style: none;
 }
 .icon {
