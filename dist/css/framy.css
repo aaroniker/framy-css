@@ -1,5 +1,5 @@
 /*
-* Framy CSS v1.1 (http://framycss.org)
+* Framy CSS v1.2 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -2433,6 +2433,7 @@ nav ul {
 	list-style: none;
 }
 .icon {
+	font-size: 1.6em;
 	display: inline-block;
 	font-family: "Ionicons";
 	speak: none;
@@ -2444,6 +2445,12 @@ nav ul {
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+.icon.lg {
+	font-size: 2em;
+}
+.icon.sm {
+	font-size: 1em;
 }
 p {
 	margin: 0 0 10px 0;
@@ -3376,6 +3383,16 @@ form.horizontal .form-element .xs-offset-11 {
 	background: #f2f2f2;
 	color: #757880;
 }
+.button.none {
+	background: transparent;
+	color: #757880;
+}
+.button.none:active,
+.button.none:focus,
+.button.none:hover {
+	background: rgba(0,0,0,0);
+	color: #757880;
+}
 table.table {
 	line-height: 1.428571429;
 	width: 100%;
@@ -3828,4 +3845,10 @@ form.horizontal .switch-inline {
 }
 .clear {
 	clear: both;
+}
+.fl-left {
+	float: left;
+}
+.fl-right {
+	float: right;
 }
