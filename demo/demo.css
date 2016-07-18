@@ -1,6 +1,5 @@
 body {
 	background: #f1f3f6;
-	padding-left: 90px;
 }
 
 .box {
@@ -49,15 +48,26 @@ body {
 #icons ul {
 	overflow: hidden;
 	padding: 0;
+	list-style: none;
+	margin: 0 0 30px 0;
 }
 
 #icons ul li {
 	display: block;
 	float: left;
-	border: 1px solid #d9d8de;
-	margin: 10px 10px 0 0;
-	padding: 10px;
-	font-size: 2em;
+	width: 25%;
+	position: relative;
+	line-height: 34px;
+	padding: 0 0 0 32px;
+}
+
+#icons ul li i {
+	position: absolute;
+	color: #5bb8fd;
+	left: 0;
+	line-height: 34px;
+	top: 0;
+	display: block;
 }
 
 #content section .content {
@@ -70,11 +80,17 @@ body {
 	#content section .content {
 		padding: 60px 50px;	
 	}
+	#icons ul li {
+		width: 33%;	
+	}
 }
 
 @media(max-width: 768px) {
 	#content section .content {
 		padding: 40px 25px;	
+	}
+	#icons ul li {
+		width: 50%;	
 	}
 }
 
@@ -120,6 +136,10 @@ body {
 	margin-bottom: 5px;
 }
 
+.code .show > .icon {
+	margin: 0 15px 0 0;
+}
+
 .code pre {
 	margin: 0;
 }
@@ -133,34 +153,4 @@ body {
 	background: #f1f3f6;
 	padding: 20px;
 	border-top: 1px solid #d9d8de;
-}
-
-#nav {
-	background: #2f3241;
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 90px;
-}
-
-#nav .logo {
-	display: block;
-	padding: 30px 20px;
-}
-
-#nav .logo img {
-	display: block;
-	width: 100%;
-}
-
-#nav ul li a {
-	display: block;
-	width: 100%;
-	padding: 20px 0;
-}
-
-#nav ul li a img {
-	display: block;
-	margin: 0 auto;	
 }
