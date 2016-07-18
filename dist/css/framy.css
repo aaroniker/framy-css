@@ -1,5 +1,5 @@
 /*
-* Framy CSS v1.2 (http://framycss.org)
+* Framy CSS v1.6 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -3296,6 +3296,7 @@ form.horizontal .form-element .xs-offset-11 {
 .button .icon {
 	position: relative;
 	left: -4px;
+	font-size: 14px;
 }
 .button.lg {
 	padding: 10px 20px;
@@ -3307,6 +3308,7 @@ form.horizontal .form-element .xs-offset-11 {
 }
 .button.lg .icon {
 	left: -5px;
+	font-size: 18px;
 }
 .button.sm {
 	padding: 6px 14px;
@@ -3318,6 +3320,7 @@ form.horizontal .form-element .xs-offset-11 {
 }
 .button.sm .icon {
 	left: -2px;
+	font-size: 12px;
 }
 .button.block {
 	display: block;
