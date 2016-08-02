@@ -15,6 +15,11 @@ Just include a specific version like this:
 https://cdn.jsdelivr.net/framy/1.6/css/framy.min.css
 ```
 
+Or the latest release:
+```
+https://cdn.jsdelivr.net/framy/latest/css/framy.min.css
+```
+
 ## Components
 
 * Flexbox Grid
