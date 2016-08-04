@@ -12,12 +12,12 @@ http://www.jsdelivr.com/projects/framy
 
 Just include a specific version like this:
 ```
-https://cdn.jsdelivr.net/framy/1.6/css/framy.min.css
+https://cdn.jsdelivr.net/framy/1.7/css/framy.min.css
 ```
 
 Or the latest release:
 ```
-https://cdn.jsdelivr.net/framy/latest/css/framy.min.css
+https://cdn.jsdelivr.net/framy/latest/css/framoy.min.css
 ```
 
 ## Components
