@@ -1465,3 +1465,18 @@
 .@{ionicons-prefix}woman:before { content: @ionicon-var-woman; }
 .@{ionicons-prefix}wrench:before { content: @ionicon-var-wrench; }
 .@{ionicons-prefix}xbox:before { content: @ionicon-var-xbox; }
+
+.checkbox,
+.checkbox-inline {
+	input {
+		&:not(:checked),
+		&:checked {
+			& + label {
+				&:after {
+					font-family: @ionicons-font-family;
+					content: @ionicon-var-checkmark !important;
+				}
+			}
+		}
+	}
+}

@@ -1,5 +1,5 @@
 /*
-* Framy CSS v1.6 (http://framycss.org)
+* Framy CSS v1.7 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -2239,6 +2239,13 @@
 .icon-xbox:before {
 	content: "\f30c";
 }
+.checkbox input:not(:checked) + label:after,
+.checkbox input:checked + label:after,
+.checkbox-inline input:not(:checked) + label:after,
+.checkbox-inline input:checked + label:after {
+	font-family: "Ionicons";
+	content: "\f122" !important;
+}
 * {
 	-webkit-font-smoothing: antialiased;
 	-ms-box-sizing: border-box;
@@ -3591,12 +3598,7 @@ form.horizontal .switch-inline {
 .checkbox input:checked + label:after,
 .checkbox-inline input:not(:checked) + label:after,
 .checkbox-inline input:checked + label:after {
-	font-family: "Ionicons";
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	content: "\f122";
+	content: "✓";
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -3605,7 +3607,15 @@ form.horizontal .switch-inline {
 	line-height: 20px;
 	display: block;
 	font-size: 12px;
-	color: #5bb8fd;
+	color: #fff;
+	background: #5bb8fd;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .checkbox input:not(:checked) + label:after,
 .checkbox-inline input:not(:checked) + label:after {
@@ -3615,11 +3625,6 @@ form.horizontal .switch-inline {
 	opacity: 0;
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 	filter: alpha(opacity=0);
-	-webkit-transform: scale(0);
-	-moz-transform: scale(0);
-	-o-transform: scale(0);
-	-ms-transform: scale(0);
-	transform: scale(0);
 }
 .checkbox input:checked + label:after,
 .checkbox-inline input:checked + label:after {
@@ -3629,11 +3634,6 @@ form.horizontal .switch-inline {
 	opacity: 1;
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
 	filter: alpha(opacity=100);
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
 }
 .checkbox input:disabled + label:after,
 .checkbox-inline input:disabled + label:after {
@@ -3700,10 +3700,10 @@ form.horizontal .switch-inline {
 .radio input:checked + label:after,
 .radio-inline input:not(:checked) + label:after,
 .radio-inline input:checked + label:after {
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -3791,10 +3791,10 @@ form.horizontal .switch-inline {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .switch input + label:before,
 .switch input + label:after,
@@ -3814,10 +3814,10 @@ form.horizontal .switch-inline {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .switch input + label:after,
 .switch-inline input + label:after {
@@ -3829,10 +3829,10 @@ form.horizontal .switch-inline {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 .switch input:checked + label:after,
 .switch-inline input:checked + label:after {
