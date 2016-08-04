@@ -29,11 +29,11 @@
 	filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
 }
 
-.transition (@duration:0.4s, @ease:ease-in-out) {
-	-webkit-transition: all @duration @ease;
-	-moz-transition: all @duration @ease;
-	-o-transition: all @duration @ease;
-	transition: all @duration @ease;
+.transition (@duration: 0.3s, @ease: ease-in-out, @type: all) {
+	-webkit-transition: @type @duration @ease;
+	-moz-transition: @type @duration @ease;
+	-o-transition: @type @duration @ease;
+	transition: @type @duration @ease;
 }
 
 .animation (@name, @duration: 400ms, @delay: 0, @ease: ease) {
