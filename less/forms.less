@@ -22,6 +22,15 @@
 	background-color: @input-bg;
 	border: 1px solid @input-border;
 	.round(@input-border-radius);
+    &.error {
+        border-color: @error;
+    }
+    &.warning {
+        border-color: @warning;
+    }
+    &.success {
+        border-color: @success;
+    }
 }
 
 .form-element {
