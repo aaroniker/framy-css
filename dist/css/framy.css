@@ -3512,6 +3512,15 @@ fieldset[disabled] .form-field {
 fieldset[disabled] .form-field {
 	cursor: not-allowed;
 }
+.form-field.success {
+	border-color: #4ce276;
+}
+.form-field.warning {
+	border-color: #f9d65e;
+}
+.form-field.error {
+	border-color: #f36362;
+}
 .form-element {
 	margin-bottom: 16.666666666667px;
 }
