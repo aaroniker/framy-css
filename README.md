@@ -17,7 +17,7 @@ https://cdn.jsdelivr.net/framy/1.7/css/framy.min.css
 
 Or the latest release:
 ```
-https://cdn.jsdelivr.net/framy/latest/css/framoy.min.css
+https://cdn.jsdelivr.net/framy/latest/css/framy.min.css
 ```
 
 ## Components
