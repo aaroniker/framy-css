@@ -4,6 +4,18 @@
 	border-radius: @radius;
 }
 
+.round-only-left (@radius: @border-radius) {
+	-webkit-border-radius: @radius 0 0 @radius;
+	-moz-border-radius: @radius 0 0 @radius;
+	border-radius: @radius 0 0 @radius;
+}
+
+.round-only-right (@radius: @border-radius) {
+	-webkit-border-radius: 0 @radius @radius 0;
+	-moz-border-radius: 0 @radius @radius 0;
+	border-radius: 0 @radius @radius 0;
+}
+
 .box-shadow (@x: 0, @y: 0, @blur: 5px, @alpha: 0.8) {
 	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
 	-moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
