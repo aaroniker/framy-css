@@ -3,6 +3,9 @@
 	font-size: @font-size;
 	line-height: @line-height;
 	.round(@border-radius);
+	&:before {
+		.round(@border-radius);
+	}
 }
 
 .button-style(@background, @color) {
@@ -81,11 +84,51 @@
 			z-index: 0;
 			content: "";
 			border: 1px solid @border;
-			.round(@border-radius);
 		}
 		.button-style(#fff, @text);
 	}
 	&.none {
 		.button-style(transparent, @text);
 	}
+}
+
+.button-group {
+	.button + .button,
+	.button + .button-group,
+	.button-group + .button,
+	.button-group + .button-group {
+		margin-left: -1px;
+	}
+	.button {
+		&:hover,
+		&:focus,
+		&:active {
+			z-index: 2;
+		}
+		&:not(:first-child):not(:last-child) {
+			&:before {
+				.round(0);
+			}
+			.round(0);
+		}
+		&:last-child:not(:first-child) {
+			&:before {
+				.round-only-right(@border-radius);
+			}
+			.round-only-right(@border-radius);
+		}
+		&:first-child:not(:last-child) {
+			&:before {
+				.round-only-left(@border-radius);
+			}
+			.round-only-left(@border-radius);
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+		float: left;
+	}
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
 }

@@ -1,5 +1,5 @@
 /*
-* Framy CSS v1.7 (http://framycss.org)
+* Framy CSS v1.8 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -3305,6 +3305,11 @@ form.horizontal .form-element .xs-offset-11 {
 	background: #42adfd;
 	color: #fff;
 }
+.button:before {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
 .button .icon {
 	position: relative;
 	left: -4px;
@@ -3322,6 +3327,11 @@ form.horizontal .form-element .xs-offset-11 {
 	left: -5px;
 	font-size: 18px;
 }
+.button.lg:before {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
 .button.sm {
 	padding: 6px 14px;
 	font-size: 12px;
@@ -3333,6 +3343,11 @@ form.horizontal .form-element .xs-offset-11 {
 .button.sm .icon {
 	left: -2px;
 	font-size: 12px;
+}
+.button.sm:before {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
 }
 .button.block {
 	display: block;
@@ -3388,9 +3403,6 @@ form.horizontal .form-element .xs-offset-11 {
 	z-index: 0;
 	content: "";
 	border: 1px solid #d9d8de;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
 }
 .button.border:active,
 .button.border:focus,
@@ -3407,6 +3419,58 @@ form.horizontal .form-element .xs-offset-11 {
 .button.none:hover {
 	background: rgba(0,0,0,0);
 	color: #757880;
+}
+.button-group {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.button-group .button + .button,
+.button-group .button + .button-group,
+.button-group .button-group + .button,
+.button-group .button-group + .button-group {
+	margin-left: -1px;
+}
+.button-group .button {
+	float: left;
+}
+.button-group .button:hover,
+.button-group .button:focus,
+.button-group .button:active {
+	z-index: 2;
+}
+.button-group .button:not(:first-child):not(:last-child) {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.button-group .button:not(:first-child):not(:last-child):before {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.button-group .button:last-child:not(:first-child) {
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+.button-group .button:last-child:not(:first-child):before {
+	-webkit-border-radius: 0 3px 3px 0;
+	-moz-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+.button-group .button:first-child:not(:last-child) {
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+.button-group .button:first-child:not(:last-child):before {
+	-webkit-border-radius: 3px 0 0 3px;
+	-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+.button-group .button:first-child {
+	margin-left: 0;
 }
 table.table {
 	line-height: 1.428571429;
