@@ -4,7 +4,7 @@ Framy is a simple CSS-Framework.
 
 __Website__ http://www.framycss.org/
 
-__Demo__ http://www.framycss.org/demo
+__Demo / Documentation__ http://www.framycss.org/demo
 
 ## Usage (CDN)
 
@@ -15,7 +15,7 @@ Just include a specific version like this:
 https://cdn.jsdelivr.net/framy/1.8/css/framy.min.css
 ```
 
-Or the latest release:
+Or the latest release (7 days delayed):
 ```
 https://cdn.jsdelivr.net/framy/latest/css/framy.min.css
 ```
