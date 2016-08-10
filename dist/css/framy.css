@@ -3621,19 +3621,16 @@ form.horizontal .switch-inline {
 	margin: 0 10px 0 0;
 	display: inline-block;
 }
-.checkbox div,
-.checkbox-inline div {
-	float: left;
-	margin: 0 0 0 10px;
-	line-height: 20px;
-}
 .checkbox label,
 .checkbox-inline label {
-	width: 20px;
+	line-height: 20px;
 	height: 20px;
 	position: relative;
 	float: left;
 	margin-bottom: 0;
+	padding-left: 30px;
+	white-space: nowrap;
+	color: inherit;
 }
 .checkbox input:not(:checked),
 .checkbox input:checked,
@@ -3646,9 +3643,6 @@ form.horizontal .switch-inline {
 .checkbox input:checked + label,
 .checkbox-inline input:not(:checked) + label,
 .checkbox-inline input:checked + label {
-	cursor: pointer;
-	width: 20px;
-	height: 20px;
 	position: relative;
 }
 .checkbox input:not(:checked) + label:before,
@@ -3662,8 +3656,8 @@ form.horizontal .switch-inline {
 	position: absolute;
 	left: 0;
 	top: 0;
-	right: 0;
-	bottom: 0;
+	width: 18px;
+	height: 18px;
 	border: 1px solid #d9d8de;
 	background: #fff;
 }
@@ -3675,7 +3669,8 @@ form.horizontal .switch-inline {
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;
+	width: 20px;
+	height: 20px;
 	text-align: center;
 	line-height: 20px;
 	display: block;

@@ -69,17 +69,15 @@ form {
 		margin: 0 (@checkbox-size / 2) 0 0;
 		display: inline-block;
 	}
-	div {
-		float: left;
-		margin: 0 0 0 (@checkbox-size / 2);
-		line-height: @checkbox-size;
-	}
 	label {
-		width: @checkbox-size;
+		line-height: @checkbox-size;
 		height: @checkbox-size;
 		position: relative;
 		float: left;
 		margin-bottom: 0;
+		padding-left: (@checkbox-size + @checkbox-size / 2);
+		white-space: nowrap;
+		color: inherit;
 	}
 	input {
 		&:not(:checked),
@@ -91,8 +89,8 @@ form {
 					position: absolute;
 					left: 0;
 					top: 0;
-					right: 0;
-					bottom: 0;
+					width: @checkbox-size - 2px;
+					height: @checkbox-size - 2px;
 					border: 1px solid @input-border;
 					background: @input-bg;
 				}
@@ -101,7 +99,8 @@ form {
 					position: absolute;
 					top: 0;
 					left: 0;
-					right: 0;
+					width: @checkbox-size;
+					height: @checkbox-size;
 					text-align: center;
 					line-height: @checkbox-size;
 					display: block;
@@ -111,9 +110,6 @@ form {
 					.transition();
 					.round(@input-border-radius);
 				}
-				cursor: pointer;
-				width: @checkbox-size;
-				height: @checkbox-size;
 				position: relative;
 			}
 			position: absolute;
