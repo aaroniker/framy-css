@@ -1,5 +1,5 @@
 /*
-* Framy CSS v1.8 (http://framycss.org)
+* Framy CSS v1.9 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -3600,6 +3600,14 @@ form.horizontal .form-element > label {
 @media (min-width: 768px) {
 	form.horizontal .form-element > label {
 		margin-bottom: 0;
+		padding: 8px 0;
+	}
+}
+form.horizontal .form-element .static {
+	margin-bottom: 0;
+}
+@media (min-width: 768px) {
+	form.horizontal .form-element .static {
 		padding: 8px 0;
 	}
 }
