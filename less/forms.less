@@ -15,6 +15,7 @@
 	outline: none;
 	display: block;
 	width: 100%;
+	-webkit-appearance: none;
 	line-height: @line-height;
 	padding: @input-padding-v @input-padding-h;
 	font-size: @font-size;
@@ -31,6 +32,56 @@
 	&.error {
 		border-color: @error;
 	}
+}
+
+.form-select {
+	&:after {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 0;
+		height: 0;
+		right: 10px;
+		bottom: 0;
+		margin: auto;
+		border-style: solid;
+		border-width: 5px 5px 0 5px;
+		border-color: @text transparent transparent transparent;
+		pointer-events: none;
+	}
+	&:before {
+		content: "";
+		width: 30px;
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		bottom: 1px;
+		pointer-events: none;
+	}
+	select {
+		&:-moz-focusring {
+			color: transparent;
+			text-shadow: none;
+		}
+		&::-ms-expand {
+			display: none;
+		}
+		border: none;
+		box-shadow: none;
+		background: transparent;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+		outline: none;
+		line-height: @line-height;
+		padding: @input-padding-v @input-padding-h;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+	}
+	position: relative;
+	background-color: @input-bg;
+	border: 1px solid @input-border;
+	.round(@input-border-radius);
 }
 
 .form-element {
