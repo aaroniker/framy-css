@@ -15,7 +15,11 @@
 }
 
 .clear {
-	clear: both;
+	&:after {
+		content: "";
+		clear: both;
+		display: block;
+	}
 }
 
 .fl-left {

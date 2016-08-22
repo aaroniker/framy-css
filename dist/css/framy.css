@@ -3976,8 +3976,10 @@ form.horizontal .switch-inline {
 .text-error {
 	color: #f36362;
 }
-.clear {
+.clear:after {
+	content: "";
 	clear: both;
+	display: block;
 }
 .fl-left {
 	float: left;
