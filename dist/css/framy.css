@@ -3960,6 +3960,10 @@ form.horizontal .switch-inline {
 	margin-left: 20px;
 	background: #4ce276;
 }
+.switch input:disabled + label:before,
+.switch-inline input:disabled + label:before {
+	background: #f1f3f6;
+}
 .text-primary {
 	color: #5bb8fd;
 }

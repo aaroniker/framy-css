@@ -317,6 +317,11 @@ form {
 				background: @switch-active;
 			}
 		}
+		&:disabled + label {
+			&:before {
+				background: @input-bg-disabled;
+			}
+		}
 		position: absolute;
 		margin-left: -9999px;
 		visibility: hidden;
