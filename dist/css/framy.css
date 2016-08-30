@@ -3976,6 +3976,12 @@ form.horizontal .switch-inline {
 .text-error {
 	color: #f36362;
 }
+.text-light {
+	color: #babcc3;
+}
+.text-dark {
+	color: #454852;
+}
 .clear:after {
 	content: "";
 	clear: both;
