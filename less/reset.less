@@ -85,6 +85,9 @@ button,
 optgroup,
 select,
 textarea {
+	&:focus {
+		outline: none;
+	}
 	margin: 0;
 }
 
@@ -130,7 +133,6 @@ sub {
 	bottom: -0.25em;
 }
 
-.clickable,
 label,
 input[type=button],
 [type=submit],
@@ -140,8 +142,8 @@ button {
 }
 
 img {
-	-ms-interpolation-mode: bicubic;
 	a & {
 		border: none;
 	}
+	-ms-interpolation-mode: bicubic;
 }
