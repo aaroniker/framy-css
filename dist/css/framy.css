@@ -1,5 +1,5 @@
 /*
-* Framy CSS v1.9 (http://framycss.org)
+* Framy CSS v2.0 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -3397,7 +3397,7 @@ form.horizontal .form-element .xs-offset-11 {
 	color: #fff;
 }
 .button.border {
-	background: #fff;
+	background: transparent;
 	color: #757880;
 }
 .button.border:before {
@@ -3413,7 +3413,7 @@ form.horizontal .form-element .xs-offset-11 {
 .button.border:active,
 .button.border:focus,
 .button.border:hover {
-	background: #f2f2f2;
+	background: rgba(0,0,0,0);
 	color: #757880;
 }
 .button.none {
