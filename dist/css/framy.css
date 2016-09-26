@@ -3773,6 +3773,11 @@ form.horizontal .switch-inline {
 .checkbox-inline input:disabled + label:after {
 	background: #f1f3f6;
 	color: #757880;
+	cursor: not-allowed;
+}
+.checkbox input:disabled + label:before,
+.checkbox-inline input:disabled + label:before {
+	cursor: not-allowed;
 }
 .radio,
 .radio-inline {
@@ -3876,6 +3881,11 @@ form.horizontal .switch-inline {
 .radio-inline input:disabled + label:after {
 	background: #f1f3f6;
 	color: #757880;
+	cursor: not-allowed;
+}
+.radio input:disabled + label:before,
+.radio-inline input:disabled + label:before {
+	cursor: not-allowed;
 }
 .switch,
 .switch-inline {
@@ -3966,9 +3976,14 @@ form.horizontal .switch-inline {
 	margin-left: 20px;
 	background: #4ce276;
 }
+.switch input:disabled + label:after,
+.switch-inline input:disabled + label:after {
+	cursor: not-allowed;
+}
 .switch input:disabled + label:before,
 .switch-inline input:disabled + label:before {
 	background: #f1f3f6;
+	cursor: not-allowed;
 }
 .text-primary {
 	color: #5bb8fd;
