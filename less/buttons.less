@@ -86,9 +86,18 @@
 			border: 1px solid @border;
 		}
 		.button-style(transparent, @text);
+		&:hover {
+			&:before {
+				border-color: darken(@border, 10%);
+			}
+			color: darken(@text, 10%);
+		}
 	}
 	&.none {
 		.button-style(transparent, @text);
+		&:hover {
+			color: darken(@text, 10%);
+		}
 	}
 }
 
