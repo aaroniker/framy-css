@@ -182,10 +182,18 @@ form {
 				.opacity(1);
 			}
 		}
-		&:disabled + label:after {
-			background: @input-bg-disabled;
-			color: @text;
-		}
+		&:disabled {
+            & + label {
+                &:after {
+    		        background: @input-bg-disabled;
+    		        color: @text;
+                    cursor: not-allowed;
+                }
+                &:before {
+                    cursor: not-allowed;
+                }
+    		}
+        }
 	}
 	overflow: hidden;
 	margin: 0 0 @checkbox-margin 0;
@@ -249,10 +257,18 @@ form {
 				.scale(1);
 			}
 		}
-		&:disabled + label:after {
-			background: @input-bg-disabled;
-			color: @text;
-		}
+		&:disabled {
+            & + label {
+                &:after {
+    		        background: @input-bg-disabled;
+    		        color: @text;
+                    cursor: not-allowed;
+                }
+                &:before {
+                    cursor: not-allowed;
+                }
+    		}
+        }
 	}
 	overflow: hidden;
 	margin: 0 0 @radio-margin 0;
@@ -317,11 +333,17 @@ form {
 				background: @switch-active;
 			}
 		}
-		&:disabled + label {
-			&:before {
-				background: @input-bg-disabled;
-			}
-		}
+		&:disabled {
+            & + label {
+                &:after {
+                    cursor: not-allowed;
+                }
+                &:before {
+    			    background: @input-bg-disabled;
+                    cursor: not-allowed;
+                }
+        	}
+        }
 		position: absolute;
 		margin-left: -9999px;
 		visibility: hidden;
