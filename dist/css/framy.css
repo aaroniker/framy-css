@@ -3320,6 +3320,9 @@ form.horizontal .form-element .xs-offset-11 {
 	position: relative;
 	left: -4px;
 	font-size: 14px;
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
 }
 .button.lg {
 	padding: 10px 20px;
