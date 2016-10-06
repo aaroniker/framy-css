@@ -3322,7 +3322,12 @@ form.horizontal .form-element .xs-offset-11 {
 	font-size: 14px;
 	display: inline-block;
 	margin: 0;
-	vertical-align: middle;
+	vertical-align: top;
+}
+.button .icon:before {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 1.428571429;
 }
 .button.lg {
 	padding: 10px 20px;

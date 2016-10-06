@@ -36,12 +36,17 @@
 	.button-style(@primary, #fff);
 	.button-size(@padding-v, @padding-h, @font-size, @line-height, @border-radius);
 	.icon {
+		&:before {
+			display: inline-block;
+			vertical-align: top;
+			line-height: @line-height;
+		}
 		position: relative;
 		left: -4px;
 		font-size: @font-size;
 		display: inline-block;
 		margin: 0;
-		vertical-align: middle;
+		vertical-align: top;
 	}
 	&.lg {
 		.icon {
