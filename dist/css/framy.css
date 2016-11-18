@@ -1,5 +1,5 @@
 /*
-* Framy CSS v2.1 (http://framycss.org)
+* Framy CSS v2.2 (http://framycss.org)
 * Copyright 2016 http://framycss.org
 * Licensed under MIT (https://github.com/aaroniker/framy-css/blob/master/LICENSE)
 */
@@ -3333,18 +3333,18 @@ form.horizontal .form-element .xs-offset-11 {
 	padding: 10px 20px;
 	font-size: 18px;
 	line-height: 1.428571429;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 .button.lg .icon {
 	left: -5px;
 	font-size: 18px;
 }
 .button.lg:before {
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 }
 .button.sm {
 	padding: 6px 14px;
@@ -3646,6 +3646,7 @@ fieldset[disabled] .form-field {
 	background: transparent;
 	height: 100%;
 	width: 100%;
+	color: inherit;
 	cursor: pointer;
 	outline: none;
 	line-height: 1.428571429;
@@ -3659,6 +3660,10 @@ fieldset[disabled] .form-field {
 }
 .form-select select::-ms-expand {
 	display: none;
+}
+.form-select select:disabled {
+	color: #babcc3;
+	cursor: not-allowed;
 }
 .form-element {
 	margin-bottom: 16.666666666667px;
