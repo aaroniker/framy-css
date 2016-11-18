@@ -34,7 +34,7 @@
 	white-space: nowrap;
 	border: none;
 	.button-style(@primary, #fff);
-	.button-size(@padding-v, @padding-h, @font-size, @line-height, @border-radius);
+	.button-size(@padding-v, @padding-h, @font-size, @line-height, @button-radius);
 	.icon {
 		&:before {
 			display: inline-block;
@@ -53,14 +53,14 @@
 			left: -5px;
 			font-size: @font-size-large;
 		}
-		.button-size(@padding-lg-v, @padding-lg-h, @font-size-large, @line-height, @border-lg-radius);
+		.button-size(@padding-lg-v, @padding-lg-h, @font-size-large, @line-height, @button-lg-radius);
 	}
 	&.sm {
 		.icon {
 			left: -2px;
 			font-size: @font-size-small;
 		}
-		.button-size(@padding-sm-v, @padding-sm-h, @font-size-small, @line-height, @border-sm-radius);
+		.button-size(@padding-sm-v, @padding-sm-h, @font-size-small, @line-height, @button-sm-radius);
 	}
 	&.block {
 		& + .button.block {
@@ -130,15 +130,15 @@
 		}
 		&:last-child:not(:first-child) {
 			&:before {
-				.round-only-right(@border-radius);
+				.round-only-right(@button-radius);
 			}
-			.round-only-right(@border-radius);
+			.round-only-right(@button-radius);
 		}
 		&:first-child:not(:last-child) {
 			&:before {
-				.round-only-left(@border-radius);
+				.round-only-left(@button-radius);
 			}
-			.round-only-left(@border-radius);
+			.round-only-left(@button-radius);
 		}
 		&:first-child {
 			margin-left: 0;
