@@ -66,11 +66,16 @@
 		&::-ms-expand {
 			display: none;
 		}
+		&:disabled {
+			color: @text-light;
+			cursor: not-allowed;
+		}
 		border: none;
 		box-shadow: none;
 		background: transparent;
 		height: 100%;
 		width: 100%;
+		color: inherit;
 		cursor: pointer;
 		outline: none;
 		line-height: @line-height;
