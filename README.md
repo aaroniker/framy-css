@@ -24,7 +24,7 @@ http://www.jsdelivr.com/projects/framy
 
 ### Install with Bower
 ```
-bower install <package>
+bower install framy-css
 ```
 
 ## Components
