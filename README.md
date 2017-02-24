@@ -1,3 +1,5 @@
+__Notice__ Working on a new style guide for Framy CSS! :) More soon ...
+
 # Framy - Very simple CSS Framework
 
 Framy is a simple CSS-Framework.
