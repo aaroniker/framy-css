@@ -1,16 +1,24 @@
 {
-  "name": "framy-css",
-  "description": "Framy is a free and very simple css-only Framework for developing responsive & modern websites.",
-  "main": "dist/css/framy.min.css",
-  "keywords": [
-    "css"
-  ],
-  "authors": [
-    "Aaron Iker"
-  ],
-  "ignore": [
-    "demo"
-  ],
-  "license": "MIT",
-  "homepage": "http://framycss.org"
+    "name": "framy-css",
+    "description": "Framy is a free and very simple css-only Framework for developing responsive & modern websites.",
+    "main": "dist/css/framy.min.css",
+    "version": "2.3.0",
+    "keywords": [
+        "css",
+        "sass",
+        "scss",
+        "responsive",
+        "front-end",
+        "framework",
+        "web"
+    ],
+    "homepage": "http://framycss.org",
+    "license": "MIT",
+    "authors": [
+        "Aaron Iker"
+    ],
+    "ignore": [
+        "demo",
+        "src"
+    ]
 }
