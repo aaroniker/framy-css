@@ -25,13 +25,15 @@
         "url": "https://github.com/aaroniker/framy-css/issues"
     },
     "scripts": {
+        "icons": "icon-font-generator src/icons/*.svg -o dist/fonts",
         "css": "node-sass --include-path src/scss src/scss/framy.scss dist/css/framy.min.css",
         "watch-css": "nodemon -e scss -x \"npm run css\""
     },
     "dependencies": {},
     "devDependencies": {
         "node-sass": "^4.5.3",
-        "nodemon": "^1.11.0"
+        "nodemon": "^1.11.0",
+        "icon-font-generator": "^1.1.1"
     },
     "ignore": [
         "demo",
