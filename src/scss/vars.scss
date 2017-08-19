@@ -1,0 +1,123 @@
+
+// Colors
+
+$primary: #8278f3;
+$primary-light: #8278f3;
+
+$dark: #262d37;
+
+$dark90: mix(#fff, $dark, 10%);
+$dark80: mix(#fff, $dark, 20%);
+$dark60: mix(#fff, $dark, 40%);
+$dark40: mix(#fff, $dark, 60%);
+$dark25: mix(#fff, $dark, 75%);
+
+$shadow: adjust-color($dark, $blue: 10);
+
+$border: $dark25;
+
+// Base
+
+$font-family: "Roboto", Arial;
+
+$font-size: 16px;
+$line-height: 26px;
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-decoration: none;
+
+$margin: 20px;
+
+// Components
+
+$headings-font-family: inherit;
+$headings-color: $dark80;
+$headings-weight: 500;
+$headings-line-height: 1.1;
+
+$border-lg-radius: 4px;
+$border-radius: 3px;
+$border-sm-radius: 2px;
+
+$padding-h: 18px;
+$padding-v: 8px;
+
+$padding-lg-h: 20px;
+$padding-lg-v: 10px;
+
+$padding-sm-h: 14px;
+$padding-sm-v: 6px;
+
+// Typography
+
+$font-size-h1: floor(($font-size * 2.6));
+$font-size-h2: floor(($font-size * 2.15));
+$font-size-h3: ceil(($font-size * 1.7));
+$font-size-h4: ceil(($font-size * 1.25));
+$font-size-h5: $font-size;
+$font-size-h6: ceil(($font-size * 0.85));
+
+// Grid
+
+$gap-width: 30;
+
+$screen-xs-min: 480;
+$screen-sm-min: 768;
+$screen-md-min: 992;
+$screen-lg-min: 1180;
+
+$container-sm: 730;
+$container-md: 960;
+$container-lg: 1150;
+
+$gap-compensation: (($gap-width * 0.5) * -1);
+$gap-half-width: ($gap-width * 0.5);
+
+// Forms
+
+$label-text: $dark80;
+$label-bottom: 5px;
+
+$input-text: $dark60;
+$input-bg: #fff;
+$input-bg-disabled: $dark80;
+$input-border: $border;
+$input-border-radius: $border-radius;
+
+$input-padding-v: $padding-v;
+$input-padding-h: ($padding-h / 1.8);
+
+$form-element-bottom: 20px;
+
+$switch-size: 20px;
+$switch-active: green;
+$switch-margin: 5px;
+
+$checkbox-size: 20px;
+$checkbox-active: $primary;
+$checkbox-active-text: #fff;
+$checkbox-margin: 5px;
+
+$radio-size: 20px;
+$radio-active: $primary;
+$radio-margin: 5px;
+
+// Buttons
+
+$button-lg-radius: $border-lg-radius;
+$button-radius: $border-radius;
+$button-sm-radius: $border-sm-radius;
+
+// Tables
+
+$table-th-text: #000;
+$table-border: $border;
+$table-padding-v: 10px;
+$table-padding-h: 15px;
+$table-line-height: $line-height;
+$table-hover: fade(#000, 20%);
+$table-th-background: none;
+$table-td-background: none;
+$table-stripe-background: fade(#000, 50%);

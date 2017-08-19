@@ -1,0 +1,78 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $dark60;
+}
+
+a {
+    text-decoration: $link-decoration;
+    color: $link-color;
+    &:hover,
+    &:focus {
+        text-decoration: $link-hover-decoration;
+        color: $link-hover-color;
+    }
+}
+
+input,
+button,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid $border;
+    margin-top: $margin;
+    margin-bottom: $margin;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: $margin;
+    ul,
+    ol {
+        margin-bottom: 0;
+    }
+    &.unstyled {
+        padding-left: 0;
+        list-style: none;
+    }
+    &.inline {
+        padding-left: 0;
+        list-style: none;
+        margin-left: -5px;
+        & > li {
+            display: inline-block;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+p {
+    margin: 0 0 $margin 0;
+}
+
+nav {
+    ul {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+}
