@@ -2,7 +2,7 @@
 // Colors
 
 $primary: #8278f3;
-$primary-light: #8278f3;
+$primary-light: mix(#fff, $primary, 20%);
 
 $dark: #262d37;
 
@@ -18,7 +18,7 @@ $border: $dark25;
 
 // Base
 
-$font-family: "Roboto", Arial;
+$font-family: 'Roboto', Arial;
 
 $font-size: 16px;
 $line-height: 26px;
@@ -33,9 +33,25 @@ $margin: 20px;
 // Components
 
 $headings-font-family: inherit;
-$headings-color: $dark80;
-$headings-weight: 500;
-$headings-line-height: 1.1;
+$headings-line-height: 1.2;
+
+$headings-h1-color: $dark80;
+$headings-h2-color: $dark80;
+$headings-h3-color: $dark80;
+$headings-h4-color: $dark80;
+
+$headings-h1-weight: normal;
+$headings-h2-weight: normal;
+$headings-h3-weight: bold;
+$headings-h4-weight: bold;
+
+$headings-h1-size: 42px;
+$headings-h2-size: 34px;
+$headings-h3-size: 26px;
+$headings-h4-size: 21px;
+
+$label-color: $dark80;
+$label-weight: normal;
 
 $border-lg-radius: 4px;
 $border-radius: 3px;
@@ -63,17 +79,17 @@ $font-size-h6: ceil(($font-size * 0.85));
 
 $gap-width: 30;
 
-$screen-xs-min: 480;
-$screen-sm-min: 768;
-$screen-md-min: 992;
-$screen-lg-min: 1180;
+$breakpoint-xs: 480;
+$breakpoint-sm: 768;
+$breakpoint-md: 992;
+$breakpoint-lg: 1180;
 
 $container-sm: 730;
 $container-md: 960;
 $container-lg: 1150;
 
-$gap-compensation: (($gap-width * 0.5) * -1);
-$gap-half-width: ($gap-width * 0.5);
+$gap-compensation: ($gap-width * .5 * -1);
+$gap-half-width: ($gap-width * .5);
 
 // Forms
 
