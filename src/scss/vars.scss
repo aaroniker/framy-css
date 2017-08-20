@@ -30,7 +30,7 @@ $link-hover-decoration: none;
 
 $margin: 20px;
 
-// Components
+// Typography
 
 $headings-font-family: inherit;
 $headings-line-height: 1.2;
@@ -50,31 +50,6 @@ $headings-h2-size: 34px;
 $headings-h3-size: 26px;
 $headings-h4-size: 21px;
 
-$label-color: $dark80;
-$label-weight: normal;
-
-$border-lg-radius: 4px;
-$border-radius: 3px;
-$border-sm-radius: 2px;
-
-$padding-h: 18px;
-$padding-v: 8px;
-
-$padding-lg-h: 20px;
-$padding-lg-v: 10px;
-
-$padding-sm-h: 14px;
-$padding-sm-v: 6px;
-
-// Typography
-
-$font-size-h1: floor(($font-size * 2.6));
-$font-size-h2: floor(($font-size * 2.15));
-$font-size-h3: ceil(($font-size * 1.7));
-$font-size-h4: ceil(($font-size * 1.25));
-$font-size-h5: $font-size;
-$font-size-h6: ceil(($font-size * 0.85));
-
 // Grid
 
 $gap-width: 30;
@@ -91,9 +66,16 @@ $container-lg: 1150;
 $gap-compensation: ($gap-width * .5 * -1);
 $gap-half-width: ($gap-width * .5);
 
+// General
+
+$border-lg-radius: 4px;
+$border-radius: 3px;
+$border-sm-radius: 2px;
+
 // Forms
 
-$label-text: $dark80;
+$label-color: $dark80;
+$label-weight: normal;
 $label-bottom: 5px;
 
 $input-text: $dark60;
@@ -102,8 +84,8 @@ $input-bg-disabled: $dark80;
 $input-border: $border;
 $input-border-radius: $border-radius;
 
-$input-padding-v: $padding-v;
-$input-padding-h: ($padding-h / 1.8);
+$input-padding-v: 1px;
+$input-padding-h: (1px / 1.8);
 
 $form-element-bottom: 20px;
 
