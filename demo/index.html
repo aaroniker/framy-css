@@ -2,1699 +2,681 @@
 <html>
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
-	<title>Framy CSS Demo</title>
-    
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    
-	<link rel="stylesheet" href="../dist/css/framy.min.css">
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.4.0/styles/github.min.css">
-	<link rel="stylesheet" href="demo.css">
+    <title>Demo</title>
 
-    <script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
-	<script src="//cdn.jsdelivr.net/highlight.js/9.4.0/highlight.min.js"></script>
-	<script>
-    	$(document).ready(function() {
-    		$("pre code").each(function(i, block) {
-    			hljs.highlightBlock(block);
-    		});
-			
-			var iconsHeight = $("#icons ul").height();
-			
-			$("#icons ul").height(340)
-			
-			$("#icons .toggle").click(function(e) {
-				e.preventDefault();
-				if($(this).hasClass('expand')) {
-					$(this).text("Show all");
-					$("#icons ul").animate({
-						height: 340	
-					}, 1000);
-					$(this).removeClass('expand');
-				} else {
-					$(this).text("Dont show all");
-					$("#icons ul").animate({
-						height: iconsHeight	
-					}, 1000);
-					$(this).addClass('expand');
-				}
-			});
-    	});
-    </script>
+    <link rel="stylesheet" href="demo.min.css">
 
 </head>
-
 <body>
 
-	<div class="container">
-    
-    	<div id="content">
-        
-        	<section id="colors">
-            
-            	<header>
-                    
-                    <h2>Colors</h2>
-                
-                </header>
-                
-                <div class="content">
-                
-                    <div class="columns">
-                    
-                        <div class="md-3 sm-6">
-                            <div class="color">
-                                <span class="primary"></span>
-                                <div class="info">
-                                    <h4>Primary</h4>
-                                    <small>#5bb8fd</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="md-3 sm-6">
-                            <div class="color">
-                                <span class="success"></span>
-                                <div class="info">
-                                    <h4>Success</h4>
-                                    <small>#4ce276</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="md-3 sm-6">
-                            <div class="color">
-                                <span class="warning"></span>
-                                <div class="info">
-                                    <h4>Warning</h4>
-                                    <small>#f9d65e</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="md-3 sm-6">
-                            <div class="color">
-                                <span class="error"></span>
-                                <div class="info">
-                                    <h4>Error</h4>
-                                    <small>#f36362</small>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="columns">
-                    
-                        <div class="md-3 sm-6">
-                            <div class="color">
-                                <span class="dark"></span>
-                                <div class="info">
-                                    <h4>Dark</h4>
-                                    <small>#2f3241</small>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="md-3 sm-6">
-                            <div class="color">
-                                <span class="light"></span>
-                                <div class="info">
-                                    <h4>Light</h4>
-                                    <small>#f1f3f6</small>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="md-3 sm-6">
-                            <div class="color">
-                                <span class="border"></span>
-                                <div class="info">
-                                    <h4>Border</h4>
-                                    <small>#d9d8de</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                
-                </div>
-            
-            </section>
-            
-            <section id="buttons">
-            
-            	<header>
-                    
-                    <h2>Buttons</h2>
-                
-                </header>
-                
-                <div class="content">
-                
-                	<h3>Size</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                            <a class="button lg" href="">Large Button</a>
-                            <a class="button" href="">Button</a>
-                            <a class="button sm" href="">Small Button</a>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;a class=&quot;button lg&quot; href=&quot;&quot;&gt;Large Button&lt;/a&gt;
-                        &lt;a class=&quot;button&quot; href=&quot;&quot;&gt;Button&lt;/a&gt;
-                        &lt;a class=&quot;button sm&quot; href=&quot;&quot;&gt;Small Button&lt;/a&gt;                        </code></pre>
-                    
-                    </div>
-                
-                	<h3>Color</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                            <a class="button" href="">Primary</a>
-                            <a class="button success" href="">Success</a>
-                            <a class="button warning" href="">Warning</a>
-                            <a class="button error" href="">Error</a>
-                            <a class="button border" href="">Border</a>
-                            <a class="button none" href="">None</a>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;a class=&quot;button&quot; href=&quot;&quot;&gt;Primary&lt;/a&gt;
-                        &lt;a class=&quot;button success&quot; href=&quot;&quot;&gt;Success&lt;/a&gt;
-                        &lt;a class=&quot;button warning&quot; href=&quot;&quot;&gt;Warning&lt;/a&gt;
-                        &lt;a class=&quot;button error&quot; href=&quot;&quot;&gt;Error&lt;/a&gt;
-                        &lt;a class=&quot;button border&quot; href=&quot;&quot;&gt;Border&lt;/a&gt;
-                        &lt;a class=&quot;button none&quot; href=&quot;&quot;&gt;None&lt;/a&gt;                        </code></pre>
-                    
-                    </div>
-                
-                	<h3>Type</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                        	<a class="button block" href="">Block Button</a>
-                        	<a class="button center" href="">Center Button</a>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;a class=&quot;button block&quot; href=&quot;&quot;&gt;Block Button&lt;/a&gt;
-                        &lt;a class=&quot;button center&quot; href=&quot;&quot;&gt;Center Button&lt;/a&gt;                        </code></pre>
-                    
-                    </div>
-                
-                	<h3>Icons</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                            <a class="button lg" href="">
-                                <i class="icon icon-gear-a"></i>
-                                Large Button
-                            </a>
-                            <a class="button" href="">
-                                <i class="icon icon-log-in"></i>
-                                Button
-                            </a>
-                            <a class="button sm" href="">
-                                <i class="icon icon-refresh"></i>
-                                Small Button
-                            </a>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;a class=&quot;button lg&quot; href=&quot;&quot;&gt;
-                        <span class="tab"></span>&lt;i class=&quot;icon icon-gear-a&quot;&gt;&lt;/i&gt;
-                        <span class="tab"></span>Large Button
-                        &lt;/a&gt;
-						
-                        &lt;a class=&quot;button&quot; href=&quot;&quot;&gt;
-                        <span class="tab"></span>&lt;i class=&quot;icon icon-log-in&quot;&gt;&lt;/i&gt;
-                        <span class="tab"></span>Button
-                        &lt;/a&gt;
-						
-                        &lt;a class=&quot;button sm&quot; href=&quot;&quot;&gt;
-                        <span class="tab"></span>&lt;i class=&quot;icon icon-refresh&quot;&gt;&lt;/i&gt;
-                        <span class="tab"></span>Small Button
-                        &lt;/a&gt;                        </code></pre>
-                    
-                    </div>
-                
-                	<h3>Groups</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        	
-                            <div class="button-group">
-								<a class="button border" href="">Button</a>
-								<a class="button border" href="">Button</a>
-								<a class="button border" href="">Button</a>
-                        	</div>
-                            
-                        </div>
-                        
-                        <pre><code class="html">&lt;div class=&quot;button-group&quot;&gt;
-						<span class="tab"></span>&lt;a class=&quot;button border&quot; href=&quot;&quot;&gt;Button&lt;/a&gt;
-						<span class="tab"></span>&lt;a class=&quot;button border&quot; href=&quot;&quot;&gt;Button&lt;/a&gt;
-						<span class="tab"></span>&lt;a class=&quot;button border&quot; href=&quot;&quot;&gt;Button&lt;/a&gt;
-                        &lt;/div&gt;                        </code></pre>
-                    
-                    </div>
-                
-                </div>
-            
-            </section>
-            
-            <section id="icons">
-            
-            	<header>
-                    
-                    <h2>Icons</h2>
-                
-                </header>
-                
-                <div class="content">
-                
-                	<h3>Usage</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        	
-                            <i class="icon lg icon-navicon-round"></i>
-                            <i class="icon icon-navicon-round"></i>
-                            <i class="icon sm icon-navicon-round"></i>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;i class=&quot;icon lg icon-navicon-round&quot;&gt;&lt;/i&gt;
-							&lt;i class=&quot;icon icon-navicon-round&quot;&gt;&lt;/i&gt;
-                            &lt;i class=&quot;icon sm icon-navicon-round&quot;&gt;&lt;/i&gt;                        </code></pre>
-                    
-                    </div>
-                
-                	<h3>List</h3>
-                
-                    <ul>
-                        <li><i class="icon icon-ionic"></i>icon-ionic</li>
-                        <li><i class="icon icon-arrow-up-a"></i>icon-arrow-up-a</li>
-                        <li><i class="icon icon-arrow-right-a"></i>icon-arrow-right-a</li>
-                        <li><i class="icon icon-arrow-down-a"></i>icon-arrow-down-a</li>
-                        <li><i class="icon icon-arrow-left-a"></i>icon-arrow-left-a</li>
-                        <li><i class="icon icon-arrow-up-b"></i>icon-arrow-up-b</li>
-                        <li><i class="icon icon-arrow-right-b"></i>icon-arrow-right-b</li>
-                        <li><i class="icon icon-arrow-down-b"></i>icon-arrow-down-b</li>
-                        <li><i class="icon icon-arrow-left-b"></i>icon-arrow-left-b</li>
-                        <li><i class="icon icon-arrow-up-c"></i>icon-arrow-up-c</li>
-                        <li><i class="icon icon-arrow-right-c"></i>icon-arrow-right-c</li>
-                        <li><i class="icon icon-arrow-down-c"></i>icon-arrow-down-c</li>
-                        <li><i class="icon icon-arrow-left-c"></i>icon-arrow-left-c</li>
-                        <li><i class="icon icon-arrow-return-right"></i>icon-arrow-return-right</li>
-                        <li><i class="icon icon-arrow-return-left"></i>icon-arrow-return-left</li>
-                        <li><i class="icon icon-arrow-swap"></i>icon-arrow-swap</li>
-                        <li><i class="icon icon-arrow-shrink"></i>icon-arrow-shrink</li>
-                        <li><i class="icon icon-arrow-expand"></i>icon-arrow-expand</li>
-                        <li><i class="icon icon-arrow-move"></i>icon-arrow-move</li>
-                        <li><i class="icon icon-arrow-resize"></i>icon-arrow-resize</li>
-                        <li><i class="icon icon-chevron-up"></i>icon-chevron-up</li>
-                        <li><i class="icon icon-chevron-right"></i>icon-chevron-right</li>
-                        <li><i class="icon icon-chevron-down"></i>icon-chevron-down</li>
-                        <li><i class="icon icon-chevron-left"></i>icon-chevron-left</li>
-                        <li><i class="icon icon-navicon-round"></i>icon-navicon-round</li>
-                        <li><i class="icon icon-navicon"></i>icon-navicon</li>
-                        <li><i class="icon icon-drag"></i>icon-drag</li>
-                        <li><i class="icon icon-log-in"></i>icon-log-in</li>
-                        <li><i class="icon icon-log-out"></i>icon-log-out</li>
-                        <li><i class="icon icon-checkmark-round"></i>icon-checkmark-round</li>
-                        <li><i class="icon icon-checkmark"></i>icon-checkmark</li>
-                        <li><i class="icon icon-checkmark-circled"></i>icon-checkmark-circled</li>
-                        <li><i class="icon icon-close-round"></i>icon-close-round</li>
-                        <li><i class="icon icon-close"></i>icon-close</li>
-                        <li><i class="icon icon-close-circled"></i>icon-close-circled</li>
-                        <li><i class="icon icon-plus-round"></i>icon-plus-round</li>
-                        <li><i class="icon icon-plus"></i>icon-plus</li>
-                        <li><i class="icon icon-plus-circled"></i>icon-plus-circled</li>
-                        <li><i class="icon icon-minus-round"></i>icon-minus-round</li>
-                        <li><i class="icon icon-minus"></i>icon-minus</li>
-                        <li><i class="icon icon-minus-circled"></i>icon-minus-circled</li>
-                        <li><i class="icon icon-information"></i>icon-information</li>
-                        <li><i class="icon icon-information-circled"></i>icon-information-circled</li>
-                        <li><i class="icon icon-help"></i>icon-help</li>
-                        <li><i class="icon icon-help-circled"></i>icon-help-circled</li>
-                        <li><i class="icon icon-backspace-outline"></i>icon-backspace-outline</li>
-                        <li><i class="icon icon-backspace"></i>icon-backspace</li>
-                        <li><i class="icon icon-help-buoy"></i>icon-help-buoy</li>
-                        <li><i class="icon icon-asterisk"></i>icon-asterisk</li>
-                        <li><i class="icon icon-alert"></i>icon-alert</li>
-                        <li><i class="icon icon-alert-circled"></i>icon-alert-circled</li>
-                        <li><i class="icon icon-refresh"></i>icon-refresh</li>
-                        <li><i class="icon icon-loop"></i>icon-loop</li>
-                        <li><i class="icon icon-shuffle"></i>icon-shuffle</li>
-                        <li><i class="icon icon-home"></i>icon-home</li>
-                        <li><i class="icon icon-search"></i>icon-search</li>
-                        <li><i class="icon icon-flag"></i>icon-flag</li>
-                        <li><i class="icon icon-star"></i>icon-star</li>
-                        <li><i class="icon icon-heart"></i>icon-heart</li>
-                        <li><i class="icon icon-heart-broken"></i>icon-heart-broken</li>
-                        <li><i class="icon icon-gear-a"></i>icon-gear-a</li>
-                        <li><i class="icon icon-gear-b"></i>icon-gear-b</li>
-                        <li><i class="icon icon-toggle-filled"></i>icon-toggle-filled</li>
-                        <li><i class="icon icon-toggle"></i>icon-toggle</li>
-                        <li><i class="icon icon-settings"></i>icon-settings</li>
-                        <li><i class="icon icon-wrench"></i>icon-wrench</li>
-                        <li><i class="icon icon-hammer"></i>icon-hammer</li>
-                        <li><i class="icon icon-edit"></i>icon-edit</li>
-                        <li><i class="icon icon-trash-a"></i>icon-trash-a</li>
-                        <li><i class="icon icon-trash-b"></i>icon-trash-b</li>
-                        <li><i class="icon icon-document"></i>icon-document</li>
-                        <li><i class="icon icon-document-text"></i>icon-document-text</li>
-                        <li><i class="icon icon-clipboard"></i>icon-clipboard</li>
-                        <li><i class="icon icon-scissors"></i>icon-scissors</li>
-                        <li><i class="icon icon-funnel"></i>icon-funnel</li>
-                        <li><i class="icon icon-bookmark"></i>icon-bookmark</li>
-                        <li><i class="icon icon-email"></i>icon-email</li>
-                        <li><i class="icon icon-email-unread"></i>icon-email-unread</li>
-                        <li><i class="icon icon-folder"></i>icon-folder</li>
-                        <li><i class="icon icon-filing"></i>icon-filing</li>
-                        <li><i class="icon icon-archive"></i>icon-archive</li>
-                        <li><i class="icon icon-reply"></i>icon-reply</li>
-                        <li><i class="icon icon-reply-all"></i>icon-reply-all</li>
-                        <li><i class="icon icon-forward"></i>icon-forward</li>
-                        <li><i class="icon icon-share"></i>icon-share</li>
-                        <li><i class="icon icon-paper-airplane"></i>icon-paper-airplane</li>
-                        <li><i class="icon icon-link"></i>icon-link</li>
-                        <li><i class="icon icon-paperclip"></i>icon-paperclip</li>
-                        <li><i class="icon icon-compose"></i>icon-compose</li>
-                        <li><i class="icon icon-briefcase"></i>icon-briefcase</li>
-                        <li><i class="icon icon-medkit"></i>icon-medkit</li>
-                        <li><i class="icon icon-at"></i>icon-at</li>
-                        <li><i class="icon icon-pound"></i>icon-pound</li>
-                        <li><i class="icon icon-quote"></i>icon-quote</li>
-                        <li><i class="icon icon-cloud"></i>icon-cloud</li>
-                        <li><i class="icon icon-upload"></i>icon-upload</li>
-                        <li><i class="icon icon-more"></i>icon-more</li>
-                        <li><i class="icon icon-grid"></i>icon-grid</li>
-                        <li><i class="icon icon-calendar"></i>icon-calendar</li>
-                        <li><i class="icon icon-clock"></i>icon-clock</li>
-                        <li><i class="icon icon-compass"></i>icon-compass</li>
-                        <li><i class="icon icon-pinpoint"></i>icon-pinpoint</li>
-                        <li><i class="icon icon-pin"></i>icon-pin</li>
-                        <li><i class="icon icon-navigate"></i>icon-navigate</li>
-                        <li><i class="icon icon-location"></i>icon-location</li>
-                        <li><i class="icon icon-map"></i>icon-map</li>
-                        <li><i class="icon icon-lock-combination"></i>icon-lock-combination</li>
-                        <li><i class="icon icon-locked"></i>icon-locked</li>
-                        <li><i class="icon icon-unlocked"></i>icon-unlocked</li>
-                        <li><i class="icon icon-key"></i>icon-key</li>
-                        <li><i class="icon icon-arrow-graph-up-right"></i>icon-arrow-graph-up-right</li>
-                        <li><i class="icon icon-arrow-graph-down-right"></i>icon-arrow-graph-down-right</li>
-                        <li><i class="icon icon-arrow-graph-up-left"></i>icon-arrow-graph-up-left</li>
-                        <li><i class="icon icon-arrow-graph-down-left"></i>icon-arrow-graph-down-left</li>
-                        <li><i class="icon icon-stats-bars"></i>icon-stats-bars</li>
-                        <li><i class="icon icon-connection-bars"></i>icon-connection-bars</li>
-                        <li><i class="icon icon-pie-graph"></i>icon-pie-graph</li>
-                        <li><i class="icon icon-chatbubble"></i>icon-chatbubble</li>
-                        <li><i class="icon icon-chatbubble-working"></i>icon-chatbubble-working</li>
-                        <li><i class="icon icon-chatbubbles"></i>icon-chatbubbles</li>
-                        <li><i class="icon icon-chatbox"></i>icon-chatbox</li>
-                        <li><i class="icon icon-chatbox-working"></i>icon-chatbox-working</li>
-                        <li><i class="icon icon-chatboxes"></i>icon-chatboxes</li>
-                        <li><i class="icon icon-person"></i>icon-person</li>
-                        <li><i class="icon icon-person-add"></i>icon-person-add</li>
-                        <li><i class="icon icon-person-stalker"></i>icon-person-stalker</li>
-                        <li><i class="icon icon-woman"></i>icon-woman</li>
-                        <li><i class="icon icon-man"></i>icon-man</li>
-                        <li><i class="icon icon-female"></i>icon-female</li>
-                        <li><i class="icon icon-male"></i>icon-male</li>
-                        <li><i class="icon icon-transgender"></i>icon-transgender</li>
-                        <li><i class="icon icon-fork"></i>icon-fork</li>
-                        <li><i class="icon icon-knife"></i>icon-knife</li>
-                        <li><i class="icon icon-spoon"></i>icon-spoon</li>
-                        <li><i class="icon icon-soup-can-outline"></i>icon-soup-can-outline</li>
-                        <li><i class="icon icon-soup-can"></i>icon-soup-can</li>
-                        <li><i class="icon icon-beer"></i>icon-beer</li>
-                        <li><i class="icon icon-wineglass"></i>icon-wineglass</li>
-                        <li><i class="icon icon-coffee"></i>icon-coffee</li>
-                        <li><i class="icon icon-icecream"></i>icon-icecream</li>
-                        <li><i class="icon icon-pizza"></i>icon-pizza</li>
-                        <li><i class="icon icon-power"></i>icon-power</li>
-                        <li><i class="icon icon-mouse"></i>icon-mouse</li>
-                        <li><i class="icon icon-battery-full"></i>icon-battery-full</li>
-                        <li><i class="icon icon-battery-half"></i>icon-battery-half</li>
-                        <li><i class="icon icon-battery-low"></i>icon-battery-low</li>
-                        <li><i class="icon icon-battery-empty"></i>icon-battery-empty</li>
-                        <li><i class="icon icon-battery-charging"></i>icon-battery-charging</li>
-                        <li><i class="icon icon-wifi"></i>icon-wifi</li>
-                        <li><i class="icon icon-bluetooth"></i>icon-bluetooth</li>
-                        <li><i class="icon icon-calculator"></i>icon-calculator</li>
-                        <li><i class="icon icon-camera"></i>icon-camera</li>
-                        <li><i class="icon icon-eye"></i>icon-eye</li>
-                        <li><i class="icon icon-eye-disabled"></i>icon-eye-disabled</li>
-                        <li><i class="icon icon-flash"></i>icon-flash</li>
-                        <li><i class="icon icon-flash-off"></i>icon-flash-off</li>
-                        <li><i class="icon icon-qr-scanner"></i>icon-qr-scanner</li>
-                        <li><i class="icon icon-image"></i>icon-image</li>
-                        <li><i class="icon icon-images"></i>icon-images</li>
-                        <li><i class="icon icon-wand"></i>icon-wand</li>
-                        <li><i class="icon icon-contrast"></i>icon-contrast</li>
-                        <li><i class="icon icon-aperture"></i>icon-aperture</li>
-                        <li><i class="icon icon-crop"></i>icon-crop</li>
-                        <li><i class="icon icon-easel"></i>icon-easel</li>
-                        <li><i class="icon icon-paintbrush"></i>icon-paintbrush</li>
-                        <li><i class="icon icon-paintbucket"></i>icon-paintbucket</li>
-                        <li><i class="icon icon-monitor"></i>icon-monitor</li>
-                        <li><i class="icon icon-laptop"></i>icon-laptop</li>
-                        <li><i class="icon icon-ipad"></i>icon-ipad</li>
-                        <li><i class="icon icon-iphone"></i>icon-iphone</li>
-                        <li><i class="icon icon-ipod"></i>icon-ipod</li>
-                        <li><i class="icon icon-printer"></i>icon-printer</li>
-                        <li><i class="icon icon-usb"></i>icon-usb</li>
-                        <li><i class="icon icon-outlet"></i>icon-outlet</li>
-                        <li><i class="icon icon-bug"></i>icon-bug</li>
-                        <li><i class="icon icon-code"></i>icon-code</li>
-                        <li><i class="icon icon-code-working"></i>icon-code-working</li>
-                        <li><i class="icon icon-code-download"></i>icon-code-download</li>
-                        <li><i class="icon icon-fork-repo"></i>icon-fork-repo</li>
-                        <li><i class="icon icon-network"></i>icon-network</li>
-                        <li><i class="icon icon-pull-request"></i>icon-pull-request</li>
-                        <li><i class="icon icon-merge"></i>icon-merge</li>
-                        <li><i class="icon icon-xbox"></i>icon-xbox</li>
-                        <li><i class="icon icon-playstation"></i>icon-playstation</li>
-                        <li><i class="icon icon-steam"></i>icon-steam</li>
-                        <li><i class="icon icon-closed-captioning"></i>icon-closed-captioning</li>
-                        <li><i class="icon icon-videocamera"></i>icon-videocamera</li>
-                        <li><i class="icon icon-film-marker"></i>icon-film-marker</li>
-                        <li><i class="icon icon-disc"></i>icon-disc</li>
-                        <li><i class="icon icon-headphone"></i>icon-headphone</li>
-                        <li><i class="icon icon-music-note"></i>icon-music-note</li>
-                        <li><i class="icon icon-radio-waves"></i>icon-radio-waves</li>
-                        <li><i class="icon icon-speakerphone"></i>icon-speakerphone</li>
-                        <li><i class="icon icon-mic-a"></i>icon-mic-a</li>
-                        <li><i class="icon icon-mic-b"></i>icon-mic-b</li>
-                        <li><i class="icon icon-mic-c"></i>icon-mic-c</li>
-                        <li><i class="icon icon-volume-high"></i>icon-volume-high</li>
-                        <li><i class="icon icon-volume-medium"></i>icon-volume-medium</li>
-                        <li><i class="icon icon-volume-low"></i>icon-volume-low</li>
-                        <li><i class="icon icon-volume-mute"></i>icon-volume-mute</li>
-                        <li><i class="icon icon-levels"></i>icon-levels</li>
-                        <li><i class="icon icon-play"></i>icon-play</li>
-                        <li><i class="icon icon-pause"></i>icon-pause</li>
-                        <li><i class="icon icon-stop"></i>icon-stop</li>
-                        <li><i class="icon icon-record"></i>icon-record</li>
-                        <li><i class="icon icon-skip-forward"></i>icon-skip-forward</li>
-                        <li><i class="icon icon-skip-backward"></i>icon-skip-backward</li>
-                        <li><i class="icon icon-eject"></i>icon-eject</li>
-                        <li><i class="icon icon-bag"></i>icon-bag</li>
-                        <li><i class="icon icon-card"></i>icon-card</li>
-                        <li><i class="icon icon-cash"></i>icon-cash</li>
-                        <li><i class="icon icon-pricetag"></i>icon-pricetag</li>
-                        <li><i class="icon icon-pricetags"></i>icon-pricetags</li>
-                        <li><i class="icon icon-thumbsup"></i>icon-thumbsup</li>
-                        <li><i class="icon icon-thumbsdown"></i>icon-thumbsdown</li>
-                        <li><i class="icon icon-happy-outline"></i>icon-happy-outline</li>
-                        <li><i class="icon icon-happy"></i>icon-happy</li>
-                        <li><i class="icon icon-sad-outline"></i>icon-sad-outline</li>
-                        <li><i class="icon icon-sad"></i>icon-sad</li>
-                        <li><i class="icon icon-bowtie"></i>icon-bowtie</li>
-                        <li><i class="icon icon-tshirt-outline"></i>icon-tshirt-outline</li>
-                        <li><i class="icon icon-tshirt"></i>icon-tshirt</li>
-                        <li><i class="icon icon-trophy"></i>icon-trophy</li>
-                        <li><i class="icon icon-podium"></i>icon-podium</li>
-                        <li><i class="icon icon-ribbon-a"></i>icon-ribbon-a</li>
-                        <li><i class="icon icon-ribbon-b"></i>icon-ribbon-b</li>
-                        <li><i class="icon icon-university"></i>icon-university</li>
-                        <li><i class="icon icon-magnet"></i>icon-magnet</li>
-                        <li><i class="icon icon-beaker"></i>icon-beaker</li>
-                        <li><i class="icon icon-erlenmeyer-flask"></i>icon-erlenmeyer-flask</li>
-                        <li><i class="icon icon-egg"></i>icon-egg</li>
-                        <li><i class="icon icon-earth"></i>icon-earth</li>
-                        <li><i class="icon icon-planet"></i>icon-planet</li>
-                        <li><i class="icon icon-lightbulb"></i>icon-lightbulb</li>
-                        <li><i class="icon icon-cube"></i>icon-cube</li>
-                        <li><i class="icon icon-leaf"></i>icon-leaf</li>
-                        <li><i class="icon icon-waterdrop"></i>icon-waterdrop</li>
-                        <li><i class="icon icon-flame"></i>icon-flame</li>
-                        <li><i class="icon icon-fireball"></i>icon-fireball</li>
-                        <li><i class="icon icon-bonfire"></i>icon-bonfire</li>
-                        <li><i class="icon icon-umbrella"></i>icon-umbrella</li>
-                        <li><i class="icon icon-nuclear"></i>icon-nuclear</li>
-                        <li><i class="icon icon-no-smoking"></i>icon-no-smoking</li>
-                        <li><i class="icon icon-thermometer"></i>icon-thermometer</li>
-                        <li><i class="icon icon-speedometer"></i>icon-speedometer</li>
-                        <li><i class="icon icon-model-s"></i>icon-model-s</li>
-                        <li><i class="icon icon-plane"></i>icon-plane</li>
-                        <li><i class="icon icon-jet"></i>icon-jet</li>
-                        <li><i class="icon icon-load-a"></i>icon-load-a</li>
-                        <li><i class="icon icon-load-b"></i>icon-load-b</li>
-                        <li><i class="icon icon-load-c"></i>icon-load-c</li>
-                        <li><i class="icon icon-load-d"></i>icon-load-d</li>
-                        <li><i class="icon icon-ios-ionic-outline"></i>icon-ios-ionic-outline</li>
-                        <li><i class="icon icon-ios-arrow-back"></i>icon-ios-arrow-back</li>
-                        <li><i class="icon icon-ios-arrow-forward"></i>icon-ios-arrow-forward</li>
-                        <li><i class="icon icon-ios-arrow-up"></i>icon-ios-arrow-up</li>
-                        <li><i class="icon icon-ios-arrow-right"></i>icon-ios-arrow-right</li>
-                        <li><i class="icon icon-ios-arrow-down"></i>icon-ios-arrow-down</li>
-                        <li><i class="icon icon-ios-arrow-left"></i>icon-ios-arrow-left</li>
-                        <li><i class="icon icon-ios-arrow-thin-up"></i>icon-ios-arrow-thin-up</li>
-                        <li><i class="icon icon-ios-arrow-thin-right"></i>icon-ios-arrow-thin-right</li>
-                        <li><i class="icon icon-ios-arrow-thin-down"></i>icon-ios-arrow-thin-down</li>
-                        <li><i class="icon icon-ios-arrow-thin-left"></i>icon-ios-arrow-thin-left</li>
-                        <li><i class="icon icon-ios-circle-filled"></i>icon-ios-circle-filled</li>
-                        <li><i class="icon icon-ios-circle-outline"></i>icon-ios-circle-outline</li>
-                        <li><i class="icon icon-ios-checkmark-empty"></i>icon-ios-checkmark-empty</li>
-                        <li><i class="icon icon-ios-checkmark-outline"></i>icon-ios-checkmark-outline</li>
-                        <li><i class="icon icon-ios-checkmark"></i>icon-ios-checkmark</li>
-                        <li><i class="icon icon-ios-plus-empty"></i>icon-ios-plus-empty</li>
-                        <li><i class="icon icon-ios-plus-outline"></i>icon-ios-plus-outline</li>
-                        <li><i class="icon icon-ios-plus"></i>icon-ios-plus</li>
-                        <li><i class="icon icon-ios-close-empty"></i>icon-ios-close-empty</li>
-                        <li><i class="icon icon-ios-close-outline"></i>icon-ios-close-outline</li>
-                        <li><i class="icon icon-ios-close"></i>icon-ios-close</li>
-                        <li><i class="icon icon-ios-minus-empty"></i>icon-ios-minus-empty</li>
-                        <li><i class="icon icon-ios-minus-outline"></i>icon-ios-minus-outline</li>
-                        <li><i class="icon icon-ios-minus"></i>icon-ios-minus</li>
-                        <li><i class="icon icon-ios-information-empty"></i>icon-ios-information-empty</li>
-                        <li><i class="icon icon-ios-information-outline"></i>icon-ios-information-outline</li>
-                        <li><i class="icon icon-ios-information"></i>icon-ios-information</li>
-                        <li><i class="icon icon-ios-help-empty"></i>icon-ios-help-empty</li>
-                        <li><i class="icon icon-ios-help-outline"></i>icon-ios-help-outline</li>
-                        <li><i class="icon icon-ios-help"></i>icon-ios-help</li>
-                        <li><i class="icon icon-ios-search"></i>icon-ios-search</li>
-                        <li><i class="icon icon-ios-search-strong"></i>icon-ios-search-strong</li>
-                        <li><i class="icon icon-ios-star"></i>icon-ios-star</li>
-                        <li><i class="icon icon-ios-star-half"></i>icon-ios-star-half</li>
-                        <li><i class="icon icon-ios-star-outline"></i>icon-ios-star-outline</li>
-                        <li><i class="icon icon-ios-heart"></i>icon-ios-heart</li>
-                        <li><i class="icon icon-ios-heart-outline"></i>icon-ios-heart-outline</li>
-                        <li><i class="icon icon-ios-more"></i>icon-ios-more</li>
-                        <li><i class="icon icon-ios-more-outline"></i>icon-ios-more-outline</li>
-                        <li><i class="icon icon-ios-home"></i>icon-ios-home</li>
-                        <li><i class="icon icon-ios-home-outline"></i>icon-ios-home-outline</li>
-                        <li><i class="icon icon-ios-cloud"></i>icon-ios-cloud</li>
-                        <li><i class="icon icon-ios-cloud-outline"></i>icon-ios-cloud-outline</li>
-                        <li><i class="icon icon-ios-cloud-upload"></i>icon-ios-cloud-upload</li>
-                        <li><i class="icon icon-ios-cloud-upload-outline"></i>icon-ios-cloud-upload-outline</li>
-                        <li><i class="icon icon-ios-cloud-download"></i>icon-ios-cloud-download</li>
-                        <li><i class="icon icon-ios-cloud-download-outline"></i>icon-ios-cloud-download-outline</li>
-                        <li><i class="icon icon-ios-upload"></i>icon-ios-upload</li>
-                        <li><i class="icon icon-ios-upload-outline"></i>icon-ios-upload-outline</li>
-                        <li><i class="icon icon-ios-download"></i>icon-ios-download</li>
-                        <li><i class="icon icon-ios-download-outline"></i>icon-ios-download-outline</li>
-                        <li><i class="icon icon-ios-refresh"></i>icon-ios-refresh</li>
-                        <li><i class="icon icon-ios-refresh-outline"></i>icon-ios-refresh-outline</li>
-                        <li><i class="icon icon-ios-refresh-empty"></i>icon-ios-refresh-empty</li>
-                        <li><i class="icon icon-ios-reload"></i>icon-ios-reload</li>
-                        <li><i class="icon icon-ios-loop-strong"></i>icon-ios-loop-strong</li>
-                        <li><i class="icon icon-ios-loop"></i>icon-ios-loop</li>
-                        <li><i class="icon icon-ios-bookmarks"></i>icon-ios-bookmarks</li>
-                        <li><i class="icon icon-ios-bookmarks-outline"></i>icon-ios-bookmarks-outline</li>
-                        <li><i class="icon icon-ios-book"></i>icon-ios-book</li>
-                        <li><i class="icon icon-ios-book-outline"></i>icon-ios-book-outline</li>
-                        <li><i class="icon icon-ios-flag"></i>icon-ios-flag</li>
-                        <li><i class="icon icon-ios-flag-outline"></i>icon-ios-flag-outline</li>
-                        <li><i class="icon icon-ios-glasses"></i>icon-ios-glasses</li>
-                        <li><i class="icon icon-ios-glasses-outline"></i>icon-ios-glasses-outline</li>
-                        <li><i class="icon icon-ios-browsers"></i>icon-ios-browsers</li>
-                        <li><i class="icon icon-ios-browsers-outline"></i>icon-ios-browsers-outline</li>
-                        <li><i class="icon icon-ios-at"></i>icon-ios-at</li>
-                        <li><i class="icon icon-ios-at-outline"></i>icon-ios-at-outline</li>
-                        <li><i class="icon icon-ios-pricetag"></i>icon-ios-pricetag</li>
-                        <li><i class="icon icon-ios-pricetag-outline"></i>icon-ios-pricetag-outline</li>
-                        <li><i class="icon icon-ios-pricetags"></i>icon-ios-pricetags</li>
-                        <li><i class="icon icon-ios-pricetags-outline"></i>icon-ios-pricetags-outline</li>
-                        <li><i class="icon icon-ios-cart"></i>icon-ios-cart</li>
-                        <li><i class="icon icon-ios-cart-outline"></i>icon-ios-cart-outline</li>
-                        <li><i class="icon icon-ios-chatboxes"></i>icon-ios-chatboxes</li>
-                        <li><i class="icon icon-ios-chatboxes-outline"></i>icon-ios-chatboxes-outline</li>
-                        <li><i class="icon icon-ios-chatbubble"></i>icon-ios-chatbubble</li>
-                        <li><i class="icon icon-ios-chatbubble-outline"></i>icon-ios-chatbubble-outline</li>
-                        <li><i class="icon icon-ios-cog"></i>icon-ios-cog</li>
-                        <li><i class="icon icon-ios-cog-outline"></i>icon-ios-cog-outline</li>
-                        <li><i class="icon icon-ios-gear"></i>icon-ios-gear</li>
-                        <li><i class="icon icon-ios-gear-outline"></i>icon-ios-gear-outline</li>
-                        <li><i class="icon icon-ios-settings"></i>icon-ios-settings</li>
-                        <li><i class="icon icon-ios-settings-strong"></i>icon-ios-settings-strong</li>
-                        <li><i class="icon icon-ios-toggle"></i>icon-ios-toggle</li>
-                        <li><i class="icon icon-ios-toggle-outline"></i>icon-ios-toggle-outline</li>
-                        <li><i class="icon icon-ios-analytics"></i>icon-ios-analytics</li>
-                        <li><i class="icon icon-ios-analytics-outline"></i>icon-ios-analytics-outline</li>
-                        <li><i class="icon icon-ios-pie"></i>icon-ios-pie</li>
-                        <li><i class="icon icon-ios-pie-outline"></i>icon-ios-pie-outline</li>
-                        <li><i class="icon icon-ios-pulse"></i>icon-ios-pulse</li>
-                        <li><i class="icon icon-ios-pulse-strong"></i>icon-ios-pulse-strong</li>
-                        <li><i class="icon icon-ios-filing"></i>icon-ios-filing</li>
-                        <li><i class="icon icon-ios-filing-outline"></i>icon-ios-filing-outline</li>
-                        <li><i class="icon icon-ios-box"></i>icon-ios-box</li>
-                        <li><i class="icon icon-ios-box-outline"></i>icon-ios-box-outline</li>
-                        <li><i class="icon icon-ios-compose"></i>icon-ios-compose</li>
-                        <li><i class="icon icon-ios-compose-outline"></i>icon-ios-compose-outline</li>
-                        <li><i class="icon icon-ios-trash"></i>icon-ios-trash</li>
-                        <li><i class="icon icon-ios-trash-outline"></i>icon-ios-trash-outline</li>
-                        <li><i class="icon icon-ios-copy"></i>icon-ios-copy</li>
-                        <li><i class="icon icon-ios-copy-outline"></i>icon-ios-copy-outline</li>
-                        <li><i class="icon icon-ios-email"></i>icon-ios-email</li>
-                        <li><i class="icon icon-ios-email-outline"></i>icon-ios-email-outline</li>
-                        <li><i class="icon icon-ios-undo"></i>icon-ios-undo</li>
-                        <li><i class="icon icon-ios-undo-outline"></i>icon-ios-undo-outline</li>
-                        <li><i class="icon icon-ios-redo"></i>icon-ios-redo</li>
-                        <li><i class="icon icon-ios-redo-outline"></i>icon-ios-redo-outline</li>
-                        <li><i class="icon icon-ios-paperplane"></i>icon-ios-paperplane</li>
-                        <li><i class="icon icon-ios-paperplane-outline"></i>icon-ios-paperplane-outline</li>
-                        <li><i class="icon icon-ios-folder"></i>icon-ios-folder</li>
-                        <li><i class="icon icon-ios-folder-outline"></i>icon-ios-folder-outline</li>
-                        <li><i class="icon icon-ios-paper"></i>icon-ios-paper</li>
-                        <li><i class="icon icon-ios-paper-outline"></i>icon-ios-paper-outline</li>
-                        <li><i class="icon icon-ios-list"></i>icon-ios-list</li>
-                        <li><i class="icon icon-ios-list-outline"></i>icon-ios-list-outline</li>
-                        <li><i class="icon icon-ios-world"></i>icon-ios-world</li>
-                        <li><i class="icon icon-ios-world-outline"></i>icon-ios-world-outline</li>
-                        <li><i class="icon icon-ios-alarm"></i>icon-ios-alarm</li>
-                        <li><i class="icon icon-ios-alarm-outline"></i>icon-ios-alarm-outline</li>
-                        <li><i class="icon icon-ios-speedometer"></i>icon-ios-speedometer</li>
-                        <li><i class="icon icon-ios-speedometer-outline"></i>icon-ios-speedometer-outline</li>
-                        <li><i class="icon icon-ios-stopwatch"></i>icon-ios-stopwatch</li>
-                        <li><i class="icon icon-ios-stopwatch-outline"></i>icon-ios-stopwatch-outline</li>
-                        <li><i class="icon icon-ios-timer"></i>icon-ios-timer</li>
-                        <li><i class="icon icon-ios-timer-outline"></i>icon-ios-timer-outline</li>
-                        <li><i class="icon icon-ios-clock"></i>icon-ios-clock</li>
-                        <li><i class="icon icon-ios-clock-outline"></i>icon-ios-clock-outline</li>
-                        <li><i class="icon icon-ios-time"></i>icon-ios-time</li>
-                        <li><i class="icon icon-ios-time-outline"></i>icon-ios-time-outline</li>
-                        <li><i class="icon icon-ios-calendar"></i>icon-ios-calendar</li>
-                        <li><i class="icon icon-ios-calendar-outline"></i>icon-ios-calendar-outline</li>
-                        <li><i class="icon icon-ios-photos"></i>icon-ios-photos</li>
-                        <li><i class="icon icon-ios-photos-outline"></i>icon-ios-photos-outline</li>
-                        <li><i class="icon icon-ios-albums"></i>icon-ios-albums</li>
-                        <li><i class="icon icon-ios-albums-outline"></i>icon-ios-albums-outline</li>
-                        <li><i class="icon icon-ios-camera"></i>icon-ios-camera</li>
-                        <li><i class="icon icon-ios-camera-outline"></i>icon-ios-camera-outline</li>
-                        <li><i class="icon icon-ios-reverse-camera"></i>icon-ios-reverse-camera</li>
-                        <li><i class="icon icon-ios-reverse-camera-outline"></i>icon-ios-reverse-camera-outline</li>
-                        <li><i class="icon icon-ios-eye"></i>icon-ios-eye</li>
-                        <li><i class="icon icon-ios-eye-outline"></i>icon-ios-eye-outline</li>
-                        <li><i class="icon icon-ios-bolt"></i>icon-ios-bolt</li>
-                        <li><i class="icon icon-ios-bolt-outline"></i>icon-ios-bolt-outline</li>
-                        <li><i class="icon icon-ios-color-wand"></i>icon-ios-color-wand</li>
-                        <li><i class="icon icon-ios-color-wand-outline"></i>icon-ios-color-wand-outline</li>
-                        <li><i class="icon icon-ios-color-filter"></i>icon-ios-color-filter</li>
-                        <li><i class="icon icon-ios-color-filter-outline"></i>icon-ios-color-filter-outline</li>
-                        <li><i class="icon icon-ios-grid-view"></i>icon-ios-grid-view</li>
-                        <li><i class="icon icon-ios-grid-view-outline"></i>icon-ios-grid-view-outline</li>
-                        <li><i class="icon icon-ios-crop-strong"></i>icon-ios-crop-strong</li>
-                        <li><i class="icon icon-ios-crop"></i>icon-ios-crop</li>
-                        <li><i class="icon icon-ios-barcode"></i>icon-ios-barcode</li>
-                        <li><i class="icon icon-ios-barcode-outline"></i>icon-ios-barcode-outline</li>
-                        <li><i class="icon icon-ios-briefcase"></i>icon-ios-briefcase</li>
-                        <li><i class="icon icon-ios-briefcase-outline"></i>icon-ios-briefcase-outline</li>
-                        <li><i class="icon icon-ios-medkit"></i>icon-ios-medkit</li>
-                        <li><i class="icon icon-ios-medkit-outline"></i>icon-ios-medkit-outline</li>
-                        <li><i class="icon icon-ios-medical"></i>icon-ios-medical</li>
-                        <li><i class="icon icon-ios-medical-outline"></i>icon-ios-medical-outline</li>
-                        <li><i class="icon icon-ios-infinite"></i>icon-ios-infinite</li>
-                        <li><i class="icon icon-ios-infinite-outline"></i>icon-ios-infinite-outline</li>
-                        <li><i class="icon icon-ios-calculator"></i>icon-ios-calculator</li>
-                        <li><i class="icon icon-ios-calculator-outline"></i>icon-ios-calculator-outline</li>
-                        <li><i class="icon icon-ios-keypad"></i>icon-ios-keypad</li>
-                        <li><i class="icon icon-ios-keypad-outline"></i>icon-ios-keypad-outline</li>
-                        <li><i class="icon icon-ios-telephone"></i>icon-ios-telephone</li>
-                        <li><i class="icon icon-ios-telephone-outline"></i>icon-ios-telephone-outline</li>
-                        <li><i class="icon icon-ios-drag"></i>icon-ios-drag</li>
-                        <li><i class="icon icon-ios-location"></i>icon-ios-location</li>
-                        <li><i class="icon icon-ios-location-outline"></i>icon-ios-location-outline</li>
-                        <li><i class="icon icon-ios-navigate"></i>icon-ios-navigate</li>
-                        <li><i class="icon icon-ios-navigate-outline"></i>icon-ios-navigate-outline</li>
-                        <li><i class="icon icon-ios-locked"></i>icon-ios-locked</li>
-                        <li><i class="icon icon-ios-locked-outline"></i>icon-ios-locked-outline</li>
-                        <li><i class="icon icon-ios-unlocked"></i>icon-ios-unlocked</li>
-                        <li><i class="icon icon-ios-unlocked-outline"></i>icon-ios-unlocked-outline</li>
-                        <li><i class="icon icon-ios-monitor"></i>icon-ios-monitor</li>
-                        <li><i class="icon icon-ios-monitor-outline"></i>icon-ios-monitor-outline</li>
-                        <li><i class="icon icon-ios-printer"></i>icon-ios-printer</li>
-                        <li><i class="icon icon-ios-printer-outline"></i>icon-ios-printer-outline</li>
-                        <li><i class="icon icon-ios-game-controller-a"></i>icon-ios-game-controller-a</li>
-                        <li><i class="icon icon-ios-game-controller-a-outline"></i>icon-ios-game-controller-a-outline</li>
-                        <li><i class="icon icon-ios-game-controller-b"></i>icon-ios-game-controller-b</li>
-                        <li><i class="icon icon-ios-game-controller-b-outline"></i>icon-ios-game-controller-b-outline</li>
-                        <li><i class="icon icon-ios-americanfootball"></i>icon-ios-americanfootball</li>
-                        <li><i class="icon icon-ios-americanfootball-outline"></i>icon-ios-americanfootball-outline</li>
-                        <li><i class="icon icon-ios-baseball"></i>icon-ios-baseball</li>
-                        <li><i class="icon icon-ios-baseball-outline"></i>icon-ios-baseball-outline</li>
-                        <li><i class="icon icon-ios-basketball"></i>icon-ios-basketball</li>
-                        <li><i class="icon icon-ios-basketball-outline"></i>icon-ios-basketball-outline</li>
-                        <li><i class="icon icon-ios-tennisball"></i>icon-ios-tennisball</li>
-                        <li><i class="icon icon-ios-tennisball-outline"></i>icon-ios-tennisball-outline</li>
-                        <li><i class="icon icon-ios-football"></i>icon-ios-football</li>
-                        <li><i class="icon icon-ios-football-outline"></i>icon-ios-football-outline</li>
-                        <li><i class="icon icon-ios-body"></i>icon-ios-body</li>
-                        <li><i class="icon icon-ios-body-outline"></i>icon-ios-body-outline</li>
-                        <li><i class="icon icon-ios-person"></i>icon-ios-person</li>
-                        <li><i class="icon icon-ios-person-outline"></i>icon-ios-person-outline</li>
-                        <li><i class="icon icon-ios-personadd"></i>icon-ios-personadd</li>
-                        <li><i class="icon icon-ios-personadd-outline"></i>icon-ios-personadd-outline</li>
-                        <li><i class="icon icon-ios-people"></i>icon-ios-people</li>
-                        <li><i class="icon icon-ios-people-outline"></i>icon-ios-people-outline</li>
-                        <li><i class="icon icon-ios-musical-notes"></i>icon-ios-musical-notes</li>
-                        <li><i class="icon icon-ios-musical-note"></i>icon-ios-musical-note</li>
-                        <li><i class="icon icon-ios-bell"></i>icon-ios-bell</li>
-                        <li><i class="icon icon-ios-bell-outline"></i>icon-ios-bell-outline</li>
-                        <li><i class="icon icon-ios-mic"></i>icon-ios-mic</li>
-                        <li><i class="icon icon-ios-mic-outline"></i>icon-ios-mic-outline</li>
-                        <li><i class="icon icon-ios-mic-off"></i>icon-ios-mic-off</li>
-                        <li><i class="icon icon-ios-volume-high"></i>icon-ios-volume-high</li>
-                        <li><i class="icon icon-ios-volume-low"></i>icon-ios-volume-low</li>
-                        <li><i class="icon icon-ios-play"></i>icon-ios-play</li>
-                        <li><i class="icon icon-ios-play-outline"></i>icon-ios-play-outline</li>
-                        <li><i class="icon icon-ios-pause"></i>icon-ios-pause</li>
-                        <li><i class="icon icon-ios-pause-outline"></i>icon-ios-pause-outline</li>
-                        <li><i class="icon icon-ios-recording"></i>icon-ios-recording</li>
-                        <li><i class="icon icon-ios-recording-outline"></i>icon-ios-recording-outline</li>
-                        <li><i class="icon icon-ios-fastforward"></i>icon-ios-fastforward</li>
-                        <li><i class="icon icon-ios-fastforward-outline"></i>icon-ios-fastforward-outline</li>
-                        <li><i class="icon icon-ios-rewind"></i>icon-ios-rewind</li>
-                        <li><i class="icon icon-ios-rewind-outline"></i>icon-ios-rewind-outline</li>
-                        <li><i class="icon icon-ios-skipbackward"></i>icon-ios-skipbackward</li>
-                        <li><i class="icon icon-ios-skipbackward-outline"></i>icon-ios-skipbackward-outline</li>
-                        <li><i class="icon icon-ios-skipforward"></i>icon-ios-skipforward</li>
-                        <li><i class="icon icon-ios-skipforward-outline"></i>icon-ios-skipforward-outline</li>
-                        <li><i class="icon icon-ios-shuffle-strong"></i>icon-ios-shuffle-strong</li>
-                        <li><i class="icon icon-ios-shuffle"></i>icon-ios-shuffle</li>
-                        <li><i class="icon icon-ios-videocam"></i>icon-ios-videocam</li>
-                        <li><i class="icon icon-ios-videocam-outline"></i>icon-ios-videocam-outline</li>
-                        <li><i class="icon icon-ios-film"></i>icon-ios-film</li>
-                        <li><i class="icon icon-ios-film-outline"></i>icon-ios-film-outline</li>
-                        <li><i class="icon icon-ios-flask"></i>icon-ios-flask</li>
-                        <li><i class="icon icon-ios-flask-outline"></i>icon-ios-flask-outline</li>
-                        <li><i class="icon icon-ios-lightbulb"></i>icon-ios-lightbulb</li>
-                        <li><i class="icon icon-ios-lightbulb-outline"></i>icon-ios-lightbulb-outline</li>
-                        <li><i class="icon icon-ios-wineglass"></i>icon-ios-wineglass</li>
-                        <li><i class="icon icon-ios-wineglass-outline"></i>icon-ios-wineglass-outline</li>
-                        <li><i class="icon icon-ios-pint"></i>icon-ios-pint</li>
-                        <li><i class="icon icon-ios-pint-outline"></i>icon-ios-pint-outline</li>
-                        <li><i class="icon icon-ios-nutrition"></i>icon-ios-nutrition</li>
-                        <li><i class="icon icon-ios-nutrition-outline"></i>icon-ios-nutrition-outline</li>
-                        <li><i class="icon icon-ios-flower"></i>icon-ios-flower</li>
-                        <li><i class="icon icon-ios-flower-outline"></i>icon-ios-flower-outline</li>
-                        <li><i class="icon icon-ios-rose"></i>icon-ios-rose</li>
-                        <li><i class="icon icon-ios-rose-outline"></i>icon-ios-rose-outline</li>
-                        <li><i class="icon icon-ios-paw"></i>icon-ios-paw</li>
-                        <li><i class="icon icon-ios-paw-outline"></i>icon-ios-paw-outline</li>
-                        <li><i class="icon icon-ios-flame"></i>icon-ios-flame</li>
-                        <li><i class="icon icon-ios-flame-outline"></i>icon-ios-flame-outline</li>
-                        <li><i class="icon icon-ios-sunny"></i>icon-ios-sunny</li>
-                        <li><i class="icon icon-ios-sunny-outline"></i>icon-ios-sunny-outline</li>
-                        <li><i class="icon icon-ios-partlysunny"></i>icon-ios-partlysunny</li>
-                        <li><i class="icon icon-ios-partlysunny-outline"></i>icon-ios-partlysunny-outline</li>
-                        <li><i class="icon icon-ios-cloudy"></i>icon-ios-cloudy</li>
-                        <li><i class="icon icon-ios-cloudy-outline"></i>icon-ios-cloudy-outline</li>
-                        <li><i class="icon icon-ios-rainy"></i>icon-ios-rainy</li>
-                        <li><i class="icon icon-ios-rainy-outline"></i>icon-ios-rainy-outline</li>
-                        <li><i class="icon icon-ios-thunderstorm"></i>icon-ios-thunderstorm</li>
-                        <li><i class="icon icon-ios-thunderstorm-outline"></i>icon-ios-thunderstorm-outline</li>
-                        <li><i class="icon icon-ios-snowy"></i>icon-ios-snowy</li>
-                        <li><i class="icon icon-ios-moon"></i>icon-ios-moon</li>
-                        <li><i class="icon icon-ios-moon-outline"></i>icon-ios-moon-outline</li>
-                        <li><i class="icon icon-ios-cloudy-night"></i>icon-ios-cloudy-night</li>
-                        <li><i class="icon icon-ios-cloudy-night-outline"></i>icon-ios-cloudy-night-outline</li>
-                        <li><i class="icon icon-android-arrow-up"></i>icon-android-arrow-up</li>
-                        <li><i class="icon icon-android-arrow-forward"></i>icon-android-arrow-forward</li>
-                        <li><i class="icon icon-android-arrow-down"></i>icon-android-arrow-down</li>
-                        <li><i class="icon icon-android-arrow-back"></i>icon-android-arrow-back</li>
-                        <li><i class="icon icon-android-arrow-dropup"></i>icon-android-arrow-dropup</li>
-                        <li><i class="icon icon-android-arrow-dropup-circle"></i>icon-android-arrow-dropup-circle</li>
-                        <li><i class="icon icon-android-arrow-dropright"></i>icon-android-arrow-dropright</li>
-                        <li><i class="icon icon-android-arrow-dropright-circle"></i>icon-android-arrow-dropright-circle</li>
-                        <li><i class="icon icon-android-arrow-dropdown"></i>icon-android-arrow-dropdown</li>
-                        <li><i class="icon icon-android-arrow-dropdown-circle"></i>icon-android-arrow-dropdown-circle</li>
-                        <li><i class="icon icon-android-arrow-dropleft"></i>icon-android-arrow-dropleft</li>
-                        <li><i class="icon icon-android-arrow-dropleft-circle"></i>icon-android-arrow-dropleft-circle</li>
-                        <li><i class="icon icon-android-add"></i>icon-android-add</li>
-                        <li><i class="icon icon-android-add-circle"></i>icon-android-add-circle</li>
-                        <li><i class="icon icon-android-remove"></i>icon-android-remove</li>
-                        <li><i class="icon icon-android-remove-circle"></i>icon-android-remove-circle</li>
-                        <li><i class="icon icon-android-close"></i>icon-android-close</li>
-                        <li><i class="icon icon-android-cancel"></i>icon-android-cancel</li>
-                        <li><i class="icon icon-android-radio-button-off"></i>icon-android-radio-button-off</li>
-                        <li><i class="icon icon-android-radio-button-on"></i>icon-android-radio-button-on</li>
-                        <li><i class="icon icon-android-checkmark-circle"></i>icon-android-checkmark-circle</li>
-                        <li><i class="icon icon-android-checkbox-outline-blank"></i>icon-android-checkbox-outline-blank</li>
-                        <li><i class="icon icon-android-checkbox-outline"></i>icon-android-checkbox-outline</li>
-                        <li><i class="icon icon-android-checkbox-blank"></i>icon-android-checkbox-blank</li>
-                        <li><i class="icon icon-android-checkbox"></i>icon-android-checkbox</li>
-                        <li><i class="icon icon-android-done"></i>icon-android-done</li>
-                        <li><i class="icon icon-android-done-all"></i>icon-android-done-all</li>
-                        <li><i class="icon icon-android-menu"></i>icon-android-menu</li>
-                        <li><i class="icon icon-android-more-horizontal"></i>icon-android-more-horizontal</li>
-                        <li><i class="icon icon-android-more-vertical"></i>icon-android-more-vertical</li>
-                        <li><i class="icon icon-android-refresh"></i>icon-android-refresh</li>
-                        <li><i class="icon icon-android-sync"></i>icon-android-sync</li>
-                        <li><i class="icon icon-android-wifi"></i>icon-android-wifi</li>
-                        <li><i class="icon icon-android-call"></i>icon-android-call</li>
-                        <li><i class="icon icon-android-apps"></i>icon-android-apps</li>
-                        <li><i class="icon icon-android-settings"></i>icon-android-settings</li>
-                        <li><i class="icon icon-android-options"></i>icon-android-options</li>
-                        <li><i class="icon icon-android-funnel"></i>icon-android-funnel</li>
-                        <li><i class="icon icon-android-search"></i>icon-android-search</li>
-                        <li><i class="icon icon-android-home"></i>icon-android-home</li>
-                        <li><i class="icon icon-android-cloud-outline"></i>icon-android-cloud-outline</li>
-                        <li><i class="icon icon-android-cloud"></i>icon-android-cloud</li>
-                        <li><i class="icon icon-android-download"></i>icon-android-download</li>
-                        <li><i class="icon icon-android-upload"></i>icon-android-upload</li>
-                        <li><i class="icon icon-android-cloud-done"></i>icon-android-cloud-done</li>
-                        <li><i class="icon icon-android-cloud-circle"></i>icon-android-cloud-circle</li>
-                        <li><i class="icon icon-android-favorite-outline"></i>icon-android-favorite-outline</li>
-                        <li><i class="icon icon-android-favorite"></i>icon-android-favorite</li>
-                        <li><i class="icon icon-android-star-outline"></i>icon-android-star-outline</li>
-                        <li><i class="icon icon-android-star-half"></i>icon-android-star-half</li>
-                        <li><i class="icon icon-android-star"></i>icon-android-star</li>
-                        <li><i class="icon icon-android-calendar"></i>icon-android-calendar</li>
-                        <li><i class="icon icon-android-alarm-clock"></i>icon-android-alarm-clock</li>
-                        <li><i class="icon icon-android-time"></i>icon-android-time</li>
-                        <li><i class="icon icon-android-stopwatch"></i>icon-android-stopwatch</li>
-                        <li><i class="icon icon-android-watch"></i>icon-android-watch</li>
-                        <li><i class="icon icon-android-locate"></i>icon-android-locate</li>
-                        <li><i class="icon icon-android-navigate"></i>icon-android-navigate</li>
-                        <li><i class="icon icon-android-pin"></i>icon-android-pin</li>
-                        <li><i class="icon icon-android-compass"></i>icon-android-compass</li>
-                        <li><i class="icon icon-android-map"></i>icon-android-map</li>
-                        <li><i class="icon icon-android-walk"></i>icon-android-walk</li>
-                        <li><i class="icon icon-android-bicycle"></i>icon-android-bicycle</li>
-                        <li><i class="icon icon-android-car"></i>icon-android-car</li>
-                        <li><i class="icon icon-android-bus"></i>icon-android-bus</li>
-                        <li><i class="icon icon-android-subway"></i>icon-android-subway</li>
-                        <li><i class="icon icon-android-train"></i>icon-android-train</li>
-                        <li><i class="icon icon-android-boat"></i>icon-android-boat</li>
-                        <li><i class="icon icon-android-plane"></i>icon-android-plane</li>
-                        <li><i class="icon icon-android-restaurant"></i>icon-android-restaurant</li>
-                        <li><i class="icon icon-android-bar"></i>icon-android-bar</li>
-                        <li><i class="icon icon-android-cart"></i>icon-android-cart</li>
-                        <li><i class="icon icon-android-camera"></i>icon-android-camera</li>
-                        <li><i class="icon icon-android-image"></i>icon-android-image</li>
-                        <li><i class="icon icon-android-film"></i>icon-android-film</li>
-                        <li><i class="icon icon-android-color-palette"></i>icon-android-color-palette</li>
-                        <li><i class="icon icon-android-create"></i>icon-android-create</li>
-                        <li><i class="icon icon-android-mail"></i>icon-android-mail</li>
-                        <li><i class="icon icon-android-drafts"></i>icon-android-drafts</li>
-                        <li><i class="icon icon-android-send"></i>icon-android-send</li>
-                        <li><i class="icon icon-android-archive"></i>icon-android-archive</li>
-                        <li><i class="icon icon-android-delete"></i>icon-android-delete</li>
-                        <li><i class="icon icon-android-attach"></i>icon-android-attach</li>
-                        <li><i class="icon icon-android-share"></i>icon-android-share</li>
-                        <li><i class="icon icon-android-share-alt"></i>icon-android-share-alt</li>
-                        <li><i class="icon icon-android-bookmark"></i>icon-android-bookmark</li>
-                        <li><i class="icon icon-android-document"></i>icon-android-document</li>
-                        <li><i class="icon icon-android-clipboard"></i>icon-android-clipboard</li>
-                        <li><i class="icon icon-android-list"></i>icon-android-list</li>
-                        <li><i class="icon icon-android-folder-open"></i>icon-android-folder-open</li>
-                        <li><i class="icon icon-android-folder"></i>icon-android-folder</li>
-                        <li><i class="icon icon-android-print"></i>icon-android-print</li>
-                        <li><i class="icon icon-android-open"></i>icon-android-open</li>
-                        <li><i class="icon icon-android-exit"></i>icon-android-exit</li>
-                        <li><i class="icon icon-android-contract"></i>icon-android-contract</li>
-                        <li><i class="icon icon-android-expand"></i>icon-android-expand</li>
-                        <li><i class="icon icon-android-globe"></i>icon-android-globe</li>
-                        <li><i class="icon icon-android-chat"></i>icon-android-chat</li>
-                        <li><i class="icon icon-android-textsms"></i>icon-android-textsms</li>
-                        <li><i class="icon icon-android-hangout"></i>icon-android-hangout</li>
-                        <li><i class="icon icon-android-happy"></i>icon-android-happy</li>
-                        <li><i class="icon icon-android-sad"></i>icon-android-sad</li>
-                        <li><i class="icon icon-android-person"></i>icon-android-person</li>
-                        <li><i class="icon icon-android-people"></i>icon-android-people</li>
-                        <li><i class="icon icon-android-person-add"></i>icon-android-person-add</li>
-                        <li><i class="icon icon-android-contact"></i>icon-android-contact</li>
-                        <li><i class="icon icon-android-contacts"></i>icon-android-contacts</li>
-                        <li><i class="icon icon-android-playstore"></i>icon-android-playstore</li>
-                        <li><i class="icon icon-android-lock"></i>icon-android-lock</li>
-                        <li><i class="icon icon-android-unlock"></i>icon-android-unlock</li>
-                        <li><i class="icon icon-android-microphone"></i>icon-android-microphone</li>
-                        <li><i class="icon icon-android-microphone-off"></i>icon-android-microphone-off</li>
-                        <li><i class="icon icon-android-notifications-none"></i>icon-android-notifications-none</li>
-                        <li><i class="icon icon-android-notifications"></i>icon-android-notifications</li>
-                        <li><i class="icon icon-android-notifications-off"></i>icon-android-notifications-off</li>
-                        <li><i class="icon icon-android-volume-mute"></i>icon-android-volume-mute</li>
-                        <li><i class="icon icon-android-volume-down"></i>icon-android-volume-down</li>
-                        <li><i class="icon icon-android-volume-up"></i>icon-android-volume-up</li>
-                        <li><i class="icon icon-android-volume-off"></i>icon-android-volume-off</li>
-                        <li><i class="icon icon-android-hand"></i>icon-android-hand</li>
-                        <li><i class="icon icon-android-desktop"></i>icon-android-desktop</li>
-                        <li><i class="icon icon-android-laptop"></i>icon-android-laptop</li>
-                        <li><i class="icon icon-android-phone-portrait"></i>icon-android-phone-portrait</li>
-                        <li><i class="icon icon-android-phone-landscape"></i>icon-android-phone-landscape</li>
-                        <li><i class="icon icon-android-bulb"></i>icon-android-bulb</li>
-                        <li><i class="icon icon-android-sunny"></i>icon-android-sunny</li>
-                        <li><i class="icon icon-android-alert"></i>icon-android-alert</li>
-                        <li><i class="icon icon-android-warning"></i>icon-android-warning</li>
-                        <li><i class="icon icon-social-twitter"></i>icon-social-twitter</li>
-                        <li><i class="icon icon-social-twitter-outline"></i>icon-social-twitter-outline</li>
-                        <li><i class="icon icon-social-facebook"></i>icon-social-facebook</li>
-                        <li><i class="icon icon-social-facebook-outline"></i>icon-social-facebook-outline</li>
-                        <li><i class="icon icon-social-googleplus"></i>icon-social-googleplus</li>
-                        <li><i class="icon icon-social-googleplus-outline"></i>icon-social-googleplus-outline</li>
-                        <li><i class="icon icon-social-google"></i>icon-social-google</li>
-                        <li><i class="icon icon-social-google-outline"></i>icon-social-google-outline</li>
-                        <li><i class="icon icon-social-dribbble"></i>icon-social-dribbble</li>
-                        <li><i class="icon icon-social-dribbble-outline"></i>icon-social-dribbble-outline</li>
-                        <li><i class="icon icon-social-octocat"></i>icon-social-octocat</li>
-                        <li><i class="icon icon-social-github"></i>icon-social-github</li>
-                        <li><i class="icon icon-social-github-outline"></i>icon-social-github-outline</li>
-                        <li><i class="icon icon-social-instagram"></i>icon-social-instagram</li>
-                        <li><i class="icon icon-social-instagram-outline"></i>icon-social-instagram-outline</li>
-                        <li><i class="icon icon-social-whatsapp"></i>icon-social-whatsapp</li>
-                        <li><i class="icon icon-social-whatsapp-outline"></i>icon-social-whatsapp-outline</li>
-                        <li><i class="icon icon-social-snapchat"></i>icon-social-snapchat</li>
-                        <li><i class="icon icon-social-snapchat-outline"></i>icon-social-snapchat-outline</li>
-                        <li><i class="icon icon-social-foursquare"></i>icon-social-foursquare</li>
-                        <li><i class="icon icon-social-foursquare-outline"></i>icon-social-foursquare-outline</li>
-                        <li><i class="icon icon-social-pinterest"></i>icon-social-pinterest</li>
-                        <li><i class="icon icon-social-pinterest-outline"></i>icon-social-pinterest-outline</li>
-                        <li><i class="icon icon-social-rss"></i>icon-social-rss</li>
-                        <li><i class="icon icon-social-rss-outline"></i>icon-social-rss-outline</li>
-                        <li><i class="icon icon-social-tumblr"></i>icon-social-tumblr</li>
-                        <li><i class="icon icon-social-tumblr-outline"></i>icon-social-tumblr-outline</li>
-                        <li><i class="icon icon-social-wordpress"></i>icon-social-wordpress</li>
-                        <li><i class="icon icon-social-wordpress-outline"></i>icon-social-wordpress-outline</li>
-                        <li><i class="icon icon-social-reddit"></i>icon-social-reddit</li>
-                        <li><i class="icon icon-social-reddit-outline"></i>icon-social-reddit-outline</li>
-                        <li><i class="icon icon-social-hackernews"></i>icon-social-hackernews</li>
-                        <li><i class="icon icon-social-hackernews-outline"></i>icon-social-hackernews-outline</li>
-                        <li><i class="icon icon-social-designernews"></i>icon-social-designernews</li>
-                        <li><i class="icon icon-social-designernews-outline"></i>icon-social-designernews-outline</li>
-                        <li><i class="icon icon-social-yahoo"></i>icon-social-yahoo</li>
-                        <li><i class="icon icon-social-yahoo-outline"></i>icon-social-yahoo-outline</li>
-                        <li><i class="icon icon-social-buffer"></i>icon-social-buffer</li>
-                        <li><i class="icon icon-social-buffer-outline"></i>icon-social-buffer-outline</li>
-                        <li><i class="icon icon-social-skype"></i>icon-social-skype</li>
-                        <li><i class="icon icon-social-skype-outline"></i>icon-social-skype-outline</li>
-                        <li><i class="icon icon-social-linkedin"></i>icon-social-linkedin</li>
-                        <li><i class="icon icon-social-linkedin-outline"></i>icon-social-linkedin-outline</li>
-                        <li><i class="icon icon-social-vimeo"></i>icon-social-vimeo</li>
-                        <li><i class="icon icon-social-vimeo-outline"></i>icon-social-vimeo-outline</li>
-                        <li><i class="icon icon-social-twitch"></i>icon-social-twitch</li>
-                        <li><i class="icon icon-social-twitch-outline"></i>icon-social-twitch-outline</li>
-                        <li><i class="icon icon-social-youtube"></i>icon-social-youtube</li>
-                        <li><i class="icon icon-social-youtube-outline"></i>icon-social-youtube-outline</li>
-                        <li><i class="icon icon-social-dropbox"></i>icon-social-dropbox</li>
-                        <li><i class="icon icon-social-dropbox-outline"></i>icon-social-dropbox-outline</li>
-                        <li><i class="icon icon-social-apple"></i>icon-social-apple</li>
-                        <li><i class="icon icon-social-apple-outline"></i>icon-social-apple-outline</li>
-                        <li><i class="icon icon-social-android"></i>icon-social-android</li>
-                        <li><i class="icon icon-social-android-outline"></i>icon-social-android-outline</li>
-                        <li><i class="icon icon-social-windows"></i>icon-social-windows</li>
-                        <li><i class="icon icon-social-windows-outline"></i>icon-social-windows-outline</li>
-                        <li><i class="icon icon-social-html5"></i>icon-social-html5</li>
-                        <li><i class="icon icon-social-html5-outline"></i>icon-social-html5-outline</li>
-                        <li><i class="icon icon-social-css3"></i>icon-social-css3</li>
-                        <li><i class="icon icon-social-css3-outline"></i>icon-social-css3-outline</li>
-                        <li><i class="icon icon-social-javascript"></i>icon-social-javascript</li>
-                        <li><i class="icon icon-social-javascript-outline"></i>icon-social-javascript-outline</li>
-                        <li><i class="icon icon-social-angular"></i>icon-social-angular</li>
-                        <li><i class="icon icon-social-angular-outline"></i>icon-social-angular-outline</li>
-                        <li><i class="icon icon-social-nodejs"></i>icon-social-nodejs</li>
-                        <li><i class="icon icon-social-sass"></i>icon-social-sass</li>
-                        <li><i class="icon icon-social-python"></i>icon-social-python</li>
-                        <li><i class="icon icon-social-chrome"></i>icon-social-chrome</li>
-                        <li><i class="icon icon-social-chrome-outline"></i>icon-social-chrome-outline</li>
-                        <li><i class="icon icon-social-codepen"></i>icon-social-codepen</li>
-                        <li><i class="icon icon-social-codepen-outline"></i>icon-social-codepen-outline</li>
-                        <li><i class="icon icon-social-markdown"></i>icon-social-markdown</li>
-                        <li><i class="icon icon-social-tux"></i>icon-social-tux</li>
-                        <li><i class="icon icon-social-freebsd-devil"></i>icon-social-freebsd-devil</li>
-                        <li><i class="icon icon-social-usd"></i>icon-social-usd</li>
-                        <li><i class="icon icon-social-usd-outline"></i>icon-social-usd-outline</li>
-                        <li><i class="icon icon-social-bitcoin"></i>icon-social-bitcoin</li>
-                        <li><i class="icon icon-social-bitcoin-outline"></i>icon-social-bitcoin-outline</li>
-                        <li><i class="icon icon-social-yen"></i>icon-social-yen</li>
-                        <li><i class="icon icon-social-yen-outline"></i>icon-social-yen-outline</li>
-                        <li><i class="icon icon-social-euro"></i>icon-social-euro</li>
-                        <li><i class="icon icon-social-euro-outline"></i>icon-social-euro-outline</li>
-                    </ul>
-                    
-                    <a href="" class="button center toggle">Show all</a>
-                    
-                </div>
-            
-            </section>
-            
-            <section id="typography">
-            
-            	<header>
-                    
-                    <h2>Typography</h2>
-                
-                </header>
-                
-                <div class="content">
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                    
-                            <h1>h1 Heading</h1>
-                            <h2>h2 Heading</h2>
-                            <h3>h3 Heading</h3>
-                            <h4>h4 Heading</h4>
-                            <h5>h5 Heading</h5>
-                            <h6>h6 Heading</h6>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;h1&gt;h1 Heading&lt;/h1&gt;
-                            &lt;h2&gt;h2 Heading&lt;/h2&gt;
-                            &lt;h3&gt;h3 Heading&lt;/h3&gt;
-                            &lt;h4&gt;h4 Heading&lt;/h4&gt;
-                            &lt;h5&gt;h5 Heading&lt;/h5&gt;
-                            &lt;h6&gt;h6 Heading&lt;/h6&gt;
-                                                    </code></pre>
-                    
-                    </div>
-                
-                </div>
-            
-            </section>
-            
-            <section id="lists">
-            
-            	<header>
-                    
-                    <h2>Lists</h2>
-                
-                </header>
-                
-                <div class="content">
-                
-                    <h3>Unordered</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                    
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Facilisis in pretium nisl aliquet</li>
-                                <li>
-                                    Nulla volutpat aliquam velit
-                                    <ul>
-                                        <li>Phasellus iaculis neque</li>
-                                        <li>Ac tristique libero volutpat at</li>
-                                    </ul>
-                                </li>
-                                <li>Eget porttitor lorem</li>
-                            </ul>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;ul&gt;
-						<span class="tab"></span>&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
-						<span class="tab"></span>&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
-						<span class="tab"></span>...
-						&lt;/ul&gt;                        </code></pre>
-                    
-                    </div>
-                    
-                    <h3>Ordered</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                            <ol>
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Consectetur adipiscing elit</li> 
-                                <li>Eget porttitor lorem</li>
-                            </ol>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;ol&gt;
-						<span class="tab"></span>&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
-						<span class="tab"></span>&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
-						<span class="tab"></span>...
-						&lt;/ol&gt;                        </code></pre>
-                    
-                    </div>
-                    
-                    <h3>Unstyled</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                            <ul class="unstyled">
-                                <li>Lorem ipsum dolor sit amet</li>
-                                <li>Consectetur adipiscing elit</li> 
-                                <li>Eget porttitor lorem</li>
-                            </ul>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;ul class=&quot;unstyled&quot;&gt;...&lt;/ul&gt;                        </code></pre>
-                    
-                    </div>
-                    
-                    <h3>Inline</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                            <ul class="inline">
-                                <li>Lorem ipsum</li>
-                                <li>Consectetur</li> 
-                                <li>Integer molestie</li>
-                            </ul>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;ul class=&quot;inline&quot;&gt;...&lt;/ul&gt;                        </code></pre>
-                    
-                    </div>
-                
-                </div>
-            
-            </section>
-            
-            <section id="forms">
-            	
-                <header>
-                
-                	<h2>Forms</h2>
-                
-                </header>
-                
-                <div class="content">
-                	
-                    <h3>Standard</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                    
-                            <form>
-                            
-                                <div class="form-element">
-                                    <label for="name1">Name</label>
-                                    <input type="text" class="form-field" id="name1">
-                                </div>
-                                
-                                <div class="form-element">
-                                    <label for="password1">Password</label>
-                                    <input type="password" class="form-field" id="password1">
-                                </div>
-                                
-                                <div class="form-element">
-                                    <div class="checkbox">
-                                        <input id="checkbox1" type="checkbox">
-                                        <label for="checkbox1">Check me</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <input id="checkbox2" type="checkbox">
-                                        <label for="checkbox2">Check me #2</label>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-element">
-                                	<label>Radio</label>
-                                    <div class="radio-inline">
-                                        <input id="radio1" type="radio" name="radio" checked>
-                                        <label for="radio1">Radio</label>
-                                    </div>
-                                    <div class="radio-inline">
-                                        <input id="radio2" type="radio" name="radio">
-                                        <label for="radio2">Radio #2</label>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-element">
-                                    <div class="switch">
-                                        <input id="switch1" type="checkbox">
-                                        <label for="switch1"></label>
-                                        <div>Switch me</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-element">
-                                	<label>Checkboxes inline</label>
-                                    <div class="checkbox-inline">
-                                        <input id="checkboxInline1" type="checkbox">
-                                        <label for="checkboxInline1">Check me</label>
-                                    </div>
-                                    <div class="checkbox-inline">
-                                        <input id="checkboxInline2" type="checkbox">
-                                        <label for="checkboxInline2">Check me #2</label>
-                                    </div>
-                                </div>
-                                
-                                <button type="submit" class="button">Submit</button>
-                                
-                            </form>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;form&gt;
-					
-						<span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;label for=&quot;name1&quot;&gt;Name&lt;/label&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;input type=&quot;text&quot; class=&quot;form-field&quot; id=&quot;name1&quot;&gt;
-						<span class="tab"></span>&lt;/div&gt;
-						
-						<span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;label for=&quot;password1&quot;&gt;Password&lt;/label&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;input type=&quot;password&quot; class=&quot;form-field&quot; id=&quot;password1&quot;&gt;
-						<span class="tab"></span>&lt;/div&gt;
-						
-						<span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;div class=&quot;checkbox&quot;&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;checkbox1&quot;&gt;Check me&lt;/label&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                       	<span class="tab"></span><span class="tab"></span>&lt;div class=&quot;checkbox&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;checkbox2&quot;&gt;Check me #2&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-						<span class="tab"></span>&lt;/div&gt;
-                                
-                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;label&gt;Radio&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;radio-inline&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;radio1&quot; type=&quot;radio&quot; name=&quot;radio&quot; checked&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;radio1&quot;&gt;Radio&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;radio-inline&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;radio2&quot; type=&quot;radio&quot; name=&quot;radio&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;radio2&quot;&gt;Radio #2&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span>&lt;/div&gt;
-						
-						<span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;div class=&quot;switch&quot;&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;switch1&quot; type=&quot;checkbox&quot;&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;switch1&quot;&gt;&lt;/label&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;Switch me&lt;/div&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-						<span class="tab"></span>&lt;/div&gt;
-                                
-                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-						<span class="tab"></span><span class="tab"></span>&lt;label&gt;Checkboxes inline&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;checkbox-inline&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;checkboxInline1&quot; type=&quot;checkbox&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;checkboxInline1&quot;&gt;Check me&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;checkbox-inline&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;checkboxInline2&quot; type=&quot;checkbox&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;checkboxInline2&quot;&gt;Check me #2&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span>&lt;/div&gt;
-						
-						<span class="tab"></span>&lt;button type=&quot;submit&quot; class=&quot;button&quot;&gt;Submit&lt;/button&gt;
-						
-						&lt;/form&gt;                        </code></pre>
-                    
-                    </div>
-                    
-                    <h3>Horizontal</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-                            
-                            <form class="horizontal">
-                            
-                                <div class="form-element">
-                                    <label for="nameh" class="sm-3">Name</label>
-                                    <div class="sm-9">
-                                        <input type="text" class="form-field error" id="nameh">
-                                    </div>
-                                </div>
-                            
-                                <div class="form-element">
-                                    <label class="sm-3">Email</label>
-                                    <div class="sm-9">
-                                    	<p class="static">test@test.de (not changeable)</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-element">
-                                    <label for="gender" class="sm-3">Gender</label>
-                                    <div class="sm-9">
-                                    	<div class="form-select">
-                                        	<select id="gender">
-                                        		<option>Male</option>
-                                        	    <option>Female</option>
-                                        	</select>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-element">
-                                    <label class="sm-3">Radio</label>
-                                    <div class="sm-9">
-                                        <div class="radio-inline">
-                                            <input id="radio1h" type="radio" name="radioh" checked>
-                                            <label for="radio1h">Radio</label>
-                                        </div>
-                                        <div class="radio-inline">
-                                            <input id="radio2h" type="radio" name="radioh">
-                                            <label for="radio2h">Radio #2</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="columns">
-                                    <div class="sm-9 sm-offset-3">
-                                        <button type="submit" class="button">Submit</button>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;form class=&quot;horizontal&quot;&gt;
-                            
-                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;label for=&quot;nameh&quot; class=&quot;sm-3&quot;&gt;Name&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input type=&quot;text&quot; class=&quot;form-field error&quot; id=&quot;nameh&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span>&lt;/div&gt;
-                            
-                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;label class=&quot;sm-3&quot;&gt;Email&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;p class=&quot;static&quot;&gt;test@test.de (not changeable)&lt;/p&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span>&lt;/div&gt;
-                                
-                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;label for=&quot;gender&quot; class=&quot;sm-3&quot;&gt;Gender&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9&quot;&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class=&quot;form-select&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;select class=&quot;form-field&quot; id=&quot;gender&quot;&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;option&gt;Male&lt;/option&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;option&gt;Female&lt;/option&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/select&gt;
-						<span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span>&lt;/div&gt;
-                                
-                        <span class="tab"></span>&lt;div class=&quot;form-element&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;label class=&quot;sm-3&quot;&gt;Radio&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class=&quot;radio-inline&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;radio1h&quot; type=&quot;radio&quot; name=&quot;radioh&quot; checked&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;radio1h&quot;&gt;Radio&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class=&quot;radio-inline&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;input id=&quot;radio2h&quot; type=&quot;radio&quot; name=&quot;radioh&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for=&quot;radio2h&quot;&gt;Radio #2&lt;/label&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span>&lt;/div&gt;
-                                
-                        <span class="tab"></span>&lt;div class=&quot;columns&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;div class=&quot;sm-9 sm-offset-3&quot;&gt;
-                        <span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;button type=&quot;submit&quot; class=&quot;button&quot;&gt;Submit&lt;/button&gt;
-                        <span class="tab"></span><span class="tab"></span>&lt;/div&gt;
-                        <span class="tab"></span>&lt;/div&gt;
-						
-						&lt;/form&gt;                        </code></pre>
-                    
-                    </div>
-                    
-                </div>
-                
-            </section>
-            
-            <section id="grid">
-            
-            	<header>
-                    
-                    <h2>Grid</h2>
-                
-                </header>
-                
-                <div class="content">
-                    
-                    <h3>Getting started</h3>
-                	
-                    <p>There are a total of 12 columns availabe for each breakpoint (unlimited nestable). You can split it up like this e.x. : <em>4x3, 3x4, 2x6, 1x12, ...</em>.<br>
-                    See how the grid system works for different devices:</p>
-                
-                	<table class="table border stripe responsive">
-                    	<thead>
-                        	<th>Class prefix</th>
-                        	<th>Description</th>
-                            <th>Container width</th>
-                        </thead>
-                        <tbody>
-                        	<tr>
-                            	<td data-th="Class prefix">.xs-</td>
-                            	<td data-th="Description">Phones (&lt;768px)</td>
-                                <td data-th="Container width">auto</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class prefix">.sm-</td>
-                            	<td data-th="Description">Small devices (&gt;768px)</td>
-                                <td data-th="Container width">730px</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class prefix">.md-</td>
-                            	<td data-th="Description">Medium devices (&gt;992px)</td>
-                                <td data-th="Container width">960px</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class prefix">.lg-</td>
-                            	<td data-th="Description">Large devices (&gt;1180)</td>
-                                <td data-th="Container width">1150px</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <div class="code">
-                    
-                        <div class="show">
-                        
-                            <div class="columns">
-            
-                                <div class="lg-4">
-                                    <div class="box">
-                                        lg-4
-                                    </div>
-                                </div>
-                    
-                                <div class="lg-4">
-                                    <div class="box">
-                                        lg-4
-                                    </div>
-                                </div>
-                    
-                                <div class="lg-4">
-                                    <div class="box">
-                                        lg-4
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        
-                            <div class="columns">
-            
-                                <div class="md-6">
-                                    <div class="box">
-                                        md-6
-                                    </div>
-                                </div>
-                    
-                                <div class="md-6">
-                                    <div class="box">
-                                        md-6
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;div class=&quot;columns&quot;&gt;
-                        <span class="tab"></span>&lt;div class=&quot;lg-4&quot;&gt;&lt;/div&gt;
-                        <span class="tab"></span>&lt;div class=&quot;lg-4&quot;&gt;&lt;/div&gt;
-                        <span class="tab"></span>&lt;div class=&quot;lg-4&quot;&gt;&lt;/div&gt;
-                    	&lt;/div&gt;
-						
-						&lt;div class=&quot;columns&quot;&gt;
-                        <span class="tab"></span>&lt;div class=&quot;md-6&quot;&gt;&lt;/div&gt;
-                        <span class="tab"></span>&lt;div class=&quot;md-6&quot;&gt;&lt;/div&gt;
-                    	&lt;/div&gt;                        </code></pre>
-                    
-                    </div>
-                    
-                    <h3>Mobile &amp; Desktop</h3>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-            
-                            <div class="columns">
-                    
-                                <div class="md-3 xs-4">
-                                    <div class="box">
-                                        md-3 xs-4
-                                    </div>
-                                </div>
-                    
-                                <div class="md-3 xs-4">
-                                    <div class="box">
-                                        md-3 xs-4
-                                    </div>
-                                </div>
-                    
-                                <div class="md-6 xs-4">
-                                    <div class="box">
-                                        md-6 xs-4
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;div class=&quot;columns&quot;&gt;
-                        <span class="tab"></span>&lt;div class=&quot;md-3 xs-4&quot;&gt;&lt;/div&gt;
-                        <span class="tab"></span>&lt;div class=&quot;md-3 xs-4&quot;&gt;&lt;/div&gt;
-                        <span class="tab"></span>&lt;div class=&quot;md-6 xs-4&quot;&gt;&lt;/div&gt;
-                    	&lt;/div&gt;                        </code></pre>
-                    
-                    </div>
-                    
-                    <h3>Offset</h3>
-                    
-                    <p>Each breakpoint also got offset classes:</p>
-                
-                    <div class="code">
-                    
-                        <div class="show">
-            
-                            <div class="columns">
-                    
-                                <div class="md-4 md-offset-2">
-                                    <div class="box">
-                                        md-4 md-offset-2
-                                    </div>
-                                </div>
-                    
-                                <div class="md-5 md-offset-1">
-                                    <div class="box">
-                                        md-6 md-offset-1
-                                    </div>
-                                </div>
-                    
-                            </div>
-                        
-                        </div>
-                        
-                        <pre><code class="html">&lt;div class=&quot;columns&quot;&gt;
-                        <span class="tab"></span>&lt;div class=&quot;md-4 md-offset-2&quot;&gt;&lt;/div&gt;
-                        <span class="tab"></span>&lt;div class=&quot;md-5 md-offset-1&quot;&gt;&lt;/div&gt;
-                    	&lt;/div&gt;                        </code></pre>
-                    
-                    </div>
-                
-                </div>
-            
-            </section>
-            
-            <section id="helper">
-            
-            	<header>
-                    
-                    <h2>Helper classes</h2>
-                
-                </header>
-                
-                <div class="content">
-                
-                	<h3>Text</h3>
-                
-                	<table class="table border stripe responsive">
-                    	<thead>
-                        	<th>Class</th>
-                        	<th>Description</th>
-                        </thead>
-                        <tbody>
-                        	<tr>
-                            	<td data-th="Class">.text-primary</td>
-                            	<td data-th="Description">Text color equal to @primary</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class">.text-success</td>
-                            	<td data-th="Description">Text color equal to @success</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class">.text-warning</td>
-                            	<td data-th="Description">Text color equal to @warning</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class">.text-error</td>
-                            	<td data-th="Description">Text color equal to @error</td>
-                            </tr>
-                            <tr>
-                            	<td data-th="Class">.text-light</td>
-                            	<td data-th="Description">Text color equal to @text-light</td>
-                            </tr>
-                            <tr>
-                            	<td data-th="Class">.text-dark</td>
-                            	<td data-th="Description">Text color equal to @text-dark</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <h3>Floats</h3>
-                
-                	<table class="table border stripe responsive">
-                    	<thead>
-                        	<th>Class</th>
-                        	<th>Description</th>
-                        </thead>
-                        <tbody>
-                        	<tr>
-                            	<td data-th="Class">.fl-left</td>
-                            	<td data-th="Description">Floating the element to the left.</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class">.fl-right</td>
-                            	<td data-th="Description">Floating the element to the right.</td>
-                            </tr>
-                        	<tr>
-                            	<td data-th="Class">.clear</td>
-                            	<td data-th="Description">Easily clear floats by adding .clear to the <strong>parent element</strong>.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <p>You can also add an extra element (e.x. div) to clear floats:</p>
-                
-                    <div class="code">
-                        
-                        <pre><code class="html">&lt;div class=&quot;clear&quot;&gt;&lt;/div&gt;                        </code></pre>
-                    
-                    </div>
-                
-                </div>
-            
-            </section>
-        
-        </div>
+    <section id="sidebar">
 
-	</div>
+        <h1>Framy CSS</h1>
+        <span class="info">Version <strong>2.3</strong></span>
+
+        <hr>
+
+        <span class="caption">Design elements</span>
+        <nav>
+            <ul>
+                <li><a href="#colors">Colors</a></li>
+                <li><a href="#typography">Typography</a></li>
+            </ul>
+        </nav>
+
+        <hr>
+
+        <span class="caption">Components</span>
+        <nav>
+            <ul>
+                <li><a href="#grid">Grid</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#stuff">Stuff</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section id="content">
+        <div class="container-fluid">
+
+            <header>
+
+                <div class="clear">
+
+                    <h1>Colors</h1>
+
+                    <a href="https://github.com/aaroniker/gear-cms" target="_blank">
+                        <img src="img/github.svg" alt="GitHub">
+                    </a>
+
+                    <div class="menu">
+                        <i class="icon icon-menu"></i>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="tab" id="colors">
+
+                <section>
+                    <h2>Main</h2>
+                    <div class="columns">
+                        <div class="md-3 xs-6">
+                            <div class="box">
+                                <div class="color primary"></div>
+                                <h4>Primary</h4>
+                                <ul class="inline">
+                                    <li>Brand</li>
+                                    <li>Links</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-3 xs-6">
+                            <div class="box">
+                                <div class="color primarylight"></div>
+                                <h4>Primary light</h4>
+                                <ul class="inline">
+                                    <li>Active</li>
+                                    <li>Focus</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-3 xs-6">
+                            <div class="box">
+                                <div class="color gradient"></div>
+                                <h4>Gradient</h4>
+                                <ul class="inline">
+                                    <li>Backgrounds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Dark</h2>
+                    <div class="columns">
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small dark"></div>
+                                <ul class="unstyled">
+                                    <li>Backgrounds</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small dark90"></div>
+                                <ul class="unstyled">
+                                    <li>Backgrounds</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small dark80"></div>
+                                <ul class="unstyled">
+                                    <li>Headlines</li>
+                                    <li>Labels</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small dark60"></div>
+                                <ul class="unstyled">
+                                    <li>Body text</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small dark40"></div>
+                                <ul class="unstyled">
+                                    <li>Light text</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small dark25"></div>
+                                <ul class="unstyled">
+                                    <li>Lighter text</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Light</h2>
+                    <div class="columns">
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small light"></div>
+                                <ul class="unstyled">
+                                    <li>Backgrounds</li>
+                                    <li>Disabled</li>
+                                    <li>Hover BG</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small line"></div>
+                                <ul class="unstyled">
+                                    <li>Line</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small border"></div>
+                                <ul class="unstyled">
+                                    <li>Border</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Alert</h2>
+                    <div class="columns">
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small success"></div>
+                                <ul class="unstyled">
+                                    <li>Success</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small error"></div>
+                                <ul class="unstyled">
+                                    <li>Error</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="box">
+                                <div class="color small info"></div>
+                                <ul class="unstyled">
+                                    <li>Info</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="tab" id="typography">
+
+                <section>
+                    <h2>Headings</h2>
+                    <ul class="bordered unstyled">
+                        <li>
+                            <div>
+                                <h1>The quick brown fox jumps over the lazy dog</h1>
+                            </div>
+                            <span class="caption">h1</span>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>The quick brown fox jumps over the lazy dog</h2>
+                            </div>
+                            <span class="caption">h2</span>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>The quick brown fox jumps over the lazy dog</h3>
+                            </div>
+                            <span class="caption">h3</span>
+                        </li>
+                        <li>
+                            <div>
+                                <h4>The quick brown fox jumps over the lazy dog</h4>
+                            </div>
+                            <span class="caption">h4</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Paragraphs</h2>
+                    <ul class="bordered unstyled">
+                        <li>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                            <span class="caption">Text</span>
+                        </li>
+                        <li>
+                            <div>
+                                <p class="light">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                            </div>
+                            <span class="caption">Text light</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Others</h2>
+                    <ul class="bordered unstyled">
+                        <li>
+                            <div>
+                                <label>Lorem ipsum dolor sit amet, consetetur sadipscing.</label>
+                            </div>
+                            <span class="caption">Label</span>
+                        </li>
+                        <li>
+                            <div>
+                                <small>Lorem ipsum dolor sit amet, consetetur sadipscing.</small>
+                            </div>
+                            <span class="caption">Small</span>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <div class="tab" id="grid">
+                <section>
+                    <div class="columns">
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="lg-1 md-3 sm-4 xs-6">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="columns">
+                        <div class="md-4">
+                            <div class="box"></div>
+                        </div>
+                        <div class="md-4">
+                            <div class="box"></div>
+                        </div>
+                        <div class="md-4">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="columns">
+                        <div class="md-4 md-offset-2 sm-6">
+                            <div class="box"></div>
+                        </div>
+                        <div class="md-6 sm-6">
+                            <div class="box"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab" id="buttons">
+                <section>
+                    <h2>Small</h2>
+                    <a href="" class="btn sm">Button</a>
+                    <a href="" class="btn sm">
+                        <i class="icon icon-gear"></i>
+                        Icon
+                    </a>
+                    <a href="" class="btn sm border">Border</a>
+                    <a href="" class="btn sm gradient">Gradient</a>
+                    <a href="" class="btn sm icon">
+                        <i class="icon icon-gear"></i>
+                    </a>
+                    <a href="" class="btn sm green">Green</a>
+                </section>
+                <section>
+                    <h2>Normal</h2>
+                    <a href="" class="btn">Button</a>
+                    <a href="" class="btn">
+                        <i class="icon icon-gear"></i>
+                        Icon
+                    </a>
+                    <a href="" class="btn border">Border</a>
+                    <a href="" class="btn gradient">Gradient</a>
+                    <a href="" class="btn icon">
+                        <i class="icon icon-gear"></i>
+                    </a>
+                    <a href="" class="btn green">Green</a>
+                </section>
+                <section>
+                    <h2>Large</h2>
+                    <a href="" class="btn lg">Button</a>
+                    <a href="" class="btn lg">
+                        <i class="icon icon-gear"></i>
+                        Icon
+                    </a>
+                    <a href="" class="btn lg border">Border</a>
+                    <a href="" class="btn lg gradient">Gradient</a>
+                    <a href="" class="btn lg icon">
+                        <i class="icon icon-gear"></i>
+                    </a>
+                    <a href="" class="btn lg green">Green</a>
+                </section>
+            </div>
+
+            <div class="tab" id="forms">
+                <section>
+                    <h2>Inputs</h2>
+                    <div class="columns">
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <input class="form-field" type="text" placeholder="Normal">
+                            </div>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <input class="form-field error" type="text" placeholder="Error">
+                            </div>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <input class="form-field filled error" type="text" value="Error processed">
+                            </div>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <input class="form-field success" type="text" placeholder="Success">
+                            </div>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <input class="form-field" type="text" placeholder="Disabled" disabled>
+                            </div>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <div class="form-group">
+                                    <span>http://</span>
+                                    <input class="form-field" type="text" placeholder="Prefix">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <div class="form-group">
+                                    <input class="form-field" type="text" placeholder="Suffix">
+                                    <span>€</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <div class="form-element">
+                                <div class="password">
+                                    <input class="form-field" type="password" value="Hello :)">
+                                    <i class="icon icon-preview"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Selects</h2>
+                    <div class="columns">
+                        <div class="md-4 sm-6">
+                            <select class="form-select">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                        <div class="md-4 sm-6">
+                            <select class="form-select disabled">
+                                <option>Option 1</option>
+                            </select>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Checkboxes</h2>
+                    <div class="columns">
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <div></div>
+                                    <span>Normal</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="checkbox fancy">
+                                    <input type="checkbox">
+                                    <div></div>
+                                    <span>Fancy</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="checkbox">
+                                    <input type="checkbox" disabled>
+                                    <div></div>
+                                    <span>Disabled</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="checkbox">
+                                    <input type="checkbox" disabled checked>
+                                    <div></div>
+                                    <span>Disabled</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Radios</h2>
+                    <div class="columns">
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="radio">
+                                    <input type="radio" name="radio" value="1" checked>
+                                    <div></div>
+                                    <span>Normal #1</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="radio fancy">
+                                    <input type="radio" name="radio" value="2">
+                                    <div></div>
+                                    <span>Fancy</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="radio">
+                                    <input type="radio" disabled>
+                                    <div></div>
+                                    <span>Disabled</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="radio">
+                                    <input type="radio" checked disabled>
+                                    <div></div>
+                                    <span>Disabled</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Switches</h2>
+                    <div class="columns">
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <div></div>
+                                    <span>Normal</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="switch fancy">
+                                    <input type="checkbox">
+                                    <div></div>
+                                    <span>Fancy</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="switch">
+                                    <input type="checkbox" disabled>
+                                    <div></div>
+                                    <span>Disabled</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="md-2 sm-4 xs-6">
+                            <div class="form-element">
+                                <label class="switch">
+                                    <input type="checkbox" disabled checked>
+                                    <div></div>
+                                    <span>Disabled</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab" id="stuff">
+                <section>
+                    <h2>Shadows</h2>
+                    <div class="columns">
+                        <div class="md-3 sm-6">
+                            <div class="shadow sm box">
+                                Small
+                            </div>
+                        </div>
+                        <div class="md-3 sm-6">
+                            <div class="shadow box">
+                                Normal
+                            </div>
+                        </div>
+                        <div class="md-3 sm-6">
+                            <div class="shadow lg box">
+                                Large
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Alerts</h2>
+                    <div class="columns">
+                        <div class="md-6">
+                            <div class="alert success">
+                                Here is a success message for you!
+                            </div>
+                            <div class="alert error">
+                                Here is an error message for you!
+                            </div>
+                            <div class="alert info">
+                                Here is an info message for you!
+                            </div>
+                        </div>
+                        <div class="md-6">
+                            <div class="alert light success">
+                                Here is a light success message for you!
+                            </div>
+                            <div class="alert light error">
+                                Here is an light error message for you!
+                            </div>
+                            <div class="alert light info">
+                                Here is an light info message for you!
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Tooltips</h2>
+                    Hover <a data-tooltip="Lorem ipsum">this</a> to see the toolip - and <a data-tooltip="Lorem ipsum dolor sit, magna sadipscing elitr, sed diam nonumy eirmod tempor invidunt">this</a> for a long version.
+                </section>
+                <section>
+                    <h2>Pagination</h2>
+                    <div class="pagination">
+                        <a class="prev"></a>
+                        <ul>
+                            <li class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                        <a class="next"></a>
+                    </div>
+                    <div class="pagination">
+                        <a class="prev"></a>
+                        <div>
+                            <strong>1</strong> of 3
+                        </div>
+                        <a class="next"></a>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </section>
+
+    <div id="overlay"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../dist/js/framy.js"></script>
+    <script src="demo.js"></script>
 
 </body>
 </html>
