@@ -5,11 +5,11 @@
 
 @mixin shadow($size: 'md') {
     @if $size == 'sm' {
-        box-shadow: 0 1px 4px 1px rgba(#000, .1);
+        box-shadow: 0 1px 4px 1px rgba($shadow, .14);
     } @else if $size == 'lg' {
-        box-shadow: 0 4px 11px 1px rgba(#000, .1);
+        box-shadow: 0 4px 11px 1px rgba($shadow, .16);
     } @else {
-        box-shadow: 0 3px 7px 1px rgba(#000, .1);
+        box-shadow: 0 3px 7px 1px rgba($shadow, .10);
     }
 }
 

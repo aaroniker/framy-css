@@ -4,17 +4,24 @@
 $primary: #8278f3;
 $primary-light: mix(#fff, $primary, 20%);
 
-$dark: #262d37;
+$dark: #202532;
+$darkBlue: adjust-color($dark, $blue: 10);
 
-$dark90: mix(#fff, $dark, 10%);
-$dark80: mix(#fff, $dark, 20%);
-$dark60: mix(#fff, $dark, 40%);
-$dark40: mix(#fff, $dark, 60%);
-$dark25: mix(#fff, $dark, 75%);
+$dark90: mix(#fff, $darkBlue, 10%);
+$dark80: mix(#fff, $darkBlue, 20%);
+$dark60: mix(#fff, $darkBlue, 40%);
+$dark40: mix(#fff, $darkBlue, 60%);
+$dark25: mix(#fff, $darkBlue, 75%);
 
-$shadow: adjust-color($dark, $blue: 10);
+$shadow: $darkBlue;
 
-$border: $dark25;
+$border: #D1D7E4;
+$line: #E8EBF4;
+$light: #F5F6FA;
+
+$success: #69DD95;
+$error: #F26175;
+$info: $primary;
 
 // Base
 
@@ -45,9 +52,9 @@ $headings-h2-weight: normal;
 $headings-h3-weight: bold;
 $headings-h4-weight: bold;
 
-$headings-h1-size: 42px;
-$headings-h2-size: 34px;
-$headings-h3-size: 26px;
+$headings-h1-size: 36px;
+$headings-h2-size: 32px;
+$headings-h3-size: 24px;
 $headings-h4-size: 21px;
 
 // Grid

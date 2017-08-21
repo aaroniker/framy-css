@@ -67,6 +67,9 @@ ol {
 
 p {
     margin: 0 0 $margin 0;
+    &.light {
+        color: $dark40;
+    }
 }
 
 nav {
