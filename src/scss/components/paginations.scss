@@ -1,0 +1,78 @@
+.pagination {
+    @include clear-after;
+    .prev,
+    .next {
+        float: left;
+        display: block;
+        cursor: pointer;
+        font-size: 18px;
+        border: 1px solid $border;
+        color: $dark40;
+        padding: $pagination-padding ($pagination-padding + 2);
+        &:before {
+            font-family: 'icons';
+            display: block;
+        }
+        &:hover {
+            color: $dark60;
+        }
+    }
+    .prev {
+        border-radius: $pagination-radius 0 0 $pagination-radius;
+        &:before {
+            content: '\f109';
+        }
+    }
+    .next {
+        border-radius: 0 $pagination-radius $pagination-radius 0;
+        &:before {
+            content: '\f10a';
+        }
+    }
+    div {
+        float: left;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+        padding: $pagination-padding ($pagination-padding + 8);
+        color: $dark40;
+        strong {
+            color: $primary;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        float: left;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+        @include clear-after;
+        li {
+            float: left;
+            list-style: none;
+            position: relative;
+            border-right: 1px solid $border;
+            padding: $pagination-padding ($pagination-padding + 4);
+            color: $dark40;
+            &:last-child {
+                border-right: 0;
+            }
+            &.active {
+                color: #fff;
+                position: relative;
+                z-index: 1;
+                background: $primary;
+                &:before {
+                    content: '';
+                    display: block;
+                    z-index: -1;
+                    left: -1px;
+                    top: -1px;
+                    right: -1px;
+                    bottom: -1px;
+                    position: absolute;
+                    background: $primary;
+                }
+            }
+        }
+    }
+}
