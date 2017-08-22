@@ -23,7 +23,7 @@
         color: #fff;
         font-size: 28px;
         font-weight: 500;
-        margin: 0 0 5px 0;
+        margin: 0 0 10px 0;
     }
     .info {
         color: #fff;
@@ -194,8 +194,11 @@
         &.primarylight {
             background: $primary-light;
         }
+        &.secondary {
+            background: $secondary;
+        }
         &.gradient {
-            @include linear-gradient(135deg, $primary, $primary-light);
+            @include linear-gradient(135deg, $primary, $secondary);
         }
         &.small {
             height: 52px;

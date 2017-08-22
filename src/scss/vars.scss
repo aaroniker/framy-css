@@ -1,11 +1,12 @@
 
 // Colors
 
-$primary: #8278f3;
+$primary: #065ab4;
+$secondary: #3ea2e0;
 $primary-light: mix(#fff, $primary, 20%);
 
-$dark: #202532;
-$darkBlue: adjust-color($dark, $blue: 10);
+$dark: #161b21;
+$darkBlue: adjust-color($dark, $blue: 8);
 
 $dark90: mix(#fff, $darkBlue, 10%);
 $dark80: mix(#fff, $darkBlue, 20%);
@@ -13,7 +14,7 @@ $dark60: mix(#fff, $darkBlue, 40%);
 $dark40: mix(#fff, $darkBlue, 60%);
 $dark25: mix(#fff, $darkBlue, 75%);
 
-$shadow: $darkBlue;
+$shadow: adjust-color($dark, $blue: 20);
 
 $border: #D1D7E4;
 $line: #E8EBF4;
@@ -21,7 +22,7 @@ $light: #F5F6FA;
 
 $success: #69DD95;
 $error: #F26175;
-$info: $primary;
+$info: $secondary;
 
 // Base
 
