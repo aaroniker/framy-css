@@ -1,0 +1,60 @@
+.alert {
+    border: 1px solid transparent;
+    color: #fff;
+    position: relative;
+    text-shadow: 0 0 1px rgba(#000, .2);
+    border-radius: $alert-radius;
+    margin: 0 0 $margin-bottom 0;
+    padding: $alert-padding ($alert-padding + 4) $alert-padding ($alert-padding + 34);
+    &:before {
+        content: '';
+        font-family: 'icons';
+        display: block;
+        vertical-align: top;
+        position: absolute;
+        left: $alert-padding + 4;
+        top: $alert-padding;
+    }
+    &.success {
+        border-color: $success;
+        background: fade-out($success, .2);
+        &:before {
+            content: '\f20b';
+        }
+    }
+    &.error {
+        border-color: $error;
+        background: fade-out($error, .2);
+        &:before {
+            content: '\f150';
+        }
+    }
+    &.info {
+        border-color: $info;
+        background: fade-out($info, .2);
+        &:before {
+            content: '\f121';
+        }
+    }
+    &.light {
+        background: none;
+        text-shadow: none;
+        font-weight: normal;
+        color: $dark40;
+        &.success {
+            &:before {
+                color: $success;
+            }
+        }
+        &.error {
+            &:before {
+                color: $error;
+            }
+        }
+        &.info {
+            &:before {
+                color: $info;
+            }
+        }
+    }
+}
