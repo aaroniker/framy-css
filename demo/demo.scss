@@ -1,5 +1,8 @@
 //
-@import '../src/scss/framy.scss';
+@import '../src/scss/vars';
+@import '../src/scss/mixins/color';
+@import '../src/scss/mixins/grid';
+@import '../src/scss/mixins/utils';
 
 #sidebar {
     position: fixed;

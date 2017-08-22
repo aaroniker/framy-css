@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
         $(this).parent().children('input').focus();
     });
 
-    $('.password .icon-preview').click(function(e) {
+    $('.password .icon-view').click(function(e) {
         if(!$(this).hasClass('active')) {
             $(this).parent().children('input').attr('type', 'text').focus();
         } else {
