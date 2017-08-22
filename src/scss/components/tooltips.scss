@@ -1,0 +1,16 @@
+[data-tooltip] {
+    cursor: help;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    z-index: 1001;
+    background: #fff;
+    padding: 6px 12px;
+    font-size: 14px;
+    max-width: 240px;
+    color: $dark60;
+    border-radius: $tooltip-radius;
+    @include shadow('sm');
+}
