@@ -36,8 +36,6 @@ $link-decoration: none;
 $link-hover-color: $primary;
 $link-hover-decoration: none;
 
-$margin: 20px;
-
 // Typography
 
 $headings-font-family: inherit;
@@ -76,19 +74,36 @@ $gap-half-width: ($gap-width * .5);
 
 // General
 
-$border-lg-radius: 4px;
-$border-radius: 3px;
-$border-sm-radius: 2px;
+$border-radius: 4px;
+$border-sm-radius: 3px;
+$border-lg-radius: 5px;
+
+$margin-bottom: 20px;
 
 // Icons
 
 $icon-class: 'icon';
+
+// Buttons
+
+$button-lg-radius: $border-lg-radius;
+$button-radius: $border-radius;
+$button-sm-radius: $border-sm-radius;
+
+$button-padding-v: 10px;
+$button-padding-h: 30px;
+$button-padding-sm-v: 8px;
+$button-padding-sm-h: 20px;
+$button-padding-lg-v: 16px;
+$button-padding-lg-h: 35px;
 
 // Forms
 
 $label-color: $dark80;
 $label-weight: normal;
 $label-bottom: 5px;
+
+/*
 
 $input-text: $dark60;
 $input-bg: #fff;
@@ -114,12 +129,6 @@ $radio-size: 20px;
 $radio-active: $primary;
 $radio-margin: 5px;
 
-// Buttons
-
-$button-lg-radius: $border-lg-radius;
-$button-radius: $border-radius;
-$button-sm-radius: $border-sm-radius;
-
 // Tables
 
 $table-th-text: #000;
@@ -131,3 +140,4 @@ $table-hover: fade(#000, 20%);
 $table-th-background: none;
 $table-td-background: none;
 $table-stripe-background: fade(#000, 50%);
+*/

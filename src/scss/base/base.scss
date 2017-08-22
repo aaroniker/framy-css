@@ -37,14 +37,14 @@ textarea {
 hr {
     border: 0;
     border-top: 1px solid $border;
-    margin-top: $margin;
-    margin-bottom: $margin;
+    margin-top: $margin-bottom;
+    margin-bottom: $margin-bottom;
 }
 
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: $margin;
+    margin-bottom: $margin-bottom;
     ul,
     ol {
         margin-bottom: 0;
@@ -66,7 +66,7 @@ ol {
 }
 
 p {
-    margin: 0 0 $margin 0;
+    margin: 0 0 $margin-bottom 0;
     &.light {
         color: $dark40;
     }

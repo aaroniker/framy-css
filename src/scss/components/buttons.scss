@@ -1,0 +1,137 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    position: relative;
+    white-space: nowrap;
+    border: none;
+    color: #fff;
+    line-height: $line-height;
+    padding: $button-padding-v $button-padding-h;
+    font-size: $font-size;
+    background: $primary;
+    border-radius: $button-radius;
+    @include transition();
+    [class*='#{$icon-class}-'] {
+        position: relative;
+        left: -5px;
+        font-size: 18px;
+        display: inline-block;
+        vertical-align: top;
+        font-weight: normal;
+        &:before {
+            display: inline-block;
+            vertical-align: top;
+            line-height: $line-height;
+        }
+    }
+    &.icon {
+        padding: $button-padding-v;
+        [class*='#{$icon-class}-'] {
+            left: 0;
+            display: block;
+            min-width: $line-height;
+        }
+    }
+    &.sm {
+        font-size: 14px;
+        border-radius: $button-sm-radius;
+        padding: $button-padding-sm-v $button-padding-sm-h;
+        &.icon {
+            padding: $button-padding-sm-v;
+        }
+        [class*='#{$icon-class}-'] {
+            font-size: 16px;
+        }
+        &.border {
+            &:before {
+                border-radius: $button-sm-radius;
+            }
+        }
+    }
+    &.lg {
+        font-size: 18px;
+        border-radius: $button-lg-radius;
+        padding: $button-padding-lg-v $button-padding-lg-h;
+        &.icon {
+            padding: $button-padding-lg-v;
+        }
+        [class*='#{$icon-class}-'] {
+            font-size: 20px;
+        }
+        &.border {
+            &:before {
+                border-radius: $button-lg-radius;
+            }
+        }
+    }
+    &:hover {
+        color: #fff;
+        background: darken($primary, 6%);
+    }
+    &.border {
+        background: #fff;
+        color: $dark60;
+        &:before {
+            content: '';
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: 0;
+            border: 1px solid $border;
+            border-radius: $button-radius;
+        }
+        &:hover {
+            background: $light;
+        }
+    }
+    &.gradient {
+        position: relative;
+        background: none;
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            z-index: -1;
+            border-radius: inherit;
+            @include linear-gradient(135deg, $primary, $secondary);
+            @include transition();
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            z-index: -2;
+            border-radius: inherit;
+            @include linear-gradient(135deg, darken($primary, 6%), darken($secondary, 6%));
+        }
+        &:hover {
+            &:after {
+                opacity: 0;
+            }
+        }
+    }
+    &.success {
+        background: $success;
+        &:hover {
+            background: darken($success, 6%);
+        }
+    }
+    &.none {
+        background: none;
+        &:hover {
+            background: none;
+        }
+    }
+}
