@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headings-font-family;
+    line-height: $headings-line-height;
+}
+
+h1 {
+    color: $headings-h1-color;
+    font-weight: $headings-h1-weight;
+    font-size: $headings-h1-size;
+    margin: 0 0 $margin-bottom 0;
+    @media(max-width: $breakpoint-sm * 1px) {
+        font-size: floor($headings-h1-size * .8);
+    }
+}
+
+h2 {
+    color: $headings-h2-color;
+    font-weight: $headings-h2-weight;
+    font-size: $headings-h2-size;
+    margin: 0 0 $margin-bottom 0;
+    @media(max-width: $breakpoint-sm * 1px) {
+        font-size: floor($headings-h2-size * .8);
+    }
+}
+
+h3 {
+    color: $headings-h3-color;
+    font-weight: $headings-h3-weight;
+    font-size: $headings-h3-size;
+    margin: $margin-bottom 0;
+    @media(max-width: $breakpoint-sm * 1px) {
+        font-size: floor($headings-h3-size * .8);
+    }
+}
+
+h4 {
+    color: $headings-h4-color;
+    font-weight: $headings-h4-weight;
+    font-size: $headings-h4-size;
+    margin: $margin-bottom 0;
+    @media(max-width: $breakpoint-sm * 1px) {
+        font-size: floor($headings-h4-size * .9);
+    }
+}
+
+label {
+    color: $label-color;
+    font-weight: $label-weight;
+    display: block;
+}
+
+small {
+    font-size: floor($font-size * .9);
+    line-height: 1;
+}

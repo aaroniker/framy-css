@@ -1,0 +1,163 @@
+
+// Colors
+
+$primary: #1a74d4;
+$secondary: #4ba7e2;
+
+$dark: #161b21;
+$darkBlue: adjust-color($dark, $blue: 8);
+
+$dark90: mix(#fff, $darkBlue, 10%);
+$dark80: mix(#fff, $darkBlue, 20%);
+$dark60: mix(#fff, $darkBlue, 40%);
+$dark40: mix(#fff, $darkBlue, 60%);
+$dark25: mix(#fff, $darkBlue, 75%);
+
+$shadow: adjust-color($dark, $blue: 20);
+
+$border: #D1D7E4;
+$line: #E8EBF4;
+$light: #F5F6FA;
+
+$success: #69DD95;
+$error: #F26175;
+$info: $secondary;
+
+// Base
+
+@import url('https://rsms.me/interface/interface.css');
+
+$font-family: 'Interface', Arial;
+
+$font-size: 16px;
+$line-height: 26px;
+
+$link-color: $primary;
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-decoration: none;
+
+// Typography
+
+$headings-font-family: inherit;
+$headings-line-height: 1.2;
+
+$headings-h1-color: $dark80;
+$headings-h2-color: $dark80;
+$headings-h3-color: $dark80;
+$headings-h4-color: $dark80;
+
+$headings-h1-weight: normal;
+$headings-h2-weight: normal;
+$headings-h3-weight: bold;
+$headings-h4-weight: bold;
+
+$headings-h1-size: 36px;
+$headings-h2-size: 32px;
+$headings-h3-size: 24px;
+$headings-h4-size: 21px;
+
+// Grid
+
+$gap-width: 30;
+
+$breakpoint-xs: 480;
+$breakpoint-sm: 768;
+$breakpoint-md: 992;
+$breakpoint-lg: 1180;
+
+$container-sm: 730;
+$container-md: 960;
+$container-lg: 1150;
+
+$gap-compensation: ($gap-width * .5 * -1);
+$gap-half-width: ($gap-width * .5);
+
+// General
+
+$border-radius: 4px;
+$border-sm-radius: 3px;
+$border-lg-radius: 5px;
+
+$margin-bottom: 20px;
+
+// Icons
+
+$icon-class: 'icon';
+
+// Buttons
+
+$button-lg-radius: $border-lg-radius;
+$button-radius: $border-radius;
+$button-sm-radius: $border-sm-radius;
+
+$button-padding-v: 10px;
+$button-padding-h: 30px;
+$button-padding-sm-v: 5px;
+$button-padding-sm-h: 20px;
+$button-padding-lg-v: 16px;
+$button-padding-lg-h: 35px;
+
+// Alerts
+
+$alert-padding: 10px;
+$alert-radius: $border-radius;
+$alert-weight: 500;
+
+// Paginations
+
+$pagination-padding: 6px;
+$pagination-radius: $border-radius;
+
+// Tooltips
+
+$tooltip-radius: $border-radius;
+
+// Forms
+
+$label-color: $dark80;
+$label-weight: normal;
+$label-bottom: 5px;
+
+$form-disabled: $light;
+$form-border: $border;
+$form-background: #fff;
+$form-element-bottom: $margin-bottom;
+
+$input-text: $dark60;
+$input-radius: $border-radius;
+
+$input-padding-v: 10px;
+$input-padding-h: 15px;
+
+
+$switch-size: 22px;
+$switch-active: $primary;
+$switch-radius: $switch-size / 2;
+
+$checkbox-size: 22px;
+$checkbox-active: $primary;
+$checkbox-radius: $border-radius;
+
+$radio-size: 22px;
+$radio-active: $primary;
+$radio-radius: 50%;
+
+// Selects
+
+$select-radius: $border-radius;
+$select-padding-v: 10px;
+$select-padding-h: 15px;
+
+// Tables
+
+$table-bottom: $margin-bottom;
+$table-th-text: $dark80;
+$table-border: $border;
+$table-padding-v: 10px;
+$table-padding-h: 15px;
+$table-line-height: $line-height;
+$table-hover: $line;
+$table-th-background: none;
+$table-td-background: none;
+$table-stripe-background: $light;

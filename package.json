@@ -1,0 +1,42 @@
+{
+    "name": "framy-css",
+    "description": "Framy is a free and very simple css-only Framework for developing responsive & modern websites.",
+    "style": "dist/css/framy.min.css",
+    "main": "dist/css/framy.min.css",
+    "sass": "src/scss/framy.scss",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aaroniker/framy-css.git"
+    },
+    "version": "2.3.0",
+    "keywords": [
+        "css",
+        "sass",
+        "scss",
+        "responsive",
+        "front-end",
+        "framework",
+        "web"
+    ],
+    "homepage": "http://framycss.org",
+    "license": "MIT",
+    "author": "Aaron Iker",
+    "bugs": {
+        "url": "https://github.com/aaroniker/framy-css/issues"
+    },
+    "scripts": {
+        "icons": "icon-font-generator src/icons/*.svg -o dist/fonts",
+        "css": "node-sass --include-path src/scss src/scss/framy.scss dist/css/framy.min.css --output-style compressed",
+        "watch-css": "nodemon -e scss -x \"npm run css\""
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "node-sass": "^4.5.3",
+        "nodemon": "^1.11.0",
+        "icon-font-generator": "^1.1.1"
+    },
+    "ignore": [
+        "demo",
+        "src"
+    ]
+}

@@ -1,0 +1,26 @@
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex-wrap($value: wrap) {
+    -webkit-flex-wrap: $value;
+    -ms-flex-wrap: $value;
+    flex-wrap: $value;
+}
+
+@mixin flex-basis($size: 0) {
+    -webkit-flex-basis: $size;
+    -ms-flex-preferred-size: $size;
+    flex-basis: $size;
+}
+
+@mixin clear-after() {
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
