@@ -1,5 +1,3 @@
-__Notice__ Working on a new style guide for Framy CSS! :) More soon ...
-
 # Framy - Very simple CSS Framework
 
 Framy is a simple CSS-Framework.
@@ -28,19 +26,3 @@ http://www.jsdelivr.com/projects/framy
 ```
 bower install framy-css
 ```
-
-## Components
-
-* Flexbox Grid
-* Buttons (+ Groups & Icons)
-* Icons (Ionicons integrated)
-* Typography (Roboto used)
-* Lists
-* Forms
-* Tables
-* CSS Helper classes
-
-## External Resources
-
-- [Roboto](https://www.google.com/fonts/specimen/Roboto)
-- [Ionicons](http://ionicons.com/)
