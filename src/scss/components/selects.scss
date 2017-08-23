@@ -1,0 +1,90 @@
+.form-select {
+    position: relative;
+    display: block;
+    user-select: none;
+    width: 100%;
+    & > span {
+        position: relative;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        background: #fff;
+        cursor: pointer;
+        border: 1px solid $border;
+        border-radius: $select-radius;
+        padding: $select-padding-v ($select-padding-h + 20) $select-padding-v $select-padding-h;
+        @include transition();
+        @include user-select();
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50%;
+            margin-top: -2px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 5px 5px 0 5px;
+            right: $select-padding-h;
+            border-color: $dark40 transparent transparent transparent;
+        }
+    }
+    &.disabled {
+        & > span {
+            cursor: not-allowed;
+            background: $light;
+            color: $dark40;
+            &:after {
+                border-color: $border transparent transparent transparent;
+            }
+        }
+    }
+    &.open {
+        & > span {
+            border-color: $primary;
+            &:after {
+                @include transform(rotate(180deg));
+            }
+        }
+        & > div {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    & > div {
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        padding: 10px 0;
+        min-width: 100%;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+        margin: 8px 0 0 0;
+        border-radius: 4px;
+        @include transition();
+        @include shadow('sm');
+        span {
+            line-height: 32px;
+            position: relative;
+            font-weight: 500;
+            display: block;
+            padding: 0 16px;
+            white-space: nowrap;
+            font-size: 14px;
+            cursor: pointer;
+            color: $dark40;
+            @include transition();
+            &:hover {
+                background: $light;
+            }
+            &.active {
+                color: #fff;
+                background: $secondary;
+            }
+        }
+    }
+}
