@@ -119,16 +119,17 @@ $label-color: $dark80;
 $label-weight: normal;
 $label-bottom: 5px;
 
+$form-disabled: $light;
+$form-border: $border;
+$form-background: #fff;
+$form-element-bottom: $margin-bottom;
+
 $input-text: $dark60;
-$input-bg: #fff;
-$input-bg-disabled: $light;
-$input-border: $border;
 $input-radius: $border-radius;
 
 $input-padding-v: 10px;
 $input-padding-h: 15px;
 
-$form-element-bottom: $margin-bottom;
 
 $switch-size: 22px;
 $switch-active: $primary;
@@ -150,12 +151,13 @@ $select-padding-h: 15px;
 
 // Tables
 
-$table-th-text: #000;
+$table-bottom: $margin-bottom;
+$table-th-text: $dark80;
 $table-border: $border;
 $table-padding-v: 10px;
 $table-padding-h: 15px;
 $table-line-height: $line-height;
-$table-hover: fade(#000, 20%);
+$table-hover: $line;
 $table-th-background: none;
 $table-td-background: none;
-$table-stripe-background: fade(#000, 50%);
+$table-stripe-background: $light;

@@ -4,17 +4,17 @@
     width: 100%;
     -webkit-appearance: none;
     background: none;
-    border: 1px solid $input-border;
+    background: $form-background;
+    border: 1px solid $form-border;
     padding: $input-padding-v $input-padding-h;
     color: $input-text;
-    background: $input-bg;
     border-radius: $input-radius;
     @include transition();
     &[disabled],
     &[readonly],
     fieldset[disabled] & {
         opacity: 1;
-        background: $input-bg-disabled;
+        background: $form-disabled;
     }
     &[disabled],
     fieldset[disabled] & {
@@ -84,7 +84,7 @@
     & > span {
         margin-bottom: 0;
         text-align: center;
-        border: 1px solid $input-border;
+        border: 1px solid $form-border;
         padding: $input-padding-v;
         background: $light;
         @include transition();
@@ -108,11 +108,11 @@
         top: 50%;
         text-align: center;
         cursor: pointer;
-        background: #fff;
+        background: $form-background;
         padding: 5px;
         font-size: 18px;
         margin: -16px 0 0 0;
-        color: $border;
+        color: $form-border;
         right: ($input-padding-v - 5);
         @include user-select();
         &:before {
@@ -222,8 +222,8 @@ form {
         & + div {
             height: $checkbox-size;
             width: $checkbox-size;
-            background: #fff;
-            border: 1px solid $border;
+            background: $form-background;
+            border: 1px solid $form-border;
             border-radius: $checkbox-radius;
             &:before {
                 position: absolute;
@@ -252,15 +252,15 @@ form {
             cursor: not-allowed;
         }
         &:disabled:checked + div {
-            background: $light;
-            border-color: $border;
+            background: $form-disabled;
+            border-color: $form-border;
             &:before {
-                border-color: $border;
+                border-color: $form-border;
             }
         }
         &:disabled:not(:checked) + div {
-            background: $light;
-            border-color: $border;
+            background: $form-disabled;
+            border-color: $form-border;
         }
     }
     &:hover {
@@ -272,7 +272,7 @@ form {
                 background: $primary;
             }
             &:disabled:checked + div {
-                background: $light;
+                background: $form-disabled;
             }
         }
     }
@@ -286,8 +286,8 @@ form {
         & + div {
             width: $radio-size;
             height: $radio-size;
-            background: #fff;
-            border: 1px solid $border;
+            background: $form-background;
+            border: 1px solid $form-border;
             border-radius: $radio-radius;
             &:before {
                 position: absolute;
@@ -314,12 +314,12 @@ form {
         }
         &:disabled + div {
             cursor: not-allowed;
-            background: $light;
-            border-color: $border;
+            background: $form-disabled;
+            border-color: $form-border;
         }
         &:disabled:checked + div {
             &:before {
-                background: $border;
+                background: $form-border;
             }
         }
     }
@@ -329,14 +329,14 @@ form {
                 border-color: $radio-active;
             }
             &:disabled + div {
-                border-color: $border;
+                border-color: $form-border;
             }
             &:checked + div {
                 background: $radio-active;
             }
             &:disabled:checked + div {
-                background: $light;
-                border-color: $border;
+                background: $form-disabled;
+                border-color: $form-border;
             }
         }
     }
@@ -374,10 +374,10 @@ form {
         }
         &:disabled + div {
             cursor: not-allowed;
-            background: $light;
-            border-color: $border;
+            background: $form-disabled;
+            border-color: $form-border;
             &:before {
-                background: $border;
+                background: $form-border;
             }
         }
     }
@@ -394,14 +394,14 @@ form {
     &:hover {
         input {
             &:disabled + div {
-                border-color: $border;
+                border-color: $form-border;
             }
             &:checked + div {
                 background: $switch-active;
             }
             &:disabled:checked + div {
-                background: $light;
-                border-color: $border;
+                background: $form-disabled;
+                border-color: $form-border;
             }
         }
     }
