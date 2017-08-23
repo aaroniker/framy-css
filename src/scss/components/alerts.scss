@@ -2,13 +2,15 @@
     border: 1px solid transparent;
     color: #fff;
     position: relative;
-    text-shadow: 0 0 1px rgba(#000, .2);
+    text-shadow: 0 0 1px rgba(#000, .25);
     border-radius: $alert-radius;
+    font-weight: $alert-weight;
     margin: 0 0 $margin-bottom 0;
     padding: $alert-padding ($alert-padding + 4) $alert-padding ($alert-padding + 34);
     &:before {
         content: '';
         font-family: 'icons';
+        font-weight: normal;
         display: block;
         vertical-align: top;
         position: absolute;

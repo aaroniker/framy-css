@@ -25,7 +25,9 @@ $info: $secondary;
 
 // Base
 
-$font-family: 'Roboto', Arial;
+@import url('https://rsms.me/interface/interface.css');
+
+$font-family: 'Interface', Arial;
 
 $font-size: 16px;
 $line-height: 26px;
@@ -91,7 +93,7 @@ $button-sm-radius: $border-sm-radius;
 
 $button-padding-v: 10px;
 $button-padding-h: 30px;
-$button-padding-sm-v: 8px;
+$button-padding-sm-v: 5px;
 $button-padding-sm-h: 20px;
 $button-padding-lg-v: 16px;
 $button-padding-lg-h: 35px;
@@ -100,6 +102,7 @@ $button-padding-lg-h: 35px;
 
 $alert-padding: 10px;
 $alert-radius: $border-radius;
+$alert-weight: 500;
 
 // Paginations
 
