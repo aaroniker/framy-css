@@ -1,3 +1,5 @@
+__INFO__ WIP - completely rewritte a few days ago - going to update README & Website / Docu soon!
+
 # Framy - Very simple CSS Framework
 
 Framy is a simple CSS-Framework.
