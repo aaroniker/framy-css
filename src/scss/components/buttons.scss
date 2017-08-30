@@ -12,7 +12,7 @@
     font-size: $font-size;
     background: $primary;
     border-radius: $button-radius;
-    @include transition();
+    @include transition;
     [class*='#{$icon-class}-'] {
         position: relative;
         left: -5px;
@@ -102,7 +102,7 @@
             z-index: -1;
             border-radius: inherit;
             @include linear-gradient(135deg, $primary, $secondary);
-            @include transition();
+            @include transition;
         }
         &:before {
             content: '';

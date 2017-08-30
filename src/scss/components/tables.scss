@@ -30,19 +30,19 @@ table {
             }
         }
         &.responsive {
-            @media(max-width: ($breakpoint-sm * 1px)) {
+            @media(max-width: $breakpoint-sm) {
                 border-top: 0;
             }
             tr {
                 th {
                     display: table-cell;
-                    @media(max-width: ($breakpoint-sm * 1px)) {
+                    @media(max-width: $breakpoint-sm) {
                         display: none;
                     }
                 }
                 td {
                     display: table-cell;
-                    @media(max-width: ($breakpoint-sm * 1px)) {
+                    @media(max-width: $breakpoint-sm) {
                         display: block;
                         padding-left: 42%;
                         padding-bottom: 0;
@@ -65,7 +65,7 @@ table {
                         left: $table-padding-h;
                         top: $table-padding-v;
                         width: 42%;
-                        @media(max-width: ($breakpoint-sm * 1px)) {
+                        @media(max-width: $breakpoint-sm) {
                             display: block;
                         }
                     }

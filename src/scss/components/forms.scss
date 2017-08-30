@@ -9,7 +9,7 @@
     padding: $input-padding-v $input-padding-h;
     color: $input-text;
     border-radius: $input-radius;
-    @include transition();
+    @include transition;
     &[disabled],
     &[readonly],
     fieldset[disabled] & {
@@ -53,14 +53,14 @@
 
 .form-group {
     position: relative;
-    display: flex;
     width: 100%;
+    @include flexbox;
     & > span,
     .form-field,
     .btn {
         white-space: nowrap;
-        display: flex;
-        align-items: center;
+        @include flexbox;
+        @include align-items(center);
         &:not(:first-child):not(:last-child) {
             border-radius: 0;
         }
@@ -77,9 +77,9 @@
     .form-field {
         position: relative;
         z-index: 1;
-        flex: 1 1 auto;
         width: 1%;
         margin-bottom: 0;
+        @include flex(1 1 auto);
     }
     & > span {
         margin-bottom: 0;
@@ -87,7 +87,7 @@
         border: 1px solid $form-border;
         padding: $input-padding-v;
         background: $light;
-        @include transition();
+        @include transition;
     }
     &.focus {
         & > span {
@@ -114,7 +114,7 @@
         margin: -16px 0 0 0;
         color: $form-border;
         right: ($input-padding-v - 5);
-        @include user-select();
+        @include user-select;
         &:before {
             line-height: 22px;
             display: block;
@@ -129,14 +129,14 @@ form {
     &.horizontal {
         .form-element {
             & > label {
-                @media(min-width: ($breakpoint-sm * 1px)) {
+                @media(min-width: $breakpoint-sm) {
                     margin-bottom: 0;
                     padding: $input-padding-v 0;
                 }
             }
             .static {
                 margin-bottom: 0;
-                @media(min-width: ($breakpoint-sm * 1px)) {
+                @media(min-width: $breakpoint-sm) {
                     padding: $input-padding-v 0;
                 }
             }
@@ -182,8 +182,8 @@ form {
             vertical-align: top;
             position: relative;
             display: inline-block;
-            @include user-select();
-            @include transition();
+            @include user-select;
+            @include transition;
             &:before {
                 content: '';
             }
@@ -301,7 +301,7 @@ form {
                 background: #fff;
                 border-radius: inherit;
                 @include transform(scale(0));
-                @include transition();
+                @include transition;
             }
         }
         &:checked + div {

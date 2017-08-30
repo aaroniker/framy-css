@@ -59,19 +59,22 @@ $headings-h4-size: 21px;
 
 // Grid
 
-$gap-width: 30;
+$columns: 12;
+$gap-width: 30px;
 
-$breakpoint-xs: 480;
-$breakpoint-sm: 768;
-$breakpoint-md: 992;
-$breakpoint-lg: 1180;
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1180px;
 
-$container-sm: 730;
-$container-md: 960;
-$container-lg: 1150;
+$container-sm: 730px;
+$container-md: 960px;
+$container-lg: 1150px;
 
-$gap-compensation: ($gap-width * .5 * -1);
-$gap-half-width: ($gap-width * .5);
+$breakpoints:
+    sm $breakpoint-sm $container-sm,
+    md $breakpoint-md $container-md,
+    lg $breakpoint-lg $container-lg;
 
 // General
 

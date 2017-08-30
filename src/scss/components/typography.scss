@@ -13,7 +13,7 @@ h1 {
     font-weight: $headings-h1-weight;
     font-size: $headings-h1-size;
     margin: 0 0 $margin-bottom 0;
-    @media(max-width: $breakpoint-sm * 1px) {
+    @media(max-width: $breakpoint-sm) {
         font-size: floor($headings-h1-size * .8);
     }
 }
@@ -23,7 +23,7 @@ h2 {
     font-weight: $headings-h2-weight;
     font-size: $headings-h2-size;
     margin: 0 0 $margin-bottom 0;
-    @media(max-width: $breakpoint-sm * 1px) {
+    @media(max-width: $breakpoint-sm) {
         font-size: floor($headings-h2-size * .8);
     }
 }
@@ -33,7 +33,7 @@ h3 {
     font-weight: $headings-h3-weight;
     font-size: $headings-h3-size;
     margin: $margin-bottom 0;
-    @media(max-width: $breakpoint-sm * 1px) {
+    @media(max-width: $breakpoint-sm) {
         font-size: floor($headings-h3-size * .8);
     }
 }
@@ -43,7 +43,7 @@ h4 {
     font-weight: $headings-h4-weight;
     font-size: $headings-h4-size;
     margin: $margin-bottom 0;
-    @media(max-width: $breakpoint-sm * 1px) {
+    @media(max-width: $breakpoint-sm) {
         font-size: floor($headings-h4-size * .9);
     }
 }
