@@ -14,12 +14,12 @@ __Demo / Documentation__ http://www.framycss.org/demo
 
 Just include a specific version like this:
 ```
-https://cdn.jsdelivr.net/framy/2.2/css/framy.min.css
+https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.2/dist/css/framy.min.css
 ```
 
 Or the latest release (7 days delayed):
 ```
-https://cdn.jsdelivr.net/framy/latest/css/framy.min.css
+https://cdn.jsdelivr.net/gh/aaroniker/framy-css@latest/dist/css/framy.min.css
 ```
 
 http://www.jsdelivr.com/projects/framy
