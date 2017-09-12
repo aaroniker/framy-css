@@ -17,11 +17,6 @@ Just include a specific version like this:
 https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.2/dist/css/framy.min.css
 ```
 
-Or the latest release (7 days delayed):
-```
-https://cdn.jsdelivr.net/gh/aaroniker/framy-css@latest/dist/css/framy.min.css
-```
-
 http://www.jsdelivr.com/projects/framy
 
 ### Install with Bower
