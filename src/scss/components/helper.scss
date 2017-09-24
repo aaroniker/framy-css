@@ -3,11 +3,11 @@
 }
 
 .f-l {
-    float: left;
+    float: left !important;
 }
 
 .f-r {
-    float: right;
+    float: right !important;
 }
 
 @each $space in $spaces {
