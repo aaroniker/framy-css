@@ -4,7 +4,7 @@
     position: relative;
     text-shadow: 0 0 1px rgba(#000, .25);
     border-radius: $alert-radius;
-    font-weight: $alert-weight;
+    font-weight: $alert-font-weight;
     margin: 0 0 $margin-bottom 0;
     padding: $alert-padding ($alert-padding + 4) $alert-padding ($alert-padding + 34);
     &:before {

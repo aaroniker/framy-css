@@ -105,7 +105,7 @@ $button-padding-lg-h: 35px;
 
 $alert-padding: 10px;
 $alert-radius: $border-radius;
-$alert-weight: 500;
+$alert-font-weight: 500;
 
 // Paginations
 
@@ -193,3 +193,7 @@ $table-hover: $line;
 $table-th-background: none;
 $table-td-background: none;
 $table-stripe-background: $light;
+
+// Helper
+
+$spaces: (5, 10, 15, 20, 25, 30, 35);
