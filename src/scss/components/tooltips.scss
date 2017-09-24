@@ -6,11 +6,11 @@
     display: none;
     position: absolute;
     z-index: 1001;
-    background: #fff;
-    padding: 6px 12px;
-    font-size: 14px;
-    max-width: 240px;
-    color: $dark60;
+    background: $tooltip-background;
+    padding: $tooltip-padding-v $tooltip-padding-h;
+    font-size: $tooltip-font-size;
+    max-width: $tooltip-max-width;
+    color: $tooltip-color;
     border-radius: $tooltip-radius;
     @include shadow('sm');
 }
