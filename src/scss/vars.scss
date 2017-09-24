@@ -107,11 +107,6 @@ $alert-padding: 10px;
 $alert-radius: $border-radius;
 $alert-font-weight: 500;
 
-// Paginations
-
-$pagination-padding: 6px;
-$pagination-radius: $border-radius;
-
 // Tooltips
 
 $tooltip-radius: $border-radius;
@@ -180,6 +175,16 @@ $select-disabled: $form-disabled;
 $select-hover: $light;
 $select-padding-v: $input-padding-v;
 $select-padding-h: $input-padding-h;
+
+// Paginations
+
+$pagination-padding: 6px;
+$pagination-radius: $input-radius;
+$pagination-border: $form-border;
+$pagination-active: $primary;
+$pagination-color: $dark40;
+$pagination-color-hover: $dark60;
+$pagination-active-color: #fff;
 
 // Tables
 

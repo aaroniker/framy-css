@@ -6,15 +6,15 @@
         display: block;
         cursor: pointer;
         font-size: 18px;
-        border: 1px solid $border;
-        color: $dark40;
+        border: 1px solid $pagination-border;
+        color: $pagination-color;
         padding: $pagination-padding ($pagination-padding + 2);
         &:before {
             font-family: 'icons';
             display: block;
         }
         &:hover {
-            color: $dark60;
+            color: $pagination-color-hover;
         }
     }
     .prev {
@@ -31,36 +31,36 @@
     }
     div {
         float: left;
-        border-top: 1px solid $border;
-        border-bottom: 1px solid $border;
+        border-top: 1px solid $pagination-border;
+        border-bottom: 1px solid $pagination-border;
         padding: $pagination-padding ($pagination-padding + 8);
-        color: $dark40;
+        color: $pagination-color;
         strong {
-            color: $primary;
+            color: $pagination-active;
         }
     }
     ul {
         margin: 0;
         padding: 0;
         float: left;
-        border-top: 1px solid $border;
-        border-bottom: 1px solid $border;
+        border-top: 1px solid $pagination-border;
+        border-bottom: 1px solid $pagination-border;
         @include clear-after;
         li {
             float: left;
             list-style: none;
             position: relative;
-            border-right: 1px solid $border;
+            border-right: 1px solid $pagination-border;
             padding: $pagination-padding ($pagination-padding + 4);
-            color: $dark40;
+            color: $pagination-color;
             &:last-child {
                 border-right: 0;
             }
             &.active {
-                color: #fff;
+                color: $pagination-active-color;
                 position: relative;
                 z-index: 1;
-                background: $primary;
+                background: $pagination-active;
                 &:before {
                     content: '';
                     display: block;
@@ -70,7 +70,7 @@
                     right: -1px;
                     bottom: -1px;
                     position: absolute;
-                    background: $primary;
+                    background: $pagination-active;
                 }
             }
         }
