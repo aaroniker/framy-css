@@ -14,7 +14,11 @@ __Demo__ http://www.framycss.org/demo
 
 Just include a specific version like this:
 ```
+// CSS
 https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.3/dist/css/framy.min.css
+
+// JS
+https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.3/dist/js/framy.js
 ```
 
 http://www.jsdelivr.com/projects/framy
