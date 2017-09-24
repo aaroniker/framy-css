@@ -6,7 +6,7 @@ Framy is a simple CSS-Framework.
 
 __Website__ http://www.framycss.org/
 
-__Demo / Documentation__ http://www.framycss.org/demo
+__Demo__ http://www.framycss.org/demo
 
 ## How to use
 
@@ -14,7 +14,7 @@ __Demo / Documentation__ http://www.framycss.org/demo
 
 Just include a specific version like this:
 ```
-https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.2/dist/css/framy.min.css
+https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.3/dist/css/framy.min.css
 ```
 
 http://www.jsdelivr.com/projects/framy
