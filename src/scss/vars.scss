@@ -152,7 +152,7 @@ $checkbox-active: mix(#fff, $primary, 40%);
 $checkbox-background: $form-background;
 $checkbox-arrow: #fff;
 $checkbox-disabled: $form-disabled;
-$checkbox-radius: $border-radius;
+$checkbox-radius: $input-radius;
 
 $radio-size: 22px;
 $radio-border: $form-border;
@@ -165,17 +165,23 @@ $radio-radius: 50%;
 
 // Selects
 
-$select-radius: $border-radius;
-$select-padding-v: 10px;
-$select-padding-h: 15px;
+$select-radius: $input-radius;
+$select-active: $secondary;
+$select-border: $form-border;
+$select-border-focus: $form-border-focus;
+$select-background: $form-background;
+$select-disabled: $form-disabled;
+$select-hover: $light;
+$select-padding-v: $input-padding-v;
+$select-padding-h: $input-padding-h;
 
 // Tables
 
 $table-bottom: $margin-bottom;
 $table-th-text: $dark80;
 $table-border: $border;
-$table-padding-v: 10px;
-$table-padding-h: 15px;
+$table-padding-v: $input-padding-v;
+$table-padding-h: $input-padding-h;
 $table-line-height: $line-height;
 $table-hover: $line;
 $table-th-background: none;

@@ -9,9 +9,9 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        background: #fff;
+        background: $select-background;
         cursor: pointer;
-        border: 1px solid $border;
+        border: 1px solid $select-border;
         border-radius: $select-radius;
         padding: $select-padding-v ($select-padding-h + 20) $select-padding-v $select-padding-h;
         @include transition();
@@ -33,16 +33,16 @@
     &.disabled {
         & > span {
             cursor: not-allowed;
-            background: $light;
+            background: $select-disabled;
             color: $dark40;
             &:after {
-                border-color: $border transparent transparent transparent;
+                border-color: $select-border transparent transparent transparent;
             }
         }
     }
     &.open {
         & > span {
-            border-color: $primary;
+            border-color: $select-border-focus;
             &:after {
                 @include transform(rotate(180deg));
             }
@@ -79,11 +79,11 @@
             color: $dark40;
             @include transition();
             &:hover {
-                background: $light;
+                background: $select-hover;
             }
             &.active {
                 color: #fff;
-                background: $secondary;
+                background: $select-active;
             }
         }
     }
