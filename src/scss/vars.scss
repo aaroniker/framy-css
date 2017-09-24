@@ -124,6 +124,9 @@ $label-bottom: 5px;
 
 $form-disabled: $light;
 $form-border: $border;
+$form-border-focus: $primary;
+$form-focus: mix(#fff, $primary, 40%);
+$form-focus-color: #fff;
 $form-background: #fff;
 $form-element-bottom: $margin-bottom;
 
@@ -133,17 +136,31 @@ $input-radius: $border-radius;
 $input-padding-v: 10px;
 $input-padding-h: 15px;
 
-
 $switch-size: 22px;
-$switch-active: $primary;
+$switch-border: $form-border;
+$switch-border-active: $primary;
+$switch-active: mix(#fff, $primary, 40%);
+$switch-background: $switch-border;
+$switch-dot: #fff;
+$switch-disabled: $form-disabled;
 $switch-radius: $switch-size / 2;
 
 $checkbox-size: 22px;
-$checkbox-active: $primary;
+$checkbox-border: $form-border;
+$checkbox-border-active: $primary;
+$checkbox-active: mix(#fff, $primary, 40%);
+$checkbox-background: $form-background;
+$checkbox-arrow: #fff;
+$checkbox-disabled: $form-disabled;
 $checkbox-radius: $border-radius;
 
 $radio-size: 22px;
-$radio-active: $primary;
+$radio-border: $form-border;
+$radio-border-active: $primary;
+$radio-active: mix(#fff, $primary, 40%);
+$radio-background: $form-background;
+$radio-dot: #fff;
+$radio-disabled: $form-disabled;
 $radio-radius: 50%;
 
 // Selects
