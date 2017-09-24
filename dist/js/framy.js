@@ -63,7 +63,7 @@ jQuery(document).ready(function($) {
         $('<div/>').addClass('tooltip').text(title).appendTo('body').fadeIn(150);
     }, function() {
         $('.tooltip').fadeOut(150, function(e) {
-            $('.tooltip').remove();
+            $(this).remove();
         });
     }).mousemove(function(e) {
         var mousex = e.pageX + 12,
