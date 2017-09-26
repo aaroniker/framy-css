@@ -25,9 +25,9 @@ $info: $secondary;
 
 // Base
 
-@import url('https://rsms.me/interface/interface.css');
+@import url('https://rsms.me/inter/inter-ui.css');
 
-$font-family: 'Interface', Arial;
+$font-family: 'Inter UI', sans-serif;
 
 $font-size: 16px;
 $line-height: 26px;
@@ -69,7 +69,7 @@ $breakpoint-lg: 1180px;
 
 $container-sm: 730px;
 $container-md: 960px;
-$container-lg: 1150px;
+$container-lg: 1160px;
 
 $breakpoints:
     sm $breakpoint-sm $container-sm,
