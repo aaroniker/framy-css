@@ -66,7 +66,9 @@
         for(i = 0; i < entries.length; i++) {
             entries[i].classList.remove('active');
         }
-        el.classList.add('active');
+        setTimeout(function() {
+            el.classList.add('active');
+        }, 300);
         div.classList.remove('open');
         div.getElementsByTagName('span')[0].textContent = el.textContent;
     });

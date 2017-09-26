@@ -1,3 +1,14 @@
+select.form-select {
+    -webkit-appearance: none;
+    width: 100%;
+    padding: $select-padding-v $select-padding-h;
+    background: $select-background;
+    cursor: pointer;
+    border: 1px solid $select-border;
+    border-radius: $select-radius;
+    line-height: $line-height;
+}
+
 .form-select {
     position: relative;
     display: block;
@@ -13,6 +24,7 @@
         cursor: pointer;
         border: 1px solid $select-border;
         border-radius: $select-radius;
+        line-height: $line-height;
         padding: $select-padding-v ($select-padding-h + 20) $select-padding-v $select-padding-h;
         @include transition();
         @include user-select();
