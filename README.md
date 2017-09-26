@@ -30,5 +30,5 @@ bower install framy-css
 
 ## Resources
 
-* Interface Font https://github.com/rsms/interface
+* Interface Font https://github.com/rsms/inter
 * Ikons http://ikons.piotrkwiatkowski.co.uk
