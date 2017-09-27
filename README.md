@@ -1,10 +1,8 @@
-__INFO__ WIP - completely rewritte a few days ago - going to update README & Website / Docu soon!
-
 # Framy - Very simple CSS Framework
 
-Framy is a simple CSS Framework.
+__INFO__ WIP - completely rewritte a few days ago - going to update Website / Docu / Demo soon!
 
-__Website__ http://www.framycss.org/
+__Website__ http://www.framycss.org
 
 __Demo__ http://www.framycss.org/demo
 
@@ -15,17 +13,34 @@ __Demo__ http://www.framycss.org/demo
 Just include a specific version like this:
 ```
 // CSS
-https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.4/dist/css/framy.min.css
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.4/dist/css/framy.min.css">
 
 // JS
-https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.4/dist/js/framy.js
+<script src="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.4/dist/js/framy.js"></script>
 ```
 
 http://www.jsdelivr.com/projects/framy
 
+### Install with npm
+```
+npm install framy-css
+```
+Then include CSS and JS files like this:
+```
+<link rel="stylesheet" href="node_modules/framy-css/dist/css/framy.min.css">
+
+<script src="node_modules/framy-css/dist/js/framy.js"></script>
+```
+
 ### Install with Bower
 ```
 bower install framy-css
+```
+Then include CSS and JS files like this:
+```
+<link rel="stylesheet" href="bower_components/framy-css/dist/css/framy.min.css">
+
+<script src="bower_components/framy-css/dist/js/framy.js"></script>
 ```
 
 ## Resources
