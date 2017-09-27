@@ -21,6 +21,8 @@ Just include a specific version like this:
 
 http://www.jsdelivr.com/projects/framy
 
+[![](https://data.jsdelivr.com/v1/package/gh/aaroniker/framy-css/badge)](https://www.jsdelivr.com/package/gh/aaroniker/framy-css)
+
 ### Install with npm
 ```
 npm install framy-css
