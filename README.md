@@ -19,7 +19,7 @@ Just include a specific version like this:
 <script src="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.4/dist/js/framy.js"></script>
 ```
 
-http://www.jsdelivr.com/projects/framy
+https://www.jsdelivr.com/package/gh/aaroniker/framy-css
 
 [![](https://data.jsdelivr.com/v1/package/gh/aaroniker/framy-css/badge)](https://www.jsdelivr.com/package/gh/aaroniker/framy-css)
 
