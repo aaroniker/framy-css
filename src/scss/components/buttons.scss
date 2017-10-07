@@ -13,7 +13,7 @@
     background: $primary;
     border-radius: $button-radius;
     @include transition;
-    [class*='#{$icon-class}-'] {
+    [class*='icon-'] {
         position: relative;
         left: -5px;
         font-size: 18px;
@@ -28,7 +28,7 @@
     }
     &.icon {
         padding: $button-padding-v;
-        [class*='#{$icon-class}-'] {
+        [class*='icon-'] {
             left: 0;
             display: block;
             min-width: $line-height;
@@ -41,7 +41,7 @@
         &.icon {
             padding: $button-padding-sm-v;
         }
-        [class*='#{$icon-class}-'] {
+        [class*='icon-'] {
             font-size: 16px;
         }
         &.border {
@@ -57,7 +57,7 @@
         &.icon {
             padding: $button-padding-lg-v;
         }
-        [class*='#{$icon-class}-'] {
+        [class*='icon-'] {
             font-size: 20px;
         }
         &.border {

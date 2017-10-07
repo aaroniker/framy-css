@@ -25,7 +25,7 @@
         "url": "https://github.com/aaroniker/framy-css/issues"
     },
     "scripts": {
-        "icons": "icon-font-generator src/icons/*.svg -o dist/fonts",
+        "icons": "icon-font-generator src/icons/*.svg -o dist/fonts -j false --html false --name icons -p icon",
         "css": "node-sass --include-path src/scss src/scss/framy.scss dist/css/framy.min.css --output-style compressed",
         "watch-css": "nodemon -e scss -x \"npm run css\""
     },
