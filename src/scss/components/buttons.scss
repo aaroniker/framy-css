@@ -10,6 +10,7 @@
     line-height: $line-height;
     padding: $button-padding-v $button-padding-h;
     font-size: $font-size;
+    font-weight: $button-font-weight;
     background: $primary;
     border-radius: $button-radius;
     @include transition;
