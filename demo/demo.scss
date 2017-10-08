@@ -282,6 +282,17 @@
     .btn {
         margin: 0 10px 5px 0;
     }
+    .btn-group {
+        .btn {
+            margin: 0;
+        }
+        .btn + .btn,
+        .btn + .btn-group,
+        .btn-group + .btn,
+        .btn-group + .btn-group {
+            margin-left: -1px;
+        }
+    }
 }
 
 #stuff {

@@ -136,3 +136,79 @@
         }
     }
 }
+
+.btn-group {
+    .btn + .btn,
+    .btn + .btn-group,
+    .btn-group + .btn,
+    .btn-group + .btn-group {
+        margin-left: -1px;
+    }
+    .btn {
+        &:hover,
+        &:focus,
+        &:active {
+            z-index: 2;
+        }
+        &:not(:first-child):not(:last-child) {
+            &:before {
+                border-radius: 0;
+            }
+            border-radius: 0;
+        }
+        &:last-child:not(:first-child) {
+            &:before,
+            &:after {
+                border-radius: 0 $button-radius $button-radius 0;
+            }
+            border-radius: 0 $button-radius $button-radius 0;
+        }
+        &:first-child:not(:last-child) {
+            &:before,
+            &:after {
+                border-radius: $button-radius 0 0 $button-radius;
+            }
+            border-radius: $button-radius 0 0 $button-radius;
+        }
+        &.sm {
+            &:last-child:not(:first-child) {
+                &:before,
+                &:after {
+                    border-radius: 0 $button-sm-radius $button-sm-radius 0;
+                }
+                border-radius: 0 $button-sm-radius $button-sm-radius 0;
+            }
+            &:first-child:not(:last-child) {
+                &:before,
+                &:after {
+                    border-radius: $button-sm-radius 0 0 $button-sm-radius;
+                }
+                border-radius: $button-sm-radius 0 0 $button-sm-radius;
+            }
+        }
+        &.lg {
+            &:last-child:not(:first-child) {
+                &:before,
+                &:after {
+                    border-radius: 0 $button-lg-radius $button-lg-radius 0;
+                }
+                border-radius: 0 $button-lg-radius $button-lg-radius 0;
+            }
+            &:first-child:not(:last-child) {
+                &:before,
+                &:after {
+                    border-radius: $button-lg-radius 0 0 $button-lg-radius;
+                }
+                border-radius: $button-lg-radius 0 0 $button-lg-radius;
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        float: left;
+    }
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    @include clear-after;
+}
