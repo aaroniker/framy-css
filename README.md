@@ -13,10 +13,10 @@ __Demo__ http://www.framycss.org/demo
 Just include a specific version like this:
 ```
 // CSS
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.4/dist/css/framy.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.5/dist/css/framy.min.css">
 
 // JS
-<script src="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.4/dist/js/framy.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.5/dist/js/framy.js"></script>
 ```
 
 https://www.jsdelivr.com/package/gh/aaroniker/framy-css
