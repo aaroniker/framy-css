@@ -2,6 +2,8 @@
     margin-right: auto;
     margin-left: auto;
     max-width: $container-lg;
+    padding-left: $gap-width * .5;
+    padding-right: $gap-width * .5;
     @include clear-after;
     @media(min-width: $breakpoint-sm) {
         width: $container-sm;
@@ -17,6 +19,8 @@
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
+    padding-left: $gap-width * .5;
+    padding-right: $gap-width * .5;
     @include clear-after;
 }
 
