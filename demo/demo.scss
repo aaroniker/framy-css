@@ -85,7 +85,7 @@
 #content {
     padding: 50px 30px 0 330px;
     @media(max-width: 992px) {
-        padding: 30px 20px 0 20px;
+        padding: 30px 0 0 0;
     }
     .container-fluid {
         max-width: 980px;
@@ -95,7 +95,7 @@
         position: relative;
         border-bottom: 1px solid $border;
         @media(max-width: 992px) {
-            padding-right: 64px;
+            padding-right: 59px;
         }
         h1 {
             float: left;
@@ -122,7 +122,7 @@
         }
         .menu {
             position: fixed;
-            right: 20px;
+            right: 15px;
             top: 40px;
             height: 40px;
             width: 40px;
