@@ -18,7 +18,7 @@
     <section id="sidebar">
 
         <h1>Framy CSS</h1>
-        <span class="info">Version <strong>2.4</strong></span>
+        <span class="info">Version <strong>2.5</strong></span>
 
         <hr>
 
@@ -37,7 +37,8 @@
             <ul>
                 <li><a href="#grid">Grid</a></li>
                 <li><a href="#buttons">Buttons</a></li>
-                <li><a href="#forms">Forms</a></li>
+                <li><a href="#formElements">Form Elements</a></li>
+                <li><a href="#formDemo">Form Demo</a></li>
                 <li><a href="#tables">Tables</a></li>
                 <li><a href="#stuff">Stuff</a></li>
             </ul>
@@ -415,7 +416,7 @@
                 </section>
             </div>
 
-            <div class="tab" id="forms">
+            <div class="tab" id="formElements">
                 <section>
                     <h2>Inputs</h2>
                     <div class="columns">
@@ -613,6 +614,66 @@
                             </div>
                         </div>
                     </div>
+                </section>
+            </div>
+
+            <div class="tab" id="formDemo">
+                <section>
+                    <h2>Normal</h2>
+                    <form>
+                        <div class="form-element">
+                            <label for="name1">Name</label>
+                            <input type="text" class="form-field" id="name1">
+                        </div>
+                        <div class="form-element">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div></div>
+                                <span>Checkbox 1</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                <div></div>
+                                <span>Checkbox 2</span>
+                            </label>
+                        </div>
+                    </form>
+                </section>
+                <section>
+                    <h2>Horizontal</h2>
+                    <form class="horizontal">
+                        <div class="form-element">
+                            <label for="nameh" class="sm-3">Name</label>
+                            <div class="sm-9">
+                                <input type="text" class="form-field" id="nameh">
+                            </div>
+                        </div>
+                        <div class="form-element">
+                            <label class="sm-3">Radios</label>
+                            <div class="sm-9">
+                                <label class="radio inline">
+                                    <input type="radio" name="radio1" value="1" checked>
+                                    <div></div>
+                                    <span>Radio Inline 1</span>
+                                </label>
+                                <label class="radio inline">
+                                    <input type="radio" name="radio1" value="2">
+                                    <div></div>
+                                    <span>Radio Inline 2</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-element">
+                            <label for="nameh" class="sm-3">Select</label>
+                            <div class="sm-9">
+                                <select class="form-select">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
                 </section>
             </div>
 
