@@ -40,6 +40,7 @@ form.horizontal .form-element {
         $name: nth($breakpoint, 1);
         [class^='#{$name}'],
         [class*=' #{$name}'] {
+            max-width: 100%;
             padding-right: $gap-width * .5;
             padding-left: $gap-width * .5;
             @include flex-basis(100%);
