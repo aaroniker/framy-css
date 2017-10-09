@@ -36,6 +36,10 @@ form.horizontal .form-element {
     &.reverse {
         @include flex-direction(row-reverse);
     }
+    &.center {
+        align-items: center;
+        justify-content: center;
+    }
     @each $breakpoint in $breakpoints {
         $name: nth($breakpoint, 1);
         [class^='#{$name}'],
