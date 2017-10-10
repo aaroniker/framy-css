@@ -147,7 +147,7 @@ form {
         .radio.inline,
         .switch:first-child,
         .switch.inline {
-            padding-top: $input-padding-v;
+            padding-top: $input-padding-v + 2;
         }
     }
 }
