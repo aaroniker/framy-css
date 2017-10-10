@@ -4,7 +4,7 @@
     width: 100%;
     -webkit-appearance: none;
     background: none;
-    background: $form-background;
+    background: $input-background;
     border: 1px solid $form-border;
     padding: $input-padding-v $input-padding-h;
     color: $input-text;
@@ -108,7 +108,7 @@
         top: 50%;
         text-align: center;
         cursor: pointer;
-        background: $form-background;
+        background: $input-background;
         padding: 5px;
         font-size: 18px;
         margin: -16px 0 0 0;
