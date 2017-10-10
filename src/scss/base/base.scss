@@ -8,19 +8,19 @@ html {
 
 body {
     margin: 0;
-    font-family: $font-family;
-    font-size: $font-size;
-    line-height: $line-height;
-    color: $text-color;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $textColor;
 }
 
 a {
-    text-decoration: $link-decoration;
-    color: $link-color;
+    text-decoration: $linkDecoration;
+    color: $linkColor;
     &:hover,
     &:focus {
-        text-decoration: $link-hover-decoration;
-        color: $link-hover-color;
+        text-decoration: $linkHoverDecoration;
+        color: $linkHoverColor;
     }
 }
 
@@ -37,14 +37,14 @@ textarea {
 hr {
     border: 0;
     border-top: 1px solid $border;
-    margin-top: $margin-bottom;
-    margin-bottom: $margin-bottom;
+    margin-top: $marginBottom;
+    margin-bottom: $marginBottom;
 }
 
 ul,
 ol {
     margin-top: 0;
-    margin-bottom: $margin-bottom;
+    margin-bottom: $marginBottom;
     ul,
     ol {
         margin-bottom: 0;
@@ -66,7 +66,7 @@ ol {
 }
 
 p {
-    margin: 0 0 $margin-bottom 0;
+    margin: 0 0 $marginBottom 0;
     &.light {
         color: $dark40;
     }

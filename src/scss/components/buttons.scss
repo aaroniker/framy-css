@@ -7,12 +7,12 @@
     white-space: nowrap;
     border: none;
     color: #fff;
-    line-height: $line-height;
-    padding: $button-padding-v $button-padding-h;
-    font-size: $font-size;
-    font-weight: $button-font-weight;
+    line-height: $lineHeight;
+    padding: $buttonPaddingV $buttonPaddingH;
+    font-size: $fontSize;
+    font-weight: $buttonFontWeight;
     background: $primary;
-    border-radius: $button-radius;
+    border-radius: $buttonRadius;
     @include transition;
     [class*='icon-'] {
         position: relative;
@@ -24,7 +24,7 @@
         &:before {
             display: inline-block;
             vertical-align: top;
-            line-height: $line-height;
+            line-height: $lineHeight;
         }
         &.right {
             left: auto;
@@ -32,43 +32,43 @@
         }
     }
     &.icon {
-        padding: $button-padding-v;
+        padding: $buttonPaddingV;
         [class*='icon-'] {
             left: auto;
             right: auto;
             display: block;
-            min-width: $line-height;
+            min-width: $lineHeight;
         }
     }
     &.sm {
         font-size: 14px;
-        border-radius: $button-sm-radius;
-        padding: $button-padding-sm-v $button-padding-sm-h;
+        border-radius: $buttonSmRadius;
+        padding: $buttonPaddingSmV $buttonPaddingSmH;
         &.icon {
-            padding: $button-padding-sm-v;
+            padding: $buttonPaddingSmV;
         }
         [class*='icon-'] {
             font-size: 16px;
         }
         &.border {
             &:before {
-                border-radius: $button-sm-radius;
+                border-radius: $buttonSmRadius;
             }
         }
     }
     &.lg {
         font-size: 18px;
-        border-radius: $button-lg-radius;
-        padding: $button-padding-lg-v $button-padding-lg-h;
+        border-radius: $buttonLgRadius;
+        padding: $buttonPaddingLgV $buttonPaddingLgH;
         &.icon {
-            padding: $button-padding-lg-v;
+            padding: $buttonPaddingLgV;
         }
         [class*='icon-'] {
             font-size: 20px;
         }
         &.border {
             &:before {
-                border-radius: $button-lg-radius;
+                border-radius: $buttonLgRadius;
             }
         }
     }
@@ -88,7 +88,7 @@
             position: absolute;
             z-index: 0;
             border: 1px solid $border;
-            border-radius: $button-radius;
+            border-radius: $buttonRadius;
         }
         &:hover {
             background: $light;
@@ -164,47 +164,47 @@
         &:last-child:not(:first-child) {
             &:before,
             &:after {
-                border-radius: 0 $button-radius $button-radius 0;
+                border-radius: 0 $buttonRadius $buttonRadius 0;
             }
-            border-radius: 0 $button-radius $button-radius 0;
+            border-radius: 0 $buttonRadius $buttonRadius 0;
         }
         &:first-child:not(:last-child) {
             &:before,
             &:after {
-                border-radius: $button-radius 0 0 $button-radius;
+                border-radius: $buttonRadius 0 0 $buttonRadius;
             }
-            border-radius: $button-radius 0 0 $button-radius;
+            border-radius: $buttonRadius 0 0 $buttonRadius;
         }
         &.sm {
             &:last-child:not(:first-child) {
                 &:before,
                 &:after {
-                    border-radius: 0 $button-sm-radius $button-sm-radius 0;
+                    border-radius: 0 $buttonSmRadius $buttonSmRadius 0;
                 }
-                border-radius: 0 $button-sm-radius $button-sm-radius 0;
+                border-radius: 0 $buttonSmRadius $buttonSmRadius 0;
             }
             &:first-child:not(:last-child) {
                 &:before,
                 &:after {
-                    border-radius: $button-sm-radius 0 0 $button-sm-radius;
+                    border-radius: $buttonSmRadius 0 0 $buttonSmRadius;
                 }
-                border-radius: $button-sm-radius 0 0 $button-sm-radius;
+                border-radius: $buttonSmRadius 0 0 $buttonSmRadius;
             }
         }
         &.lg {
             &:last-child:not(:first-child) {
                 &:before,
                 &:after {
-                    border-radius: 0 $button-lg-radius $button-lg-radius 0;
+                    border-radius: 0 $buttonLgRadius $buttonLgRadius 0;
                 }
-                border-radius: 0 $button-lg-radius $button-lg-radius 0;
+                border-radius: 0 $buttonLgRadius $buttonLgRadius 0;
             }
             &:first-child:not(:last-child) {
                 &:before,
                 &:after {
-                    border-radius: $button-lg-radius 0 0 $button-lg-radius;
+                    border-radius: $buttonLgRadius 0 0 $buttonLgRadius;
                 }
-                border-radius: $button-lg-radius 0 0 $button-lg-radius;
+                border-radius: $buttonLgRadius 0 0 $buttonLgRadius;
             }
         }
         &:first-child {

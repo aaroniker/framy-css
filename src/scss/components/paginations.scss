@@ -6,61 +6,61 @@
         display: block;
         cursor: pointer;
         font-size: 18px;
-        border: 1px solid $pagination-border;
-        color: $pagination-color;
-        padding: $pagination-padding ($pagination-padding + 2);
+        border: 1px solid $paginationBorder;
+        color: $paginationColor;
+        padding: $paginationPadding ($paginationPadding + 2);
         &:before {
             font-family: 'icons';
             display: block;
         }
         &:hover {
-            color: $pagination-color-hover;
+            color: $paginationColorHover;
         }
     }
     .prev {
-        border-radius: $pagination-radius 0 0 $pagination-radius;
+        border-radius: $paginationRadius 0 0 $paginationRadius;
         &:before {
             content: '\f109';
         }
     }
     .next {
-        border-radius: 0 $pagination-radius $pagination-radius 0;
+        border-radius: 0 $paginationRadius $paginationRadius 0;
         &:before {
             content: '\f10a';
         }
     }
     div {
         float: left;
-        border-top: 1px solid $pagination-border;
-        border-bottom: 1px solid $pagination-border;
-        padding: $pagination-padding ($pagination-padding + 8);
-        color: $pagination-color;
+        border-top: 1px solid $paginationBorder;
+        border-bottom: 1px solid $paginationBorder;
+        padding: $paginationPadding ($paginationPadding + 8);
+        color: $paginationColor;
         strong {
-            color: $pagination-active;
+            color: $paginationActive;
         }
     }
     ul {
         margin: 0;
         padding: 0;
         float: left;
-        border-top: 1px solid $pagination-border;
-        border-bottom: 1px solid $pagination-border;
+        border-top: 1px solid $paginationBorder;
+        border-bottom: 1px solid $paginationBorder;
         @include clear-after;
         li {
             float: left;
             list-style: none;
             position: relative;
-            border-right: 1px solid $pagination-border;
-            padding: $pagination-padding ($pagination-padding + 4);
-            color: $pagination-color;
+            border-right: 1px solid $paginationBorder;
+            padding: $paginationPadding ($paginationPadding + 4);
+            color: $paginationColor;
             &:last-child {
                 border-right: 0;
             }
             &.active {
-                color: $pagination-active-color;
+                color: $paginationActiveColor;
                 position: relative;
                 z-index: 1;
-                background: $pagination-active;
+                background: $paginationActive;
                 &:before {
                     content: '';
                     display: block;
@@ -70,7 +70,7 @@
                     right: -1px;
                     bottom: -1px;
                     position: absolute;
-                    background: $pagination-active;
+                    background: $paginationActive;
                 }
             }
         }

@@ -4,17 +4,17 @@
     width: 100%;
     -webkit-appearance: none;
     background: none;
-    background: $input-background;
-    border: 1px solid $form-border;
-    padding: $input-padding-v $input-padding-h;
-    color: $input-text;
-    border-radius: $input-radius;
+    background: $inputBackground;
+    border: 1px solid $formBorder;
+    padding: $inputPaddingV $inputPaddingH;
+    color: $inputText;
+    border-radius: $inputRadius;
     @include transition;
     &[disabled],
     &[readonly],
     fieldset[disabled] & {
         opacity: 1;
-        background: $form-disabled;
+        background: $formDisabled;
     }
     &[disabled],
     fieldset[disabled] & {
@@ -31,7 +31,7 @@
     }
     &:focus {
         outline: none;
-        border-color: $form-border-focus;
+        border-color: $formBorderFocus;
         &.filled {
             background: none;
         }
@@ -42,11 +42,11 @@
 }
 
 .form-element {
-    margin-bottom: $form-element-bottom;
+    margin-bottom: $formElementBottom;
     label {
-        color: $label-color;
-        margin-bottom: $label-bottom;
-        font-weight: $label-weight;
+        color: $labelColor;
+        margin-bottom: $labelBottom;
+        font-weight: $labelWeight;
         max-width: 100%;
     }
 }
@@ -65,10 +65,10 @@
             border-radius: 0;
         }
         &:first-child {
-            border-radius: $input-radius 0 0 $input-radius;
+            border-radius: $inputRadius 0 0 $inputRadius;
         }
         &:last-child {
-            border-radius: 0 $input-radius $input-radius 0;
+            border-radius: 0 $inputRadius $inputRadius 0;
         }
         &:not(:first-child) {
             margin-left: -1px;
@@ -84,16 +84,16 @@
     & > span {
         margin-bottom: 0;
         text-align: center;
-        border: 1px solid $form-border;
-        padding: $input-padding-v;
+        border: 1px solid $formBorder;
+        padding: $inputPaddingV;
         background: $light;
         @include transition;
     }
     &.focus {
         & > span {
-            color: $form-focus-color;
-            background: $form-focus;
-            border-color: $form-border-focus;
+            color: $formFocusColor;
+            background: $formFocus;
+            border-color: $formBorderFocus;
         }
     }
 }
@@ -108,19 +108,19 @@
         top: 50%;
         text-align: center;
         cursor: pointer;
-        background: $input-background;
+        background: $inputBackground;
         padding: 5px;
         font-size: 18px;
         margin: -16px 0 0 0;
-        color: $form-border;
-        right: ($input-padding-v - 5);
+        color: $formBorder;
+        right: ($inputPaddingV - 5);
         @include user-select;
         &:before {
             line-height: 22px;
             display: block;
         }
         &.active {
-            color: $form-border-focus;
+            color: $formBorderFocus;
         }
     }
 }
@@ -129,15 +129,15 @@ form {
     &.horizontal {
         .form-element {
             & > label {
-                @media(min-width: $breakpoint-sm) {
+                @media(min-width: $breakpointSm) {
                     margin-bottom: 0;
-                    padding: $input-padding-v 0;
+                    padding: $inputPaddingV 0;
                 }
             }
             .static {
                 margin-bottom: 0;
-                @media(min-width: $breakpoint-sm) {
-                    padding: $input-padding-v 0;
+                @media(min-width: $breakpointSm) {
+                    padding: $inputPaddingV 0;
                 }
             }
         }
@@ -147,7 +147,7 @@ form {
         .radio.inline,
         .switch:first-child,
         .switch.inline {
-            padding-top: $input-padding-v + 2;
+            padding-top: $inputPaddingV + 2;
         }
     }
 }
@@ -215,15 +215,15 @@ form {
 
 .checkbox {
     & > span {
-        line-height: $checkbox-size + 2;
+        line-height: $checkboxSize + 2;
     }
     input {
         & + div {
-            height: $checkbox-size;
-            width: $checkbox-size;
-            background: $checkbox-background;
-            border: 1px solid $checkbox-border;
-            border-radius: $checkbox-radius;
+            height: $checkboxSize;
+            width: $checkboxSize;
+            background: $checkboxBackground;
+            border: 1px solid $checkboxBorder;
+            border-radius: $checkboxRadius;
             &:before {
                 position: absolute;
                 top: 50%;
@@ -232,15 +232,15 @@ form {
                 height: 11px;
                 margin: -7px 0 0 -3px;
                 opacity: 0;
-                border-right: 2px solid $checkbox-arrow;
-                border-bottom: 2px solid $checkbox-arrow;
+                border-right: 2px solid $checkboxArrow;
+                border-bottom: 2px solid $checkboxArrow;
                 @include transform(rotate(0deg) scale(0));
                 @include transition(all .3s ease .15s);
             }
         }
         &:checked + div {
-            background: $checkbox-active;
-            border-color: $checkbox-border-active;
+            background: $checkboxActive;
+            border-color: $checkboxBorderActive;
             &:before {
                 opacity: 1;
                 @include transform(rotate(42deg) scale(1));
@@ -251,27 +251,27 @@ form {
             cursor: not-allowed;
         }
         &:disabled:checked + div {
-            background: $checkbox-disabled;
-            border-color: $checkbox-border;
+            background: $checkboxDisabled;
+            border-color: $checkboxBorder;
             &:before {
-                border-color: $checkbox-border;
+                border-color: $checkboxBorder;
             }
         }
         &:disabled:not(:checked) + div {
-            background: $checkbox-disabled;
-            border-color: $checkbox-border;
+            background: $checkboxDisabled;
+            border-color: $checkboxBorder;
         }
     }
     &:hover {
         input {
             & + div {
-                border-color: $checkbox-border-active;
+                border-color: $checkboxBorderActive;
             }
             &:checked + div {
-                background: $checkbox-border-active;
+                background: $checkboxBorderActive;
             }
             &:disabled:checked + div {
-                background: $checkbox-disabled;
+                background: $checkboxDisabled;
             }
         }
     }
@@ -279,7 +279,7 @@ form {
         input {
             & + div {
                 &:after {
-                    box-shadow: 0 ($checkbox-size - 4px) 0 $checkbox-border-active, 0 (-$checkbox-size + 4px) 0 $checkbox-border-active, (-$checkbox-size + 4px) 0 0 $checkbox-border-active, ($checkbox-size - 4px) 0 0 $checkbox-border-active, ($checkbox-size - 10px) ($checkbox-size - 10px) 0 $checkbox-border-active, (-$checkbox-size + 10px) ($checkbox-size - 10px) 0 $checkbox-border-active, ($checkbox-size - 10px) (-$checkbox-size + 10px) 0 $checkbox-border-active, (-$checkbox-size + 10px) (-$checkbox-size + 10px) 0 $checkbox-border-active;
+                    box-shadow: 0 ($checkboxSize - 4px) 0 $checkboxBorderActive, 0 (-$checkboxSize + 4px) 0 $checkboxBorderActive, (-$checkboxSize + 4px) 0 0 $checkboxBorderActive, ($checkboxSize - 4px) 0 0 $checkboxBorderActive, ($checkboxSize - 10px) ($checkboxSize - 10px) 0 $checkboxBorderActive, (-$checkboxSize + 10px) ($checkboxSize - 10px) 0 $checkboxBorderActive, ($checkboxSize - 10px) (-$checkboxSize + 10px) 0 $checkboxBorderActive, (-$checkboxSize + 10px) (-$checkboxSize + 10px) 0 $checkboxBorderActive;
                 }
             }
         }
@@ -288,33 +288,33 @@ form {
 
 .radio {
     & > span {
-        line-height: $radio-size + 2;
+        line-height: $radioSize + 2;
     }
     input {
         & + div {
-            width: $radio-size;
-            height: $radio-size;
-            background: $radio-background;
-            border: 1px solid $radio-border;
-            border-radius: $radio-radius;
+            width: $radioSize;
+            height: $radioSize;
+            background: $radioBackground;
+            border: 1px solid $radioBorder;
+            border-radius: $radioRadius;
             &:before {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 display: block;
-                width: ($radio-size + 2) / 2;
-                height: ($radio-size + 2) / 2;
-                margin: (-(($radio-size + 2) / 4)) 0 0 (-(($radio-size + 2) / 4));
+                width: ($radioSize + 2) / 2;
+                height: ($radioSize + 2) / 2;
+                margin: (-(($radioSize + 2) / 4)) 0 0 (-(($radioSize + 2) / 4));
                 opacity: 0;
-                background: $radio-dot;
+                background: $radioDot;
                 border-radius: inherit;
                 @include transform(scale(0));
                 @include transition;
             }
         }
         &:checked + div {
-            background: $radio-active;
-            border-color: $radio-border-active;
+            background: $radioActive;
+            border-color: $radioBorderActive;
             &:before {
                 opacity: 1;
                 @include transform(scale(1));
@@ -322,29 +322,29 @@ form {
         }
         &:disabled + div {
             cursor: not-allowed;
-            background: $radio-disabled;
-            border-color: $radio-border;
+            background: $radioDisabled;
+            border-color: $radioBorder;
         }
         &:disabled:checked + div {
             &:before {
-                background: $radio-border;
+                background: $radioBorder;
             }
         }
     }
     &:hover {
         input {
             & + div {
-                border-color: $radio-border-active;
+                border-color: $radioBorderActive;
             }
             &:disabled + div {
-                border-color: $radio-border;
+                border-color: $radioBorder;
             }
             &:checked + div {
-                background: $radio-border-active;
+                background: $radioBorderActive;
             }
             &:disabled:checked + div {
-                background: $radio-disabled;
-                border-color: $radio-border;
+                background: $radioDisabled;
+                border-color: $radioBorder;
             }
         }
     }
@@ -352,7 +352,7 @@ form {
         input {
             & + div {
                 &:after {
-                    box-shadow: 0 ($radio-size - 4px) 0 $radio-border-active, 0 (-$radio-size + 4px) 0 $radio-border-active, (-$radio-size + 4px) 0 0 $radio-border-active, ($radio-size - 4px) 0 0 $radio-border-active, ($radio-size - 10px) ($radio-size - 10px) 0 $radio-border-active, (-$radio-size + 10px) ($radio-size - 10px) 0 $radio-border-active, ($radio-size - 10px) (-$radio-size + 10px) 0 $radio-border-active, (-$radio-size + 10px) (-$radio-size + 10px) 0 $radio-border-active;
+                    box-shadow: 0 ($radioSize - 4px) 0 $radioBorderActive, 0 (-$radioSize + 4px) 0 $radioBorderActive, (-$radioSize + 4px) 0 0 $radioBorderActive, ($radioSize - 4px) 0 0 $radioBorderActive, ($radioSize - 10px) ($radioSize - 10px) 0 $radioBorderActive, (-$radioSize + 10px) ($radioSize - 10px) 0 $radioBorderActive, ($radioSize - 10px) (-$radioSize + 10px) 0 $radioBorderActive, (-$radioSize + 10px) (-$radioSize + 10px) 0 $radioBorderActive;
                 }
             }
         }
@@ -361,20 +361,20 @@ form {
 
 .switch {
     & > span {
-        line-height: $switch-size;
+        line-height: $switchSize;
     }
     input {
         & + div {
-            width: $switch-size * 2;
-            height: $switch-size;
-            border: 1px solid $switch-border;
-            background: $switch-background;
-            border-radius: $switch-radius;
+            width: $switchSize * 2;
+            height: $switchSize;
+            border: 1px solid $switchBorder;
+            background: $switchBackground;
+            border-radius: $switchRadius;
             &:before {
                 float: left;
-                width: $switch-size - 6;
-                height: $switch-size - 6;
-                background: $switch-dot;
+                width: $switchSize - 6;
+                height: $switchSize - 6;
+                background: $switchDot;
                 pointer-events: none;
                 margin-top: 2px;
                 margin-left: 2px;
@@ -383,18 +383,18 @@ form {
             }
         }
         &:checked + div {
-            background: $switch-active;
-            border: 1px solid $switch-border-active;
+            background: $switchActive;
+            border: 1px solid $switchBorderActive;
             &:before {
-                @include translate($switch-size, 0)
+                @include translate($switchSize, 0)
             }
         }
         &:disabled + div {
             cursor: not-allowed;
-            background: $switch-disabled;
-            border-color: $switch-border;
+            background: $switchDisabled;
+            border-color: $switchBorder;
             &:before {
-                background: $switch-border;
+                background: $switchBorder;
             }
         }
     }
@@ -402,7 +402,7 @@ form {
         input {
             & + div {
                 &:after {
-                    box-shadow: 0 ($switch-size - 4px) 0 $switch-border-active, 0 (-$switch-size + 4px) 0 $switch-border-active, (-$switch-size - 6px) 0 0 $switch-border-active, ($switch-size + 6px) 0 0 $switch-border-active, ($switch-size - 3px) ($switch-size - 7px) 0 $switch-border-active, (-$switch-size + 3px) ($switch-size - 7px) 0 $switch-border-active, ($switch-size - 3px) (-$switch-size + 7px) 0 $switch-border-active, (-$switch-size + 3px) (-$switch-size + 7px) 0 $switch-border-active;
+                    box-shadow: 0 ($switchSize - 4px) 0 $switchBorderActive, 0 (-$switchSize + 4px) 0 $switchBorderActive, (-$switchSize - 6px) 0 0 $switchBorderActive, ($switchSize + 6px) 0 0 $switchBorderActive, ($switchSize - 3px) ($switchSize - 7px) 0 $switchBorderActive, (-$switchSize + 3px) ($switchSize - 7px) 0 $switchBorderActive, ($switchSize - 3px) (-$switchSize + 7px) 0 $switchBorderActive, (-$switchSize + 3px) (-$switchSize + 7px) 0 $switchBorderActive;
                 }
             }
         }
@@ -410,14 +410,14 @@ form {
     &:hover {
         input {
             &:disabled + div {
-                border-color: $switch-border;
+                border-color: $switchBorder;
             }
             &:checked + div {
-                background: $switch-border-active;
+                background: $switchBorderActive;
             }
             &:disabled:checked + div {
-                background: $switch-disabled;
-                border-color: $switch-border;
+                background: $switchDisabled;
+                border-color: $switchBorder;
             }
         }
     }

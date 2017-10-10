@@ -27,164 +27,164 @@ $info: $secondary;
 
 @import url('https://rsms.me/inter/inter-ui.css');
 
-$font-family: 'Inter UI', sans-serif;
+$fontFamily: 'Inter UI', sans-serif;
 
-$font-size: 16px;
-$line-height: 26px;
-$text-color: $dark60;
+$fontSize: 16px;
+$lineHeight: 26px;
+$textColor: $dark60;
 
-$link-color: $primary;
-$link-decoration: none;
-$link-hover-color: $primary;
-$link-hover-decoration: none;
+$linkColor: $primary;
+$linkDecoration: none;
+$linkHoverColor: $primary;
+$linkHoverDecoration: none;
 
-$border-radius: 4px;
-$border-sm-radius: 3px;
-$border-lg-radius: 5px;
+$borderRadius: 4px;
+$borderSmRadius: 3px;
+$borderLgRadius: 5px;
 
-$margin-bottom: 20px;
+$marginBottom: 20px;
 
 // Typography
 
-$headings-font-family: inherit;
-$headings-line-height: 1.2;
+$headingsFontFamily: inherit;
+$headingsLineHeight: 1.2;
 
-$headings-h1-color: $dark80;
-$headings-h2-color: $dark80;
-$headings-h3-color: $dark80;
-$headings-h4-color: $dark80;
+$headingsH1Color: $dark80;
+$headingsH2Color: $dark80;
+$headingsH3Color: $dark80;
+$headingsH4Color: $dark80;
 
-$headings-h1-weight: normal;
-$headings-h2-weight: normal;
-$headings-h3-weight: bold;
-$headings-h4-weight: bold;
+$headingsH1Weight: normal;
+$headingsH2Weight: normal;
+$headingsH3Weight: bold;
+$headingsH4Weight: bold;
 
-$headings-h1-size: 36px;
-$headings-h2-size: 32px;
-$headings-h3-size: 24px;
-$headings-h4-size: 21px;
+$headingsH1Size: 36px;
+$headingsH2Size: 32px;
+$headingsH3Size: 24px;
+$headingsH4Size: 21px;
 
 // Grid
 
 $columns: 12;
-$gap-width: 30px;
+$gapWidth: 30px;
 
-$breakpoint-xs: 480px;
-$breakpoint-sm: 768px;
-$breakpoint-md: 992px;
-$breakpoint-lg: 1180px;
+$breakpointXs: 480px;
+$breakpointSm: 768px;
+$breakpointMd: 992px;
+$breakpointLg: 1180px;
 
-$container-sm: 730px;
-$container-md: 960px;
-$container-lg: 1160px;
+$containerSm: 730px;
+$containerMd: 960px;
+$containerLg: 1160px;
 
 $breakpoints:
-    sm $breakpoint-sm $container-sm,
-    md $breakpoint-md $container-md,
-    lg $breakpoint-lg $container-lg;
+    sm $breakpointSm $containerSm,
+    md $breakpointMd $containerMd,
+    lg $breakpointLg $containerLg;
 
 // Buttons
 
-$button-lg-radius: $border-lg-radius;
-$button-radius: $border-radius;
-$button-sm-radius: $border-sm-radius;
+$buttonLgRadius: $borderLgRadius;
+$buttonRadius: $borderRadius;
+$buttonSmRadius: $borderSmRadius;
 
-$button-font-weight: 500;
+$buttonFontWeight: 500;
 
-$button-padding-v: 10px;
-$button-padding-h: 25px;
-$button-padding-sm-v: 5px;
-$button-padding-sm-h: 20px;
-$button-padding-lg-v: 15px;
-$button-padding-lg-h: 30px;
+$buttonPaddingV: 10px;
+$buttonPaddingH: 25px;
+$buttonPaddingSmV: 5px;
+$buttonPaddingSmH: 20px;
+$buttonPaddingLgV: 15px;
+$buttonPaddingLgH: 30px;
 
 // Alerts
 
-$alert-padding: 10px;
-$alert-radius: $border-radius;
-$alert-font-weight: 500;
+$alertPadding: 10px;
+$alertRadius: $borderRadius;
+$alertFontWeight: 500;
 
 // Forms
 
-$label-color: $dark80;
-$label-weight: normal;
-$label-bottom: 5px;
+$labelColor: $dark80;
+$labelWeight: normal;
+$labelBottom: 5px;
 
-$form-disabled: $light;
-$form-border: $border;
-$form-border-focus: $primary;
-$form-focus: mix(#fff, $primary, 40%);
-$form-focus-color: #fff;
-$form-element-bottom: $margin-bottom;
+$formDisabled: $light;
+$formBorder: $border;
+$formBorderFocus: $primary;
+$formFocus: mix(#fff, $primary, 40%);
+$formFocusColor: #fff;
+$formElementBottom: $marginBottom;
 
-$input-text: $dark60;
-$input-background: #fff;
-$input-radius: $border-radius;
+$inputText: $dark60;
+$inputBackground: #fff;
+$inputRadius: $borderRadius;
 
-$input-padding-v: 10px;
-$input-padding-h: 15px;
+$inputPaddingV: 10px;
+$inputPaddingH: 15px;
 
-$switch-size: 22px;
-$switch-border: $form-border;
-$switch-border-active: $primary;
-$switch-active: mix(#fff, $primary, 40%);
-$switch-background: $switch-border;
-$switch-dot: #fff;
-$switch-disabled: $form-disabled;
-$switch-radius: $switch-size / 2;
+$switchSize: 22px;
+$switchBorder: $formBorder;
+$switchBorderActive: $primary;
+$switchActive: mix(#fff, $primary, 40%);
+$switchBackground: $switchBorder;
+$switchDot: #fff;
+$switchDisabled: $formDisabled;
+$switchRadius: $switchSize / 2;
 
-$checkbox-size: 22px;
-$checkbox-border: $form-border;
-$checkbox-border-active: $primary;
-$checkbox-active: mix(#fff, $primary, 40%);
-$checkbox-background: $input-background;
-$checkbox-arrow: #fff;
-$checkbox-disabled: $form-disabled;
-$checkbox-radius: $input-radius;
+$checkboxSize: 22px;
+$checkboxBorder: $formBorder;
+$checkboxBorderActive: $primary;
+$checkboxActive: mix(#fff, $primary, 40%);
+$checkboxBackground: $inputBackground;
+$checkboxArrow: #fff;
+$checkboxDisabled: $formDisabled;
+$checkboxRadius: $inputRadius;
 
-$radio-size: 22px;
-$radio-border: $form-border;
-$radio-border-active: $primary;
-$radio-active: mix(#fff, $primary, 40%);
-$radio-background: $input-background;
-$radio-dot: #fff;
-$radio-disabled: $form-disabled;
-$radio-radius: 50%;
+$radioSize: 22px;
+$radioBorder: $formBorder;
+$radioBorderActive: $primary;
+$radioActive: mix(#fff, $primary, 40%);
+$radioBackground: $inputBackground;
+$radioDot: #fff;
+$radioDisabled: $formDisabled;
+$radioRadius: 50%;
 
 // Selects
 
-$select-radius: $input-radius;
-$select-active: $secondary;
-$select-border: $form-border;
-$select-border-focus: $form-border-focus;
-$select-background: $input-background;
-$select-disabled: $form-disabled;
-$select-hover: $light;
-$select-padding-v: $input-padding-v;
-$select-padding-h: $input-padding-h;
+$selectRadius: $inputRadius;
+$selectActive: $secondary;
+$selectBorder: $formBorder;
+$selectBorderFocus: $formBorderFocus;
+$selectBackground: $inputBackground;
+$selectDisabled: $formDisabled;
+$selectHover: $light;
+$selectPaddingV: $inputPaddingV;
+$selectPaddingH: $inputPaddingH;
 
 // Paginations
 
-$pagination-padding: 6px;
-$pagination-radius: $input-radius;
-$pagination-border: $form-border;
-$pagination-active: $primary;
-$pagination-color: $dark40;
-$pagination-color-hover: $dark60;
-$pagination-active-color: #fff;
+$paginationPadding: 6px;
+$paginationRadius: $inputRadius;
+$paginationBorder: $formBorder;
+$paginationActive: $primary;
+$paginationColor: $dark40;
+$paginationColorHover: $dark60;
+$paginationActiveColor: #fff;
 
 // Tables
 
-$table-bottom: $margin-bottom;
-$table-th-text: $dark80;
-$table-border: $border;
-$table-padding-v: $input-padding-v;
-$table-padding-h: $input-padding-h;
-$table-line-height: $line-height;
-$table-hover: $line;
-$table-th-background: none;
-$table-td-background: none;
-$table-stripe-background: $light;
+$tableBottom: $marginBottom;
+$tableThText: $dark80;
+$tableBorder: $border;
+$tablePaddingV: $inputPaddingV;
+$tablePaddingH: $inputPaddingH;
+$tableLineHeight: $lineHeight;
+$tableHover: $line;
+$tableThBackground: none;
+$tableTdBackground: none;
+$tableStripeBackground: $light;
 
 // Helper
 

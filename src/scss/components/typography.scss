@@ -4,57 +4,57 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $headings-font-family;
-    line-height: $headings-line-height;
+    font-family: $headingsFontFamily;
+    line-height: $headingsLineHeight;
 }
 
 h1 {
-    color: $headings-h1-color;
-    font-weight: $headings-h1-weight;
-    font-size: $headings-h1-size;
-    margin: 0 0 $margin-bottom 0;
-    @media(max-width: $breakpoint-sm) {
-        font-size: floor($headings-h1-size * .8);
+    color: $headingsH1Color;
+    font-weight: $headingsH1Weight;
+    font-size: $headingsH1Size;
+    margin: 0 0 $marginBottom 0;
+    @media(max-width: $breakpointSm) {
+        font-size: floor($headingsH1Size * .8);
     }
 }
 
 h2 {
-    color: $headings-h2-color;
-    font-weight: $headings-h2-weight;
-    font-size: $headings-h2-size;
-    margin: 0 0 $margin-bottom 0;
-    @media(max-width: $breakpoint-sm) {
-        font-size: floor($headings-h2-size * .8);
+    color: $headingsH2Color;
+    font-weight: $headingsH2Weight;
+    font-size: $headingsH2Size;
+    margin: 0 0 $marginBottom 0;
+    @media(max-width: $breakpointSm) {
+        font-size: floor($headingsH2Size * .8);
     }
 }
 
 h3 {
-    color: $headings-h3-color;
-    font-weight: $headings-h3-weight;
-    font-size: $headings-h3-size;
-    margin: $margin-bottom 0;
-    @media(max-width: $breakpoint-sm) {
-        font-size: floor($headings-h3-size * .8);
+    color: $headingsH3Color;
+    font-weight: $headingsH3Weight;
+    font-size: $headingsH3Size;
+    margin: $marginBottom 0;
+    @media(max-width: $breakpointSm) {
+        font-size: floor($headingsH3Size * .8);
     }
 }
 
 h4 {
-    color: $headings-h4-color;
-    font-weight: $headings-h4-weight;
-    font-size: $headings-h4-size;
-    margin: $margin-bottom 0;
-    @media(max-width: $breakpoint-sm) {
-        font-size: floor($headings-h4-size * .9);
+    color: $headingsH4Color;
+    font-weight: $headingsH4Weight;
+    font-size: $headingsH4Size;
+    margin: $marginBottom 0;
+    @media(max-width: $breakpointSm) {
+        font-size: floor($headingsH4Size * .9);
     }
 }
 
 label {
-    color: $label-color;
-    font-weight: $label-weight;
+    color: $labelColor;
+    font-weight: $labelWeight;
     display: block;
 }
 
 small {
-    font-size: floor($font-size * .9);
+    font-size: floor($fontSize * .9);
     line-height: 1;
 }

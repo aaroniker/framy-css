@@ -151,8 +151,8 @@
 }
 
 @mixin grid-col-common {
-    padding-right: $gap-width * .5;
-    padding-left: $gap-width * .5;
+    padding-right: $gapWidth * .5;
+    padding-left: $gapWidth * .5;
     @include flex-grow(0);
     @include flex-shrink(0);
 }

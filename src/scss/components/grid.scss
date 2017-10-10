@@ -1,33 +1,33 @@
 .container {
     margin-right: auto;
     margin-left: auto;
-    max-width: $container-lg;
-    padding-left: $gap-width * .5;
-    padding-right: $gap-width * .5;
+    max-width: $containerLg;
+    padding-left: $gapWidth * .5;
+    padding-right: $gapWidth * .5;
     @include clear-after;
-    @media(min-width: $breakpoint-sm) {
-        width: $container-sm;
+    @media(min-width: $breakpointSm) {
+        width: $containerSm;
     }
-    @media(min-width: $breakpoint-md) {
-        width: $container-md;
+    @media(min-width: $breakpointMd) {
+        width: $containerMd;
     }
-    @media(min-width: $breakpoint-lg) {
-        width: $container-lg;
+    @media(min-width: $breakpointLg) {
+        width: $containerLg;
     }
 }
 
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
-    padding-left: $gap-width * .5;
-    padding-right: $gap-width * .5;
+    padding-left: $gapWidth * .5;
+    padding-right: $gapWidth * .5;
     @include clear-after;
 }
 
 .columns,
 form.horizontal .form-element {
-    margin-right: $gap-width * .5 * -1;
-    margin-left: $gap-width * .5 * -1;
+    margin-right: $gapWidth * .5 * -1;
+    margin-left: $gapWidth * .5 * -1;
     @include flexbox;
     @include flex(0, 1, auto);
     @include flex-direction(row);
@@ -45,8 +45,8 @@ form.horizontal .form-element {
         [class^='#{$name}'],
         [class*=' #{$name}'] {
             max-width: 100%;
-            padding-right: $gap-width * .5;
-            padding-left: $gap-width * .5;
+            padding-right: $gapWidth * .5;
+            padding-left: $gapWidth * .5;
             @include flex-basis(100%);
         }
     }

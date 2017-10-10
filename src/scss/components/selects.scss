@@ -1,12 +1,12 @@
 select.form-select {
     -webkit-appearance: none;
     width: 100%;
-    padding: $select-padding-v $select-padding-h;
-    background: $select-background;
+    padding: $selectPaddingV $selectPaddingH;
+    background: $selectBackground;
     cursor: pointer;
-    border: 1px solid $select-border;
-    border-radius: $select-radius;
-    line-height: $line-height;
+    border: 1px solid $selectBorder;
+    border-radius: $selectRadius;
+    line-height: $lineHeight;
 }
 
 .form-select {
@@ -20,12 +20,12 @@ select.form-select {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        background: $select-background;
+        background: $selectBackground;
         cursor: pointer;
-        border: 1px solid $select-border;
-        border-radius: $select-radius;
-        line-height: $line-height;
-        padding: $select-padding-v ($select-padding-h + 20) $select-padding-v $select-padding-h;
+        border: 1px solid $selectBorder;
+        border-radius: $selectRadius;
+        line-height: $lineHeight;
+        padding: $selectPaddingV ($selectPaddingH + 20) $selectPaddingV $selectPaddingH;
         @include transition();
         @include user-select();
         &:after {
@@ -38,23 +38,23 @@ select.form-select {
             height: 0;
             border-style: solid;
             border-width: 5px 5px 0 5px;
-            right: $select-padding-h;
+            right: $selectPaddingH;
             border-color: $dark40 transparent transparent transparent;
         }
     }
     &.disabled {
         & > span {
             cursor: not-allowed;
-            background: $select-disabled;
+            background: $selectDisabled;
             color: $dark40;
             &:after {
-                border-color: $select-border transparent transparent transparent;
+                border-color: $selectBorder transparent transparent transparent;
             }
         }
     }
     &.open {
         & > span {
-            border-color: $select-border-focus;
+            border-color: $selectBorderFocus;
             &:after {
                 @include transform(rotate(180deg));
             }
@@ -91,11 +91,11 @@ select.form-select {
             color: $dark40;
             @include transition();
             &:hover {
-                background: $select-hover;
+                background: $selectHover;
             }
             &.active {
                 color: #fff;
-                background: $select-active;
+                background: $selectActive;
             }
         }
     }

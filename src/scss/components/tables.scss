@@ -1,17 +1,17 @@
 table {
     &.table {
-        line-height: $table-line-height;
+        line-height: $tableLineHeight;
         width: 100%;
-        margin-bottom: $table-bottom;
+        margin-bottom: $tableBottom;
         &.border {
-            border: 1px solid $table-border;
+            border: 1px solid $tableBorder;
         }
         &.stripe {
             tbody {
                 tr {
                     &:nth-child(2n + 1) {
                         td {
-                            background: $table-stripe-background;
+                            background: $tableStripeBackground;
                         }
                     }
                 }
@@ -23,49 +23,49 @@ table {
                     &:hover {
                         td,
                         th {
-                            background: $table-hover;
+                            background: $tableHover;
                         }
                     }
                 }
             }
         }
         &.responsive {
-            @media(max-width: $breakpoint-sm) {
+            @media(max-width: $breakpointSm) {
                 border-top: 0;
             }
             tr {
                 th {
                     display: table-cell;
-                    @media(max-width: $breakpoint-sm) {
+                    @media(max-width: $breakpointSm) {
                         display: none;
                     }
                 }
                 td {
                     display: table-cell;
-                    @media(max-width: $breakpoint-sm) {
+                    @media(max-width: $breakpointSm) {
                         display: block;
                         padding-left: 42%;
                         padding-bottom: 0;
-                        padding-right: $table-padding-h;
+                        padding-right: $tablePaddingH;
                         position: relative;
                         border: 0;
                     }
                     &:first-child {
-                        border-top: 1px solid $table-border;
+                        border-top: 1px solid $tableBorder;
                     }
                     &:last-child {
-                        padding-bottom: $table-padding-v;
+                        padding-bottom: $tablePaddingV;
                     }
                     &:before {
                         content: attr(data-th)": ";
-                        color:  $table-th-text;
+                        color:  $tableThText;
                         font-weight: bold;
                         display: none;
                         position: absolute;
-                        left: $table-padding-h;
-                        top: $table-padding-v;
+                        left: $tablePaddingH;
+                        top: $tablePaddingV;
                         width: 42%;
-                        @media(max-width: $breakpoint-sm) {
+                        @media(max-width: $breakpointSm) {
                             display: block;
                         }
                     }
@@ -74,14 +74,14 @@ table {
         }
         tr {
             th {
-                color:  $table-th-text;
-                padding: $table-padding-v $table-padding-h;
-                background: $table-th-background;
+                color:  $tableThText;
+                padding: $tablePaddingV $tablePaddingH;
+                background: $tableThBackground;
             }
             td {
-                padding: $table-padding-v $table-padding-h;
-                border-top: 1px solid $table-border;
-                background: $table-td-background;
+                padding: $tablePaddingV $tablePaddingH;
+                border-top: 1px solid $tableBorder;
+                background: $tableTdBackground;
             }
         }
     }
