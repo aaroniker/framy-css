@@ -26,11 +26,16 @@
             vertical-align: top;
             line-height: $line-height;
         }
+        &.right {
+            left: auto;
+            right: -5px;
+        }
     }
     &.icon {
         padding: $button-padding-v;
         [class*='icon-'] {
-            left: 0;
+            left: auto;
+            right: auto;
             display: block;
             min-width: $line-height;
         }
