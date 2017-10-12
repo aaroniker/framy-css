@@ -27,11 +27,14 @@
     "scripts": {
         "icons": "icon-font-generator src/icons/*.svg -o dist/fonts -j false --html false --name icons -p icon",
         "css": "node-sass --include-path src/scss src/scss/framy.scss dist/css/framy.min.css --output-style compressed",
-        "watch-css": "nodemon -e scss -x \"npm run css\""
+        "css-grid": "node-sass --include-path src/scss src/scss/framy.grid.scss dist/css/framy.grid.min.css --output-style compressed",
+        "watch-css": "nodemon -e scss -x \"npm-run-all --parallel css css-grid\""
     },
-    "dependencies": {},
+    "dependencies": {
+    },
     "devDependencies": {
         "node-sass": "^4.5.3",
+        "npm-run-all": "^4.1.1",
         "nodemon": "^1.11.0",
         "icon-font-generator": "^1.1.1"
     },
