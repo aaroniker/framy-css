@@ -13,10 +13,16 @@ __Demo__ http://www.framycss.org/demo
 Just include a specific version like this:
 ```
 // CSS
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.5/dist/css/framy.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.6/dist/css/framy.min.css">
 
 // JS
-<script src="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.5/dist/js/framy.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.6/dist/js/framy.js"></script>
+```
+
+Or just the CSS flexbox grid:
+```
+// Just the CSS flexbox grid
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.6/dist/css/framy.grid.min.css">
 ```
 
 https://www.jsdelivr.com/package/gh/aaroniker/framy-css
