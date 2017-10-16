@@ -25,8 +25,11 @@ $info: $secondary;
 
 // Base
 
-@import url('https://rsms.me/inter/inter-ui.css');
+$iconFontImport: true;
+$iconFontUrl: '../fonts/icons.css';
 
+$fontImport: true;
+$fontUrl: 'https://rsms.me/inter/inter-ui.css';
 $fontFamily: 'Inter UI', sans-serif;
 
 $fontSize: 16px;

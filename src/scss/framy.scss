@@ -26,4 +26,6 @@
 @import 'components/buttons';
 @import 'components/helper';
 
-@import '../fonts/icons.css';
+@if $iconFontImport == true {
+    @import url($iconFontUrl);
+}
