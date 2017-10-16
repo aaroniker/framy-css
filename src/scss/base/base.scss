@@ -1,5 +1,5 @@
-@if $fontFamilyImport == true {
-    @import url($fontFamilyUrl);
+@if $fontImport == true {
+    @import url($fontUrl);
 }
 
 html {
