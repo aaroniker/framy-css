@@ -31,8 +31,7 @@
         "watch-css": "nodemon -e scss -x \"npm-run-all --parallel css css-grid\"",
         "scss:lint": "stylelint src/**/*.scss"
     },
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "node-sass": "^4.5.3",
         "npm-run-all": "^4.1.1",
