@@ -13,9 +13,7 @@ h1 {
     font-weight: $headingsH1Weight;
     font-size: $headingsH1Size;
     margin: 0 0 $marginBottom 0;
-    @include max(sm) {
-        font-size: floor($headingsH1Size * .8);
-    }
+    @include responsive-size(floor($headingsH1Size * .8), $headingsH1Size);
 }
 
 h2 {
@@ -23,9 +21,7 @@ h2 {
     font-weight: $headingsH2Weight;
     font-size: $headingsH2Size;
     margin: 0 0 $marginBottom 0;
-    @include max(sm) {
-        font-size: floor($headingsH2Size * .8);
-    }
+    @include responsive-size(floor($headingsH2Size * .8), $headingsH2Size);
 }
 
 h3 {
@@ -33,9 +29,7 @@ h3 {
     font-weight: $headingsH3Weight;
     font-size: $headingsH3Size;
     margin: $marginBottom 0;
-    @include max(sm) {
-        font-size: floor($headingsH3Size * .8);
-    }
+    @include responsive-size(floor($headingsH3Size * .8), $headingsH3Size);
 }
 
 h4 {
@@ -43,9 +37,7 @@ h4 {
     font-weight: $headingsH4Weight;
     font-size: $headingsH4Size;
     margin: $marginBottom 0;
-    @include max(sm) {
-        font-size: floor($headingsH4Size * .9);
-    }
+    @include responsive-size(floor($headingsH4Size * .8), $headingsH4Size);
 }
 
 label {
