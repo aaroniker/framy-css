@@ -5,13 +5,13 @@
     padding-left: $gapWidth * .5;
     padding-right: $gapWidth * .5;
     @include clear-after;
-    @media(min-width: $breakpointSm) {
+    @include min(sm) {
         width: $containerSm;
     }
-    @media(min-width: $breakpointMd) {
+    @include min(md) {
         width: $containerMd;
     }
-    @media(min-width: $breakpointLg) {
+    @include min(lg) {
         width: $containerLg;
     }
 }
