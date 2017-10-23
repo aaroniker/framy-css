@@ -1,3 +1,5 @@
+// Forms
+
 [].forEach.call(document.querySelectorAll('.form-group input.form-field'), function(el) {
     el.addEventListener('focus', function() {
         el.parentNode.classList.add('focus');
@@ -19,6 +21,8 @@
         el.classList.toggle('active');
     });
 });
+
+// Selects
 
 [].forEach.call(document.querySelectorAll('select.form-select'), function(el) {
 
