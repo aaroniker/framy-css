@@ -22,6 +22,17 @@
     });
 });
 
+[].forEach.call(document.querySelectorAll('textarea.autoexpand'), function(el) {
+
+    el.addEventListener('keydown', function() {
+        var el = this;
+        setTimeout(function() {
+            el.style.cssText = 'min-height: ' + el.scrollHeight + 'px';
+        }, 0);
+    });
+
+});
+
 // Selects
 
 [].forEach.call(document.querySelectorAll('select.form-select'), function(el) {

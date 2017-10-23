@@ -41,6 +41,12 @@
     }
 }
 
+textarea {
+    &.form-field {
+        resize: vertical;
+    }
+}
+
 .form-element {
     margin-bottom: $formElementBottom;
     label {
