@@ -92,6 +92,12 @@ $buttonLgRadius: $borderLgRadius;
 $buttonRadius: $borderRadius;
 $buttonSmRadius: $borderSmRadius;
 
+$buttonHoverTransform: translate(0, -8%);
+$buttonGroupHoverTransform: none;
+
+$buttonClickTransform: scale(.99);
+$buttonGroupClickTransform: none;
+
 $buttonFontWeight: 500;
 
 $buttonPaddingV: 10px;

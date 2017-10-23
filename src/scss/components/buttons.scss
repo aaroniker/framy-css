@@ -148,6 +148,12 @@
     &.block {
         display: block;
     }
+    &:hover {
+        @include transform($buttonHoverTransform);
+    }
+    &:active {
+        @include transform($buttonClickTransform);
+    }
 }
 
 .btn-group {
@@ -217,6 +223,12 @@
         }
         &:first-child {
             margin-left: 0;
+        }
+        &:hover {
+            @include transform($buttonGroupHoverTransform);
+        }
+        &:active {
+            @include transform($buttonGroupClickTransform);
         }
         float: left;
     }
