@@ -10,6 +10,30 @@
     float: right !important;
 }
 
+.wrap-lines {
+    align-items: center;
+    text-align: center;
+    @include flexbox;
+    @include justify-content(center);
+    &:before,
+    &:after {
+        content: '';
+        flex-grow: 1;
+        height: 1px;
+        background: #ccc;
+        min-width: $wrapLinesMinWidth;
+        display: inline-block;
+        vertical-align: middle;
+        @include flex-grow(1);
+    }
+    &:before {
+        margin-right: $wrapLinesGutter;
+    }
+    &:after {
+        margin-left: $wrapLinesGutter;
+    }
+}
+
 @each $space in $spaces {
     @each $side in (top, bottom, left, right) {
         .m-#{str-slice($side, 0, 1)}-#{$space} {
