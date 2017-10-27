@@ -224,11 +224,9 @@
         &:first-child {
             margin-left: 0;
         }
-        &:hover {
-            @include transform($buttonGroupHoverTransform);
-        }
+        &:hover,
         &:active {
-            @include transform($buttonGroupClickTransform);
+            @include transform(none);
         }
         float: left;
     }
