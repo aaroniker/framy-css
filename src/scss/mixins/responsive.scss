@@ -19,6 +19,11 @@
             @content;
         }
     }
+    @else {
+        @media(min-width: $breakpoint) {
+            @content;
+        }
+    }
 }
 
 @mixin max($breakpoint) {
@@ -39,6 +44,11 @@
     }
     @else if $breakpoint == lg {
         @media(max-width: $breakpointLg) {
+            @content;
+        }
+    }
+    @else {
+        @media(max-width: $breakpoint) {
             @content;
         }
     }
