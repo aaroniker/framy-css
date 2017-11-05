@@ -3,6 +3,7 @@
 @import '../src/scss/mixins/color';
 @import '../src/scss/mixins/grid';
 @import '../src/scss/mixins/utils';
+@import '../src/scss/mixins/responsive';
 
 #sidebar {
     position: fixed;
@@ -13,13 +14,13 @@
     padding: 50px 35px;
     z-index: 2;
     background: $dark;
-    @include transition();
-    @media(max-width: 992px) {
+    @include transition;
+    @include max(md) {
         width: 270px;
         padding: 30px 20px;
         @include translate(-270px, 0);
         &.show {
-            @include translate();
+            @include translate;
         }
     }
     h1 {
@@ -67,7 +68,7 @@
                     font-size: 18px;
                     display: block;
                     color: $dark80;
-                    @include transition();
+                    @include transition;
                     &:hover {
                         color: $dark60;
                     }
@@ -84,7 +85,7 @@
 
 #content {
     padding: 50px 30px 0 330px;
-    @media(max-width: 992px) {
+    @include max(md) {
         padding: 30px 0 0 0;
     }
     .container-fluid {
@@ -94,7 +95,7 @@
         margin: 0 0 48px 0;
         position: relative;
         border-bottom: 1px solid $border;
-        @media(max-width: 992px) {
+        @include max(md) {
             padding-right: 59px;
         }
         h1 {
@@ -141,7 +142,7 @@
             z-index: 2;
             border-radius: 50%;
             @include shadow('sm');
-            @media(max-width: 992px) {
+            @include max(md) {
                 display: block;
             }
             i {
@@ -156,12 +157,12 @@
     }
     section {
         margin: 0 0 48px 0;
-        @media(max-width: 992px) {
+        @include max(md) {
             margin: 0 0 32px 0;
         }
         .box {
             margin: 0 0 32px 0;
-            @media(max-width: 992px) {
+            @include max(md) {
                 margin: 0 0 24px 0;
             }
         }
@@ -178,7 +179,7 @@
 }
 
 #overlay {
-    @media(max-width: 992px) {
+    @include max(md) {
         position: fixed;
         left: 0;
         top: 0;
@@ -194,7 +195,7 @@
     .color {
         height: 116px;
         border-radius: 4px;
-        @media(max-width: 992px) {
+        @include max(md) {
             height: 92px;
         }
         &.primary {
@@ -209,7 +210,7 @@
         &.small {
             height: 52px;
             margin: 0 0 12px 0;
-            @media(max-width: 1200px) {
+            @include max(lg) {
                 height: 40px;
             }
         }
@@ -245,6 +246,9 @@
         }
         &.error {
             background: $error;
+        }
+        &.warning {
+            background: $warning;
         }
         &.info {
             background: $info;
@@ -309,7 +313,7 @@
         padding: 24px;
         border-radius: 4px;
         @include shadow();
-        @media(max-width: 992px) {
+        @include max(md) {
             height: 92px;
         }
         &.sm {
@@ -326,6 +330,50 @@
     .pagination {
         display: inline-block;
         margin: 0 10px 5px 0;
+    }
+}
+
+#icons {
+    section {
+        @include clear-after;
+        .preview {
+            width: 20%;
+            float: left;
+            margin: 5px 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            @include max(lg) {
+                width: 25%;
+            }
+            @include max(md) {
+                width: 33.3333%;
+            }
+            @include max(sm) {
+                width: 50%;
+            }
+            .inner {
+                i {
+                    color: $dark;
+                    &:before {
+                        line-height: 36px;
+                        font-size: 18px;
+                    }
+                }
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 8px 0 0;
+            }
+            br {
+                display: none;
+            }
+            .label {
+                color: $dark40;
+                line-height: 36px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
     }
 }
 
