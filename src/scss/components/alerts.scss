@@ -2,7 +2,7 @@
     border: 1px solid transparent;
     color: #fff;
     position: relative;
-    text-shadow: 0 0 1px rgba(#000, .25);
+    text-shadow: 0 0 1px 1px rgba(#000, .4);
     border-radius: $alertRadius;
     font-weight: $alertFontWeight;
     margin: 0 0 $marginBottom 0;
@@ -21,21 +21,28 @@
         border-color: $success;
         background: fade-out($success, .2);
         &:before {
-            content: '\f20b';
+            content: '\f145';
         }
     }
     &.error {
         border-color: $error;
         background: fade-out($error, .2);
         &:before {
-            content: '\f150';
+            content: '\f144';
+        }
+    }
+    &.warning {
+        border-color: $warning;
+        background: fade-out($warning, .2);
+        &:before {
+            content: '\f226';
         }
     }
     &.info {
         border-color: $info;
         background: fade-out($info, .2);
         &:before {
-            content: '\f121';
+            content: '\f14a';
         }
     }
     &.light {
@@ -43,6 +50,7 @@
         text-shadow: none;
         font-weight: normal;
         color: $dark40;
+        text-shadow: none;
         &.success {
             &:before {
                 color: $success;
@@ -51,6 +59,11 @@
         &.error {
             &:before {
                 color: $error;
+            }
+        }
+        &.warning {
+            &:before {
+                color: $warning;
             }
         }
         &.info {

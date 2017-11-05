@@ -21,6 +21,7 @@ $light: #F5F6FA;
 
 $success: #69DD95;
 $error: #F26175;
+$warning: #F8C93F;
 $info: $secondary;
 
 // Base
@@ -187,10 +188,10 @@ $tableBorder: $border;
 $tablePaddingV: $inputPaddingV;
 $tablePaddingH: $inputPaddingH;
 $tableLineHeight: $lineHeight;
-$tableHover: $line;
+$tableHover: $light;
 $tableThBackground: none;
 $tableTdBackground: none;
-$tableStripeBackground: $light;
+$tableStripeBackground: rgba($light, .6);
 
 // Helper
 
