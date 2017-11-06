@@ -47,7 +47,11 @@
     var template = '<span>' + value + '</span>';
     template += '<div>';
     for(i = 0; i < el.options.length; i++) {
-        template += '<span class="' + el.options[i].classList.value + '" data-value="' + el.options[i].value + '">' + el.options[i].innerHTML + '</span>';
+        var active = '';
+        if(value == el.options[i].innerHTML) {
+            active = 'active';
+        }
+        template += '<span class="' + el.options[i].classList.value + ' ' + active + '" data-value="' + el.options[i].value + '">' + el.options[i].innerHTML + '</span>';
     }
     template += '</div>';
 
