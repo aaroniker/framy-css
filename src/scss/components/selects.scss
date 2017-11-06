@@ -26,8 +26,8 @@ select.form-select {
         border-radius: $selectRadius;
         line-height: $lineHeight;
         padding: $selectPaddingV ($selectPaddingH + 20) $selectPaddingV $selectPaddingH;
-        @include transition();
-        @include user-select();
+        @include transition;
+        @include user-select;
         &:after {
             content: '';
             position: absolute;
@@ -60,8 +60,7 @@ select.form-select {
             }
         }
         & > div {
-            opacity: 1;
-            visibility: visible;
+            display: block;
         }
     }
     & > div {
@@ -72,12 +71,10 @@ select.form-select {
         padding: 10px 0;
         min-width: 100%;
         background: #fff;
-        opacity: 0;
-        visibility: hidden;
+        display: none;
         z-index: 1;
         margin: 8px 0 0 0;
         border-radius: 4px;
-        @include transition();
         @include shadow('sm');
         span {
             line-height: 32px;
@@ -89,7 +86,7 @@ select.form-select {
             font-size: 14px;
             cursor: pointer;
             color: $dark40;
-            @include transition();
+            @include transition;
             &:hover {
                 background: $selectHover;
             }
