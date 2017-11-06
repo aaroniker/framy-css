@@ -3,7 +3,6 @@
     display: block;
     width: 100%;
     -webkit-appearance: none;
-    background: none;
     background: $inputBackground;
     border: 1px solid $formBorder;
     padding: $inputPaddingV $inputPaddingH;
@@ -38,6 +37,62 @@
     }
     &:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 1000px white inset !important;
+    }
+}
+
+.form-file-field {
+    outline: none;
+    display: block;
+    width: 100%;
+    -webkit-appearance: none;
+    position: relative;
+    background: $inputBackground;
+    border: 1px solid $formBorder;
+    padding: $inputPaddingV $inputPaddingH;
+    border-radius: $inputRadius;
+    white-space: nowrap;
+    overflow: hidden;
+    @include transition;
+    @include clear-after;
+    &.focus {
+        border-color: $formBorderFocus;
+    }
+    .file-btn {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+        border-radius: $inputRadius;
+        background: $inputFileButtonBackground;
+        color: $inputFileButtonColor;
+        font-size: 14px;
+        font-weight: 500;
+        position: relative;
+        left: -5px;
+    }
+    .file-msg {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        font-weight: 500;
+        color: $inputFileColor;
+    }
+    &.active {
+        .file-msg {
+            color: $inputFileColorActive;
+        }
+    }
+    input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        cursor: pointer;
+        opacity: 0;
+        &:focus {
+            outline: none;
+        }
     }
 }
 

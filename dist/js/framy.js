@@ -9,6 +9,22 @@
     });
 });
 
+[].forEach.call(document.querySelectorAll('.form-file-field input'), function(el) {
+    el.addEventListener('change', function() {
+        var filesCount = el.files.length;
+        if(filesCount === 1) {
+            el.parentNode.querySelectorAll('.file-msg')[0].textContent = el.value.split('\\').pop();
+        } else {
+            var textSelected = 'files selected';
+            if(el.parentNode.querySelectorAll('.file-msg')[0].dataset.selected) {
+                textSelected = el.parentNode.querySelectorAll('.file-msg')[0].dataset.selected;
+            }
+            el.parentNode.querySelectorAll('.file-msg')[0].textContent = filesCount + ' ' + textSelected;
+        }
+        el.parentNode.classList.add('active');
+    });
+});
+
 [].forEach.call(document.querySelectorAll('.password .icon-view'), function(el) {
     el.addEventListener('click', function() {
         var input = el.parentNode.getElementsByTagName('input')[0];
