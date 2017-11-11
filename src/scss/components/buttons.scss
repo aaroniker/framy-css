@@ -154,6 +154,12 @@
     &:active {
         @include transform($buttonClickTransform);
     }
+    &:link,
+    &:active,
+    &:visited,
+    &:focus {
+        color: inherit;
+    }
 }
 
 .btn-group {
