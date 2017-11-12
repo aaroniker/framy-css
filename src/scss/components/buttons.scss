@@ -14,6 +14,12 @@
     background: $primary;
     border-radius: $buttonRadius;
     @include transition;
+    &:link,
+    &:active,
+    &:visited,
+    &:focus {
+        color: #fff;
+    }
     [class*='icon-'] {
         position: relative;
         left: -5px;
@@ -79,6 +85,12 @@
     &.border {
         background: #fff;
         color: $dark60;
+        &:link,
+        &:active,
+        &:visited,
+        &:focus {
+            color: $dark60;
+        }
         &:before {
             content: '';
             left: 0;
@@ -153,12 +165,6 @@
     }
     &:active {
         @include transform($buttonClickTransform);
-    }
-    &:link,
-    &:active,
-    &:visited,
-    &:focus {
-        color: inherit;
     }
 }
 
