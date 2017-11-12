@@ -20,13 +20,13 @@
     .prev {
         border-radius: $paginationRadius 0 0 $paginationRadius;
         &:before {
-            content: '\f109';
+            content: '\f10a';
         }
     }
     .next {
         border-radius: 0 $paginationRadius $paginationRadius 0;
         &:before {
-            content: '\f10a';
+            content: '\f10b';
         }
     }
     div {
