@@ -82,11 +82,6 @@ $containerSm: 730px;
 $containerMd: 960px;
 $containerLg: 1160px;
 
-$breakpoints:
-    sm $breakpointSm $containerSm,
-    md $breakpointMd $containerMd,
-    lg $breakpointLg $containerLg;
-
 // Buttons
 
 $buttonLgRadius: $borderLgRadius;

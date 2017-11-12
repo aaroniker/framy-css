@@ -1,3 +1,8 @@
+$breakpoints:
+    sm $breakpointSm $containerSm,
+    md $breakpointMd $containerMd,
+    lg $breakpointLg $containerLg;
+
 .container {
     margin-right: auto;
     margin-left: auto;
