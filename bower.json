@@ -2,7 +2,7 @@
     "name": "framy-css",
     "description": "Framy is a free and very simple CSS Framework for developing responsive & modern websites.",
     "main": "dist/css/framy.min.css",
-    "version": "2.8.1",
+    "version": "2.8.2",
     "keywords": [
         "css",
         "sass",
