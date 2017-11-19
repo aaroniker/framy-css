@@ -10,24 +10,26 @@ __Demo__ http://www.framycss.org/demo
 
 ### CDN
 
-Just include a specific version like this:
+Just include the latest version like this:
 ```
 // CSS
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.8.2/dist/css/framy.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@latest/dist/css/framy.min.css">
 
 // JS
-<script src="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.8.2/dist/js/framy.js"></script>
+<script src="//cdn.jsdelivr.net/npm/framy-css@latest/dist/js/framy.js"></script>
 ```
 
 Or just the CSS flexbox grid:
 ```
 // Just the CSS flexbox grid
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaroniker/framy-css@2.8.2/dist/css/framy.grid.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@latest/dist/css/framy.grid.min.css">
 ```
 
-https://www.jsdelivr.com/package/gh/aaroniker/framy-css
-
-[![](https://data.jsdelivr.com/v1/package/gh/aaroniker/framy-css/badge)](https://www.jsdelivr.com/package/gh/aaroniker/framy-css)
+Or replace _latest_ with a specific version (ex. grid system):
+```
+// Just the CSS flexbox grid
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@2.8.2/dist/css/framy.grid.min.css">
+```
 
 ### Install with npm
 ```
