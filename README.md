@@ -1,10 +1,7 @@
 # Framy - Very simple CSS Framework
 
-__INFO__ WIP - completely rewritte a few days ago - going to update Website / Docu / Demo soon!
-
 __Website__ http://www.framycss.org
-
-__Demo__ http://www.framycss.org/demo
+__Documentation__ http://www.framycss.org/#/docs
 
 ## How to use
 
@@ -28,7 +25,7 @@ Or just the CSS flexbox grid:
 Or replace _latest_ with a specific version (ex. grid system):
 ```
 // Just the CSS flexbox grid
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@2.8.2/dist/css/framy.grid.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@2.8.3/dist/css/framy.grid.min.css">
 ```
 
 ### Install with npm
