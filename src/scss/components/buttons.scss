@@ -146,8 +146,27 @@
             background: darken($success, 6%);
         }
     }
+    &.error {
+        background: $error;
+        &:hover {
+            background: darken($error, 6%);
+        }
+    }
+    &.warning {
+        background: $warning;
+        &:hover {
+            background: darken($warning, 6%);
+        }
+    }
+    &.info {
+        background: $info;
+        &:hover {
+            background: darken($info, 6%);
+        }
+    }
     &.none {
         background: none;
+        color: $textColor;
         &:hover {
             background: none;
         }
