@@ -1,6 +1,7 @@
 # Framy - Very simple CSS Framework
 
 __Website__ http://www.framycss.org
+
 __Documentation__ http://www.framycss.org/#/docs
 
 ## How to use
