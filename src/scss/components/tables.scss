@@ -59,7 +59,7 @@ table {
                     &:before {
                         content: attr(data-th)": ";
                         color:  $tableThText;
-                        font-weight: bold;
+                        font-weight: $tableThWeight;
                         display: none;
                         position: absolute;
                         left: $tablePaddingH;
@@ -74,7 +74,8 @@ table {
         }
         tr {
             th {
-                color:  $tableThText;
+                color: $tableThText;
+                font-weight: $tableThWeight;
                 padding: $tablePaddingV $tablePaddingH;
                 background: $tableThBackground;
             }
