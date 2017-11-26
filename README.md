@@ -1,5 +1,7 @@
 # Framy - Very simple CSS Framework
 
+Framy is a collection of basic components, you will need in every web project to develop responsive & modern interfaces and websites.
+
 __Website__ http://www.framycss.org
 
 __Documentation__ http://www.framycss.org/#/docs
@@ -26,7 +28,7 @@ Or just the CSS flexbox grid:
 Or replace _latest_ with a specific version (ex. grid system):
 ```
 // Just the CSS flexbox grid
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@2.8.3/dist/css/framy.grid.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@2.8.4/dist/css/framy.grid.min.css">
 ```
 
 ### Install with npm
