@@ -2,9 +2,9 @@
 
 Framy is a collection of basic components, you will need in every web project to develop responsive & modern interfaces and websites.
 
-__Website__ http://www.framycss.org
-
-__Documentation__ http://www.framycss.org/#/docs
+* __Website__ http://www.framycss.org
+* __Documentation__ http://www.framycss.org/#/docs
+* __Demo__ http://demo.framycss.org
 
 ## How to use
 
