@@ -6,6 +6,12 @@ Framy is a collection of basic components, you will need in every web project to
 * __Documentation__ http://www.framycss.org/#/docs
 * __Demo__ http://demo.framycss.org
 
+[![](https://data.jsdelivr.com/v1/package/npm/framy-css/badge?style=rounded)](https://www.jsdelivr.com/package/npm/framy-css)
+[![npm](https://img.shields.io/npm/dt/framy-css.svg)](https://www.npmjs.com/package/framy-css)
+[![npm](https://img.shields.io/npm/v/framy-css.svg)](https://www.npmjs.com/package/framy-css)
+[![Bower](https://img.shields.io/bower/v/framy-css.svg)]()
+[![npm](https://img.shields.io/npm/l/framy-css.svg)]()
+
 ## How to use
 
 ### CDN
