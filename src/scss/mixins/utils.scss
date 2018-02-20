@@ -13,7 +13,10 @@
     }
 }
 
-@mixin transition($args: all .3s ease 0s) {
+@mixin transition($args...) {
+    @if length($args) == 0 {
+        $args: all .3s ease 0s;
+    }
     -webkit-transition: $args;
     transition: $args;
 }
@@ -39,7 +42,8 @@
     &::-webkit-input-placeholder,
     &::-moz-placeholder,
     &:-ms-input-placeholder,
-    &:-moz-placeholder {
+    &:-moz-placeholder,
+    &::placeholder {
         color: $color;
     }
 }
