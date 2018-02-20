@@ -8,7 +8,7 @@
         "type": "git",
         "url": "https://github.com/aaroniker/framy-css.git"
     },
-    "version": "2.8.4",
+    "version": "2.8.5",
     "keywords": [
         "css",
         "sass",
@@ -42,7 +42,6 @@
         "stylelint-scss": "^2.1.0"
     },
     "ignore": [
-        "demo",
-        "src"
+        "demo"
     ]
 }

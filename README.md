@@ -34,7 +34,7 @@ Or just the CSS flexbox grid:
 Or replace _latest_ with a specific version (ex. grid system):
 ```
 // Just the CSS flexbox grid
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@2.8.4/dist/css/framy.grid.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/framy-css@2.8.5/dist/css/framy.grid.min.css">
 ```
 
 ### Install with npm
