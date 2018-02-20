@@ -45,6 +45,12 @@ form.horizontal .form-element {
         align-items: center;
         justify-content: center;
     }
+    &.center-v {
+        align-items: center;
+    }
+    &.center-h {
+        justify-content: center;
+    }
     @each $breakpoint in $breakpoints {
         $name: nth($breakpoint, 1);
         [class^='#{$name}'],
