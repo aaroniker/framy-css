@@ -118,6 +118,7 @@ $formBorderFocus: $primary;
 $formFocus: mix(#fff, $primary, 40%);
 $formFocusColor: #fff;
 $formElementBottom: $marginBottom;
+$formOverrideAutofillWebkit: true;
 
 $inputText: $dark60;
 $inputTextPlaceholder: $dark60;

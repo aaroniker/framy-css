@@ -36,6 +36,12 @@
             background: none;
         }
     }
+    @if $formOverrideAutofillWebkit == true {
+        &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px $inputBackground inset !important;
+            -webkit-text-fill-color: $inputText !important;
+        }
+    }
 }
 
 .form-file-field {
