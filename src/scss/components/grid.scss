@@ -42,14 +42,14 @@ form.horizontal .form-element {
         @include flex-direction(row-reverse);
     }
     &.center {
-        align-items: center;
-        justify-content: center;
+        @include align-items(center);
+        @include justify-content(center);
     }
     &.center-v {
-        align-items: center;
+        @include align-items(center);
     }
     &.center-h {
-        justify-content: center;
+        @include justify-content(center);
     }
     @each $breakpoint in $breakpoints {
         $name: nth($breakpoint, 1);
