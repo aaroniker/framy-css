@@ -1,8 +1,12 @@
-* {
+html {
     @include box-sizing();
+}
+
+* {
+    @include box-sizing(inherit);
     &:before,
     &:after {
-         @include box-sizing();
+        @include box-sizing(inherit);
     }
 }
 
@@ -41,6 +45,7 @@ progress {
 html,
 body {
     min-height: 100%;
+    margin: 0;
 }
 
 a {
@@ -60,11 +65,9 @@ q:after {
     content: none;
 }
 
+code,
 pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    white-space: pre-line;
-    word-wrap: break-word;
+    word-break: break-word;
 }
 
 table {
@@ -89,6 +92,7 @@ optgroup,
 select,
 textarea {
     margin: 0;
+    text-transform: none;
     &:focus {
         outline: none;
     }
@@ -116,9 +120,11 @@ button::-moz-focus-inner {
 
 button,
 input[type=button],
+input[type=reset],
 input[type=submit] {
     width: auto;
     overflow: visible;
+    -webkit-appearance: button;
 }
 
 sub,
@@ -136,12 +142,21 @@ sub {
     bottom: -0.25em;
 }
 
+progress {
+    vertical-align: baseline;
+}
+
 label,
 input[type=button],
+input[type=reset],
 input[type=submit],
 input[type=file],
 button {
     cursor: pointer;
+}
+
+[type='search']::-webkit-search-decoration {
+    -webkit-appearance: none;
 }
 
 img {
