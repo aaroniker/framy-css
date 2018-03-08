@@ -61,6 +61,18 @@ form.horizontal .form-element {
             @include flex-basis(100%);
         }
     }
+    &.half {
+        margin-right: $gapWidth * .25 * -1;
+        margin-left: $gapWidth * .25 * -1;
+        @each $breakpoint in $breakpoints {
+            $name: nth($breakpoint, 1);
+            [class^='#{$name}'],
+            [class*=' #{$name}'] {
+                padding-right: $gapWidth * .25;
+                padding-left: $gapWidth * .25;
+            }
+        }
+    }
     $name: xs;
     .#{$name} {
         @include grid-col-common;
