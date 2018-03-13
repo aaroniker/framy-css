@@ -56,11 +56,6 @@
         [class*='icon-'] {
             font-size: 16px;
         }
-        &.border {
-            &:before {
-                border-radius: $buttonSmRadius;
-            }
-        }
     }
     &.lg {
         font-size: 18px;
@@ -71,11 +66,6 @@
         }
         [class*='icon-'] {
             font-size: 20px;
-        }
-        &.border {
-            &:before {
-                border-radius: $buttonLgRadius;
-            }
         }
     }
     &:hover {
@@ -99,8 +89,8 @@
             bottom: 0;
             position: absolute;
             z-index: 0;
+            border-radius: inherit;
             border: 1px solid $border;
-            border-radius: $buttonRadius;
         }
         &:hover {
             background: $light;
