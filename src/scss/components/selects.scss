@@ -46,7 +46,7 @@ select.form-select {
         & > span {
             cursor: not-allowed;
             background: $selectDisabled;
-            color: $dark40;
+            color: $textColor;
             &:after {
                 border-color: $selectBorder transparent transparent transparent;
             }
